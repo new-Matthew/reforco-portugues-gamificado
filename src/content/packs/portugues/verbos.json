@@ -1,0 +1,512 @@
+{
+  "id": "portugues-verbos",
+  "subject": "portugues",
+  "title": "Verbos",
+  "description": "Classificação dos verbos quanto à terminação, à conjugação e à função.",
+  "version": "1.0.0",
+  "locale": "pt-BR",
+  "nodes": [
+    {
+      "id": "verbos-terminalidade-ar",
+      "title": "1ª conjugação (-AR)",
+      "subtitle": "Amar, falar, pular...",
+      "chapter": "Módulo 01 · Terminação",
+      "icon": "npc",
+      "position": { "x": 0, "y": 0 },
+      "unlock": { "requires": [] },
+      "npc": {
+        "speaker": "Mestre Verbo",
+        "lines": [
+          "Bem-vindo à Trilha dos Verbos!",
+          "Hoje vamos reconhecer a 1ª conjugação pela terminação -AR."
+        ]
+      },
+      "reward": { "itemId": "selo-ar", "label": "Selo da 1ª conjugação" },
+      "lesson": {
+        "id": "lesson-verbos-ar",
+        "title": "Verbos terminados em -AR",
+        "intro": "Na 1ª conjugação, o infinitivo termina em -AR. A vogal temática é -a-.",
+        "xpReward": 40,
+        "coinReward": 10,
+        "requiredCorrectRatio": 1,
+        "questions": [
+          {
+            "id": "ar-q1",
+            "type": "single-choice",
+            "prompt": "Qual verbo pertence à 1ª conjugação?",
+            "choices": [
+              { "id": "a", "label": "vender" },
+              { "id": "b", "label": "amar" },
+              { "id": "c", "label": "proibir" }
+            ],
+            "correctChoiceId": "b",
+            "explanation": "Amar termina em -AR, por isso é da 1ª conjugação."
+          },
+          {
+            "id": "ar-q2",
+            "type": "multiple-choice",
+            "prompt": "Quais verbos terminam em -AR?",
+            "choices": [
+              { "id": "a", "label": "falar" },
+              { "id": "b", "label": "correr" },
+              { "id": "c", "label": "pular" },
+              { "id": "d", "label": "partir" }
+            ],
+            "correctChoiceIds": ["a", "c"],
+            "explanation": "Falar e pular terminam em -AR. Correr é -ER e partir é -IR."
+          },
+          {
+            "id": "ar-q3",
+            "type": "text",
+            "prompt": "Complete: os verbos terminados em -AR pertencem à ___ conjugação.",
+            "placeholder": "Ex.: 1ª",
+            "acceptedAnswers": ["1ª", "1a", "1", "primeira", "primeira conjugação", "1ª conjugação"],
+            "explanation": "A vogal temática -a- caracteriza a 1ª conjugação."
+          }
+        ]
+      }
+    },
+    {
+      "id": "verbos-terminalidade-er-or",
+      "title": "2ª conjugação (-ER e -OR)",
+      "subtitle": "Fazer, vender, pôr...",
+      "chapter": "Módulo 01 · Terminação",
+      "icon": "star",
+      "position": { "x": 2, "y": 1 },
+      "unlock": { "requires": ["verbos-terminalidade-ar"] },
+      "npc": {
+        "speaker": "Mestre Verbo",
+        "lines": [
+          "A 2ª conjugação reúne os verbos em -ER e também os em -OR.",
+          "Cuidado: pôr, compor e repor entram nessa turma!"
+        ]
+      },
+      "reward": { "itemId": "selo-er-or", "label": "Selo da 2ª conjugação" },
+      "lesson": {
+        "id": "lesson-verbos-er-or",
+        "title": "Verbos terminados em -ER e -OR",
+        "intro": "A 2ª conjugação tem vogal temática -e-, com infinitivos em -ER e -OR.",
+        "xpReward": 45,
+        "coinReward": 12,
+        "requiredCorrectRatio": 1,
+        "questions": [
+          {
+            "id": "er-q1",
+            "type": "single-choice",
+            "prompt": "Qual verbo pertence à 2ª conjugação?",
+            "choices": [
+              { "id": "a", "label": "amar" },
+              { "id": "b", "label": "fazer" },
+              { "id": "c", "label": "proibir" }
+            ],
+            "correctChoiceId": "b",
+            "explanation": "Fazer termina em -ER, portanto é da 2ª conjugação."
+          },
+          {
+            "id": "er-q2",
+            "type": "multiple-choice",
+            "prompt": "Quais verbos são da 2ª conjugação?",
+            "choices": [
+              { "id": "a", "label": "vender" },
+              { "id": "b", "label": "pôr" },
+              { "id": "c", "label": "partir" },
+              { "id": "d", "label": "correr" }
+            ],
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "Vender e correr terminam em -ER; pôr termina em -OR. Partir é -IR."
+          },
+          {
+            "id": "er-q3",
+            "type": "single-choice",
+            "prompt": "Por que 'pôr' é classificado na 2ª conjugação?",
+            "choices": [
+              { "id": "a", "label": "Porque termina em -OR, terminação associada à 2ª conjugação." },
+              { "id": "b", "label": "Porque termina em -AR." },
+              { "id": "c", "label": "Porque não possui conjugação." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Além de -ER, a terminação -OR (pôr, compor, repor) integra a 2ª conjugação."
+          }
+        ]
+      }
+    },
+    {
+      "id": "verbos-terminalidade-ir",
+      "title": "3ª conjugação (-IR)",
+      "subtitle": "Proibir, permitir...",
+      "chapter": "Módulo 01 · Terminação",
+      "icon": "chest",
+      "position": { "x": 1, "y": 2 },
+      "unlock": { "requires": ["verbos-terminalidade-er-or"] },
+      "npc": {
+        "speaker": "Mestre Verbo",
+        "lines": [
+          "Fechamos o primeiro módulo com a 3ª conjugação.",
+          "Procure sempre a terminação do infinitivo!"
+        ]
+      },
+      "reward": { "itemId": "bau-da-terminacao", "label": "Baú da terminação" },
+      "lesson": {
+        "id": "lesson-verbos-ir",
+        "title": "Verbos terminados em -IR",
+        "intro": "Na 3ª conjugação, o infinitivo termina em -IR e a vogal temática é -i-.",
+        "xpReward": 45,
+        "coinReward": 12,
+        "requiredCorrectRatio": 1,
+        "questions": [
+          {
+            "id": "ir-q1",
+            "type": "single-choice",
+            "prompt": "Qual verbo pertence à 3ª conjugação?",
+            "choices": [
+              { "id": "a", "label": "falar" },
+              { "id": "b", "label": "vender" },
+              { "id": "c", "label": "proibir" }
+            ],
+            "correctChoiceId": "c",
+            "explanation": "Proibir termina em -IR, logo é da 3ª conjugação."
+          },
+          {
+            "id": "ir-q2",
+            "type": "multiple-choice",
+            "prompt": "Quais verbos terminam em -IR?",
+            "choices": [
+              { "id": "a", "label": "permitir" },
+              { "id": "b", "label": "partir" },
+              { "id": "c", "label": "amar" },
+              { "id": "d", "label": "sorrir" }
+            ],
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "Permitir, partir e sorrir terminam em -IR. Amar é -AR."
+          },
+          {
+            "id": "ir-q3",
+            "type": "text",
+            "prompt": "Complete: os verbos terminados em -IR pertencem à ___ conjugação.",
+            "placeholder": "Ex.: 3ª",
+            "acceptedAnswers": ["3ª", "3a", "3", "terceira", "terceira conjugação", "3ª conjugação"],
+            "explanation": "A vogal temática -i- caracteriza a 3ª conjugação."
+          }
+        ]
+      }
+    },
+    {
+      "id": "verbos-regulares-irregulares",
+      "title": "Regulares e Irregulares",
+      "subtitle": "Modelo fixo versus mudanças no radical",
+      "chapter": "Módulo 02 · Conjugação",
+      "icon": "npc",
+      "position": { "x": 2, "y": 0 },
+      "unlock": { "requires": ["verbos-terminalidade-ir"] },
+      "npc": {
+        "speaker": "Guardiã das Formas",
+        "lines": [
+          "Nem todo verbo segue o modelo à risca.",
+          "Vamos separar os regulares dos irregulares."
+        ]
+      },
+      "reward": { "itemId": "lupa-regular", "label": "Lupa do regular" },
+      "lesson": {
+        "id": "lesson-verbos-regulares-irregulares",
+        "title": "Verbos regulares e irregulares",
+        "intro": "Regulares mantêm o radical e as terminações do modelo. Irregulares alteram o radical ou as terminações.",
+        "xpReward": 50,
+        "coinReward": 14,
+        "requiredCorrectRatio": 1,
+        "questions": [
+          {
+            "id": "reg-q1",
+            "type": "single-choice",
+            "prompt": "O que caracteriza um verbo regular?",
+            "choices": [
+              { "id": "a", "label": "Mantém o radical e segue as terminações do modelo de sua conjugação." },
+              { "id": "b", "label": "Muda o radical em todas as pessoas." },
+              { "id": "c", "label": "Só existe no singular." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O verbo regular não foge do paradigma da sua conjugação."
+          },
+          {
+            "id": "reg-q2",
+            "type": "single-choice",
+            "prompt": "Qual verbo é irregular?",
+            "choices": [
+              { "id": "a", "label": "amar" },
+              { "id": "b", "label": "falar" },
+              { "id": "c", "label": "fazer" }
+            ],
+            "correctChoiceId": "c",
+            "explanation": "Fazer apresenta radicais diferentes: faço, fiz, farei."
+          },
+          {
+            "id": "reg-q3",
+            "type": "multiple-choice",
+            "prompt": "Quais verbos são regulares?",
+            "choices": [
+              { "id": "a", "label": "falar" },
+              { "id": "b", "label": "vender" },
+              { "id": "c", "label": "ser" },
+              { "id": "d", "label": "partir" }
+            ],
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "Ser é irregular (sou, era, fui); os demais seguem seus modelos."
+          }
+        ]
+      }
+    },
+    {
+      "id": "verbos-defectivos-anomalos",
+      "title": "Defectivos e Anômalos",
+      "subtitle": "Conjugação incompleta e radicais múltiplos",
+      "chapter": "Módulo 02 · Conjugação",
+      "icon": "star",
+      "position": { "x": 0, "y": 1 },
+      "unlock": { "requires": ["verbos-regulares-irregulares"] },
+      "npc": {
+        "speaker": "Guardiã das Formas",
+        "lines": [
+          "Alguns verbos têm buracos na conjugação.",
+          "Outros trocam de radical no meio do caminho."
+        ]
+      },
+      "reward": { "itemId": "chave-defectiva", "label": "Chave dos defectivos" },
+      "lesson": {
+        "id": "lesson-verbos-defectivos-anomalos",
+        "title": "Verbos defectivos e anômalos",
+        "intro": "Defectivos não se conjugam em todas as formas. Anômalos apresentam mais de um radical.",
+        "xpReward": 50,
+        "coinReward": 14,
+        "requiredCorrectRatio": 1,
+        "questions": [
+          {
+            "id": "def-q1",
+            "type": "single-choice",
+            "prompt": "O que é um verbo defectivo?",
+            "choices": [
+              { "id": "a", "label": "Não se conjuga em todas as pessoas ou formas." },
+              { "id": "b", "label": "Tem duas formas equivalentes." },
+              { "id": "c", "label": "Substitui outro verbo na frase." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O defectivo tem lacunas na conjugação."
+          },
+          {
+            "id": "def-q2",
+            "type": "single-choice",
+            "prompt": "Qual verbo é defectivo?",
+            "choices": [
+              { "id": "a", "label": "falar" },
+              { "id": "b", "label": "falir" },
+              { "id": "c", "label": "amar" }
+            ],
+            "correctChoiceId": "b",
+            "explanation": "Falir só se usa nas formas arrizotônicas, como falimos e falem."
+          },
+          {
+            "id": "def-q3",
+            "type": "single-choice",
+            "prompt": "O que é um verbo anômalo?",
+            "choices": [
+              { "id": "a", "label": "Apresenta mais de um radical ao longo da conjugação, como ser e ir." },
+              { "id": "b", "label": "Segue sempre o modelo regular." },
+              { "id": "c", "label": "Não possui sujeito." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Ser (sou/era/fui) e ir (vou/fui/ia) são exemplos clássicos de anomalia."
+          }
+        ]
+      }
+    },
+    {
+      "id": "verbos-abundantes-pronominais",
+      "title": "Abundantes e Pronominais",
+      "subtitle": "Duas formas, um pronome",
+      "chapter": "Módulo 02 · Conjugação",
+      "icon": "chest",
+      "position": { "x": 2, "y": 2 },
+      "unlock": { "requires": ["verbos-defectivos-anomalos"] },
+      "npc": {
+        "speaker": "Guardiã das Formas",
+        "lines": [
+          "Existem verbos com mais de uma forma correta.",
+          "E outros que só vivem acompanhados de pronome."
+        ]
+      },
+      "reward": { "itemId": "bau-da-conjugacao", "label": "Baú da conjugação" },
+      "lesson": {
+        "id": "lesson-verbos-abundantes-pronominais",
+        "title": "Verbos abundantes e pronominais",
+        "intro": "Abundantes possuem duas ou mais formas equivalentes. Pronominais conjugam-se com pronome pessoal.",
+        "xpReward": 50,
+        "coinReward": 14,
+        "requiredCorrectRatio": 1,
+        "questions": [
+          {
+            "id": "abu-q1",
+            "type": "single-choice",
+            "prompt": "O que é um verbo abundante?",
+            "choices": [
+              { "id": "a", "label": "Possui duas ou mais formas equivalentes, como imprimido e impresso." },
+              { "id": "b", "label": "Não possui infinitivo." },
+              { "id": "c", "label": "Só é usado no plural." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "As formas abundantes convivem com o mesmo valor."
+          },
+          {
+            "id": "abu-q2",
+            "type": "single-choice",
+            "prompt": "Qual verbo é abundante?",
+            "choices": [
+              { "id": "a", "label": "falar" },
+              { "id": "b", "label": "imprimir" },
+              { "id": "c", "label": "partir" }
+            ],
+            "correctChoiceId": "b",
+            "explanation": "Imprimir admite imprimido e impresso."
+          },
+          {
+            "id": "abu-q3",
+            "type": "multiple-choice",
+            "prompt": "Quais verbos são pronominais?",
+            "choices": [
+              { "id": "a", "label": "arrepender-se" },
+              { "id": "b", "label": "queixar-se" },
+              { "id": "c", "label": "falar" },
+              { "id": "d", "label": "lembrar-se" }
+            ],
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "Verbos pronominais conjugam-se com pronome reflexivo."
+          }
+        ]
+      }
+    },
+    {
+      "id": "verbos-auxiliares-principais-vicarios",
+      "title": "Auxiliares, Principais e Vicários",
+      "subtitle": "Quem ajuda, quem manda e quem substitui",
+      "chapter": "Módulo 03 · Função",
+      "icon": "npc",
+      "position": { "x": 0, "y": 0 },
+      "unlock": { "requires": ["verbos-abundantes-pronominais"] },
+      "npc": {
+        "speaker": "Sentinela da Oração",
+        "lines": [
+          "Nem todo verbo carrega sozinho o sentido da oração.",
+          "Vamos entender os papéis de cada um."
+        ]
+      },
+      "reward": { "itemId": "selo-funcao", "label": "Selo da função verbal" },
+      "lesson": {
+        "id": "lesson-verbos-auxiliares-principais-vicarios",
+        "title": "Verbos auxiliares, principais e vicários",
+        "intro": "Auxiliares formam locuções; principais são o núcleo do predicado; vicários substituem outro verbo.",
+        "xpReward": 55,
+        "coinReward": 15,
+        "requiredCorrectRatio": 1,
+        "questions": [
+          {
+            "id": "aux-q1",
+            "type": "single-choice",
+            "prompt": "Qual é a função do verbo auxiliar?",
+            "choices": [
+              { "id": "a", "label": "Formar tempos compostos e locuções verbais, como em 'tenho estudado'." },
+              { "id": "b", "label": "Ser sempre o núcleo do predicado." },
+              { "id": "c", "label": "Substituir o sujeito da oração." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Em 'tenho estudado', 'tenho' auxilia 'estudado'."
+          },
+          {
+            "id": "aux-q2",
+            "type": "single-choice",
+            "prompt": "O que é um verbo principal?",
+            "choices": [
+              { "id": "a", "label": "É o núcleo do predicado e carrega o sentido da ação ou estado." },
+              { "id": "b", "label": "Só aparece em locuções verbais." },
+              { "id": "c", "label": "Indica apenas tempo." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O principal carrega a carga semântica central do predicado."
+          },
+          {
+            "id": "aux-q3",
+            "type": "single-choice",
+            "prompt": "O que é um verbo vicário?",
+            "choices": [
+              { "id": "a", "label": "Substitui outro verbo já mencionado, como 'fazer' em 'Ele estuda e eu também o faço'." },
+              { "id": "b", "label": "Nunca aparece em orações." },
+              { "id": "c", "label": "É sempre irregular." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O vicário evita repetir o verbo anterior."
+          }
+        ]
+      }
+    },
+    {
+      "id": "verbos-causativos-sensitivos",
+      "title": "Causativos e Sensitivos",
+      "subtitle": "Fazer acontecer e perceber",
+      "chapter": "Módulo 03 · Função",
+      "icon": "chest",
+      "position": { "x": 2, "y": 1 },
+      "unlock": { "requires": ["verbos-auxiliares-principais-vicarios"] },
+      "npc": {
+        "speaker": "Sentinela da Oração",
+        "lines": [
+          "Há verbos que mandam alguém agir.",
+          "E há os que captam o que os sentidos percebem."
+        ]
+      },
+      "reward": { "itemId": "bau-da-funcao", "label": "Baú da função" },
+      "lesson": {
+        "id": "lesson-verbos-causativos-sensitivos",
+        "title": "Verbos causativos e sensitivos",
+        "intro": "Causativos indicam que alguém faz outro realizar a ação. Sensitivos expressam percepção.",
+        "xpReward": 55,
+        "coinReward": 15,
+        "requiredCorrectRatio": 1,
+        "questions": [
+          {
+            "id": "cau-q1",
+            "type": "single-choice",
+            "prompt": "O que é um verbo causativo?",
+            "choices": [
+              { "id": "a", "label": "Indica que o sujeito faz alguém realizar uma ação, como mandar, deixar e fazer." },
+              { "id": "b", "label": "Indica apenas percepção." },
+              { "id": "c", "label": "Substitui o verbo principal." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Em 'mandei o menino sair', 'mandei' é causativo."
+          },
+          {
+            "id": "cau-q2",
+            "type": "single-choice",
+            "prompt": "Qual verbo é sensitivo?",
+            "choices": [
+              { "id": "a", "label": "ouvir" },
+              { "id": "b", "label": "mandar" },
+              { "id": "c", "label": "deixar" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Verbos sensitivos expressam percepção: ver, ouvir, sentir."
+          },
+          {
+            "id": "cau-q3",
+            "type": "multiple-choice",
+            "prompt": "Quais verbos são causativos?",
+            "choices": [
+              { "id": "a", "label": "mandar" },
+              { "id": "b", "label": "deixar" },
+              { "id": "c", "label": "estudar" },
+              { "id": "d", "label": "fazer" }
+            ],
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "Mandar, deixar e fazer podem introduzir uma ação realizada por outro."
+          }
+        ]
+      }
+    }
+  ]
+}

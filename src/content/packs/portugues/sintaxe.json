@@ -1,0 +1,137 @@
+{
+  "id": "portugues-sintaxe",
+  "subject": "portugues",
+  "title": "Sintaxe",
+  "description": "Termos essenciais da oração: sujeito e predicado.",
+  "version": "1.0.0",
+  "locale": "pt-BR",
+  "nodes": [
+    {
+      "id": "sintaxe-sujeito-predicado",
+      "title": "Sujeito e Predicado",
+      "subtitle": "Os termos essenciais da oração",
+      "chapter": "Módulo 01 · Termos essenciais",
+      "icon": "npc",
+      "position": { "x": 0, "y": 0 },
+      "unlock": { "requires": [] },
+      "npc": {
+        "speaker": "Professor Sintaxe",
+        "lines": [
+          "Toda oração se organiza em torno de um sujeito e de um predicado.",
+          "Vamos identificar cada um deles."
+        ]
+      },
+      "reward": { "itemId": "selo-sintaxe", "label": "Selo da sintaxe" },
+      "lesson": {
+        "id": "lesson-sintaxe-sujeito-predicado",
+        "title": "Sujeito e predicado",
+        "intro": "O sujeito é o termo sobre o qual se declara algo. O predicado é o que se declara sobre ele.",
+        "xpReward": 40,
+        "coinReward": 10,
+        "requiredCorrectRatio": 1,
+        "questions": [
+          {
+            "id": "sp-q1",
+            "type": "single-choice",
+            "prompt": "O que é o sujeito de uma oração?",
+            "choices": [
+              { "id": "a", "label": "O termo sobre o qual se declara algo." },
+              { "id": "b", "label": "O verbo principal." },
+              { "id": "c", "label": "O complemento do verbo." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O sujeito é o termo com o qual o verbo concorda."
+          },
+          {
+            "id": "sp-q2",
+            "type": "single-choice",
+            "prompt": "Em 'O menino correu no parque', qual é o sujeito?",
+            "choices": [
+              { "id": "a", "label": "O menino" },
+              { "id": "b", "label": "correu" },
+              { "id": "c", "label": "no parque" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "'O menino' é o termo sobre o qual se declara que correu."
+          },
+          {
+            "id": "sp-q3",
+            "type": "single-choice",
+            "prompt": "O que é o predicado?",
+            "choices": [
+              { "id": "a", "label": "O que se declara sobre o sujeito." },
+              { "id": "b", "label": "O sujeito da oração." },
+              { "id": "c", "label": "Um tipo de verbo." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O predicado contém o verbo e as informações sobre o sujeito."
+          }
+        ]
+      }
+    },
+    {
+      "id": "sintaxe-tipos-sujeito",
+      "title": "Tipos de Sujeito",
+      "subtitle": "Simples, composto, oculto e inexistente",
+      "chapter": "Módulo 01 · Termos essenciais",
+      "icon": "chest",
+      "position": { "x": 2, "y": 1 },
+      "unlock": { "requires": ["sintaxe-sujeito-predicado"] },
+      "npc": {
+        "speaker": "Professor Sintaxe",
+        "lines": [
+          "O sujeito pode aparecer, esconder-se ou nem existir.",
+          "Vamos classificar!"
+        ]
+      },
+      "reward": { "itemId": "bau-sintaxe", "label": "Baú da sintaxe" },
+      "lesson": {
+        "id": "lesson-sintaxe-tipos-sujeito",
+        "title": "Tipos de sujeito",
+        "intro": "Simples tem um núcleo; composto tem dois ou mais; oculto está implícito; inexistente não existe.",
+        "xpReward": 45,
+        "coinReward": 12,
+        "requiredCorrectRatio": 1,
+        "questions": [
+          {
+            "id": "ts-q1",
+            "type": "single-choice",
+            "prompt": "O que é sujeito simples?",
+            "choices": [
+              { "id": "a", "label": "Possui um único núcleo." },
+              { "id": "b", "label": "Possui dois ou mais núcleos." },
+              { "id": "c", "label": "Não existe." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Um único núcleo caracteriza o sujeito simples."
+          },
+          {
+            "id": "ts-q2",
+            "type": "single-choice",
+            "prompt": "Em 'Choveu ontem', como se classifica o sujeito?",
+            "choices": [
+              { "id": "a", "label": "Inexistente." },
+              { "id": "b", "label": "Simples." },
+              { "id": "c", "label": "Oculto." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Chover é verbo impessoal; a oração não tem sujeito."
+          },
+          {
+            "id": "ts-q3",
+            "type": "multiple-choice",
+            "prompt": "Quais orações têm sujeito oculto?",
+            "choices": [
+              { "id": "a", "label": "Cheguei cedo." },
+              { "id": "b", "label": "Eles chegaram." },
+              { "id": "c", "label": "Fizemos o trabalho." },
+              { "id": "d", "label": "A chuva caiu." }
+            ],
+            "correctChoiceIds": ["a", "c"],
+            "explanation": "O sujeito não aparece, mas é identificado pela desinência: eu e nós."
+          }
+        ]
+      }
+    }
+  ]
+}
