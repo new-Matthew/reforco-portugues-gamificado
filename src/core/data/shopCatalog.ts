@@ -1,0 +1,60 @@
+import type { ShopItem } from "../entities/shop";
+
+export const DEFAULT_SHOP_CATALOG: readonly ShopItem[] = [
+  {
+    id: "hat-wizard",
+    name: "Chapéu de Mago",
+    description: "Um chapéu estrelado para quem domina as palavras.",
+    price: 30,
+    category: "hat",
+    spriteId: "hat-wizard",
+  },
+  {
+    id: "hat-crown",
+    name: "Coroa Real",
+    description: "Para o monarca da gramática.",
+    price: 60,
+    category: "hat",
+    spriteId: "hat-crown",
+  },
+  {
+    id: "hat-knight",
+    name: "Capacete de Cavaleiro",
+    description: "Proteção de aço contra erros de sintaxe.",
+    price: 45,
+    category: "hat",
+    spriteId: "hat-knight",
+  },
+  {
+    id: "hat-glasses",
+    name: "Óculos Arcanos",
+    description: "Enxerga concordâncias invisíveis.",
+    price: 20,
+    category: "hat",
+    spriteId: "hat-glasses",
+  },
+  {
+    id: "avatar-mage",
+    name: "Avatar Mago",
+    description: "Um estudioso das runas e dos verbos.",
+    price: 80,
+    category: "avatar",
+    spriteId: "avatar-mage",
+  },
+  {
+    id: "avatar-knight",
+    name: "Avatar Cavaleiro",
+    description: "Armadura reluzente para grandes batalhas.",
+    price: 100,
+    category: "avatar",
+    spriteId: "avatar-knight",
+  },
+  {
+    id: "avatar-ranger",
+    name: "Avatar Arqueira",
+    description: "Rápida como uma oração bem construída.",
+    price: 70,
+    category: "avatar",
+    spriteId: "avatar-ranger",
+  },
+];
