@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { TUTORIAL_STEPS } from "../content/tutorialSteps";
 import { PixelButton } from "../ui/pixel/PixelButton";
 import { PixelPanel } from "../ui/pixel/PixelPanel";
 import { RoleSwitcher, type AppRole } from "../ui/pixel/RoleSwitcher";
@@ -6,6 +7,7 @@ import { LessonScreen } from "../ui/screens/LessonScreen";
 import { MapScreen } from "../ui/screens/MapScreen";
 import { ResultModal } from "../ui/screens/ResultModal";
 import { TeacherDashboard } from "../ui/screens/TeacherDashboard";
+import { TutorialDialog } from "../ui/tutorial/TutorialDialog";
 import { useGame } from "./useGame";
 
 export function App() {
@@ -38,6 +40,8 @@ export function App() {
   const currentNode = session
     ? snapshot.nodes.find((node) => node.id === session.nodeId)
     : undefined;
+  const tutorialStep =
+    TUTORIAL_STEPS[snapshot.tutorial.currentStepIndex] ?? TUTORIAL_STEPS[0];
 
   return (
     <main className="app">
@@ -83,6 +87,7 @@ export function App() {
           onPurchaseItem={(itemId) => controller.purchaseItem(itemId)}
           onEquipItem={(itemId) => controller.equipItem(itemId)}
           onUnequipItem={(category) => controller.unequipItem(category)}
+          onHelp={() => controller.reopenTutorial()}
           onReset={() => {
             if (window.confirm("Apagar todo o progresso?")) {
               controller.resetProgress();
@@ -90,6 +95,19 @@ export function App() {
           }}
         />
       )}
+
+      {role === "student" &&
+      snapshot.screen === "map" &&
+      snapshot.tutorial.isTutorialOpen &&
+      tutorialStep ? (
+        <TutorialDialog
+          step={tutorialStep}
+          stepIndex={snapshot.tutorial.currentStepIndex}
+          totalSteps={TUTORIAL_STEPS.length}
+          onAdvance={() => controller.advanceTutorial()}
+          onSkip={() => controller.skipTutorial()}
+        />
+      ) : null}
 
       {role === "student" && snapshot.outcome ? (
         <ResultModal

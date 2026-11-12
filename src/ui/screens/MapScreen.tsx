@@ -48,6 +48,7 @@ interface MapScreenProps {
   readonly onPurchaseItem: (itemId: string) => void;
   readonly onEquipItem: (itemId: string) => void;
   readonly onUnequipItem: (category: ShopItemCategory) => void;
+  readonly onHelp: () => void;
   readonly onReset: () => void;
 }
 
@@ -293,6 +294,7 @@ export function MapScreen({
   onPurchaseItem,
   onEquipItem,
   onUnequipItem,
+  onHelp,
   onReset,
 }: MapScreenProps) {
   const [dialogNode, setDialogNode] = useState<MapNode | null>(null);
@@ -335,7 +337,7 @@ export function MapScreen({
             <strong>Nível {levelInfo.level}</strong>
           </div>
         </div>
-        <div className="stats">
+        <div className="stats" id="tutorial-target-stats">
           <span className="stat stat--coin">
             <PixelSprite sprite={coinSprite} size={16} />
             {player.coins}
@@ -354,10 +356,20 @@ export function MapScreen({
           <button
             type="button"
             className="shop-trigger"
+            id="tutorial-target-shop"
             onClick={() => setShopOpen(true)}
           >
             <PixelSprite sprite={chestSprite} size={14} />
             Loja
+          </button>
+          <button
+            type="button"
+            className="help-trigger"
+            onClick={onHelp}
+            aria-label="Reabrir tutorial"
+            title="Reabrir tutorial"
+          >
+            ?
           </button>
         </div>
       </header>
@@ -368,7 +380,11 @@ export function MapScreen({
         label={`${levelInfo.xpIntoLevel} / ${levelInfo.xpForNextLevel} XP até o próximo nível`}
       />
 
-      <nav className="course-tabs" aria-label="Cursos disponíveis">
+      <nav
+        className="course-tabs"
+        id="tutorial-target-modules"
+        aria-label="Cursos disponíveis"
+      >
         {courses.map((course) => (
           <button
             key={course.id}

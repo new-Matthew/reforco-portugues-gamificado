@@ -9,10 +9,12 @@ import type {
   Question,
   ShopItem,
   ShopItemCategory,
+  TutorialState,
   UserAnswer,
 } from "../core/entities/index";
 import type { LevelInfo } from "../core/services/GameEngine";
 import { GameEngine } from "../core/services/GameEngine";
+import type { TutorialSession } from "../core/services/TutorialSession";
 import {
   createCourseFromDraft,
   createLessonNodeFromDraft,
@@ -42,11 +44,13 @@ export interface ControllerSnapshot {
   readonly currentQuestion: Question | null;
   readonly feedback: AnswerFeedback | null;
   readonly outcome: LessonOutcome | null;
+  readonly tutorial: TutorialState;
 }
 
 export class GameController {
   private readonly listeners = new Set<() => void>();
   private readonly engine: GameEngine;
+  private readonly tutorial: TutorialSession;
   private snapshot: ControllerSnapshot;
   private status: ControllerStatus = "loading";
   private error: string | null = null;
@@ -56,8 +60,9 @@ export class GameController {
   private outcome: LessonOutcome | null = null;
   private initPromise: Promise<void> | null = null;
 
-  constructor(engine: GameEngine) {
+  constructor(engine: GameEngine, tutorial: TutorialSession) {
     this.engine = engine;
+    this.tutorial = tutorial;
     this.snapshot = this.build();
   }
 
@@ -75,6 +80,7 @@ export class GameController {
       this.initPromise = (async () => {
         try {
           await this.engine.init();
+          await this.tutorial.init();
           const courses = this.engine.listCourses();
           this.activeCourseId = courses[0]?.id ?? null;
           this.status = "ready";
@@ -271,6 +277,21 @@ export class GameController {
     this.emit();
   }
 
+  advanceTutorial(): void {
+    this.tutorial.advance();
+    this.emit();
+  }
+
+  skipTutorial(): void {
+    this.tutorial.skip();
+    this.emit();
+  }
+
+  reopenTutorial(): void {
+    this.tutorial.reopen();
+    this.emit();
+  }
+
   private build(): ControllerSnapshot {
     const courses = this.status === "loading" ? [] : this.engine.listCourses();
     let nodes: readonly MapNode[] = [];
@@ -302,6 +323,7 @@ export class GameController {
       currentQuestion: this.engine.getCurrentQuestion(),
       feedback: this.feedback,
       outcome: this.outcome,
+      tutorial: this.tutorial.getState(),
     };
   }
 

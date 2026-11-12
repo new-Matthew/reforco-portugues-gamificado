@@ -1654,3 +1654,241 @@ legend.field__label {
   font-size: 1rem;
   cursor: pointer;
 }
+
+/* Tutorial interativo (onboarding) */
+
+.help-trigger {
+  appearance: none;
+  font: inherit;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--text);
+  background: var(--panel-2);
+  border: 2px solid var(--border-soft);
+  width: 28px;
+  height: 28px;
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+  box-shadow: 0 3px 0 var(--shadow);
+}
+
+.help-trigger:hover {
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.help-trigger:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.tutorial-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 88;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 18px 14px calc(16px + env(safe-area-inset-bottom, 0px));
+  pointer-events: none;
+}
+
+.tutorial-backdrop {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 100%, rgba(11, 9, 19, 0.12) 0%, rgba(7, 5, 12, 0.42) 70%),
+    linear-gradient(to top, rgba(5, 3, 10, 0.55) 0%, rgba(5, 3, 10, 0) 45%);
+  pointer-events: none;
+}
+
+.tutorial-dialog {
+  position: relative;
+  pointer-events: auto;
+  width: 100%;
+  max-width: 520px;
+  display: flex;
+  flex-direction: column;
+  background: var(--panel);
+  border: 3px solid var(--accent);
+  box-shadow:
+    0 7px 0 var(--shadow),
+    inset 0 0 0 3px #1a1527;
+  padding: 12px 14px 14px;
+  animation: tutorial-rise 220ms ease-out;
+}
+
+.tutorial-dialog__guide-frame {
+  position: absolute;
+  left: 14px;
+  bottom: calc(100% - 14px);
+  width: 76px;
+  height: 76px;
+  border: 3px solid var(--accent);
+  background: var(--bg-deep);
+  box-shadow: 0 5px 0 var(--shadow);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.tutorial-dialog__guide {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 24%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.tutorial-dialog__body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tutorial-dialog__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  min-height: 18px;
+  padding-left: 82px;
+}
+
+.tutorial-dialog__skip {
+  appearance: none;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  cursor: pointer;
+  padding: 2px 4px;
+}
+
+.tutorial-dialog__skip:hover {
+  color: var(--accent);
+}
+
+.tutorial-dialog__skip:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.tutorial-dialog__text {
+  appearance: none;
+  border: none;
+  background: transparent;
+  font: inherit;
+  font-size: 0.82rem;
+  line-height: 1.58;
+  color: var(--text);
+  text-align: left;
+  white-space: normal;
+  padding: 0;
+  margin: 0;
+  min-height: 4.4em;
+  width: 100%;
+  cursor: pointer;
+}
+
+.tutorial-dialog__text:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.tutorial-dialog__caret {
+  color: var(--accent);
+  animation: tutorial-caret-blink 900ms steps(2, start) infinite;
+}
+
+.tutorial-dialog__caret--hidden {
+  visibility: hidden;
+  animation: none;
+}
+
+.tutorial-dialog__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.tutorial-dialog__dots {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.tutorial-dialog__dot {
+  width: 9px;
+  height: 9px;
+  background: var(--bg-deep);
+  border: 2px solid var(--border-soft);
+}
+
+.tutorial-dialog__dot--active {
+  background: var(--accent);
+  border-color: #1a1226;
+  box-shadow: 0 0 8px rgba(255, 207, 92, 0.55);
+}
+
+.tutorial-spotlight {
+  outline: 3px solid var(--accent);
+  outline-offset: 3px;
+  box-shadow: 0 0 0 4px rgba(255, 207, 92, 0.22), 0 0 22px rgba(255, 207, 92, 0.6);
+  animation: tutorial-spotlight-pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes tutorial-rise {
+  from {
+    transform: translateY(18px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes tutorial-caret-blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+@keyframes tutorial-spotlight-pulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 4px rgba(255, 207, 92, 0.22), 0 0 16px rgba(255, 207, 92, 0.45);
+  }
+  50% {
+    box-shadow: 0 0 0 5px rgba(255, 207, 92, 0.34), 0 0 26px rgba(255, 207, 92, 0.75);
+  }
+}
+
+@media (min-width: 560px) {
+  .tutorial-dialog__guide-frame {
+    width: 88px;
+    height: 88px;
+  }
+
+  .tutorial-dialog__meta {
+    padding-left: 96px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tutorial-dialog,
+  .tutorial-spotlight,
+  .tutorial-dialog__caret {
+    animation: none;
+  }
+}
