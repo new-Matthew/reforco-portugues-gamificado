@@ -9,4 +9,5 @@ export * from "./ports/system";
 export * from "./services/GameEngine";
 export * from "./services/TutorialSession";
 export * from "./services/answerEvaluators";
+export * from "./services/inventory";
 export * from "./services/progression";
