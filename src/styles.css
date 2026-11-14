@@ -197,6 +197,38 @@ ul {
   box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.35);
 }
 
+.avatar-frame svg,
+.trail-node__player svg,
+.shop-item__preview svg,
+.inventory__current-frame svg {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.avatar-frame--button {
+  appearance: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  transition: transform 70ms ease, border-color 70ms ease, box-shadow 70ms ease;
+}
+
+.avatar-frame--button:hover {
+  border-color: var(--accent);
+  box-shadow:
+    inset 0 -3px 0 rgba(0, 0, 0, 0.35),
+    0 0 12px rgba(255, 207, 92, 0.28);
+}
+
+.avatar-frame--button:active {
+  transform: translateY(2px);
+}
+
+.avatar-frame--button:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+}
+
 .profile__text {
   display: flex;
   flex-direction: column;
@@ -206,6 +238,31 @@ ul {
 .profile__text strong {
   font-size: 0.85rem;
   letter-spacing: 0.04em;
+}
+
+.profile__inventory-link {
+  appearance: none;
+  border: none;
+  background: none;
+  font: inherit;
+  font-size: 0.58rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.profile__inventory-link:hover {
+  color: #ffe38a;
+}
+
+.profile__inventory-link:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
 }
 
 .stats {
@@ -585,24 +642,63 @@ ul {
 
 .trail-node__player {
   position: absolute;
-  top: 54px;
-  right: -14px;
+  top: 50px;
+  right: -16px;
   z-index: 3;
-  padding: 3px;
-  background: rgba(11, 9, 19, 0.85);
+  padding: 4px;
+  border-radius: 6px;
+  background: radial-gradient(
+    circle at 50% 28%,
+    rgba(255, 207, 92, 0.32) 0%,
+    rgba(11, 9, 19, 0.92) 72%
+  );
   border: 2px solid var(--accent);
-  box-shadow: 0 3px 0 var(--shadow);
-  filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.4));
-  animation: player-bob 1.4s ease-in-out infinite;
+  box-shadow:
+    0 4px 0 var(--shadow),
+    0 0 12px rgba(255, 207, 92, 0.55),
+    0 0 26px rgba(255, 207, 92, 0.25);
+  filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.5));
+  animation:
+    player-bob 1.8s ease-in-out infinite,
+    player-glow 1.8s ease-in-out infinite;
+}
+
+.trail-node__player::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -10px;
+  width: 28px;
+  height: 8px;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 50%;
+  filter: blur(1px);
 }
 
 @keyframes player-bob {
   0%,
   100% {
-    transform: translateY(0);
+    transform: translateY(0) scale(1);
   }
   50% {
-    transform: translateY(-3px);
+    transform: translateY(-3px) scale(1.05);
+  }
+}
+
+@keyframes player-glow {
+  0%,
+  100% {
+    box-shadow:
+      0 4px 0 var(--shadow),
+      0 0 10px rgba(255, 207, 92, 0.45),
+      0 0 20px rgba(255, 207, 92, 0.2);
+  }
+  50% {
+    box-shadow:
+      0 4px 0 var(--shadow),
+      0 0 18px rgba(255, 207, 92, 0.75),
+      0 0 34px rgba(255, 207, 92, 0.4);
   }
 }
 
@@ -969,6 +1065,39 @@ ul {
   color: var(--accent);
 }
 
+.shop-item__category {
+  font-size: 0.54rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--purple);
+}
+
+.inventory__current {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  background: var(--bg-deep);
+  border: 2px solid var(--border-soft);
+}
+
+.inventory__current-frame {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 58px;
+  height: 58px;
+  background: var(--panel-2);
+  border: 2px solid var(--accent);
+  filter: drop-shadow(0 3px 0 rgba(0, 0, 0, 0.35));
+}
+
+.inventory__current p {
+  font-size: 0.62rem;
+  line-height: 1.45;
+  color: var(--muted);
+}
+
 .shop-item__actions {
   display: flex;
   flex-direction: column;
@@ -988,6 +1117,14 @@ ul {
   text-transform: uppercase;
   text-align: center;
   color: var(--green);
+}
+
+.shop-item__owned {
+  font-size: 0.54rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--accent);
 }
 
 .shop__empty {
@@ -1888,7 +2025,9 @@ legend.field__label {
 @media (prefers-reduced-motion: reduce) {
   .tutorial-dialog,
   .tutorial-spotlight,
-  .tutorial-dialog__caret {
+  .tutorial-dialog__caret,
+  .trail-node__player,
+  .trail-node--current {
     animation: none;
   }
 }

@@ -26,6 +26,7 @@ import { seedForGroup } from "../map/decorations";
 import { ForestBackdrop } from "../map/ForestBackdrop";
 import { NpcDialog } from "./NpcDialog";
 import { ShopModal } from "./ShopModal";
+import { InventoryModal } from "./InventoryModal";
 
 const ROW_HEIGHT = 152;
 const NODE_CENTER_Y = 41;
@@ -241,7 +242,7 @@ function TrailGroup({
                 <PlayerAvatar
                   avatarSpriteId={avatarSpriteId}
                   hatSpriteId={hatSpriteId}
-                  size={26}
+                  size={30}
                   title="Seu avatar no mapa"
                 />
               </span>
@@ -299,6 +300,7 @@ export function MapScreen({
 }: MapScreenProps) {
   const [dialogNode, setDialogNode] = useState<MapNode | null>(null);
   const [shopOpen, setShopOpen] = useState(false);
+  const [inventoryOpen, setInventoryOpen] = useState(false);
   const unlocked = useMemo(() => new Set(unlockedNodeIds), [unlockedNodeIds]);
   const groups = useMemo(() => groupByChapter(nodes), [nodes]);
   const nodesById = useMemo(
@@ -324,17 +326,30 @@ export function MapScreen({
     <div className="screen map-screen">
       <header className="topbar">
         <div className="profile">
-          <div className="avatar-frame">
+          <button
+            type="button"
+            className="avatar-frame avatar-frame--button"
+            onClick={() => setInventoryOpen(true)}
+            aria-label="Abrir inventário de customização"
+            title="Abrir inventário"
+          >
             <PlayerAvatar
               avatarSpriteId={equippedAvatarSpriteId}
               hatSpriteId={equippedHatSpriteId}
               size={44}
               title="Avatar do explorador"
             />
-          </div>
+          </button>
           <div className="profile__text">
             <span className="eyebrow">Explorador</span>
             <strong>Nível {levelInfo.level}</strong>
+            <button
+              type="button"
+              className="profile__inventory-link"
+              onClick={() => setInventoryOpen(true)}
+            >
+              Inventário
+            </button>
           </div>
         </div>
         <div className="stats" id="tutorial-target-stats">
@@ -471,6 +486,19 @@ export function MapScreen({
           equippedItemIds={player.equippedItemIds}
           onClose={() => setShopOpen(false)}
           onPurchase={onPurchaseItem}
+          onEquip={onEquipItem}
+          onUnequip={onUnequipItem}
+        />
+      ) : null}
+
+      {inventoryOpen ? (
+        <InventoryModal
+          items={shopItems}
+          ownedItemIds={player.ownedItemIds}
+          equippedItemIds={player.equippedItemIds}
+          equippedAvatarSpriteId={equippedAvatarSpriteId}
+          equippedHatSpriteId={equippedHatSpriteId}
+          onClose={() => setInventoryOpen(false)}
           onEquip={onEquipItem}
           onUnequip={onUnequipItem}
         />
