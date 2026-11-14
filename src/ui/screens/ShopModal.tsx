@@ -5,6 +5,7 @@ import { PixelButton } from "../pixel/PixelButton";
 import { PixelSprite } from "../pixel/PixelSprite";
 import { PlayerAvatar } from "../pixel/PlayerAvatar";
 import { coinSprite } from "../pixel/sprites";
+import { InventoryList } from "./InventoryList";
 
 interface ShopModalProps {
   readonly items: readonly ShopItem[];
@@ -17,9 +18,12 @@ interface ShopModalProps {
   readonly onUnequip: (category: ShopItemCategory) => void;
 }
 
-const TABS: readonly { category: ShopItemCategory; label: string }[] = [
-  { category: "hat", label: "Chapéus" },
-  { category: "avatar", label: "Avatares" },
+type ShopTab = ShopItemCategory | "inventory";
+
+const TABS: readonly { id: ShopTab; label: string }[] = [
+  { id: "hat", label: "Chapéus" },
+  { id: "avatar", label: "Avatares" },
+  { id: "inventory", label: "Inventário" },
 ];
 
 export function ShopModal({
@@ -32,7 +36,7 @@ export function ShopModal({
   onEquip,
   onUnequip,
 }: ShopModalProps) {
-  const [category, setCategory] = useState<ShopItemCategory>("hat");
+  const [category, setCategory] = useState<ShopTab>("hat");
   const equippedAvatar =
     items.find(
       (item) =>
@@ -42,7 +46,10 @@ export function ShopModal({
     items.find(
       (item) => item.category === "hat" && equippedItemIds.includes(item.id),
     ) ?? null;
-  const visibleItems = items.filter((item) => item.category === category);
+  const visibleItems =
+    category === "inventory"
+      ? []
+      : items.filter((item) => item.category === category);
 
   return (
     <Modal onClose={onClose} labelledBy="shop-title">
@@ -65,18 +72,26 @@ export function ShopModal({
         <div className="shop__tabs" role="group" aria-label="Categorias da loja">
           {TABS.map((tab) => (
             <button
-              key={tab.category}
+              key={tab.id}
               type="button"
               className="shop__tab"
-              aria-pressed={category === tab.category}
-              onClick={() => setCategory(tab.category)}
+              aria-pressed={category === tab.id}
+              onClick={() => setCategory(tab.id)}
             >
               {tab.label}
             </button>
           ))}
         </div>
 
-        {visibleItems.length === 0 ? (
+        {category === "inventory" ? (
+          <InventoryList
+            items={items}
+            ownedItemIds={ownedItemIds}
+            equippedItemIds={equippedItemIds}
+            onEquip={onEquip}
+            onUnequip={onUnequip}
+          />
+        ) : visibleItems.length === 0 ? (
           <p className="shop__empty">Nenhum item disponível nesta categoria.</p>
         ) : (
           <ul className="shop__grid">
@@ -122,9 +137,12 @@ export function ShopModal({
                           </PixelButton>
                         </>
                       ) : (
-                        <PixelButton onClick={() => onEquip(item.id)}>
-                          Equipar
-                        </PixelButton>
+                        <>
+                          <span className="shop-item__owned">Comprado</span>
+                          <PixelButton onClick={() => onEquip(item.id)}>
+                            Equipar
+                          </PixelButton>
+                        </>
                       )
                     ) : (
                       <PixelButton
