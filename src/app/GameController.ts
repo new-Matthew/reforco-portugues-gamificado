@@ -44,6 +44,7 @@ export interface ControllerSnapshot {
   readonly currentQuestion: Question | null;
   readonly feedback: AnswerFeedback | null;
   readonly outcome: LessonOutcome | null;
+  readonly nextNode: MapNode | null;
   readonly tutorial: TutorialState;
 }
 
@@ -211,6 +212,15 @@ export class GameController {
     this.startNode(session.nodeId);
   }
 
+  startNextPhase(): void {
+    const nextNode = this.snapshot.nextNode;
+    if (!nextNode) {
+      this.backToMap();
+      return;
+    }
+    this.startNode(nextNode.id);
+  }
+
   restartLesson(): void {
     const session = this.engine.getSession();
     if (!session) return;
@@ -303,6 +313,10 @@ export class GameController {
       }
     }
 
+    const unlockedNodeIds = this.activeCourseId
+      ? this.engine.getUnlockedNodeIds(this.activeCourseId)
+      : [];
+
     return {
       status: this.status,
       error: this.error,
@@ -316,15 +330,28 @@ export class GameController {
       shopItems: this.engine.getShopCatalog(),
       equippedAvatar: this.engine.getEquippedItem("avatar"),
       equippedHat: this.engine.getEquippedItem("hat"),
-      unlockedNodeIds: this.activeCourseId
-        ? this.engine.getUnlockedNodeIds(this.activeCourseId)
-        : [],
+      unlockedNodeIds,
       session: this.engine.getSession(),
       currentQuestion: this.engine.getCurrentQuestion(),
       feedback: this.feedback,
       outcome: this.outcome,
+      nextNode: this.resolveNextNode(nodes, unlockedNodeIds),
       tutorial: this.tutorial.getState(),
     };
+  }
+
+  private resolveNextNode(
+    nodes: readonly MapNode[],
+    unlockedNodeIds: readonly string[],
+  ): MapNode | null {
+    const outcome = this.outcome;
+    if (!outcome?.passed) return null;
+
+    const currentIndex = nodes.findIndex((node) => node.id === outcome.nodeId);
+    if (currentIndex < 0) return null;
+
+    const nextNode = nodes[currentIndex + 1] ?? null;
+    return nextNode && unlockedNodeIds.includes(nextNode.id) ? nextNode : null;
   }
 
   private emit(): void {

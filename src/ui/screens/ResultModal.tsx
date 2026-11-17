@@ -7,11 +7,19 @@ import { chestOpenSprite, chestSprite, npcSprite } from "../pixel/sprites";
 
 interface ResultModalProps {
   readonly outcome: LessonOutcome;
+  readonly nextPhaseTitle: string | null;
+  readonly onNextPhase: () => void;
   readonly onBackToMap: () => void;
   readonly onRetry: () => void;
 }
 
-export function ResultModal({ outcome, onBackToMap, onRetry }: ResultModalProps) {
+export function ResultModal({
+  outcome,
+  nextPhaseTitle,
+  onNextPhase,
+  onBackToMap,
+  onRetry,
+}: ResultModalProps) {
   const [chestOpened, setChestOpened] = useState(false);
   const stars = `${"★".repeat(outcome.stars)}${"☆".repeat(Math.max(0, 3 - outcome.stars))}`;
   const accuracy =
@@ -20,6 +28,7 @@ export function ResultModal({ outcome, onBackToMap, onRetry }: ResultModalProps)
       : 0;
   const leveledUp = outcome.leveledUp ?? false;
   const streakCurrent = outcome.streakCurrent ?? 0;
+  const hasNextPhase = outcome.passed && nextPhaseTitle !== null;
 
   useEffect(() => {
     if (!outcome.passed) return;
@@ -86,13 +95,23 @@ export function ResultModal({ outcome, onBackToMap, onRetry }: ResultModalProps)
         {outcome.passed && !outcome.isFirstCompletion ? (
           <p className="result__note">Revisão concluída: recompensas reduzidas.</p>
         ) : null}
+        {hasNextPhase ? (
+          <p className="result__note">A seguir: {nextPhaseTitle}</p>
+        ) : null}
         <div className="modal-actions">
-          <PixelButton variant="ghost" onClick={onBackToMap}>
+          <PixelButton
+            variant={outcome.passed && !hasNextPhase ? "primary" : "ghost"}
+            onClick={onBackToMap}
+          >
             Voltar ao mapa
           </PixelButton>
-          <PixelButton onClick={onRetry}>
-            {outcome.passed ? "Repetir" : "Tentar de novo"}
-          </PixelButton>
+          {outcome.passed ? (
+            hasNextPhase ? (
+              <PixelButton onClick={onNextPhase}>Próxima fase</PixelButton>
+            ) : null
+          ) : (
+            <PixelButton onClick={onRetry}>Tentar de novo</PixelButton>
+          )}
         </div>
       </div>
     </Modal>

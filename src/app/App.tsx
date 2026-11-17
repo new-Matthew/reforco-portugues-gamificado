@@ -112,6 +112,8 @@ export function App() {
       {role === "student" && snapshot.outcome ? (
         <ResultModal
           outcome={snapshot.outcome}
+          nextPhaseTitle={snapshot.nextNode?.title ?? null}
+          onNextPhase={() => controller.startNextPhase()}
           onBackToMap={() => controller.backToMap()}
           onRetry={() => controller.retry()}
         />
