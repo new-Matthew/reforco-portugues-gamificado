@@ -41,7 +41,8 @@
               { "id": "d", "label": "careta" }
             ],
             "correctChoiceId": "c",
-            "explanation": "Em carro, o RR tem som forte. Em caro, muro e careta, o R entre vogais tem som fraco."
+            "explanation": "Em carro, o RR tem som forte. Em caro, muro e careta, o R entre vogais tem som fraco.",
+            "dicaCearense": "Oxe, calma aí! Em carro, o RR tem som forte. Em caro, muro e careta, o R entre vogais tem som fraco. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p4-ort-r-s-f1-q2",
@@ -54,7 +55,8 @@
               { "id": "d", "label": "torre" }
             ],
             "correctChoiceId": "b",
-            "explanation": "Em caro, o R fica entre as vogais A e O e tem som fraco."
+            "explanation": "Em caro, o R fica entre as vogais A e O e tem som fraco.",
+            "dicaCearense": "Bora desenrolar isso aqui! Em caro, o R fica entre as vogais A e O e tem som fraco. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p4-ort-r-s-f1-q3",
@@ -67,7 +69,8 @@
               { "id": "d", "label": "feraduro" }
             ],
             "correctChoiceId": "a",
-            "explanation": "A palavra ferradura é escrita com RR entre as vogais E e A."
+            "explanation": "A palavra ferradura é escrita com RR entre as vogais E e A.",
+            "dicaCearense": "Num tem perigo, não! A palavra ferradura é escrita com RR entre as vogais E e A. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p4-ort-r-s-f1-q4",
@@ -80,7 +83,8 @@
               { "id": "d", "label": "torre" }
             ],
             "correctChoiceIds": ["a", "b", "d"],
-            "explanation": "Terra, carro e torre têm RR. Careta tem apenas um R entre vogais."
+            "explanation": "Terra, carro e torre têm RR. Careta tem apenas um R entre vogais.",
+            "dicaCearense": "Visse? Presta atenção: Terra, carro e torre têm RR. Careta tem apenas um R entre vogais. Vai com calma e seleciona apenas o que combina com a regra."
           },
           {
             "id": "p4-ort-r-s-f1-q5",
@@ -88,7 +92,8 @@
             "prompt": "Complete: 'O ___ late e é um animal doméstico que começa com C.'",
             "placeholder": "Escreva o animal",
             "acceptedAnswers": ["cachorro", "cachorro."],
-            "explanation": "Cachorro é escrito com RR entre as vogais O e O."
+            "explanation": "Cachorro é escrito com RR entre as vogais O e O.",
+            "dicaCearense": "Mermão, olha a regra: Cachorro é escrito com RR entre as vogais O e O. Tenta escrever com calma e confia no que tu aprendeu."
           }
         ]
       }
@@ -128,7 +133,8 @@
               { "id": "d", "label": "careta" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Carro é o veículo que passa pela estrada. Caro significa que custa muito."
+            "explanation": "Carro é o veículo que passa pela estrada. Caro significa que custa muito.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Carro é o veículo que passa pela estrada. Caro significa que custa muito. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p4-ort-r-s-f2-q2",
@@ -141,7 +147,8 @@
               { "id": "d", "label": "caro" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Cara é o feminino de caro, com um único R. A forma carra não existe."
+            "explanation": "Cara é o feminino de caro, com um único R. A forma carra não existe.",
+            "dicaCearense": "Oxe, calma aí! Cara é o feminino de caro, com um único R. A forma carra não existe. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p4-ort-r-s-f2-q3",
@@ -154,7 +161,8 @@
               { "id": "d", "label": "dois R separados." }
             ],
             "correctChoiceId": "a",
-            "explanation": "Torre é escrita com RR, que representa o som forte do R."
+            "explanation": "Torre é escrita com RR, que representa o som forte do R.",
+            "dicaCearense": "Bora desenrolar isso aqui! Torre é escrita com RR, que representa o som forte do R. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p4-ort-r-s-f2-q4",
@@ -162,7 +170,8 @@
             "prompt": "Complete com R ou RR: 'O cachorro co___e atrás da bola.'",
             "placeholder": "Escreva a palavra completa",
             "acceptedAnswers": ["corre", "corre."],
-            "explanation": "A palavra corre é escrita com RR: o cachorro corre."
+            "explanation": "A palavra corre é escrita com RR: o cachorro corre.",
+            "dicaCearense": "Num tem perigo, não! A palavra corre é escrita com RR: o cachorro corre. Tenta escrever com calma e confia no que tu aprendeu."
           },
           {
             "id": "p4-ort-r-s-f2-q5",
@@ -175,7 +184,8 @@
               { "id": "d", "label": "careta" }
             ],
             "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "Rato e roda começam com R forte; carro tem RR. Em careta, o R entre vogais é fraco."
+            "explanation": "Rato e roda começam com R forte; carro tem RR. Em careta, o R entre vogais é fraco.",
+            "dicaCearense": "Visse? Presta atenção: Rato e roda começam com R forte; carro tem RR. Em careta, o R entre vogais é fraco. Marque só o que segue a regra, sem pressa."
           }
         ]
       }
@@ -215,7 +225,8 @@
               { "id": "d", "label": "escola" }
             ],
             "correctChoiceId": "c",
-            "explanation": "Correu é escrita com RR entre as vogais O e E."
+            "explanation": "Correu é escrita com RR entre as vogais O e E.",
+            "dicaCearense": "Mermão, olha a regra: Correu é escrita com RR entre as vogais O e E. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p4-ort-r-s-f3-q2",
@@ -228,7 +239,8 @@
               { "id": "d", "label": "cão" }
             ],
             "correctChoiceId": "c",
-            "explanation": "Passou é escrita com SS. Em casa e vaso, o S entre vogais tem som de Z."
+            "explanation": "Passou é escrita com SS. Em casa e vaso, o S entre vogais tem som de Z.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Passou é escrita com SS. Em casa e vaso, o S entre vogais tem som de Z. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p4-ort-r-s-f3-q3",
@@ -241,7 +253,8 @@
               { "id": "d", "label": "cachorro" }
             ],
             "correctChoiceIds": ["a", "d"],
-            "explanation": "Carro e cachorro têm RR. Passou tem SS e rua tem apenas um R."
+            "explanation": "Carro e cachorro têm RR. Passou tem SS e rua tem apenas um R.",
+            "dicaCearense": "Oxe, calma aí! Carro e cachorro têm RR. Passou tem SS e rua tem apenas um R. Confere cada alternativa com calma, uma por uma."
           },
           {
             "id": "p4-ort-r-s-f3-q4",
@@ -249,7 +262,8 @@
             "prompt": "Complete com S ou SS: 'Ele deu um pa___o à frente.'",
             "placeholder": "Escreva a palavra completa",
             "acceptedAnswers": ["passo", "passo."],
-            "explanation": "Passo é escrito com SS entre as vogais A e O, com som de S forte."
+            "explanation": "Passo é escrito com SS entre as vogais A e O, com som de S forte.",
+            "dicaCearense": "Bora desenrolar isso aqui! Passo é escrito com SS entre as vogais A e O, com som de S forte. Pensa na regra e escreve a palavra sem pressa."
           },
           {
             "id": "p4-ort-r-s-f3-q5",
@@ -262,7 +276,8 @@
               { "id": "d", "label": "O caro pasou na rua." }
             ],
             "correctChoiceId": "a",
-            "explanation": "Carro tem RR e passou tem SS. As outras frases trocam a grafia das palavras."
+            "explanation": "Carro tem RR e passou tem SS. As outras frases trocam a grafia das palavras.",
+            "dicaCearense": "Num tem perigo, não! Carro tem RR e passou tem SS. As outras frases trocam a grafia das palavras. Relê o enunciado e confia no teu raciocínio."
           }
         ]
       }
@@ -302,7 +317,8 @@
               { "id": "d", "label": "cãpo" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Campo é escrito com M antes de P."
+            "explanation": "Campo é escrito com M antes de P.",
+            "dicaCearense": "Visse? Presta atenção: Campo é escrito com M antes de P. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p4-ort-mp-x-f1-q2",
@@ -315,7 +331,8 @@
               { "id": "d", "label": "taque" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Tanque é escrito com N antes de Q, pois a regra do M vale apenas antes de P e B."
+            "explanation": "Tanque é escrito com N antes de Q, pois a regra do M vale apenas antes de P e B.",
+            "dicaCearense": "Mermão, olha a regra: Tanque é escrito com N antes de Q, pois a regra do M vale apenas antes de P e B. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p4-ort-mp-x-f1-q3",
@@ -328,7 +345,8 @@
               { "id": "d", "label": "lâmpada" }
             ],
             "correctChoiceIds": ["a", "b", "d"],
-            "explanation": "Bomba, também e lâmpada usam M antes de B ou P. Canpo está errado: o correto é campo."
+            "explanation": "Bomba, também e lâmpada usam M antes de B ou P. Canpo está errado: o correto é campo.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Bomba, também e lâmpada usam M antes de B ou P. Canpo está errado: o correto é campo. Marque só o que segue a regra, sem pressa."
           },
           {
             "id": "p4-ort-mp-x-f1-q4",
@@ -336,7 +354,8 @@
             "prompt": "Complete: 'Eu ___ fui à escola.' (advérbio de inclusão)",
             "placeholder": "Escreva a palavra",
             "acceptedAnswers": ["também", "tambem", "também."],
-            "explanation": "Também é escrito com M antes de B."
+            "explanation": "Também é escrito com M antes de B.",
+            "dicaCearense": "Oxe, calma aí! Também é escrito com M antes de B. Relembra como a palavra aparece no dia a dia e tenta de novo."
           },
           {
             "id": "p4-ort-mp-x-f1-q5",
@@ -349,7 +368,8 @@
               { "id": "d", "label": "canto" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Ombro tem M antes de B. Ontem termina em M, e encontro e canto usam N antes de C e T."
+            "explanation": "Ombro tem M antes de B. Ontem termina em M, e encontro e canto usam N antes de C e T.",
+            "dicaCearense": "Bora desenrolar isso aqui! Ombro tem M antes de B. Ontem termina em M, e encontro e canto usam N antes de C e T. Respira, revisa a regra e tenta de novo."
           }
         ]
       }
@@ -389,7 +409,8 @@
               { "id": "d", "label": "senpro" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Sempre é escrito com M antes de P."
+            "explanation": "Sempre é escrito com M antes de P.",
+            "dicaCearense": "Num tem perigo, não! Sempre é escrito com M antes de P. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p4-ort-mp-x-f2-q2",
@@ -402,7 +423,8 @@
               { "id": "d", "label": "lanpiao" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Lampião é escrito com M antes de P e com til no ÃO."
+            "explanation": "Lampião é escrito com M antes de P e com til no ÃO.",
+            "dicaCearense": "Visse? Presta atenção: Lampião é escrito com M antes de P e com til no ÃO. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p4-ort-mp-x-f2-q3",
@@ -415,7 +437,8 @@
               { "id": "d", "label": "enbruio" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Embrulho é escrito com M antes de B."
+            "explanation": "Embrulho é escrito com M antes de B.",
+            "dicaCearense": "Mermão, olha a regra: Embrulho é escrito com M antes de B. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p4-ort-mp-x-f2-q4",
@@ -428,7 +451,8 @@
               { "id": "d", "label": "também" }
             ],
             "correctChoiceIds": ["a", "b", "d"],
-            "explanation": "Sempre, bomba e também estão corretas. Encontro também está correto, mas usa N antes de C, não M."
+            "explanation": "Sempre, bomba e também estão corretas. Encontro também está correto, mas usa N antes de C, não M.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Sempre, bomba e também estão corretas. Encontro também está correto, mas usa N antes de C, não M. Vai com calma e seleciona apenas o que combina com a regra."
           },
           {
             "id": "p4-ort-mp-x-f2-q5",
@@ -436,7 +460,8 @@
             "prompt": "Complete: 'O ___ é a parte do corpo entre o pescoço e o braço.'",
             "placeholder": "Escreva a palavra",
             "acceptedAnswers": ["ombro", "ombro."],
-            "explanation": "Ombro é escrito com M antes de B."
+            "explanation": "Ombro é escrito com M antes de B.",
+            "dicaCearense": "Oxe, calma aí! Ombro é escrito com M antes de B. Tenta escrever com calma e confia no que tu aprendeu."
           }
         ]
       }
@@ -476,7 +501,8 @@
               { "id": "d", "label": "chicara" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Xícara é escrito com X e acento na sílaba XÍ."
+            "explanation": "Xícara é escrito com X e acento na sílaba XÍ.",
+            "dicaCearense": "Bora desenrolar isso aqui! Xícara é escrito com X e acento na sílaba XÍ. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p4-ort-mp-x-f3-q2",
@@ -489,7 +515,8 @@
               { "id": "d", "label": "xavi" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Chave é escrito com CH."
+            "explanation": "Chave é escrito com CH.",
+            "dicaCearense": "Num tem perigo, não! Chave é escrito com CH. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p4-ort-mp-x-f3-q3",
@@ -502,7 +529,8 @@
               { "id": "d", "label": "lixo" }
             ],
             "correctChoiceIds": ["a", "b", "d"],
-            "explanation": "Peixe, caixa e lixo são escritos com X. Chuva é escrita com CH."
+            "explanation": "Peixe, caixa e lixo são escritos com X. Chuva é escrita com CH.",
+            "dicaCearense": "Visse? Presta atenção: Peixe, caixa e lixo são escritos com X. Chuva é escrita com CH. Vai com calma e seleciona apenas o que combina com a regra."
           },
           {
             "id": "p4-ort-mp-x-f3-q4",
@@ -510,7 +538,8 @@
             "prompt": "Complete: 'A ___ está caindo do céu.'",
             "placeholder": "Escreva a palavra",
             "acceptedAnswers": ["chuva", "chuva."],
-            "explanation": "Chuva é escrita com CH."
+            "explanation": "Chuva é escrita com CH.",
+            "dicaCearense": "Mermão, olha a regra: Chuva é escrita com CH. Tenta escrever com calma e confia no que tu aprendeu."
           },
           {
             "id": "p4-ort-mp-x-f3-q5",
@@ -523,7 +552,8 @@
               { "id": "d", "label": "exame" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Em xícara, o X soa como CH. Em táxi, soa como KS; em próximo, como S; em exame, como Z."
+            "explanation": "Em xícara, o X soa como CH. Em táxi, soa como KS; em próximo, como S; em exame, como Z.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Em xícara, o X soa como CH. Em táxi, soa como KS; em próximo, como S; em exame, como Z. Lê as alternativas com calma e elimina o que não combina."
           }
         ]
       }
@@ -563,7 +593,8 @@
               { "id": "d", "label": "nenhuma" }
             ],
             "correctChoiceId": "b",
-            "explanation": "A sílaba tônica de café é FÉ, a última. Por isso, café é oxítona."
+            "explanation": "A sílaba tônica de café é FÉ, a última. Por isso, café é oxítona.",
+            "dicaCearense": "Oxe, calma aí! A sílaba tônica de café é FÉ, a última. Por isso, café é oxítona. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p4-acen-f1-q2",
@@ -576,7 +607,8 @@
               { "id": "d", "label": "nenhuma" }
             ],
             "correctChoiceId": "a",
-            "explanation": "A sílaba tônica de lápis é LÁ, a penúltima. Por isso, lápis é paroxítona."
+            "explanation": "A sílaba tônica de lápis é LÁ, a penúltima. Por isso, lápis é paroxítona.",
+            "dicaCearense": "Bora desenrolar isso aqui! A sílaba tônica de lápis é LÁ, a penúltima. Por isso, lápis é paroxítona. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p4-acen-f1-q3",
@@ -589,7 +621,8 @@
               { "id": "d", "label": "lâmpada" }
             ],
             "correctChoiceId": "a",
-            "explanation": "A sílaba tônica de lâmpada é LÂM, a antepenúltima. Por isso, lâmpada é proparoxítona."
+            "explanation": "A sílaba tônica de lâmpada é LÂM, a antepenúltima. Por isso, lâmpada é proparoxítona.",
+            "dicaCearense": "Num tem perigo, não! A sílaba tônica de lâmpada é LÂM, a antepenúltima. Por isso, lâmpada é proparoxítona. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p4-acen-f1-q4",
@@ -602,7 +635,8 @@
               { "id": "d", "label": "xícara" }
             ],
             "correctChoiceIds": ["a", "b", "d"],
-            "explanation": "Médico, pássaro e xícara têm a tônica na antepenúltima sílaba. Café é oxítona."
+            "explanation": "Médico, pássaro e xícara têm a tônica na antepenúltima sílaba. Café é oxítona.",
+            "dicaCearense": "Visse? Presta atenção: Médico, pássaro e xícara têm a tônica na antepenúltima sílaba. Café é oxítona. Marque só o que segue a regra, sem pressa."
           },
           {
             "id": "p4-acen-f1-q5",
@@ -610,7 +644,8 @@
             "prompt": "Classifique a palavra 'sofá' quanto à tonicidade.",
             "placeholder": "Ex.: oxítona",
             "acceptedAnswers": ["oxítona", "oxitona", "oxítona.", "oxitona."],
-            "explanation": "Sofá tem a tônica na última sílaba (FÁ), por isso é oxítona."
+            "explanation": "Sofá tem a tônica na última sílaba (FÁ), por isso é oxítona.",
+            "dicaCearense": "Mermão, olha a regra: Sofá tem a tônica na última sílaba (FÁ), por isso é oxítona. Relembra como a palavra aparece no dia a dia e tenta de novo."
           }
         ]
       }
@@ -650,7 +685,8 @@
               { "id": "d", "label": "lampáda" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Lâmpada é proparoxítona, e todas as proparoxítonas são acentuadas na antepenúltima sílaba."
+            "explanation": "Lâmpada é proparoxítona, e todas as proparoxítonas são acentuadas na antepenúltima sílaba.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Lâmpada é proparoxítona, e todas as proparoxítonas são acentuadas na antepenúltima sílaba. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p4-acen-f2-q2",
@@ -663,7 +699,8 @@
               { "id": "d", "label": "cafè" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Café é oxítona terminada em E e recebe acento agudo."
+            "explanation": "Café é oxítona terminada em E e recebe acento agudo.",
+            "dicaCearense": "Oxe, calma aí! Café é oxítona terminada em E e recebe acento agudo. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p4-acen-f2-q3",
@@ -676,7 +713,8 @@
               { "id": "d", "label": "lapís" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Lápis é paroxítona terminada em -IS e recebe acento na penúltima sílaba."
+            "explanation": "Lápis é paroxítona terminada em -IS e recebe acento na penúltima sílaba.",
+            "dicaCearense": "Bora desenrolar isso aqui! Lápis é paroxítona terminada em -IS e recebe acento na penúltima sílaba. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p4-acen-f2-q4",
@@ -689,7 +727,8 @@
               { "id": "d", "label": "escola" }
             ],
             "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "As formas corretas são você, café e lápis. Escola é paroxítona terminada em -A e não recebe acento."
+            "explanation": "As formas corretas são você, café e lápis. Escola é paroxítona terminada em -A e não recebe acento.",
+            "dicaCearense": "Num tem perigo, não! As formas corretas são você, café e lápis. Escola é paroxítona terminada em -A e não recebe acento. Olha todas as opções antes de responder, visse?"
           },
           {
             "id": "p4-acen-f2-q5",
@@ -697,7 +736,8 @@
             "prompt": "Complete com acento: 'A ___ é a ciência que estuda números e formas.' (matematica)",
             "placeholder": "Escreva com acento",
             "acceptedAnswers": ["matemática", "matemática."],
-            "explanation": "Matemática é proparoxítona e recebe acento na antepenúltima sílaba: MA-TE-MÁ-TI-CA."
+            "explanation": "Matemática é proparoxítona e recebe acento na antepenúltima sílaba: MA-TE-MÁ-TI-CA.",
+            "dicaCearense": "Visse? Presta atenção: Matemática é proparoxítona e recebe acento na antepenúltima sílaba: MA-TE-MÁ-TI-CA. Num tem perigo, não! Escreve com calma que tu consegue."
           }
         ]
       }
@@ -737,7 +777,8 @@
               { "id": "d", "label": "forte / fraco" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Sabia (verbo ou adjetivo) e sabiá (ave) têm significados diferentes por causa do acento."
+            "explanation": "Sabia (verbo ou adjetivo) e sabiá (ave) têm significados diferentes por causa do acento.",
+            "dicaCearense": "Mermão, olha a regra: Sabia (verbo ou adjetivo) e sabiá (ave) têm significados diferentes por causa do acento. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p4-acen-f3-q2",
@@ -750,7 +791,8 @@
               { "id": "d", "label": "3" }
             ],
             "correctChoiceId": "b",
-            "explanation": "Apenas árvore é proparoxítona. Sabiá é oxítona e canta é paroxítona."
+            "explanation": "Apenas árvore é proparoxítona. Sabiá é oxítona e canta é paroxítona.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Apenas árvore é proparoxítona. Sabiá é oxítona e canta é paroxítona. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p4-acen-f3-q3",
@@ -763,7 +805,8 @@
               { "id": "d", "label": "A" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Música tem a tônica na antepenúltima sílaba: MÚ-SI-CA."
+            "explanation": "Música tem a tônica na antepenúltima sílaba: MÚ-SI-CA.",
+            "dicaCearense": "Oxe, calma aí! Música tem a tônica na antepenúltima sílaba: MÚ-SI-CA. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p4-acen-f3-q4",
@@ -776,7 +819,8 @@
               { "id": "d", "label": "arvore" }
             ],
             "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "Pássaro e lâmpada são proparoxítonas; café é oxítona. O correto é árvore, com acento."
+            "explanation": "Pássaro e lâmpada são proparoxítonas; café é oxítona. O correto é árvore, com acento.",
+            "dicaCearense": "Bora desenrolar isso aqui! Pássaro e lâmpada são proparoxítonas; café é oxítona. O correto é árvore, com acento. Vai com calma e seleciona apenas o que combina com a regra."
           },
           {
             "id": "p4-acen-f3-q5",
@@ -784,7 +828,8 @@
             "prompt": "Complete: 'O ___ é uma ave que canta.' (sabia)",
             "placeholder": "Escreva com acento",
             "acceptedAnswers": ["sabiá", "sabiá."],
-            "explanation": "O sabiá é uma ave. Sem acento, sabia é uma forma do verbo saber."
+            "explanation": "O sabiá é uma ave. Sem acento, sabia é uma forma do verbo saber.",
+            "dicaCearense": "Num tem perigo, não! O sabiá é uma ave. Sem acento, sabia é uma forma do verbo saber. Tenta escrever com calma e confia no que tu aprendeu."
           }
         ]
       }
@@ -824,7 +869,8 @@
               { "id": "d", "label": "escola" }
             ],
             "correctChoiceId": "b",
-            "explanation": "Brasil é o nome de um país específico, por isso é substantivo próprio."
+            "explanation": "Brasil é o nome de um país específico, por isso é substantivo próprio.",
+            "dicaCearense": "Visse? Presta atenção: Brasil é o nome de um país específico, por isso é substantivo próprio. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p4-subst-f1-q2",
@@ -837,7 +883,8 @@
               { "id": "d", "label": "Recife" }
             ],
             "correctChoiceId": "c",
-            "explanation": "Cachorro nomeia qualquer animal desse grupo, por isso é comum."
+            "explanation": "Cachorro nomeia qualquer animal desse grupo, por isso é comum.",
+            "dicaCearense": "Mermão, olha a regra: Cachorro nomeia qualquer animal desse grupo, por isso é comum. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p4-subst-f1-q3",
@@ -850,7 +897,8 @@
               { "id": "d", "label": "água" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Cardume é o coletivo de peixes."
+            "explanation": "Cardume é o coletivo de peixes.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Cardume é o coletivo de peixes. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p4-subst-f1-q4",
@@ -863,7 +911,8 @@
               { "id": "d", "label": "Brasil" }
             ],
             "correctChoiceIds": ["a", "b", "d"],
-            "explanation": "Maria, São Paulo e Brasil são nomes específicos. Menina é um substantivo comum."
+            "explanation": "Maria, São Paulo e Brasil são nomes específicos. Menina é um substantivo comum.",
+            "dicaCearense": "Oxe, calma aí! Maria, São Paulo e Brasil são nomes específicos. Menina é um substantivo comum. Confere cada alternativa com calma, uma por uma."
           },
           {
             "id": "p4-subst-f1-q5",
@@ -871,7 +920,8 @@
             "prompt": "Qual é o coletivo de lobos?",
             "placeholder": "Escreva o coletivo",
             "acceptedAnswers": ["alcateia", "alcateia."],
-            "explanation": "Alcateia é o substantivo coletivo que nomeia um grupo de lobos."
+            "explanation": "Alcateia é o substantivo coletivo que nomeia um grupo de lobos.",
+            "dicaCearense": "Bora desenrolar isso aqui! Alcateia é o substantivo coletivo que nomeia um grupo de lobos. Pensa na regra e escreve a palavra sem pressa."
           }
         ]
       }
@@ -911,7 +961,8 @@
               { "id": "d", "label": "A e menina" }
             ],
             "correctChoiceId": "a",
-            "explanation": "A é artigo definido e uma é artigo indefinido."
+            "explanation": "A é artigo definido e uma é artigo indefinido.",
+            "dicaCearense": "Num tem perigo, não! A é artigo definido e uma é artigo indefinido. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p4-subst-f2-q2",
@@ -924,7 +975,8 @@
               { "id": "d", "label": "cedo" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Dois indica quantidade e é um numeral cardinal."
+            "explanation": "Dois indica quantidade e é um numeral cardinal.",
+            "dicaCearense": "Visse? Presta atenção: Dois indica quantidade e é um numeral cardinal. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p4-subst-f2-q3",
@@ -937,7 +989,8 @@
               { "id": "d", "label": "Gatos dormem." }
             ],
             "correctChoiceId": "a",
-            "explanation": "O é artigo definido. Um é artigo indefinido; as outras frases não têm artigo."
+            "explanation": "O é artigo definido. Um é artigo indefinido; as outras frases não têm artigo.",
+            "dicaCearense": "Mermão, olha a regra: O é artigo definido. Um é artigo indefinido; as outras frases não têm artigo. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p4-subst-f2-q4",
@@ -950,7 +1003,8 @@
               { "id": "d", "label": "dobro" }
             ],
             "correctChoiceIds": ["a", "b", "d"],
-            "explanation": "Três é cardinal, primeiro é ordinal e dobro é multiplicativo. Mesa é substantivo."
+            "explanation": "Três é cardinal, primeiro é ordinal e dobro é multiplicativo. Mesa é substantivo.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Três é cardinal, primeiro é ordinal e dobro é multiplicativo. Mesa é substantivo. Marque só o que segue a regra, sem pressa."
           },
           {
             "id": "p4-subst-f2-q5",
@@ -958,7 +1012,8 @@
             "prompt": "Complete com o artigo definido feminino: '___ escola é grande.'",
             "placeholder": "Escreva o artigo",
             "acceptedAnswers": ["A", "a", "A."],
-            "explanation": "O artigo definido feminino singular é A."
+            "explanation": "O artigo definido feminino singular é A.",
+            "dicaCearense": "Oxe, calma aí! O artigo definido feminino singular é A. Relembra como a palavra aparece no dia a dia e tenta de novo."
           }
         ]
       }
@@ -998,7 +1053,8 @@
               { "id": "d", "label": "4" }
             ],
             "correctChoiceId": "c",
-            "explanation": "Os substantivos comuns são meninas, bairro e prêmio. As é artigo, três é numeral e um é artigo."
+            "explanation": "Os substantivos comuns são meninas, bairro e prêmio. As é artigo, três é numeral e um é artigo.",
+            "dicaCearense": "Bora desenrolar isso aqui! Os substantivos comuns são meninas, bairro e prêmio. As é artigo, três é numeral e um é artigo. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p4-subst-f3-q2",
@@ -1011,7 +1067,8 @@
               { "id": "d", "label": "um" }
             ],
             "correctChoiceId": "a",
-            "explanation": "As é o artigo definido feminino plural."
+            "explanation": "As é o artigo definido feminino plural.",
+            "dicaCearense": "Num tem perigo, não! As é o artigo definido feminino plural. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p4-subst-f3-q3",
@@ -1024,7 +1081,8 @@
               { "id": "d", "label": "prêmio" }
             ],
             "correctChoiceId": "b",
-            "explanation": "Três indica a quantidade de meninas e é um numeral cardinal."
+            "explanation": "Três indica a quantidade de meninas e é um numeral cardinal.",
+            "dicaCearense": "Visse? Presta atenção: Três indica a quantidade de meninas e é um numeral cardinal. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p4-subst-f3-q4",
@@ -1037,7 +1095,8 @@
               { "id": "d", "label": "prêmio" }
             ],
             "correctChoiceIds": ["a", "b", "d"],
-            "explanation": "Meninas, bairro e prêmio são substantivos comuns. Três é numeral."
+            "explanation": "Meninas, bairro e prêmio são substantivos comuns. Três é numeral.",
+            "dicaCearense": "Mermão, olha a regra: Meninas, bairro e prêmio são substantivos comuns. Três é numeral. Olha todas as opções antes de responder, visse?"
           },
           {
             "id": "p4-subst-f3-q5",
@@ -1045,7 +1104,8 @@
             "prompt": "Reescreva com artigo definido plural: 'O menino chegou.' → '___ meninos chegaram.'",
             "placeholder": "Escreva o artigo",
             "acceptedAnswers": ["Os", "os", "Os."],
-            "explanation": "O plural de O é Os: Os meninos chegaram."
+            "explanation": "O plural de O é Os: Os meninos chegaram.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: O plural de O é Os: Os meninos chegaram. Num tem perigo, não! Escreve com calma que tu consegue."
           }
         ]
       }
@@ -1085,7 +1145,8 @@
               { "id": "d", "label": "rua" }
             ],
             "correctChoiceId": "b",
-            "explanation": "Amarela caracteriza o substantivo casa, por isso é adjetivo."
+            "explanation": "Amarela caracteriza o substantivo casa, por isso é adjetivo.",
+            "dicaCearense": "Oxe, calma aí! Amarela caracteriza o substantivo casa, por isso é adjetivo. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p4-adj-f1-q2",
@@ -1098,7 +1159,8 @@
               { "id": "d", "label": "mesa" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Feliz é adjetivo. Felicidade, alegria e mesa são substantivos."
+            "explanation": "Feliz é adjetivo. Felicidade, alegria e mesa são substantivos.",
+            "dicaCearense": "Bora desenrolar isso aqui! Feliz é adjetivo. Felicidade, alegria e mesa são substantivos. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p4-adj-f1-q3",
@@ -1111,7 +1173,8 @@
               { "id": "d", "label": "os" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Estudiosos é o adjetivo que acompanha meninos, no masculino plural."
+            "explanation": "Estudiosos é o adjetivo que acompanha meninos, no masculino plural.",
+            "dicaCearense": "Num tem perigo, não! Estudiosos é o adjetivo que acompanha meninos, no masculino plural. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p4-adj-f1-q4",
@@ -1124,7 +1187,8 @@
               { "id": "d", "label": "cheiroso" }
             ],
             "correctChoiceIds": ["a", "b", "d"],
-            "explanation": "Bonito, rápido e cheiroso são adjetivos. Cidade é substantivo."
+            "explanation": "Bonito, rápido e cheiroso são adjetivos. Cidade é substantivo.",
+            "dicaCearense": "Visse? Presta atenção: Bonito, rápido e cheiroso são adjetivos. Cidade é substantivo. Vai com calma e seleciona apenas o que combina com a regra."
           },
           {
             "id": "p4-adj-f1-q5",
@@ -1132,7 +1196,8 @@
             "prompt": "Dê um adjetivo para completar: 'O céu está ___.'",
             "placeholder": "Ex.: azul",
             "acceptedAnswers": ["azul", "limpo", "nublado", "escuro", "claro", "estrelado", "cinzento", "azul.", "limpo.", "nublado.", "escuro.", "claro.", "estrelado.", "cinzento."],
-            "explanation": "Azul, limpo, nublado e escuro são exemplos de adjetivos que caracterizam o céu."
+            "explanation": "Azul, limpo, nublado e escuro são exemplos de adjetivos que caracterizam o céu.",
+            "dicaCearense": "Mermão, olha a regra: Azul, limpo, nublado e escuro são exemplos de adjetivos que caracterizam o céu. Tenta escrever com calma e confia no que tu aprendeu."
           }
         ]
       }
@@ -1172,7 +1237,8 @@
               { "id": "d", "label": "perfumados" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Flores é feminino plural, então o adjetivo deve ser perfumadas."
+            "explanation": "Flores é feminino plural, então o adjetivo deve ser perfumadas.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Flores é feminino plural, então o adjetivo deve ser perfumadas. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p4-adj-f2-q2",
@@ -1185,7 +1251,8 @@
               { "id": "d", "label": "cansadas" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Menino é masculino singular, então o adjetivo fica no masculino singular: cansado."
+            "explanation": "Menino é masculino singular, então o adjetivo fica no masculino singular: cansado.",
+            "dicaCearense": "Oxe, calma aí! Menino é masculino singular, então o adjetivo fica no masculino singular: cansado. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p4-adj-f2-q3",
@@ -1198,7 +1265,8 @@
               { "id": "d", "label": "rápidas" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Carros é masculino plural, então o adjetivo fica no masculino plural: rápidos."
+            "explanation": "Carros é masculino plural, então o adjetivo fica no masculino plural: rápidos.",
+            "dicaCearense": "Bora desenrolar isso aqui! Carros é masculino plural, então o adjetivo fica no masculino plural: rápidos. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p4-adj-f2-q4",
@@ -1211,7 +1279,8 @@
               { "id": "d", "label": "O menino bonita sorriu." }
             ],
             "correctChoiceIds": ["a", "b"],
-            "explanation": "As frases A e B concordam em gênero e número. Em C e D, o adjetivo não combina com o substantivo."
+            "explanation": "As frases A e B concordam em gênero e número. Em C e D, o adjetivo não combina com o substantivo.",
+            "dicaCearense": "Num tem perigo, não! As frases A e B concordam em gênero e número. Em C e D, o adjetivo não combina com o substantivo. Confere cada alternativa com calma, uma por uma."
           },
           {
             "id": "p4-adj-f2-q5",
@@ -1219,7 +1288,8 @@
             "prompt": "Complete: 'A cidade é ___.' (bonito)",
             "placeholder": "Escreva o adjetivo",
             "acceptedAnswers": ["bonita", "bonita."],
-            "explanation": "Cidade é feminino singular, então o adjetivo correto é bonita."
+            "explanation": "Cidade é feminino singular, então o adjetivo correto é bonita.",
+            "dicaCearense": "Visse? Presta atenção: Cidade é feminino singular, então o adjetivo correto é bonita. Pensa na regra e escreve a palavra sem pressa."
           }
         ]
       }
@@ -1259,7 +1329,8 @@
               { "id": "d", "label": "plural" }
             ],
             "correctChoiceId": "a",
-            "explanation": "A expressão mais alto que compara a altura de João com a de Pedro."
+            "explanation": "A expressão mais alto que compara a altura de João com a de Pedro.",
+            "dicaCearense": "Mermão, olha a regra: A expressão mais alto que compara a altura de João com a de Pedro. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p4-adj-f3-q2",
@@ -1272,7 +1343,8 @@
               { "id": "d", "label": "diminutivo" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Muito doce intensifica a qualidade, por isso é superlativo."
+            "explanation": "Muito doce intensifica a qualidade, por isso é superlativo.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Muito doce intensifica a qualidade, por isso é superlativo. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p4-adj-f3-q3",
@@ -1285,7 +1357,8 @@
               { "id": "d", "label": "A janelas estão aberta." }
             ],
             "correctChoiceId": "a",
-            "explanation": "Janelas é feminino plural, então o adjetivo deve ser abertas."
+            "explanation": "Janelas é feminino plural, então o adjetivo deve ser abertas.",
+            "dicaCearense": "Oxe, calma aí! Janelas é feminino plural, então o adjetivo deve ser abertas. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p4-adj-f3-q4",
@@ -1298,7 +1371,8 @@
               { "id": "d", "label": "feliz" }
             ],
             "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "Bonitas, altas e rápidas estão no feminino plural. Feliz está no singular."
+            "explanation": "Bonitas, altas e rápidas estão no feminino plural. Feliz está no singular.",
+            "dicaCearense": "Bora desenrolar isso aqui! Bonitas, altas e rápidas estão no feminino plural. Feliz está no singular. Marque só o que segue a regra, sem pressa."
           },
           {
             "id": "p4-adj-f3-q5",
@@ -1306,7 +1380,8 @@
             "prompt": "Complete com o comparativo de superioridade de 'grande': 'O elefante é ___ que o rato.'",
             "placeholder": "Escreva o adjetivo",
             "acceptedAnswers": ["maior", "mais grande", "maior.", "mais grande."],
-            "explanation": "O comparativo de superioridade de grande é maior. A forma mais grande também é compreensível, mas maior é a mais adequada."
+            "explanation": "O comparativo de superioridade de grande é maior. A forma mais grande também é compreensível, mas maior é a mais adequada.",
+            "dicaCearense": "Num tem perigo, não! O comparativo de superioridade de grande é maior. A forma mais grande também é compreensível, mas maior é a mais adequada. Relembra como a palavra aparece no dia a dia e tenta de novo."
           }
         ]
       }
@@ -1346,7 +1421,8 @@
               { "id": "d", "label": "imperativo" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Brinca indica uma ação que acontece agora, no presente."
+            "explanation": "Brinca indica uma ação que acontece agora, no presente.",
+            "dicaCearense": "Visse? Presta atenção: Brinca indica uma ação que acontece agora, no presente. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p4-verb-f1-q2",
@@ -1359,7 +1435,8 @@
               { "id": "d", "label": "gerúndio" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Brincou indica uma ação que já aconteceu, no passado."
+            "explanation": "Brincou indica uma ação que já aconteceu, no passado.",
+            "dicaCearense": "Mermão, olha a regra: Brincou indica uma ação que já aconteceu, no passado. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p4-verb-f1-q3",
@@ -1372,7 +1449,8 @@
               { "id": "d", "label": "infinitivo" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Brincará indica uma ação que ainda vai acontecer, no futuro."
+            "explanation": "Brincará indica uma ação que ainda vai acontecer, no futuro.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Brincará indica uma ação que ainda vai acontecer, no futuro. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p4-verb-f1-q4",
@@ -1385,7 +1463,8 @@
               { "id": "d", "label": "correrá" }
             ],
             "correctChoiceIds": ["a", "b"],
-            "explanation": "Canta e corre estão no presente. Cantou está no passado e correrá no futuro."
+            "explanation": "Canta e corre estão no presente. Cantou está no passado e correrá no futuro.",
+            "dicaCearense": "Oxe, calma aí! Canta e corre estão no presente. Cantou está no passado e correrá no futuro. Olha todas as opções antes de responder, visse?"
           },
           {
             "id": "p4-verb-f1-q5",
@@ -1393,7 +1472,8 @@
             "prompt": "Complete: 'Amanhã eu ___ (estudar) para a prova.'",
             "placeholder": "Escreva o verbo no futuro",
             "acceptedAnswers": ["estudarei", "vou estudar", "estudarei.", "vou estudar."],
-            "explanation": "Estudarei está no futuro do presente. Vou estudar também expressa futuro."
+            "explanation": "Estudarei está no futuro do presente. Vou estudar também expressa futuro.",
+            "dicaCearense": "Bora desenrolar isso aqui! Estudarei está no futuro do presente. Vou estudar também expressa futuro. Num tem perigo, não! Escreve com calma que tu consegue."
           }
         ]
       }
@@ -1433,7 +1513,8 @@
               { "id": "d", "label": "jogando" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Ontem indica passado, então usamos jogou."
+            "explanation": "Ontem indica passado, então usamos jogou.",
+            "dicaCearense": "Num tem perigo, não! Ontem indica passado, então usamos jogou. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p4-verb-f2-q2",
@@ -1446,7 +1527,8 @@
               { "id": "d", "label": "fazendo" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Agora indica presente, então usamos faz."
+            "explanation": "Agora indica presente, então usamos faz.",
+            "dicaCearense": "Visse? Presta atenção: Agora indica presente, então usamos faz. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p4-verb-f2-q3",
@@ -1459,7 +1541,8 @@
               { "id": "d", "label": "ir" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Amanhã indica futuro, então usamos iremos."
+            "explanation": "Amanhã indica futuro, então usamos iremos.",
+            "dicaCearense": "Mermão, olha a regra: Amanhã indica futuro, então usamos iremos. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p4-verb-f2-q4",
@@ -1472,7 +1555,8 @@
               { "id": "d", "label": "Ele correrá amanhã." }
             ],
             "correctChoiceIds": ["a", "b"],
-            "explanation": "Cantou e correu estão no passado. Canta está no presente e correrá no futuro."
+            "explanation": "Cantou e correu estão no passado. Canta está no presente e correrá no futuro.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Cantou e correu estão no passado. Canta está no presente e correrá no futuro. Vai com calma e seleciona apenas o que combina com a regra."
           },
           {
             "id": "p4-verb-f2-q5",
@@ -1480,7 +1564,8 @@
             "prompt": "Escreva o verbo 'falar' no futuro do presente para 'eu'.",
             "placeholder": "Ex.: falarei",
             "acceptedAnswers": ["falarei", "falarei."],
-            "explanation": "Eu falarei está no futuro do presente do indicativo."
+            "explanation": "Eu falarei está no futuro do presente do indicativo.",
+            "dicaCearense": "Oxe, calma aí! Eu falarei está no futuro do presente do indicativo. Tenta escrever com calma e confia no que tu aprendeu."
           }
         ]
       }
@@ -1520,7 +1605,8 @@
               { "id": "d", "label": "um" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Encontrou é o verbo que indica a ação do corvo."
+            "explanation": "Encontrou é o verbo que indica a ação do corvo.",
+            "dicaCearense": "Bora desenrolar isso aqui! Encontrou é o verbo que indica a ação do corvo. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p4-verb-f3-q2",
@@ -1533,7 +1619,8 @@
               { "id": "d", "label": "infinitivo" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Encontrou indica uma ação que já aconteceu, no passado."
+            "explanation": "Encontrou indica uma ação que já aconteceu, no passado.",
+            "dicaCearense": "Num tem perigo, não! Encontrou indica uma ação que já aconteceu, no passado. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p4-verb-f3-q3",
@@ -1546,7 +1633,8 @@
               { "id": "d", "label": "corrida" }
             ],
             "correctChoiceId": "b",
-            "explanation": "Vencerá indica uma ação que ainda vai acontecer, no futuro."
+            "explanation": "Vencerá indica uma ação que ainda vai acontecer, no futuro.",
+            "dicaCearense": "Visse? Presta atenção: Vencerá indica uma ação que ainda vai acontecer, no futuro. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p4-verb-f3-q4",
@@ -1559,7 +1647,8 @@
               { "id": "d", "label": "corrida" }
             ],
             "correctChoiceIds": ["a", "b"],
-            "explanation": "Caminha e vencerá são verbos. Devagar e corrida não são verbos."
+            "explanation": "Caminha e vencerá são verbos. Devagar e corrida não são verbos.",
+            "dicaCearense": "Mermão, olha a regra: Caminha e vencerá são verbos. Devagar e corrida não são verbos. Confere cada alternativa com calma, uma por uma."
           },
           {
             "id": "p4-verb-f3-q5",
@@ -1567,7 +1656,8 @@
             "prompt": "Complete: 'No ano passado, eu ___ (aprender) a nadar.'",
             "placeholder": "Escreva o verbo no passado",
             "acceptedAnswers": ["aprendi", "aprendi."],
-            "explanation": "No ano passado indica passado, então usamos aprendi."
+            "explanation": "No ano passado indica passado, então usamos aprendi.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: No ano passado indica passado, então usamos aprendi. Pensa na regra e escreve a palavra sem pressa."
           }
         ]
       }
@@ -1607,7 +1697,8 @@
               { "id": "d", "label": "late alto" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O cachorro é o termo sobre o qual se declara que late alto."
+            "explanation": "O cachorro é o termo sobre o qual se declara que late alto.",
+            "dicaCearense": "Oxe, calma aí! O cachorro é o termo sobre o qual se declara que late alto. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p4-frase-f1-q2",
@@ -1620,7 +1711,8 @@
               { "id": "d", "label": "vírgula (,)" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O ponto de interrogação indica uma pergunta."
+            "explanation": "O ponto de interrogação indica uma pergunta.",
+            "dicaCearense": "Bora desenrolar isso aqui! O ponto de interrogação indica uma pergunta. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p4-frase-f1-q3",
@@ -1633,7 +1725,8 @@
               { "id": "d", "label": "dois-pontos (:)" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O ponto de exclamação expressa emoção, surpresa ou entusiasmo."
+            "explanation": "O ponto de exclamação expressa emoção, surpresa ou entusiasmo.",
+            "dicaCearense": "Num tem perigo, não! O ponto de exclamação expressa emoção, surpresa ou entusiasmo. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p4-frase-f1-q4",
@@ -1646,7 +1739,8 @@
               { "id": "d", "label": "Que belo dia!" }
             ],
             "correctChoiceIds": ["a", "b"],
-            "explanation": "As frases A e B são perguntas. C é declarativa e D é exclamativa."
+            "explanation": "As frases A e B são perguntas. C é declarativa e D é exclamativa.",
+            "dicaCearense": "Visse? Presta atenção: As frases A e B são perguntas. C é declarativa e D é exclamativa. Marque só o que segue a regra, sem pressa."
           },
           {
             "id": "p4-frase-f1-q5",
@@ -1654,7 +1748,8 @@
             "prompt": "Complete a frase com o sinal adequado: 'Você viu meu caderno___'",
             "placeholder": "Escreva o sinal",
             "acceptedAnswers": ["?", "? ", "interrogação", "ponto de interrogação"],
-            "explanation": "Como a frase é uma pergunta, deve terminar com ponto de interrogação."
+            "explanation": "Como a frase é uma pergunta, deve terminar com ponto de interrogação.",
+            "dicaCearense": "Mermão, olha a regra: Como a frase é uma pergunta, deve terminar com ponto de interrogação. Relembra como a palavra aparece no dia a dia e tenta de novo."
           }
         ]
       }
@@ -1694,7 +1789,8 @@
               { "id": "d", "label": "ponto final" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O travessão inicia a fala da personagem. Os dois-pontos anunciam que a fala virá."
+            "explanation": "O travessão inicia a fala da personagem. Os dois-pontos anunciam que a fala virá.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: O travessão inicia a fala da personagem. Os dois-pontos anunciam que a fala virá. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p4-frase-f2-q2",
@@ -1707,7 +1803,8 @@
               { "id": "d", "label": "exclamação" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Os dois-pontos introduzem a lista que virá em seguida."
+            "explanation": "Os dois-pontos introduzem a lista que virá em seguida.",
+            "dicaCearense": "Oxe, calma aí! Os dois-pontos introduzem a lista que virá em seguida. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p4-frase-f2-q3",
@@ -1720,7 +1817,8 @@
               { "id": "d", "label": "uma exclamação" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Depois dos dois-pontos vem a lista de três coisas."
+            "explanation": "Depois dos dois-pontos vem a lista de três coisas.",
+            "dicaCearense": "Bora desenrolar isso aqui! Depois dos dois-pontos vem a lista de três coisas. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p4-frase-f2-q4",
@@ -1733,7 +1831,8 @@
               { "id": "d", "label": "sublinhado" }
             ],
             "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "Travessão, dois-pontos e interrogação podem aparecer em diálogos. Sublinhado não é sinal de pontuação."
+            "explanation": "Travessão, dois-pontos e interrogação podem aparecer em diálogos. Sublinhado não é sinal de pontuação.",
+            "dicaCearense": "Num tem perigo, não! Travessão, dois-pontos e interrogação podem aparecer em diálogos. Sublinhado não é sinal de pontuação. Olha todas as opções antes de responder, visse?"
           },
           {
             "id": "p4-frase-f2-q5",
@@ -1741,7 +1840,8 @@
             "prompt": "Complete com o sinal que introduz a fala: 'A professora disse___ — Abram o livro.'",
             "placeholder": "Escreva o sinal",
             "acceptedAnswers": [":", "dois-pontos", "dois pontos"],
-            "explanation": "Os dois-pontos anunciam a fala que vem depois do travessão."
+            "explanation": "Os dois-pontos anunciam a fala que vem depois do travessão.",
+            "dicaCearense": "Visse? Presta atenção: Os dois-pontos anunciam a fala que vem depois do travessão. Num tem perigo, não! Escreve com calma que tu consegue."
           }
         ]
       }
@@ -1781,7 +1881,8 @@
               { "id": "d", "label": "Devemos comer uvas todos os dias." }
             ],
             "correctChoiceId": "a",
-            "explanation": "A raposa desvaloriza as uvas porque não conseguiu alcançá-las. Essa é a moral da fábula."
+            "explanation": "A raposa desvaloriza as uvas porque não conseguiu alcançá-las. Essa é a moral da fábula.",
+            "dicaCearense": "Mermão, olha a regra: A raposa desvaloriza as uvas porque não conseguiu alcançá-las. Essa é a moral da fábula. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p4-frase-f3-q2",
@@ -1794,7 +1895,8 @@
               { "id": "d", "label": "receita" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O texto tem animais personificados e uma moral, características da fábula."
+            "explanation": "O texto tem animais personificados e uma moral, características da fábula.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: O texto tem animais personificados e uma moral, características da fábula. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p4-frase-f3-q3",
@@ -1807,7 +1909,8 @@
               { "id": "d", "label": "a professora" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Bia assina o bilhete, então é a remetente. Ana é a destinatária."
+            "explanation": "Bia assina o bilhete, então é a remetente. Ana é a destinatária.",
+            "dicaCearense": "Oxe, calma aí! Bia assina o bilhete, então é a remetente. Ana é a destinatária. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p4-frase-f3-q4",
@@ -1820,7 +1923,8 @@
               { "id": "d", "label": "Os professores." }
             ],
             "correctChoiceId": "a",
-            "explanation": "O fato principal é a realização da feira de ciências na escola."
+            "explanation": "O fato principal é a realização da feira de ciências na escola.",
+            "dicaCearense": "Bora desenrolar isso aqui! O fato principal é a realização da feira de ciências na escola. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p4-frase-f3-q5",
@@ -1833,7 +1937,8 @@
               { "id": "d", "label": "texto curto" }
             ],
             "correctChoiceIds": ["a", "b", "d"],
-            "explanation": "A fábula é curta, costuma ter animais personificados e termina com uma moral."
+            "explanation": "A fábula é curta, costuma ter animais personificados e termina com uma moral.",
+            "dicaCearense": "Num tem perigo, não! A fábula é curta, costuma ter animais personificados e termina com uma moral. Confere cada alternativa com calma, uma por uma."
           }
         ]
       }

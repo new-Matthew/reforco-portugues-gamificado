@@ -73,6 +73,7 @@ describe("conteúdo do Ensino Fundamental I", () => {
           );
           questionIds.add(question.id);
           expect(question.explanation?.trim().length ?? 0).toBeGreaterThan(0);
+          expect(question.dicaCearense?.trim().length ?? 0).toBeGreaterThan(0);
         }
       }
     }

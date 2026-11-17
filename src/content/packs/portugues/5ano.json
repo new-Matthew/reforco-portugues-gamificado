@@ -41,7 +41,8 @@
               { "id": "d", "label": "pasarino" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Passarinho é escrito com SS entre as vogais A e I."
+            "explanation": "Passarinho é escrito com SS entre as vogais A e I.",
+            "dicaCearense": "Oxe, calma aí! Passarinho é escrito com SS entre as vogais A e I. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p5-ort-f1-q2",
@@ -54,7 +55,8 @@
               { "id": "d", "label": "tênpo" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Tempo é escrito com M antes de P."
+            "explanation": "Tempo é escrito com M antes de P.",
+            "dicaCearense": "Bora desenrolar isso aqui! Tempo é escrito com M antes de P. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p5-ort-f1-q3",
@@ -67,7 +69,8 @@
               { "id": "d", "label": "próximo" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Em caixa, o X soa como CH. Em táxi, soa como KS; em exame, como Z; em próximo, como S."
+            "explanation": "Em caixa, o X soa como CH. Em táxi, soa como KS; em exame, como Z; em próximo, como S.",
+            "dicaCearense": "Num tem perigo, não! Em caixa, o X soa como CH. Em táxi, soa como KS; em exame, como Z; em próximo, como S. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p5-ort-f1-q4",
@@ -80,7 +83,8 @@
               { "id": "d", "label": "caza" }
             ],
             "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "Carro tem RR, casa tem S com som de Z e passado tem SS. Caza está errada: o correto é casa."
+            "explanation": "Carro tem RR, casa tem S com som de Z e passado tem SS. Caza está errada: o correto é casa.",
+            "dicaCearense": "Visse? Presta atenção: Carro tem RR, casa tem S com som de Z e passado tem SS. Caza está errada: o correto é casa. Vai com calma e seleciona apenas o que combina com a regra."
           },
           {
             "id": "p5-ort-f1-q5",
@@ -88,7 +92,8 @@
             "prompt": "Complete: 'O ___ é um animal que late.' (com RR)",
             "placeholder": "Escreva o animal",
             "acceptedAnswers": ["cachorro", "cachorro."],
-            "explanation": "Cachorro é escrito com RR entre as vogais O e O."
+            "explanation": "Cachorro é escrito com RR entre as vogais O e O.",
+            "dicaCearense": "Mermão, olha a regra: Cachorro é escrito com RR entre as vogais O e O. Tenta escrever com calma e confia no que tu aprendeu."
           }
         ]
       }
@@ -128,7 +133,8 @@
               { "id": "d", "label": "migalhas" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Passarinho é escrito com SS entre as vogais A e I."
+            "explanation": "Passarinho é escrito com SS entre as vogais A e I.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Passarinho é escrito com SS entre as vogais A e I. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p5-ort-f2-q2",
@@ -141,7 +147,8 @@
               { "id": "d", "label": "migalhas" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Em pousou, o S fica entre as vogais U e O e tem som de Z."
+            "explanation": "Em pousou, o S fica entre as vogais U e O e tem som de Z.",
+            "dicaCearense": "Oxe, calma aí! Em pousou, o S fica entre as vogais U e O e tem som de Z. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p5-ort-f2-q3",
@@ -154,7 +161,8 @@
               { "id": "d", "label": "enchami" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Enxame é escrito com X depois de EN e é o coletivo de abelhas."
+            "explanation": "Enxame é escrito com X depois de EN e é o coletivo de abelhas.",
+            "dicaCearense": "Bora desenrolar isso aqui! Enxame é escrito com X depois de EN e é o coletivo de abelhas. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p5-ort-f2-q4",
@@ -167,7 +175,8 @@
               { "id": "d", "label": "xícara" }
             ],
             "correctChoiceIds": ["a", "c", "d"],
-            "explanation": "Sempre tem M antes de P; chave tem CH; xícara tem X. O correto é campo, com M."
+            "explanation": "Sempre tem M antes de P; chave tem CH; xícara tem X. O correto é campo, com M.",
+            "dicaCearense": "Num tem perigo, não! Sempre tem M antes de P; chave tem CH; xícara tem X. O correto é campo, com M. Confere cada alternativa com calma, uma por uma."
           },
           {
             "id": "p5-ort-f2-q5",
@@ -175,7 +184,8 @@
             "prompt": "Complete: 'A ___ serve para tomar café.' (X ou CH)",
             "placeholder": "Escreva a palavra",
             "acceptedAnswers": ["xícara", "xicara", "xícara."],
-            "explanation": "Xícara é escrito com X e acento na sílaba XÍ."
+            "explanation": "Xícara é escrito com X e acento na sílaba XÍ.",
+            "dicaCearense": "Visse? Presta atenção: Xícara é escrito com X e acento na sílaba XÍ. Pensa na regra e escreve a palavra sem pressa."
           }
         ]
       }
@@ -215,7 +225,8 @@
               { "id": "d", "label": "4" }
             ],
             "correctChoiceId": "c",
-            "explanation": "As palavras com RR são carro, cachorro e correu."
+            "explanation": "As palavras com RR são carro, cachorro e correu.",
+            "dicaCearense": "Mermão, olha a regra: As palavras com RR são carro, cachorro e correu. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p5-ort-f3-q2",
@@ -228,7 +239,8 @@
               { "id": "d", "label": "cachorro" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Passou tem SS com som de S forte. Em praça, o Ç também tem som de S, mas não é a letra S."
+            "explanation": "Passou tem SS com som de S forte. Em praça, o Ç também tem som de S, mas não é a letra S.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Passou tem SS com som de S forte. Em praça, o Ç também tem som de S, mas não é a letra S. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p5-ort-f3-q3",
@@ -241,7 +253,8 @@
               { "id": "d", "label": "O peixe nada no lago e o campo está senpre verde." }
             ],
             "correctChoiceId": "a",
-            "explanation": "Peixe é com X; campo tem M antes de P; sempre tem M antes de P."
+            "explanation": "Peixe é com X; campo tem M antes de P; sempre tem M antes de P.",
+            "dicaCearense": "Oxe, calma aí! Peixe é com X; campo tem M antes de P; sempre tem M antes de P. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p5-ort-f3-q4",
@@ -254,7 +267,8 @@
               { "id": "d", "label": "mecher" }
             ],
             "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "Enxugar, encharcar e mexer estão corretas. Mecher está errada: o correto é mexer."
+            "explanation": "Enxugar, encharcar e mexer estão corretas. Mecher está errada: o correto é mexer.",
+            "dicaCearense": "Bora desenrolar isso aqui! Enxugar, encharcar e mexer estão corretas. Mecher está errada: o correto é mexer. Marque só o que segue a regra, sem pressa."
           },
           {
             "id": "p5-ort-f3-q5",
@@ -262,7 +276,8 @@
             "prompt": "Complete com SS: 'O ___ é uma ave que canta.'",
             "placeholder": "Escreva a palavra",
             "acceptedAnswers": ["passarinho", "passarinho."],
-            "explanation": "Passarinho é escrito com SS entre as vogais A e I."
+            "explanation": "Passarinho é escrito com SS entre as vogais A e I.",
+            "dicaCearense": "Num tem perigo, não! Passarinho é escrito com SS entre as vogais A e I. Relembra como a palavra aparece no dia a dia e tenta de novo."
           }
         ]
       }
@@ -302,7 +317,8 @@
               { "id": "d", "label": "nenhuma" }
             ],
             "correctChoiceId": "c",
-            "explanation": "A sílaba tônica de jacaré é RÉ, a última. Por isso, é oxítona."
+            "explanation": "A sílaba tônica de jacaré é RÉ, a última. Por isso, é oxítona.",
+            "dicaCearense": "Visse? Presta atenção: A sílaba tônica de jacaré é RÉ, a última. Por isso, é oxítona. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p5-acen-f1-q2",
@@ -315,7 +331,8 @@
               { "id": "d", "label": "nenhuma" }
             ],
             "correctChoiceId": "a",
-            "explanation": "A sílaba tônica de árvore é ÁR, a antepenúltima. Por isso, é proparoxítona."
+            "explanation": "A sílaba tônica de árvore é ÁR, a antepenúltima. Por isso, é proparoxítona.",
+            "dicaCearense": "Mermão, olha a regra: A sílaba tônica de árvore é ÁR, a antepenúltima. Por isso, é proparoxítona. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p5-acen-f1-q3",
@@ -328,7 +345,8 @@
               { "id": "d", "label": "nenhuma" }
             ],
             "correctChoiceId": "b",
-            "explanation": "A sílaba tônica de caderno é DER, a penúltima. Por isso, é paroxítona."
+            "explanation": "A sílaba tônica de caderno é DER, a penúltima. Por isso, é paroxítona.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: A sílaba tônica de caderno é DER, a penúltima. Por isso, é paroxítona. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p5-acen-f1-q4",
@@ -341,7 +359,8 @@
               { "id": "d", "label": "lâmpada" }
             ],
             "correctChoiceIds": ["a", "b", "d"],
-            "explanation": "Música, página e lâmpada têm a tônica na antepenúltima sílaba. Café é oxítona."
+            "explanation": "Música, página e lâmpada têm a tônica na antepenúltima sílaba. Café é oxítona.",
+            "dicaCearense": "Oxe, calma aí! Música, página e lâmpada têm a tônica na antepenúltima sílaba. Café é oxítona. Olha todas as opções antes de responder, visse?"
           },
           {
             "id": "p5-acen-f1-q5",
@@ -349,7 +368,8 @@
             "prompt": "Classifique a palavra 'sofá' quanto à tonicidade.",
             "placeholder": "Ex.: oxítona",
             "acceptedAnswers": ["oxítona", "oxitona", "oxítona.", "oxitona."],
-            "explanation": "Sofá tem a tônica na última sílaba (FÁ), por isso é oxítona."
+            "explanation": "Sofá tem a tônica na última sílaba (FÁ), por isso é oxítona.",
+            "dicaCearense": "Bora desenrolar isso aqui! Sofá tem a tônica na última sílaba (FÁ), por isso é oxítona. Num tem perigo, não! Escreve com calma que tu consegue."
           }
         ]
       }
@@ -389,7 +409,8 @@
               { "id": "d", "label": "cafè" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Café é oxítona terminada em E e recebe acento agudo."
+            "explanation": "Café é oxítona terminada em E e recebe acento agudo.",
+            "dicaCearense": "Num tem perigo, não! Café é oxítona terminada em E e recebe acento agudo. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p5-acen-f2-q2",
@@ -402,7 +423,8 @@
               { "id": "d", "label": "facíl" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Fácil é paroxítona terminada em -L e recebe acento na penúltima sílaba."
+            "explanation": "Fácil é paroxítona terminada em -L e recebe acento na penúltima sílaba.",
+            "dicaCearense": "Visse? Presta atenção: Fácil é paroxítona terminada em -L e recebe acento na penúltima sílaba. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p5-acen-f2-q3",
@@ -415,7 +437,8 @@
               { "id": "d", "label": "pagína" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Página é proparoxítona e recebe acento na antepenúltima sílaba."
+            "explanation": "Página é proparoxítona e recebe acento na antepenúltima sílaba.",
+            "dicaCearense": "Mermão, olha a regra: Página é proparoxítona e recebe acento na antepenúltima sílaba. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p5-acen-f2-q4",
@@ -428,7 +451,8 @@
               { "id": "d", "label": "escola" }
             ],
             "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "As formas corretas são você, café e árvore. Escola é paroxítona terminada em -A e não recebe acento."
+            "explanation": "As formas corretas são você, café e árvore. Escola é paroxítona terminada em -A e não recebe acento.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: As formas corretas são você, café e árvore. Escola é paroxítona terminada em -A e não recebe acento. Vai com calma e seleciona apenas o que combina com a regra."
           },
           {
             "id": "p5-acen-f2-q5",
@@ -436,7 +460,8 @@
             "prompt": "Complete com acento: 'A ___ é a ciência dos números.' (matematica)",
             "placeholder": "Escreva com acento",
             "acceptedAnswers": ["matemática", "matemática."],
-            "explanation": "Matemática é proparoxítona e recebe acento na antepenúltima sílaba."
+            "explanation": "Matemática é proparoxítona e recebe acento na antepenúltima sílaba.",
+            "dicaCearense": "Oxe, calma aí! Matemática é proparoxítona e recebe acento na antepenúltima sílaba. Tenta escrever com calma e confia no que tu aprendeu."
           }
         ]
       }
@@ -476,7 +501,8 @@
               { "id": "d", "label": "forte / fraco" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Sabia (verbo ou adjetivo) e sabiá (ave) têm significados diferentes por causa do acento."
+            "explanation": "Sabia (verbo ou adjetivo) e sabiá (ave) têm significados diferentes por causa do acento.",
+            "dicaCearense": "Bora desenrolar isso aqui! Sabia (verbo ou adjetivo) e sabiá (ave) têm significados diferentes por causa do acento. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p5-acen-f3-q2",
@@ -489,7 +515,8 @@
               { "id": "d", "label": "3" }
             ],
             "correctChoiceId": "b",
-            "explanation": "Apenas árvore é proparoxítona. Sabiá é oxítona e canta é paroxítona."
+            "explanation": "Apenas árvore é proparoxítona. Sabiá é oxítona e canta é paroxítona.",
+            "dicaCearense": "Num tem perigo, não! Apenas árvore é proparoxítona. Sabiá é oxítona e canta é paroxítona. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p5-acen-f3-q3",
@@ -502,7 +529,8 @@
               { "id": "d", "label": "A" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Música tem a tônica na antepenúltima sílaba: MÚ-SI-CA."
+            "explanation": "Música tem a tônica na antepenúltima sílaba: MÚ-SI-CA.",
+            "dicaCearense": "Visse? Presta atenção: Música tem a tônica na antepenúltima sílaba: MÚ-SI-CA. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p5-acen-f3-q4",
@@ -515,7 +543,8 @@
               { "id": "d", "label": "arvore" }
             ],
             "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "Pássaro e lâmpada são proparoxítonas; café é oxítona. O correto é árvore, com acento."
+            "explanation": "Pássaro e lâmpada são proparoxítonas; café é oxítona. O correto é árvore, com acento.",
+            "dicaCearense": "Mermão, olha a regra: Pássaro e lâmpada são proparoxítonas; café é oxítona. O correto é árvore, com acento. Confere cada alternativa com calma, uma por uma."
           },
           {
             "id": "p5-acen-f3-q5",
@@ -523,7 +552,8 @@
             "prompt": "Complete: 'O ___ é uma ave que canta.' (sabia)",
             "placeholder": "Escreva com acento",
             "acceptedAnswers": ["sabiá", "sabiá."],
-            "explanation": "O sabiá é uma ave. Sem acento, sabia é uma forma do verbo saber."
+            "explanation": "O sabiá é uma ave. Sem acento, sabia é uma forma do verbo saber.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: O sabiá é uma ave. Sem acento, sabia é uma forma do verbo saber. Pensa na regra e escreve a palavra sem pressa."
           }
         ]
       }
@@ -563,7 +593,8 @@
               { "id": "d", "label": "inteligentes" }
             ],
             "correctChoiceId": "c",
-            "explanation": "Meninas é o substantivo que nomeia os seres de quem se fala."
+            "explanation": "Meninas é o substantivo que nomeia os seres de quem se fala.",
+            "dicaCearense": "Oxe, calma aí! Meninas é o substantivo que nomeia os seres de quem se fala. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p5-morf-f1-q2",
@@ -576,7 +607,8 @@
               { "id": "d", "label": "chegaram" }
             ],
             "correctChoiceId": "c",
-            "explanation": "Inteligentes caracteriza as meninas, por isso é adjetivo."
+            "explanation": "Inteligentes caracteriza as meninas, por isso é adjetivo.",
+            "dicaCearense": "Bora desenrolar isso aqui! Inteligentes caracteriza as meninas, por isso é adjetivo. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p5-morf-f1-q3",
@@ -589,7 +621,8 @@
               { "id": "d", "label": "As" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Duas indica a quantidade de meninas e é um numeral cardinal."
+            "explanation": "Duas indica a quantidade de meninas e é um numeral cardinal.",
+            "dicaCearense": "Num tem perigo, não! Duas indica a quantidade de meninas e é um numeral cardinal. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p5-morf-f1-q4",
@@ -602,7 +635,8 @@
               { "id": "d", "label": "os" }
             ],
             "correctChoiceIds": ["a", "b", "d"],
-            "explanation": "O, uma e os são artigos. Menino é substantivo."
+            "explanation": "O, uma e os são artigos. Menino é substantivo.",
+            "dicaCearense": "Visse? Presta atenção: O, uma e os são artigos. Menino é substantivo. Marque só o que segue a regra, sem pressa."
           },
           {
             "id": "p5-morf-f1-q5",
@@ -610,7 +644,8 @@
             "prompt": "Classifique o substantivo 'Brasil' (próprio ou comum).",
             "placeholder": "Escreva próprio ou comum",
             "acceptedAnswers": ["próprio", "proprio", "próprio.", "proprio."],
-            "explanation": "Brasil é o nome específico de um país, por isso é substantivo próprio."
+            "explanation": "Brasil é o nome específico de um país, por isso é substantivo próprio.",
+            "dicaCearense": "Mermão, olha a regra: Brasil é o nome específico de um país, por isso é substantivo próprio. Relembra como a palavra aparece no dia a dia e tenta de novo."
           }
         ]
       }
@@ -650,7 +685,8 @@
               { "id": "d", "label": "brincar" }
             ],
             "correctChoiceId": "a",
-            "explanation": "As crianças é sujeito no plural, então o verbo fica brincaram."
+            "explanation": "As crianças é sujeito no plural, então o verbo fica brincaram.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: As crianças é sujeito no plural, então o verbo fica brincaram. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p5-morf-f2-q2",
@@ -663,7 +699,8 @@
               { "id": "d", "label": "novas" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Bola é feminino singular, então o adjetivo deve ser nova."
+            "explanation": "Bola é feminino singular, então o adjetivo deve ser nova.",
+            "dicaCearense": "Oxe, calma aí! Bola é feminino singular, então o adjetivo deve ser nova. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p5-morf-f2-q3",
@@ -676,7 +713,8 @@
               { "id": "d", "label": "estar" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Os livros é sujeito no plural, então usamos estão."
+            "explanation": "Os livros é sujeito no plural, então usamos estão.",
+            "dicaCearense": "Bora desenrolar isso aqui! Os livros é sujeito no plural, então usamos estão. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p5-morf-f2-q4",
@@ -689,7 +727,8 @@
               { "id": "d", "label": "O carro são rápido." }
             ],
             "correctChoiceIds": ["a", "b"],
-            "explanation": "Em A e B, substantivo, adjetivo e verbo concordam. Em C e D, há desencontro de gênero e número."
+            "explanation": "Em A e B, substantivo, adjetivo e verbo concordam. Em C e D, há desencontro de gênero e número.",
+            "dicaCearense": "Num tem perigo, não! Em A e B, substantivo, adjetivo e verbo concordam. Em C e D, há desencontro de gênero e número. Olha todas as opções antes de responder, visse?"
           },
           {
             "id": "p5-morf-f2-q5",
@@ -697,7 +736,8 @@
             "prompt": "Complete: 'A menina está ___ (feliz) com o presente.'",
             "placeholder": "Escreva o adjetivo",
             "acceptedAnswers": ["feliz", "feliz."],
-            "explanation": "Feliz é um adjetivo uniforme: tem a mesma forma no masculino e no feminino."
+            "explanation": "Feliz é um adjetivo uniforme: tem a mesma forma no masculino e no feminino.",
+            "dicaCearense": "Visse? Presta atenção: Feliz é um adjetivo uniforme: tem a mesma forma no masculino e no feminino. Num tem perigo, não! Escreve com calma que tu consegue."
           }
         ]
       }
@@ -737,7 +777,8 @@
               { "id": "d", "label": "4" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O único adjetivo é curiosos. Três é numeral, amigos e floresta são substantivos."
+            "explanation": "O único adjetivo é curiosos. Três é numeral, amigos e floresta são substantivos.",
+            "dicaCearense": "Mermão, olha a regra: O único adjetivo é curiosos. Três é numeral, amigos e floresta são substantivos. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p5-morf-f3-q2",
@@ -750,7 +791,8 @@
               { "id": "d", "label": "floresta" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Três indica a quantidade de amigos e é um numeral cardinal."
+            "explanation": "Três indica a quantidade de amigos e é um numeral cardinal.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Três indica a quantidade de amigos e é um numeral cardinal. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p5-morf-f3-q3",
@@ -763,7 +805,8 @@
               { "id": "d", "label": "curiosos" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Floresta é um substantivo coletivo que nomeia um conjunto de árvores."
+            "explanation": "Floresta é um substantivo coletivo que nomeia um conjunto de árvores.",
+            "dicaCearense": "Oxe, calma aí! Floresta é um substantivo coletivo que nomeia um conjunto de árvores. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p5-morf-f3-q4",
@@ -776,7 +819,8 @@
               { "id": "d", "label": "floresta" }
             ],
             "correctChoiceIds": ["a", "b"],
-            "explanation": "Curiosos e valentes caracterizam seres. Mesas e floresta são substantivos."
+            "explanation": "Curiosos e valentes caracterizam seres. Mesas e floresta são substantivos.",
+            "dicaCearense": "Bora desenrolar isso aqui! Curiosos e valentes caracterizam seres. Mesas e floresta são substantivos. Vai com calma e seleciona apenas o que combina com a regra."
           },
           {
             "id": "p5-morf-f3-q5",
@@ -784,7 +828,8 @@
             "prompt": "Reescreva no plural: 'O menino curioso chegou.' → 'Os meninos ___ chegaram.'",
             "placeholder": "Escreva o adjetivo",
             "acceptedAnswers": ["curiosos", "curiosos."],
-            "explanation": "Meninos é masculino plural, então o adjetivo fica curiosos."
+            "explanation": "Meninos é masculino plural, então o adjetivo fica curiosos.",
+            "dicaCearense": "Num tem perigo, não! Meninos é masculino plural, então o adjetivo fica curiosos. Tenta escrever com calma e confia no que tu aprendeu."
           }
         ]
       }
@@ -824,7 +869,8 @@
               { "id": "d", "label": "infinitivo" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Todos os dias indica uma ação habitual, no presente."
+            "explanation": "Todos os dias indica uma ação habitual, no presente.",
+            "dicaCearense": "Visse? Presta atenção: Todos os dias indica uma ação habitual, no presente. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p5-verb-f1-q2",
@@ -837,7 +883,8 @@
               { "id": "d", "label": "gerúndio" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Ontem indica passado, e estudou é a forma do passado."
+            "explanation": "Ontem indica passado, e estudou é a forma do passado.",
+            "dicaCearense": "Mermão, olha a regra: Ontem indica passado, e estudou é a forma do passado. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p5-verb-f1-q3",
@@ -850,7 +897,8 @@
               { "id": "d", "label": "imperativo" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Amanhã e estudaremos indicam uma ação que ainda vai acontecer."
+            "explanation": "Amanhã e estudaremos indicam uma ação que ainda vai acontecer.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Amanhã e estudaremos indicam uma ação que ainda vai acontecer. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p5-verb-f1-q4",
@@ -863,7 +911,8 @@
               { "id": "d", "label": "correrá" }
             ],
             "correctChoiceIds": ["a", "b"],
-            "explanation": "Cantou e correu estão no passado. Canta está no presente e correrá no futuro."
+            "explanation": "Cantou e correu estão no passado. Canta está no presente e correrá no futuro.",
+            "dicaCearense": "Oxe, calma aí! Cantou e correu estão no passado. Canta está no presente e correrá no futuro. Confere cada alternativa com calma, uma por uma."
           },
           {
             "id": "p5-verb-f1-q5",
@@ -871,7 +920,8 @@
             "prompt": "Escreva o verbo 'aprender' no presente para 'eu'.",
             "placeholder": "Ex.: aprendo",
             "acceptedAnswers": ["aprendo", "aprendo."],
-            "explanation": "Eu aprendo está no presente do indicativo."
+            "explanation": "Eu aprendo está no presente do indicativo.",
+            "dicaCearense": "Bora desenrolar isso aqui! Eu aprendo está no presente do indicativo. Pensa na regra e escreve a palavra sem pressa."
           }
         ]
       }
@@ -911,7 +961,8 @@
               { "id": "d", "label": "visitando" }
             ],
             "correctChoiceId": "a",
-            "explanation": "No ano passado indica passado, então usamos visitou."
+            "explanation": "No ano passado indica passado, então usamos visitou.",
+            "dicaCearense": "Num tem perigo, não! No ano passado indica passado, então usamos visitou. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p5-verb-f2-q2",
@@ -924,7 +975,8 @@
               { "id": "d", "label": "apresentando" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Agora indica presente, então usamos apresenta."
+            "explanation": "Agora indica presente, então usamos apresenta.",
+            "dicaCearense": "Visse? Presta atenção: Agora indica presente, então usamos apresenta. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p5-verb-f2-q3",
@@ -937,7 +989,8 @@
               { "id": "d", "label": "entregando" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Na próxima semana indica futuro, então usamos entregará."
+            "explanation": "Na próxima semana indica futuro, então usamos entregará.",
+            "dicaCearense": "Mermão, olha a regra: Na próxima semana indica futuro, então usamos entregará. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p5-verb-f2-q4",
@@ -950,7 +1003,8 @@
               { "id": "d", "label": "Nós estudamos agora." }
             ],
             "correctChoiceIds": ["a", "b"],
-            "explanation": "Viajarei e estudaremos estão no futuro. Viajei está no passado e estudamos agora está no presente."
+            "explanation": "Viajarei e estudaremos estão no futuro. Viajei está no passado e estudamos agora está no presente.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Viajarei e estudaremos estão no futuro. Viajei está no passado e estudamos agora está no presente. Marque só o que segue a regra, sem pressa."
           },
           {
             "id": "p5-verb-f2-q5",
@@ -958,7 +1012,8 @@
             "prompt": "Complete: 'Ontem, eles ___ (chegar) cedo.'",
             "placeholder": "Escreva o verbo no passado",
             "acceptedAnswers": ["chegaram", "chegaram."],
-            "explanation": "Ontem indica passado, e eles exige a forma chegaram."
+            "explanation": "Ontem indica passado, e eles exige a forma chegaram.",
+            "dicaCearense": "Oxe, calma aí! Ontem indica passado, e eles exige a forma chegaram. Relembra como a palavra aparece no dia a dia e tenta de novo."
           }
         ]
       }
@@ -998,7 +1053,8 @@
               { "id": "d", "label": "veloz" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Venceu indica a ação final: a tartaruga ganhou a corrida."
+            "explanation": "Venceu indica a ação final: a tartaruga ganhou a corrida.",
+            "dicaCearense": "Bora desenrolar isso aqui! Venceu indica a ação final: a tartaruga ganhou a corrida. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p5-verb-f3-q2",
@@ -1011,7 +1067,8 @@
               { "id": "d", "label": "infinitivo" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Venceu indica uma ação que já aconteceu, no passado."
+            "explanation": "Venceu indica uma ação que já aconteceu, no passado.",
+            "dicaCearense": "Num tem perigo, não! Venceu indica uma ação que já aconteceu, no passado. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p5-verb-f3-q3",
@@ -1024,7 +1081,8 @@
               { "id": "d", "label": "Nenhum" }
             ],
             "correctChoiceId": "d",
-            "explanation": "Corria, caminhava e venceu estão no passado. Nenhum verbo do trecho está no presente."
+            "explanation": "Corria, caminhava e venceu estão no passado. Nenhum verbo do trecho está no presente.",
+            "dicaCearense": "Visse? Presta atenção: Corria, caminhava e venceu estão no passado. Nenhum verbo do trecho está no presente. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p5-verb-f3-q4",
@@ -1037,7 +1095,8 @@
               { "id": "d", "label": "vence" }
             ],
             "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "Corria, caminhava e venceu estão no passado. Vence está no presente."
+            "explanation": "Corria, caminhava e venceu estão no passado. Vence está no presente.",
+            "dicaCearense": "Mermão, olha a regra: Corria, caminhava e venceu estão no passado. Vence está no presente. Olha todas as opções antes de responder, visse?"
           },
           {
             "id": "p5-verb-f3-q5",
@@ -1045,7 +1104,8 @@
             "prompt": "Complete: 'A tartaruga ___ (vencer) a corrida ontem.'",
             "placeholder": "Escreva o verbo no passado",
             "acceptedAnswers": ["venceu", "venceu."],
-            "explanation": "Ontem indica passado, então usamos venceu."
+            "explanation": "Ontem indica passado, então usamos venceu.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Ontem indica passado, então usamos venceu. Num tem perigo, não! Escreve com calma que tu consegue."
           }
         ]
       }
@@ -1085,7 +1145,8 @@
               { "id": "d", "label": "balançou as árvores" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O vento é o termo sobre o qual se declara que balançou as árvores."
+            "explanation": "O vento é o termo sobre o qual se declara que balançou as árvores.",
+            "dicaCearense": "Oxe, calma aí! O vento é o termo sobre o qual se declara que balançou as árvores. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p5-sint-f1-q2",
@@ -1098,7 +1159,8 @@
               { "id": "d", "label": "vento" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O predicado é o que se declara sobre o sujeito: balançou as árvores."
+            "explanation": "O predicado é o que se declara sobre o sujeito: balançou as árvores.",
+            "dicaCearense": "Bora desenrolar isso aqui! O predicado é o que se declara sobre o sujeito: balançou as árvores. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p5-sint-f1-q3",
@@ -1111,7 +1173,8 @@
               { "id": "d", "label": "Feche a janela." }
             ],
             "correctChoiceId": "a",
-            "explanation": "A frase declarativa afirma algo e termina com ponto final."
+            "explanation": "A frase declarativa afirma algo e termina com ponto final.",
+            "dicaCearense": "Num tem perigo, não! A frase declarativa afirma algo e termina com ponto final. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p5-sint-f1-q4",
@@ -1124,7 +1187,8 @@
               { "id": "d", "label": "Onde está o livro?" }
             ],
             "correctChoiceIds": ["a", "b"],
-            "explanation": "As frases A e B expressam emoção e terminam com exclamação. C é declarativa e D é interrogativa."
+            "explanation": "As frases A e B expressam emoção e terminam com exclamação. C é declarativa e D é interrogativa.",
+            "dicaCearense": "Visse? Presta atenção: As frases A e B expressam emoção e terminam com exclamação. C é declarativa e D é interrogativa. Vai com calma e seleciona apenas o que combina com a regra."
           },
           {
             "id": "p5-sint-f1-q5",
@@ -1132,7 +1196,8 @@
             "prompt": "Complete a frase com o sinal adequado: 'Que belo dia___'",
             "placeholder": "Escreva o sinal",
             "acceptedAnswers": ["!", "! ", "exclamação", "ponto de exclamação"],
-            "explanation": "A frase expressa entusiasmo, por isso deve terminar com ponto de exclamação."
+            "explanation": "A frase expressa entusiasmo, por isso deve terminar com ponto de exclamação.",
+            "dicaCearense": "Mermão, olha a regra: A frase expressa entusiasmo, por isso deve terminar com ponto de exclamação. Tenta escrever com calma e confia no que tu aprendeu."
           }
         ]
       }
@@ -1172,7 +1237,8 @@
               { "id": "d", "label": "vírgula" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Os dois-pontos anunciam que a fala da menina virá em seguida."
+            "explanation": "Os dois-pontos anunciam que a fala da menina virá em seguida.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Os dois-pontos anunciam que a fala da menina virá em seguida. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p5-sint-f2-q2",
@@ -1185,7 +1251,8 @@
               { "id": "d", "label": "vírgula" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O travessão inicia a fala da personagem."
+            "explanation": "O travessão inicia a fala da personagem.",
+            "dicaCearense": "Oxe, calma aí! O travessão inicia a fala da personagem. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p5-sint-f2-q3",
@@ -1198,7 +1265,8 @@
               { "id": "d", "label": "ponto final" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Os dois-pontos podem introduzir uma explicação, uma lista ou uma fala."
+            "explanation": "Os dois-pontos podem introduzir uma explicação, uma lista ou uma fala.",
+            "dicaCearense": "Bora desenrolar isso aqui! Os dois-pontos podem introduzir uma explicação, uma lista ou uma fala. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p5-sint-f2-q4",
@@ -1211,7 +1279,8 @@
               { "id": "d", "label": "sublinhado" }
             ],
             "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "Travessão, dois-pontos e interrogação são sinais de pontuação usados em diálogos. Sublinhado não é pontuação."
+            "explanation": "Travessão, dois-pontos e interrogação são sinais de pontuação usados em diálogos. Sublinhado não é pontuação.",
+            "dicaCearense": "Num tem perigo, não! Travessão, dois-pontos e interrogação são sinais de pontuação usados em diálogos. Sublinhado não é pontuação. Confere cada alternativa com calma, uma por uma."
           },
           {
             "id": "p5-sint-f2-q5",
@@ -1219,7 +1288,8 @@
             "prompt": "Complete: 'O professor disse___ — Abram o livro na página 10.'",
             "placeholder": "Escreva o sinal",
             "acceptedAnswers": [":", "dois-pontos", "dois pontos"],
-            "explanation": "Os dois-pontos anunciam a fala que vem depois do travessão."
+            "explanation": "Os dois-pontos anunciam a fala que vem depois do travessão.",
+            "dicaCearense": "Visse? Presta atenção: Os dois-pontos anunciam a fala que vem depois do travessão. Pensa na regra e escreve a palavra sem pressa."
           }
         ]
       }
@@ -1259,7 +1329,8 @@
               { "id": "d", "label": "Que dia" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O menino é o termo sobre o qual se declara que abriu a janela e viu o céu."
+            "explanation": "O menino é o termo sobre o qual se declara que abriu a janela e viu o céu.",
+            "dicaCearense": "Mermão, olha a regra: O menino é o termo sobre o qual se declara que abriu a janela e viu o céu. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p5-sint-f3-q2",
@@ -1272,7 +1343,8 @@
               { "id": "d", "label": "Que dia bonito" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O predicado informa o que o menino fez: abriu a janela e viu o céu."
+            "explanation": "O predicado informa o que o menino fez: abriu a janela e viu o céu.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: O predicado informa o que o menino fez: abriu a janela e viu o céu. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p5-sint-f3-q3",
@@ -1285,7 +1357,8 @@
               { "id": "d", "label": "vírgula" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O travessão inicia a fala: — Que dia bonito!"
+            "explanation": "O travessão inicia a fala: — Que dia bonito!",
+            "dicaCearense": "Oxe, calma aí! O travessão inicia a fala: — Que dia bonito! Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p5-sint-f3-q4",
@@ -1298,7 +1371,8 @@
               { "id": "d", "label": "interrogação" }
             ],
             "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "O trecho tem dois-pontos, travessão e exclamação. Não há interrogação."
+            "explanation": "O trecho tem dois-pontos, travessão e exclamação. Não há interrogação.",
+            "dicaCearense": "Bora desenrolar isso aqui! O trecho tem dois-pontos, travessão e exclamação. Não há interrogação. Marque só o que segue a regra, sem pressa."
           },
           {
             "id": "p5-sint-f3-q5",
@@ -1306,7 +1380,8 @@
             "prompt": "Transforme em pergunta: 'O dia está bonito.' → 'O dia está bonito___'",
             "placeholder": "Escreva o sinal",
             "acceptedAnswers": ["?", "? ", "interrogação", "ponto de interrogação"],
-            "explanation": "Para transformar a frase em pergunta, usamos o ponto de interrogação."
+            "explanation": "Para transformar a frase em pergunta, usamos o ponto de interrogação.",
+            "dicaCearense": "Num tem perigo, não! Para transformar a frase em pergunta, usamos o ponto de interrogação. Relembra como a palavra aparece no dia a dia e tenta de novo."
           }
         ]
       }
@@ -1346,7 +1421,8 @@
               { "id": "d", "label": "receita" }
             ],
             "correctChoiceId": "a",
-            "explanation": "A fábula tem animais personificados e uma moral."
+            "explanation": "A fábula tem animais personificados e uma moral.",
+            "dicaCearense": "Visse? Presta atenção: A fábula tem animais personificados e uma moral. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p5-gen-f1-q2",
@@ -1359,7 +1435,8 @@
               { "id": "d", "label": "poema" }
             ],
             "correctChoiceId": "a",
-            "explanation": "A notícia relata um fato recente e responde a perguntas como quem, quando, onde e o quê."
+            "explanation": "A notícia relata um fato recente e responde a perguntas como quem, quando, onde e o quê.",
+            "dicaCearense": "Mermão, olha a regra: A notícia relata um fato recente e responde a perguntas como quem, quando, onde e o quê. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p5-gen-f1-q3",
@@ -1372,7 +1449,8 @@
               { "id": "d", "label": "relatório" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O bilhete é uma mensagem curta trocada entre pessoas."
+            "explanation": "O bilhete é uma mensagem curta trocada entre pessoas.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: O bilhete é uma mensagem curta trocada entre pessoas. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p5-gen-f1-q4",
@@ -1385,7 +1463,8 @@
               { "id": "d", "label": "animais que falam" }
             ],
             "correctChoiceIds": ["a", "b"],
-            "explanation": "A notícia apresenta um fato principal e costuma informar data e local. Moral e animais que falam são da fábula."
+            "explanation": "A notícia apresenta um fato principal e costuma informar data e local. Moral e animais que falam são da fábula.",
+            "dicaCearense": "Oxe, calma aí! A notícia apresenta um fato principal e costuma informar data e local. Moral e animais que falam são da fábula. Olha todas as opções antes de responder, visse?"
           },
           {
             "id": "p5-gen-f1-q5",
@@ -1393,7 +1472,8 @@
             "prompt": "Qual é o gênero de um texto com moral e animais personificados?",
             "placeholder": "Escreva o gênero",
             "acceptedAnswers": ["fábula", "fabula", "fábula.", "fabula."],
-            "explanation": "Esse é o gênero da fábula."
+            "explanation": "Esse é o gênero da fábula.",
+            "dicaCearense": "Bora desenrolar isso aqui! Esse é o gênero da fábula. Num tem perigo, não! Escreve com calma que tu consegue."
           }
         ]
       }
@@ -1433,7 +1513,8 @@
               { "id": "d", "label": "Nunca ajude ninguém." }
             ],
             "correctChoiceId": "a",
-            "explanation": "O rato retribui a gentileza do leão, mostrando que pequenos gestos podem ter grandes consequências."
+            "explanation": "O rato retribui a gentileza do leão, mostrando que pequenos gestos podem ter grandes consequências.",
+            "dicaCearense": "Num tem perigo, não! O rato retribui a gentileza do leão, mostrando que pequenos gestos podem ter grandes consequências. Dá uma olhada nas opções de novo que tu acha!"
           },
           {
             "id": "p5-gen-f2-q2",
@@ -1446,7 +1527,8 @@
               { "id": "d", "label": "o caçador" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O rato roeu a rede e libertou o leão."
+            "explanation": "O rato roeu a rede e libertou o leão.",
+            "dicaCearense": "Visse? Presta atenção: O rato roeu a rede e libertou o leão. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p5-gen-f2-q3",
@@ -1459,7 +1541,8 @@
               { "id": "d", "label": "a escola" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Maria assina o bilhete, então é a remetente. João é o destinatário."
+            "explanation": "Maria assina o bilhete, então é a remetente. João é o destinatário.",
+            "dicaCearense": "Mermão, olha a regra: Maria assina o bilhete, então é a remetente. João é o destinatário. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p5-gen-f2-q4",
@@ -1472,7 +1555,8 @@
               { "id": "d", "label": "A aula será na segunda." }
             ],
             "correctChoiceId": "a",
-            "explanation": "Maria avisa João de que não haverá aula amanhã."
+            "explanation": "Maria avisa João de que não haverá aula amanhã.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: Maria avisa João de que não haverá aula amanhã. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p5-gen-f2-q5",
@@ -1485,7 +1569,8 @@
               { "id": "d", "label": "aviso sobre a aula" }
             ],
             "correctChoiceIds": ["a", "b", "d"],
-            "explanation": "O bilhete tem destinatário (João), remetente (Maria) e um aviso sobre a aula. Moral é característica da fábula."
+            "explanation": "O bilhete tem destinatário (João), remetente (Maria) e um aviso sobre a aula. Moral é característica da fábula.",
+            "dicaCearense": "Oxe, calma aí! O bilhete tem destinatário (João), remetente (Maria) e um aviso sobre a aula. Moral é característica da fábula. Confere cada alternativa com calma, uma por uma."
           }
         ]
       }
@@ -1525,7 +1610,8 @@
               { "id": "d", "label": "A última terça-feira." }
             ],
             "correctChoiceId": "a",
-            "explanation": "O fato principal é a apresentação da horta comunitária pelos alunos."
+            "explanation": "O fato principal é a apresentação da horta comunitária pelos alunos.",
+            "dicaCearense": "Bora desenrolar isso aqui! O fato principal é a apresentação da horta comunitária pelos alunos. Lê as alternativas com calma e elimina o que não combina."
           },
           {
             "id": "p5-gen-f3-q2",
@@ -1538,7 +1624,8 @@
               { "id": "d", "label": "no fim de semana" }
             ],
             "correctChoiceId": "a",
-            "explanation": "A notícia informa que o fato ocorreu na última terça-feira."
+            "explanation": "A notícia informa que o fato ocorreu na última terça-feira.",
+            "dicaCearense": "Num tem perigo, não! A notícia informa que o fato ocorreu na última terça-feira. Relê o enunciado e confia no teu raciocínio."
           },
           {
             "id": "p5-gen-f3-q3",
@@ -1551,7 +1638,8 @@
               { "id": "d", "label": "Porque a horta secou." }
             ],
             "correctChoiceId": "a",
-            "explanation": "O projeto ganhou destaque por reaproveitar garrafas plásticas na horta comunitária."
+            "explanation": "O projeto ganhou destaque por reaproveitar garrafas plásticas na horta comunitária.",
+            "dicaCearense": "Visse? Presta atenção: O projeto ganhou destaque por reaproveitar garrafas plásticas na horta comunitária. Respira, revisa a regra e tenta de novo."
           },
           {
             "id": "p5-gen-f3-q4",
@@ -1564,7 +1652,8 @@
               { "id": "d", "label": "moral" }
             ],
             "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "A notícia apresenta fato, tempo e local. Moral é característica da fábula."
+            "explanation": "A notícia apresenta fato, tempo e local. Moral é característica da fábula.",
+            "dicaCearense": "Mermão, olha a regra: A notícia apresenta fato, tempo e local. Moral é característica da fábula. Confere cada alternativa com calma, uma por uma."
           },
           {
             "id": "p5-gen-f3-q5",
@@ -1572,7 +1661,8 @@
             "prompt": "Qual gênero textual tem como objetivo informar um fato recente?",
             "placeholder": "Escreva o gênero",
             "acceptedAnswers": ["notícia", "noticia", "notícia.", "noticia."],
-            "explanation": "A notícia informa um fato recente de interesse público."
+            "explanation": "A notícia informa um fato recente de interesse público.",
+            "dicaCearense": "Arretado de bom! Vamos revisar: A notícia informa um fato recente de interesse público. Pensa na regra e escreve a palavra sem pressa."
           }
         ]
       }
