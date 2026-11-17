@@ -35,6 +35,7 @@ function emptyQuestion(): QuestionDraft {
     alternatives: ["", "", "", ""],
     correctIndex: 0,
     explanation: "",
+    dicaCearense: "",
   };
 }
 
@@ -118,6 +119,7 @@ export function TeacherDashboard({
         alternatives: question.alternatives.map((item) => item.trim()),
         correctIndex: question.correctIndex,
         explanation: question.explanation.trim(),
+        dicaCearense: question.dicaCearense?.trim() || undefined,
       },
     ]);
     setQuestion(emptyQuestion());
@@ -430,6 +432,22 @@ export function TeacherDashboard({
                     setQuestion((current) => ({
                       ...current,
                       explanation: event.target.value,
+                    }))
+                  }
+                />
+              </label>
+
+              <label className="field">
+                <span className="field__label">Dica do Mestre (opcional)</span>
+                <textarea
+                  className="pixel-input pixel-textarea"
+                  value={question.dicaCearense ?? ""}
+                  maxLength={220}
+                  placeholder="Ex.: Oxe, relê a regra e olha as opções de novo, visse?"
+                  onChange={(event) =>
+                    setQuestion((current) => ({
+                      ...current,
+                      dicaCearense: event.target.value,
                     }))
                   }
                 />

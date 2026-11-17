@@ -1,9 +1,12 @@
 import { useEffect, useState } from "react";
 import type { AnswerFeedback, Question, UserAnswer } from "../../core/entities/index";
 import { HeartRow } from "../pixel/HeartRow";
+import { Modal } from "../pixel/Modal";
 import { PixelButton } from "../pixel/PixelButton";
 import { PixelPanel } from "../pixel/PixelPanel";
+import { PixelSprite } from "../pixel/PixelSprite";
 import { ProgressBar } from "../pixel/ProgressBar";
+import { npcSprite } from "../pixel/sprites";
 import { PedagogicalFeedbackModal } from "./PedagogicalFeedbackModal";
 
 interface LessonScreenProps {
@@ -13,8 +16,10 @@ interface LessonScreenProps {
   readonly totalQuestions: number;
   readonly lives: number;
   readonly maxLives: number;
+  readonly hintXpPenalty: number;
   readonly feedback: AnswerFeedback | null;
   readonly onAnswer: (answer: UserAnswer) => void;
+  readonly onUseHint: () => void;
   readonly onNext: () => void;
   readonly onExit: () => void;
   readonly onRestartLesson: () => void;
@@ -27,18 +32,22 @@ export function LessonScreen({
   totalQuestions,
   lives,
   maxLives,
+  hintXpPenalty,
   feedback,
   onAnswer,
+  onUseHint,
   onNext,
   onExit,
   onRestartLesson,
 }: LessonScreenProps) {
   const [selected, setSelected] = useState<string[]>([]);
   const [text, setText] = useState("");
+  const [hintOpen, setHintOpen] = useState(false);
 
   useEffect(() => {
     setSelected([]);
     setText("");
+    setHintOpen(false);
   }, [question.id]);
 
   const locked = feedback !== null;
@@ -65,6 +74,12 @@ export function LessonScreen({
     onAnswer(answer);
   };
 
+  const handleHint = (): void => {
+    if (!question.dicaCearense) return;
+    onUseHint();
+    setHintOpen(true);
+  };
+
   return (
     <div className="screen lesson-screen">
       <header className="lesson-bar">
@@ -81,6 +96,19 @@ export function LessonScreen({
         tone="lesson"
         label={`Pergunta ${questionNumber} de ${totalQuestions}`}
       />
+
+      {question.dicaCearense && !feedback ? (
+        <div className="hint-bar">
+          <PixelButton
+            variant="secondary"
+            className="hint-button"
+            onClick={handleHint}
+          >
+            <PixelSprite sprite={npcSprite} size={22} title="Mestre Verbo" />
+            <span>Pedir dica</span>
+          </PixelButton>
+        </div>
+      ) : null}
 
       <PixelPanel className="question-card">
         <span className="eyebrow">
@@ -152,6 +180,28 @@ export function LessonScreen({
           onContinue={onNext}
           onRestart={onRestartLesson}
         />
+      ) : null}
+
+      {hintOpen && question.dicaCearense ? (
+        <Modal labelledBy="hint-title" onClose={() => setHintOpen(false)}>
+          <div className="hint-dialog">
+            <div className="hint-dialog__portrait">
+              <PixelSprite sprite={npcSprite} size={72} title="Mestre Verbo" />
+            </div>
+            <div className="hint-dialog__bubble">
+              <span className="eyebrow">Dica do Mestre Verbo</span>
+              <h2 id="hint-title">Bora desenrolar isso!</h2>
+              <p>{question.dicaCearense}</p>
+              <p className="hint-dialog__penalty">
+                Usar a dica reduz {hintXpPenalty} XP da recompensa final, uma vez
+                por questão.
+              </p>
+              <PixelButton fullWidth onClick={() => setHintOpen(false)}>
+                Entendi, bora tentar!
+              </PixelButton>
+            </div>
+          </div>
+        </Modal>
       ) : null}
     </div>
   );

@@ -869,6 +869,37 @@ ul {
   border-color: var(--blue);
 }
 
+/* Dicas */
+
+.hint-bar {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.hint-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  font-size: 0.66rem;
+  letter-spacing: 0.04em;
+}
+
+.hint-button svg {
+  flex-shrink: 0;
+}
+
+@media (max-width: 430px) {
+  .hint-bar {
+    justify-content: stretch;
+  }
+
+  .hint-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
 /* Feedback */
 
 .feedback {
@@ -1209,6 +1240,56 @@ ul {
   }
   75% {
     transform: translateX(-2px);
+  }
+}
+
+/* Dica do personagem */
+
+.hint-dialog {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.hint-dialog__portrait {
+  flex-shrink: 0;
+  padding: 7px;
+  background: var(--bg-deep);
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 18px rgba(255, 207, 92, 0.2);
+}
+
+.hint-dialog__bubble {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.hint-dialog__bubble h2 {
+  font-size: 0.9rem;
+}
+
+.hint-dialog__bubble p {
+  font-size: 0.76rem;
+  line-height: 1.55;
+  color: var(--muted);
+}
+
+.hint-dialog__bubble .hint-dialog__penalty {
+  font-size: 0.62rem;
+  color: var(--accent);
+}
+
+@media (max-width: 430px) {
+  .hint-dialog {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hint-dialog__bubble {
+    align-items: stretch;
   }
 }
 

@@ -83,6 +83,12 @@ export function ResultModal({
           <li>+{outcome.xpEarned} XP</li>
           <li>+{outcome.coinsEarned} moedas</li>
         </ul>
+        {outcome.hintsUsed > 0 ? (
+          <p className="result__note">
+            {outcome.hintsUsed} {outcome.hintsUsed === 1 ? "dica usada" : "dicas usadas"}
+            {outcome.hintPenaltyXp > 0 ? ` · -${outcome.hintPenaltyXp} XP` : ""}
+          </p>
+        ) : null}
         {streakCurrent > 0 ? (
           <p className="result__streak">
             🔥 Ofensiva: {streakCurrent} {streakCurrent === 1 ? "dia" : "dias"}

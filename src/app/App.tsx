@@ -64,8 +64,10 @@ export function App() {
           totalQuestions={session.questionIds.length}
           lives={snapshot.player.lives}
           maxLives={snapshot.maxLives}
+          hintXpPenalty={snapshot.hintXpPenalty}
           feedback={snapshot.feedback}
           onAnswer={(answer) => controller.answer(answer)}
+          onUseHint={() => controller.useHint()}
           onNext={() => controller.advance()}
           onExit={() => controller.backToMap()}
           onRestartLesson={() => controller.restartLesson()}
