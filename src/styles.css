@@ -885,8 +885,16 @@ ul {
   letter-spacing: 0.04em;
 }
 
-.hint-button svg {
+.hint-button__guide {
   flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  object-fit: cover;
+  object-position: 50% 24%;
+  border: 2px solid var(--border);
+  background: var(--bg-deep);
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 @media (max-width: 430px) {
@@ -1259,6 +1267,16 @@ ul {
   box-shadow: 0 0 18px rgba(255, 207, 92, 0.2);
 }
 
+.hint-dialog__guide {
+  display: block;
+  width: 76px;
+  height: 76px;
+  object-fit: cover;
+  object-position: 50% 24%;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
 .hint-dialog__bubble {
   display: flex;
   flex-direction: column;
@@ -1290,6 +1308,13 @@ ul {
 
   .hint-dialog__bubble {
     align-items: stretch;
+  }
+}
+
+@media (min-width: 560px) {
+  .hint-dialog__guide {
+    width: 88px;
+    height: 88px;
   }
 }
 

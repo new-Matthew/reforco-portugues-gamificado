@@ -9,7 +9,7 @@ export const TUTORIAL_STEPS: readonly TutorialStep[] = [
   {
     id: "welcome",
     message:
-      "Olá, explorador! Eu sou o Mestre da Trilha e vou te acompanhar nos primeiros passos. Vamos aprender juntos como evoluir no seu reforço de Português?",
+      "Olá, explorador! Eu sou a Tia Thaís e vou te acompanhar nos primeiros passos. Vamos aprender juntos como evoluir no seu reforço de Português?",
     buttonLabel: "Entendi",
   },
   {

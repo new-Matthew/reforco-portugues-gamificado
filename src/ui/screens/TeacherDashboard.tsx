@@ -438,7 +438,7 @@ export function TeacherDashboard({
               </label>
 
               <label className="field">
-                <span className="field__label">Dica do Mestre (opcional)</span>
+                <span className="field__label">Dica da Tia Thaís (opcional)</span>
                 <textarea
                   className="pixel-input pixel-textarea"
                   value={question.dicaCearense ?? ""}

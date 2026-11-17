@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
+import guideImage from "../../assets/personagem-tutorial.jpeg";
 import type { AnswerFeedback, Question, UserAnswer } from "../../core/entities/index";
 import { HeartRow } from "../pixel/HeartRow";
 import { Modal } from "../pixel/Modal";
 import { PixelButton } from "../pixel/PixelButton";
 import { PixelPanel } from "../pixel/PixelPanel";
-import { PixelSprite } from "../pixel/PixelSprite";
 import { ProgressBar } from "../pixel/ProgressBar";
-import { npcSprite } from "../pixel/sprites";
 import { PedagogicalFeedbackModal } from "./PedagogicalFeedbackModal";
 
 interface LessonScreenProps {
@@ -102,9 +101,15 @@ export function LessonScreen({
           <PixelButton
             variant="secondary"
             className="hint-button"
+            aria-label="Pedir dica para Tia Thaís"
             onClick={handleHint}
           >
-            <PixelSprite sprite={npcSprite} size={22} title="Mestre Verbo" />
+            <img
+              className="hint-button__guide"
+              src={guideImage}
+              alt=""
+              draggable={false}
+            />
             <span>Pedir dica</span>
           </PixelButton>
         </div>
@@ -186,10 +191,15 @@ export function LessonScreen({
         <Modal labelledBy="hint-title" onClose={() => setHintOpen(false)}>
           <div className="hint-dialog">
             <div className="hint-dialog__portrait">
-              <PixelSprite sprite={npcSprite} size={72} title="Mestre Verbo" />
+              <img
+                className="hint-dialog__guide"
+                src={guideImage}
+                alt="Tia Thaís"
+                draggable={false}
+              />
             </div>
             <div className="hint-dialog__bubble">
-              <span className="eyebrow">Dica do Mestre Verbo</span>
+              <span className="eyebrow">Dica da Tia Thaís</span>
               <h2 id="hint-title">Bora desenrolar isso!</h2>
               <p>{question.dicaCearense}</p>
               <p className="hint-dialog__penalty">

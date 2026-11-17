@@ -21,7 +21,7 @@ export function PedagogicalFeedbackModal({
     <Modal labelledBy="pedagogical-title">
       <div className="pedagogical">
         <div className="pedagogical__portrait">
-          <PixelSprite sprite={npcSprite} size={64} title="Mestre Verbo" />
+          <PixelSprite sprite={npcSprite} size={64} title="Tia Thaís" />
         </div>
         <span className="eyebrow">Feedback de aprendizagem</span>
         <h2 id="pedagogical-title">Quase lá! Vamos revisar.</h2>

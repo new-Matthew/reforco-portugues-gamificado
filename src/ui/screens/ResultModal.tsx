@@ -51,7 +51,7 @@ export function ResultModal({
                 : npcSprite
             }
             size={80}
-            title={outcome.passed ? "Baú de recompensa" : "Mestre Verbo"}
+            title={outcome.passed ? "Baú de recompensa" : "Tia Thaís"}
           />
           {outcome.passed ? (
             <span className="result__sparkles" aria-hidden="true">

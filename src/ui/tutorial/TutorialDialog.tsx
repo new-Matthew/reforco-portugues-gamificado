@@ -89,7 +89,7 @@ export function TutorialDialog({
         <div className="tutorial-dialog__body">
           <div className="tutorial-dialog__meta">
             <span className="eyebrow" id="tutorial-dialog-title">
-              Mestre da Trilha · {stepIndex + 1}/{totalSteps}
+              Tia Thaís · {stepIndex + 1}/{totalSteps}
             </span>
             <button
               type="button"

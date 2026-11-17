@@ -98,7 +98,7 @@ describe("authoring", () => {
     expect(node.lesson.requiredCorrectRatio).toBe(0.75);
   });
 
-  it("preserva a dica do Mestre ao publicar uma questão", () => {
+  it("preserva a dica da Tia Thaís ao publicar uma questão", () => {
     const course = buildCatalog().courses[0];
     if (!course) throw new Error("Fixture sem curso.");
 
