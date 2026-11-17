@@ -1,10 +1,10 @@
 import { describe, expect, it } from "vitest";
-import sintaxe from "../src/content/packs/portugues/sintaxe.json";
-import verbos from "../src/content/packs/portugues/verbos.json";
+import quartoAno from "../src/content/packs/portugues/4ano.json";
+import quintoAno from "../src/content/packs/portugues/5ano.json";
 import { validateContentPacks } from "../src/content/schema/validateContent";
 
-function cloneVerbos(): Record<string, unknown> {
-  return JSON.parse(JSON.stringify(verbos)) as Record<string, unknown>;
+function cloneQuartoAno(): Record<string, unknown> {
+  return JSON.parse(JSON.stringify(quartoAno)) as Record<string, unknown>;
 }
 
 function firstNode(pack: Record<string, unknown>): Record<string, unknown> {
@@ -13,23 +13,22 @@ function firstNode(pack: Record<string, unknown>): Record<string, unknown> {
 }
 
 describe("validateContentPacks", () => {
-  it("aceita os packs reais de Português", () => {
-    const result = validateContentPacks([verbos, sintaxe]);
+  it("aceita os packs reais do Ensino Fundamental I", () => {
+    const result = validateContentPacks([quartoAno, quintoAno]);
     if (!result.ok) {
       throw new Error(JSON.stringify(result.issues, null, 2));
     }
 
     expect(result.catalog.courses.map((course) => course.title)).toEqual([
-      "Verbos",
-      "Sintaxe",
+      "Língua Portuguesa · 4º Ano",
+      "Língua Portuguesa · 5º Ano",
     ]);
-    const verbosCourse = result.catalog.courses[0];
-    expect(verbosCourse?.nodes).toHaveLength(8);
-    expect(result.catalog.courses[1]?.nodes).toHaveLength(2);
+    expect(result.catalog.courses[0]?.nodes).toHaveLength(21);
+    expect(result.catalog.courses[1]?.nodes).toHaveLength(18);
   });
 
   it("rejeita alternativa correta inexistente", () => {
-    const pack = cloneVerbos();
+    const pack = cloneQuartoAno();
     const node = firstNode(pack);
     const lesson = node.lesson as Record<string, unknown>;
     const questions = lesson.questions as Array<Record<string, unknown>>;
@@ -45,7 +44,7 @@ describe("validateContentPacks", () => {
   });
 
   it("rejeita ids de alternativa duplicados", () => {
-    const pack = cloneVerbos();
+    const pack = cloneQuartoAno();
     const node = firstNode(pack);
     const lesson = node.lesson as Record<string, unknown>;
     const questions = lesson.questions as Array<Record<string, unknown>>;
@@ -62,7 +61,7 @@ describe("validateContentPacks", () => {
   });
 
   it("rejeita dependência de desbloqueio inexistente", () => {
-    const pack = cloneVerbos();
+    const pack = cloneQuartoAno();
     const node = firstNode(pack);
     node.unlock = { requires: ["nao-existe"] };
 
@@ -76,9 +75,9 @@ describe("validateContentPacks", () => {
   });
 
   it("rejeita ciclos de desbloqueio", () => {
-    const pack = cloneVerbos();
+    const pack = cloneQuartoAno();
     const nodes = pack.nodes as Array<Record<string, unknown>>;
-    nodes[0]!.unlock = { requires: ["verbos-terminalidade-er-or"] };
+    nodes[0]!.unlock = { requires: ["p4-ort-r-s-f3"] };
 
     const result = validateContentPacks([pack]);
     expect(result.ok).toBe(false);
@@ -88,7 +87,7 @@ describe("validateContentPacks", () => {
   });
 
   it("rejeita conteúdo sem perguntas", () => {
-    const pack = cloneVerbos();
+    const pack = cloneQuartoAno();
     const node = firstNode(pack);
     const lesson = node.lesson as Record<string, unknown>;
     lesson.questions = [];
