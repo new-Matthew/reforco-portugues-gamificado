@@ -1,0 +1,1581 @@
+{
+  "id": "portugues-5ano",
+  "subject": "portugues",
+  "title": "Língua Portuguesa · 5º Ano",
+  "description": "Trilha de aprofundamento do 5º ano: ortografia em contexto, acentuação, morfologia, verbos, sintaxe e leitura de gêneros textuais.",
+  "version": "1.0.0",
+  "locale": "pt-BR",
+  "nodes": [
+    {
+      "id": "p5-ort-f1",
+      "title": "Fase 1 · Revisão integrada",
+      "subtitle": "R/RR, S/SS, M/P/B e X/CH",
+      "chapter": "Módulo 01 · Ortografia em contexto",
+      "icon": "npc",
+      "position": { "x": 0, "y": 0 },
+      "unlock": { "requires": [] },
+      "npc": {
+        "speaker": "Guardiã da Escrita",
+        "lines": [
+          "No 5º ano, vamos revisar a ortografia e usá-la em textos maiores.",
+          "Comece observando as palavras escritas corretamente."
+        ]
+      },
+      "reward": { "itemId": "p5-selo-ortografia", "label": "Selo da ortografia" },
+      "lesson": {
+        "id": "lesson-p5-ort-f1",
+        "title": "Reconhecer grafias corretas",
+        "intro": "Revise R/RR, S/SS, M antes de P/B e X/CH. Observe a posição das letras e o som que elas representam.",
+        "xpReward": 50,
+        "coinReward": 12,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-ort-f1-q1",
+            "type": "single-choice",
+            "prompt": "Qual palavra está escrita corretamente?",
+            "choices": [
+              { "id": "a", "label": "passarinho" },
+              { "id": "b", "label": "pasarinho" },
+              { "id": "c", "label": "passarino" },
+              { "id": "d", "label": "pasarino" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Passarinho é escrito com SS entre as vogais A e I."
+          },
+          {
+            "id": "p5-ort-f1-q2",
+            "type": "single-choice",
+            "prompt": "Qual palavra tem M antes de P?",
+            "choices": [
+              { "id": "a", "label": "tempo" },
+              { "id": "b", "label": "tenpo" },
+              { "id": "c", "label": "tem po" },
+              { "id": "d", "label": "tênpo" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Tempo é escrito com M antes de P."
+          },
+          {
+            "id": "p5-ort-f1-q3",
+            "type": "single-choice",
+            "prompt": "Qual palavra tem X com som de CH?",
+            "choices": [
+              { "id": "a", "label": "caixa" },
+              { "id": "b", "label": "táxi" },
+              { "id": "c", "label": "exame" },
+              { "id": "d", "label": "próximo" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Em caixa, o X soa como CH. Em táxi, soa como KS; em exame, como Z; em próximo, como S."
+          },
+          {
+            "id": "p5-ort-f1-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais palavras estão escritas corretamente?",
+            "choices": [
+              { "id": "a", "label": "carro" },
+              { "id": "b", "label": "casa" },
+              { "id": "c", "label": "passado" },
+              { "id": "d", "label": "caza" }
+            ],
+            "correctChoiceIds": ["a", "b", "c"],
+            "explanation": "Carro tem RR, casa tem S com som de Z e passado tem SS. Caza está errada: o correto é casa."
+          },
+          {
+            "id": "p5-ort-f1-q5",
+            "type": "text",
+            "prompt": "Complete: 'O ___ é um animal que late.' (com RR)",
+            "placeholder": "Escreva o animal",
+            "acceptedAnswers": ["cachorro", "cachorro."],
+            "explanation": "Cachorro é escrito com RR entre as vogais O e O."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-ort-f2",
+      "title": "Fase 2 · Ortografia na micro-história",
+      "subtitle": "Ler, observar e completar",
+      "chapter": "Módulo 01 · Ortografia em contexto",
+      "icon": "star",
+      "position": { "x": 2, "y": 1 },
+      "unlock": { "requires": ["p5-ort-f1"] },
+      "npc": {
+        "speaker": "Guardiã da Escrita",
+        "lines": [
+          "Agora a ortografia aparece dentro de uma pequena história.",
+          "Procure as pistas no texto antes de responder."
+        ]
+      },
+      "reward": { "itemId": "p5-selo-historia", "label": "Selo da micro-história" },
+      "lesson": {
+        "id": "lesson-p5-ort-f2",
+        "title": "Ortografia em contexto",
+        "intro": "Leia a micro-história e observe as palavras com SS, S, X e CH. O contexto ajuda a confirmar a grafia.",
+        "xpReward": 55,
+        "coinReward": 14,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-ort-f2-q1",
+            "type": "single-choice",
+            "prompt": "Leia: 'O passarinho pousou na janela e comeu as migalhas.' Qual palavra tem SS?",
+            "choices": [
+              { "id": "a", "label": "passarinho" },
+              { "id": "b", "label": "janela" },
+              { "id": "c", "label": "comeu" },
+              { "id": "d", "label": "migalhas" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Passarinho é escrito com SS entre as vogais A e I."
+          },
+          {
+            "id": "p5-ort-f2-q2",
+            "type": "single-choice",
+            "prompt": "No trecho 'O passarinho pousou na janela', qual palavra tem S com som de Z?",
+            "choices": [
+              { "id": "a", "label": "pousou" },
+              { "id": "b", "label": "passarinho" },
+              { "id": "c", "label": "janela" },
+              { "id": "d", "label": "migalhas" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Em pousou, o S fica entre as vogais U e O e tem som de Z."
+          },
+          {
+            "id": "p5-ort-f2-q3",
+            "type": "single-choice",
+            "prompt": "Complete: 'O ___ é o coletivo de abelhas.'",
+            "choices": [
+              { "id": "a", "label": "enxame" },
+              { "id": "b", "label": "enchame" },
+              { "id": "c", "label": "enxami" },
+              { "id": "d", "label": "enchami" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Enxame é escrito com X depois de EN e é o coletivo de abelhas."
+          },
+          {
+            "id": "p5-ort-f2-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais palavras estão escritas corretamente?",
+            "choices": [
+              { "id": "a", "label": "sempre" },
+              { "id": "b", "label": "canpo" },
+              { "id": "c", "label": "chave" },
+              { "id": "d", "label": "xícara" }
+            ],
+            "correctChoiceIds": ["a", "c", "d"],
+            "explanation": "Sempre tem M antes de P; chave tem CH; xícara tem X. O correto é campo, com M."
+          },
+          {
+            "id": "p5-ort-f2-q5",
+            "type": "text",
+            "prompt": "Complete: 'A ___ serve para tomar café.' (X ou CH)",
+            "placeholder": "Escreva a palavra",
+            "acceptedAnswers": ["xícara", "xicara", "xícara."],
+            "explanation": "Xícara é escrito com X e acento na sílaba XÍ."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-ort-f3",
+      "title": "Fase 3 · Síntese ortográfica",
+      "subtitle": "Corrigir e reescrever",
+      "chapter": "Módulo 01 · Ortografia em contexto",
+      "icon": "chest",
+      "position": { "x": 1, "y": 2 },
+      "unlock": { "requires": ["p5-ort-f2"] },
+      "npc": {
+        "speaker": "Guardiã da Escrita",
+        "lines": [
+          "Hora de corrigir frases e reconhecer todas as regras juntas.",
+          "Leia com atenção e compare as opções."
+        ]
+      },
+      "reward": { "itemId": "p5-bau-ortografia", "label": "Baú da ortografia" },
+      "lesson": {
+        "id": "lesson-p5-ort-f3",
+        "title": "Corrigir e reescrever",
+        "intro": "Use todas as regras ortográficas para escolher a frase correta e completar palavras.",
+        "xpReward": 60,
+        "coinReward": 16,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-ort-f3-q1",
+            "type": "single-choice",
+            "prompt": "Leia: 'O carro passou na praça e o cachorro correu atrás.' Quantas palavras têm RR?",
+            "choices": [
+              { "id": "a", "label": "1" },
+              { "id": "b", "label": "2" },
+              { "id": "c", "label": "3" },
+              { "id": "d", "label": "4" }
+            ],
+            "correctChoiceId": "c",
+            "explanation": "As palavras com RR são carro, cachorro e correu."
+          },
+          {
+            "id": "p5-ort-f3-q2",
+            "type": "single-choice",
+            "prompt": "No trecho anterior, qual palavra tem S com som de S forte?",
+            "choices": [
+              { "id": "a", "label": "passou" },
+              { "id": "b", "label": "praça" },
+              { "id": "c", "label": "carro" },
+              { "id": "d", "label": "cachorro" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Passou tem SS com som de S forte. Em praça, o Ç também tem som de S, mas não é a letra S."
+          },
+          {
+            "id": "p5-ort-f3-q3",
+            "type": "single-choice",
+            "prompt": "Qual reescrita está correta?",
+            "choices": [
+              { "id": "a", "label": "O peixe nada no lago e o campo está sempre verde." },
+              { "id": "b", "label": "O peiche nada no lago e o campo está sempre verde." },
+              { "id": "c", "label": "O peixe nada no lago e o canpo está sempre verde." },
+              { "id": "d", "label": "O peixe nada no lago e o campo está senpre verde." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Peixe é com X; campo tem M antes de P; sempre tem M antes de P."
+          },
+          {
+            "id": "p5-ort-f3-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais palavras estão escritas corretamente?",
+            "choices": [
+              { "id": "a", "label": "enxugar" },
+              { "id": "b", "label": "encharcar" },
+              { "id": "c", "label": "mexer" },
+              { "id": "d", "label": "mecher" }
+            ],
+            "correctChoiceIds": ["a", "b", "c"],
+            "explanation": "Enxugar, encharcar e mexer estão corretas. Mecher está errada: o correto é mexer."
+          },
+          {
+            "id": "p5-ort-f3-q5",
+            "type": "text",
+            "prompt": "Complete com SS: 'O ___ é uma ave que canta.'",
+            "placeholder": "Escreva a palavra",
+            "acceptedAnswers": ["passarinho", "passarinho."],
+            "explanation": "Passarinho é escrito com SS entre as vogais A e I."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-acen-f1",
+      "title": "Fase 1 · Classificar a tonicidade",
+      "subtitle": "Oxítona, paroxítona e proparoxítona",
+      "chapter": "Módulo 02 · Acentuação e tonicidade",
+      "icon": "npc",
+      "position": { "x": 0, "y": 0 },
+      "unlock": { "requires": ["p5-ort-f3"] },
+      "npc": {
+        "speaker": "Mestre Acento",
+        "lines": [
+          "No 5º ano, vamos reconhecer a tônica com mais precisão.",
+          "Conte as sílabas e localize a mais forte."
+        ]
+      },
+      "reward": { "itemId": "p5-selo-tonica", "label": "Selo da tonicidade" },
+      "lesson": {
+        "id": "lesson-p5-acen-f1",
+        "title": "Classificar palavras",
+        "intro": "Jacaré é oxítona, caderno é paroxítona e árvore é proparoxítona. Observe a posição da tônica.",
+        "xpReward": 50,
+        "coinReward": 12,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-acen-f1-q1",
+            "type": "single-choice",
+            "prompt": "Em 'jacaré', qual é a sílaba tônica?",
+            "choices": [
+              { "id": "a", "label": "ja" },
+              { "id": "b", "label": "ca" },
+              { "id": "c", "label": "ré" },
+              { "id": "d", "label": "nenhuma" }
+            ],
+            "correctChoiceId": "c",
+            "explanation": "A sílaba tônica de jacaré é RÉ, a última. Por isso, é oxítona."
+          },
+          {
+            "id": "p5-acen-f1-q2",
+            "type": "single-choice",
+            "prompt": "Em 'árvore', qual é a sílaba tônica?",
+            "choices": [
+              { "id": "a", "label": "ár" },
+              { "id": "b", "label": "vo" },
+              { "id": "c", "label": "re" },
+              { "id": "d", "label": "nenhuma" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "A sílaba tônica de árvore é ÁR, a antepenúltima. Por isso, é proparoxítona."
+          },
+          {
+            "id": "p5-acen-f1-q3",
+            "type": "single-choice",
+            "prompt": "Em 'caderno', qual é a sílaba tônica?",
+            "choices": [
+              { "id": "a", "label": "ca" },
+              { "id": "b", "label": "der" },
+              { "id": "c", "label": "no" },
+              { "id": "d", "label": "nenhuma" }
+            ],
+            "correctChoiceId": "b",
+            "explanation": "A sílaba tônica de caderno é DER, a penúltima. Por isso, é paroxítona."
+          },
+          {
+            "id": "p5-acen-f1-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais palavras são proparoxítonas?",
+            "choices": [
+              { "id": "a", "label": "música" },
+              { "id": "b", "label": "página" },
+              { "id": "c", "label": "café" },
+              { "id": "d", "label": "lâmpada" }
+            ],
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "Música, página e lâmpada têm a tônica na antepenúltima sílaba. Café é oxítona."
+          },
+          {
+            "id": "p5-acen-f1-q5",
+            "type": "text",
+            "prompt": "Classifique a palavra 'sofá' quanto à tonicidade.",
+            "placeholder": "Ex.: oxítona",
+            "acceptedAnswers": ["oxítona", "oxitona", "oxítona.", "oxitona."],
+            "explanation": "Sofá tem a tônica na última sílaba (FÁ), por isso é oxítona."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-acen-f2",
+      "title": "Fase 2 · Aplicar as regras",
+      "subtitle": "Acento certo, palavra certa",
+      "chapter": "Módulo 02 · Acentuação e tonicidade",
+      "icon": "star",
+      "position": { "x": 2, "y": 1 },
+      "unlock": { "requires": ["p5-acen-f1"] },
+      "npc": {
+        "speaker": "Mestre Acento",
+        "lines": [
+          "As proparoxítonas são sempre acentuadas.",
+          "As oxítonas e paroxítonas dependem da terminação."
+        ]
+      },
+      "reward": { "itemId": "p5-selo-regras", "label": "Selo das regras" },
+      "lesson": {
+        "id": "lesson-p5-acen-f2",
+        "title": "Acentuar com segurança",
+        "intro": "Compare as palavras sem acento e com acento para perceber a regra de cada grupo.",
+        "xpReward": 55,
+        "coinReward": 14,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-acen-f2-q1",
+            "type": "single-choice",
+            "prompt": "Qual palavra é uma oxítona acentuada?",
+            "choices": [
+              { "id": "a", "label": "café" },
+              { "id": "b", "label": "cafe" },
+              { "id": "c", "label": "cáfe" },
+              { "id": "d", "label": "cafè" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Café é oxítona terminada em E e recebe acento agudo."
+          },
+          {
+            "id": "p5-acen-f2-q2",
+            "type": "single-choice",
+            "prompt": "Qual palavra é uma paroxítona acentuada?",
+            "choices": [
+              { "id": "a", "label": "fácil" },
+              { "id": "b", "label": "facil" },
+              { "id": "c", "label": "fáçil" },
+              { "id": "d", "label": "facíl" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Fácil é paroxítona terminada em -L e recebe acento na penúltima sílaba."
+          },
+          {
+            "id": "p5-acen-f2-q3",
+            "type": "single-choice",
+            "prompt": "Qual palavra é uma proparoxítona acentuada?",
+            "choices": [
+              { "id": "a", "label": "página" },
+              { "id": "b", "label": "pagina" },
+              { "id": "c", "label": "págína" },
+              { "id": "d", "label": "pagína" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Página é proparoxítona e recebe acento na antepenúltima sílaba."
+          },
+          {
+            "id": "p5-acen-f2-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais palavras devem receber acento?",
+            "choices": [
+              { "id": "a", "label": "voce" },
+              { "id": "b", "label": "cafe" },
+              { "id": "c", "label": "arvore" },
+              { "id": "d", "label": "escola" }
+            ],
+            "correctChoiceIds": ["a", "b", "c"],
+            "explanation": "As formas corretas são você, café e árvore. Escola é paroxítona terminada em -A e não recebe acento."
+          },
+          {
+            "id": "p5-acen-f2-q5",
+            "type": "text",
+            "prompt": "Complete com acento: 'A ___ é a ciência dos números.' (matematica)",
+            "placeholder": "Escreva com acento",
+            "acceptedAnswers": ["matemática", "matemática."],
+            "explanation": "Matemática é proparoxítona e recebe acento na antepenúltima sílaba."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-acen-f3",
+      "title": "Fase 3 · Acentuação e sentido",
+      "subtitle": "Palavras que mudam de significado",
+      "chapter": "Módulo 02 · Acentuação e tonicidade",
+      "icon": "chest",
+      "position": { "x": 1, "y": 2 },
+      "unlock": { "requires": ["p5-acen-f2"] },
+      "npc": {
+        "speaker": "Mestre Acento",
+        "lines": [
+          "O acento pode diferenciar palavras e mudar o sentido da frase.",
+          "Compare sabia e sabiá, por exemplo."
+        ]
+      },
+      "reward": { "itemId": "p5-bau-acentuacao", "label": "Baú da acentuação" },
+      "lesson": {
+        "id": "lesson-p5-acen-f3",
+        "title": "Acentuação em síntese",
+        "intro": "Classifique palavras no texto e reconheça pares que mudam de sentido com o acento.",
+        "xpReward": 60,
+        "coinReward": 16,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-acen-f3-q1",
+            "type": "single-choice",
+            "prompt": "Qual par de palavras muda de sentido por causa do acento?",
+            "choices": [
+              { "id": "a", "label": "sabia / sabiá" },
+              { "id": "b", "label": "casa / caza" },
+              { "id": "c", "label": "menino / menina" },
+              { "id": "d", "label": "forte / fraco" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Sabia (verbo ou adjetivo) e sabiá (ave) têm significados diferentes por causa do acento."
+          },
+          {
+            "id": "p5-acen-f3-q2",
+            "type": "single-choice",
+            "prompt": "Em 'O sabiá canta na árvore', quantas palavras proparoxítonas há?",
+            "choices": [
+              { "id": "a", "label": "0" },
+              { "id": "b", "label": "1" },
+              { "id": "c", "label": "2" },
+              { "id": "d", "label": "3" }
+            ],
+            "correctChoiceId": "b",
+            "explanation": "Apenas árvore é proparoxítona. Sabiá é oxítona e canta é paroxítona."
+          },
+          {
+            "id": "p5-acen-f3-q3",
+            "type": "single-choice",
+            "prompt": "Em 'A música começou cedo', qual palavra é proparoxítona?",
+            "choices": [
+              { "id": "a", "label": "música" },
+              { "id": "b", "label": "começou" },
+              { "id": "c", "label": "cedo" },
+              { "id": "d", "label": "A" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Música tem a tônica na antepenúltima sílaba: MÚ-SI-CA."
+          },
+          {
+            "id": "p5-acen-f3-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais palavras estão corretamente acentuadas?",
+            "choices": [
+              { "id": "a", "label": "pássaro" },
+              { "id": "b", "label": "lâmpada" },
+              { "id": "c", "label": "café" },
+              { "id": "d", "label": "arvore" }
+            ],
+            "correctChoiceIds": ["a", "b", "c"],
+            "explanation": "Pássaro e lâmpada são proparoxítonas; café é oxítona. O correto é árvore, com acento."
+          },
+          {
+            "id": "p5-acen-f3-q5",
+            "type": "text",
+            "prompt": "Complete: 'O ___ é uma ave que canta.' (sabia)",
+            "placeholder": "Escreva com acento",
+            "acceptedAnswers": ["sabiá", "sabiá."],
+            "explanation": "O sabiá é uma ave. Sem acento, sabia é uma forma do verbo saber."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-morf-f1",
+      "title": "Fase 1 · Classes gramaticais",
+      "subtitle": "Substantivo, adjetivo, artigo e numeral",
+      "chapter": "Módulo 03 · Morfologia e concordância",
+      "icon": "npc",
+      "position": { "x": 0, "y": 0 },
+      "unlock": { "requires": ["p5-acen-f3"] },
+      "npc": {
+        "speaker": "Guardião da Gramática",
+        "lines": [
+          "Vamos revisar as classes que já conhecemos e observar como trabalham juntas.",
+          "Em uma frase, cada palavra tem uma função."
+        ]
+      },
+      "reward": { "itemId": "p5-selo-classes", "label": "Selo das classes" },
+      "lesson": {
+        "id": "lesson-p5-morf-f1",
+        "title": "Reconhecer as classes",
+        "intro": "Substantivo nomeia, adjetivo caracteriza, artigo determina e numeral indica quantidade ou ordem.",
+        "xpReward": 50,
+        "coinReward": 12,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-morf-f1-q1",
+            "type": "single-choice",
+            "prompt": "Em 'As duas meninas inteligentes chegaram', qual palavra é substantivo?",
+            "choices": [
+              { "id": "a", "label": "As" },
+              { "id": "b", "label": "duas" },
+              { "id": "c", "label": "meninas" },
+              { "id": "d", "label": "inteligentes" }
+            ],
+            "correctChoiceId": "c",
+            "explanation": "Meninas é o substantivo que nomeia os seres de quem se fala."
+          },
+          {
+            "id": "p5-morf-f1-q2",
+            "type": "single-choice",
+            "prompt": "Na mesma frase, qual palavra é adjetivo?",
+            "choices": [
+              { "id": "a", "label": "duas" },
+              { "id": "b", "label": "meninas" },
+              { "id": "c", "label": "inteligentes" },
+              { "id": "d", "label": "chegaram" }
+            ],
+            "correctChoiceId": "c",
+            "explanation": "Inteligentes caracteriza as meninas, por isso é adjetivo."
+          },
+          {
+            "id": "p5-morf-f1-q3",
+            "type": "single-choice",
+            "prompt": "Na mesma frase, qual palavra é numeral?",
+            "choices": [
+              { "id": "a", "label": "duas" },
+              { "id": "b", "label": "meninas" },
+              { "id": "c", "label": "inteligentes" },
+              { "id": "d", "label": "As" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Duas indica a quantidade de meninas e é um numeral cardinal."
+          },
+          {
+            "id": "p5-morf-f1-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais palavras são artigos?",
+            "choices": [
+              { "id": "a", "label": "o" },
+              { "id": "b", "label": "uma" },
+              { "id": "c", "label": "menino" },
+              { "id": "d", "label": "os" }
+            ],
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "O, uma e os são artigos. Menino é substantivo."
+          },
+          {
+            "id": "p5-morf-f1-q5",
+            "type": "text",
+            "prompt": "Classifique o substantivo 'Brasil' (próprio ou comum).",
+            "placeholder": "Escreva próprio ou comum",
+            "acceptedAnswers": ["próprio", "proprio", "próprio.", "proprio."],
+            "explanation": "Brasil é o nome específico de um país, por isso é substantivo próprio."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-morf-f2",
+      "title": "Fase 2 · Concordância em contexto",
+      "subtitle": "Gênero, número e verbo",
+      "chapter": "Módulo 03 · Morfologia e concordância",
+      "icon": "star",
+      "position": { "x": 2, "y": 1 },
+      "unlock": { "requires": ["p5-morf-f1"] },
+      "npc": {
+        "speaker": "Guardião da Gramática",
+        "lines": [
+          "Substantivo, adjetivo, artigo e verbo precisam concordar.",
+          "Observe o gênero e o número antes de escolher."
+        ]
+      },
+      "reward": { "itemId": "p5-selo-concordancia", "label": "Selo da concordância" },
+      "lesson": {
+        "id": "lesson-p5-morf-f2",
+        "title": "Concordar corretamente",
+        "intro": "A concordância liga as palavras da frase. Se o substantivo está no plural, o adjetivo e o verbo também mudam.",
+        "xpReward": 55,
+        "coinReward": 14,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-morf-f2-q1",
+            "type": "single-choice",
+            "prompt": "Complete: 'As crianças ___ no parque.'",
+            "choices": [
+              { "id": "a", "label": "brincaram" },
+              { "id": "b", "label": "brincou" },
+              { "id": "c", "label": "brincamos" },
+              { "id": "d", "label": "brincar" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "As crianças é sujeito no plural, então o verbo fica brincaram."
+          },
+          {
+            "id": "p5-morf-f2-q2",
+            "type": "single-choice",
+            "prompt": "Complete: 'O menino comprou uma bola ___.'",
+            "choices": [
+              { "id": "a", "label": "nova" },
+              { "id": "b", "label": "novo" },
+              { "id": "c", "label": "novos" },
+              { "id": "d", "label": "novas" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Bola é feminino singular, então o adjetivo deve ser nova."
+          },
+          {
+            "id": "p5-morf-f2-q3",
+            "type": "single-choice",
+            "prompt": "Complete: 'Os livros ___ sobre a mesa.'",
+            "choices": [
+              { "id": "a", "label": "estão" },
+              { "id": "b", "label": "está" },
+              { "id": "c", "label": "estamos" },
+              { "id": "d", "label": "estar" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Os livros é sujeito no plural, então usamos estão."
+          },
+          {
+            "id": "p5-morf-f2-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais frases têm concordância correta?",
+            "choices": [
+              { "id": "a", "label": "As flores são bonitas." },
+              { "id": "b", "label": "Os carros são rápidos." },
+              { "id": "c", "label": "As flores são bonito." },
+              { "id": "d", "label": "O carro são rápido." }
+            ],
+            "correctChoiceIds": ["a", "b"],
+            "explanation": "Em A e B, substantivo, adjetivo e verbo concordam. Em C e D, há desencontro de gênero e número."
+          },
+          {
+            "id": "p5-morf-f2-q5",
+            "type": "text",
+            "prompt": "Complete: 'A menina está ___ (feliz) com o presente.'",
+            "placeholder": "Escreva o adjetivo",
+            "acceptedAnswers": ["feliz", "feliz."],
+            "explanation": "Feliz é um adjetivo uniforme: tem a mesma forma no masculino e no feminino."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-morf-f3",
+      "title": "Fase 3 · Morfologia em síntese",
+      "subtitle": "Analisar uma frase completa",
+      "chapter": "Módulo 03 · Morfologia e concordância",
+      "icon": "chest",
+      "position": { "x": 1, "y": 2 },
+      "unlock": { "requires": ["p5-morf-f2"] },
+      "npc": {
+        "speaker": "Guardião da Gramática",
+        "lines": [
+          "Vamos analisar uma frase inteira e reconhecer as classes e os coletivos.",
+          "Cada detalhe importa!"
+        ]
+      },
+      "reward": { "itemId": "p5-bau-morfologia", "label": "Baú da morfologia" },
+      "lesson": {
+        "id": "lesson-p5-morf-f3",
+        "title": "Análise morfológica em síntese",
+        "intro": "Leia 'Os três amigos curiosos exploraram a floresta' e identifique numeral, adjetivo e substantivo coletivo.",
+        "xpReward": 60,
+        "coinReward": 16,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-morf-f3-q1",
+            "type": "single-choice",
+            "prompt": "Leia: 'Os três amigos curiosos exploraram a floresta.' Quantos adjetivos há?",
+            "choices": [
+              { "id": "a", "label": "1" },
+              { "id": "b", "label": "2" },
+              { "id": "c", "label": "3" },
+              { "id": "d", "label": "4" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O único adjetivo é curiosos. Três é numeral, amigos e floresta são substantivos."
+          },
+          {
+            "id": "p5-morf-f3-q2",
+            "type": "single-choice",
+            "prompt": "No trecho anterior, qual palavra é numeral?",
+            "choices": [
+              { "id": "a", "label": "três" },
+              { "id": "b", "label": "amigos" },
+              { "id": "c", "label": "curiosos" },
+              { "id": "d", "label": "floresta" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Três indica a quantidade de amigos e é um numeral cardinal."
+          },
+          {
+            "id": "p5-morf-f3-q3",
+            "type": "single-choice",
+            "prompt": "No trecho anterior, qual substantivo coletivo poderia substituir 'conjunto de árvores'?",
+            "choices": [
+              { "id": "a", "label": "floresta" },
+              { "id": "b", "label": "amigos" },
+              { "id": "c", "label": "três" },
+              { "id": "d", "label": "curiosos" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Floresta é um substantivo coletivo que nomeia um conjunto de árvores."
+          },
+          {
+            "id": "p5-morf-f3-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais palavras podem ser adjetivos?",
+            "choices": [
+              { "id": "a", "label": "curiosos" },
+              { "id": "b", "label": "valentes" },
+              { "id": "c", "label": "mesas" },
+              { "id": "d", "label": "floresta" }
+            ],
+            "correctChoiceIds": ["a", "b"],
+            "explanation": "Curiosos e valentes caracterizam seres. Mesas e floresta são substantivos."
+          },
+          {
+            "id": "p5-morf-f3-q5",
+            "type": "text",
+            "prompt": "Reescreva no plural: 'O menino curioso chegou.' → 'Os meninos ___ chegaram.'",
+            "placeholder": "Escreva o adjetivo",
+            "acceptedAnswers": ["curiosos", "curiosos."],
+            "explanation": "Meninos é masculino plural, então o adjetivo fica curiosos."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-verb-f1",
+      "title": "Fase 1 · Tempos do indicativo",
+      "subtitle": "Presente, passado e futuro",
+      "chapter": "Módulo 04 · Verbos e tempos",
+      "icon": "npc",
+      "position": { "x": 0, "y": 0 },
+      "unlock": { "requires": ["p5-morf-f3"] },
+      "npc": {
+        "speaker": "Mestre Tempo",
+        "lines": [
+          "No 5º ano, vamos observar os tempos verbais com mais atenção.",
+          "O indicativo situa a ação no presente, no passado ou no futuro."
+        ]
+      },
+      "reward": { "itemId": "p5-selo-tempos", "label": "Selo dos tempos" },
+      "lesson": {
+        "id": "lesson-p5-verb-f1",
+        "title": "Reconhecer tempos verbais",
+        "intro": "Observe a forma do verbo e as pistas de tempo da frase para identificar o tempo verbal.",
+        "xpReward": 50,
+        "coinReward": 12,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-verb-f1-q1",
+            "type": "single-choice",
+            "prompt": "Em 'Nós estudamos todos os dias', o verbo está no:",
+            "choices": [
+              { "id": "a", "label": "presente" },
+              { "id": "b", "label": "passado" },
+              { "id": "c", "label": "futuro" },
+              { "id": "d", "label": "infinitivo" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Todos os dias indica uma ação habitual, no presente."
+          },
+          {
+            "id": "p5-verb-f1-q2",
+            "type": "single-choice",
+            "prompt": "Em 'Ele estudou ontem', o verbo está no:",
+            "choices": [
+              { "id": "a", "label": "passado" },
+              { "id": "b", "label": "presente" },
+              { "id": "c", "label": "futuro" },
+              { "id": "d", "label": "gerúndio" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Ontem indica passado, e estudou é a forma do passado."
+          },
+          {
+            "id": "p5-verb-f1-q3",
+            "type": "single-choice",
+            "prompt": "Em 'Nós estudaremos amanhã', o verbo está no:",
+            "choices": [
+              { "id": "a", "label": "futuro" },
+              { "id": "b", "label": "presente" },
+              { "id": "c", "label": "passado" },
+              { "id": "d", "label": "imperativo" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Amanhã e estudaremos indicam uma ação que ainda vai acontecer."
+          },
+          {
+            "id": "p5-verb-f1-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais verbos estão no passado?",
+            "choices": [
+              { "id": "a", "label": "cantou" },
+              { "id": "b", "label": "correu" },
+              { "id": "c", "label": "canta" },
+              { "id": "d", "label": "correrá" }
+            ],
+            "correctChoiceIds": ["a", "b"],
+            "explanation": "Cantou e correu estão no passado. Canta está no presente e correrá no futuro."
+          },
+          {
+            "id": "p5-verb-f1-q5",
+            "type": "text",
+            "prompt": "Escreva o verbo 'aprender' no presente para 'eu'.",
+            "placeholder": "Ex.: aprendo",
+            "acceptedAnswers": ["aprendo", "aprendo."],
+            "explanation": "Eu aprendo está no presente do indicativo."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-verb-f2",
+      "title": "Fase 2 · Tempos e pistas contextuais",
+      "subtitle": "Ontem, agora e na próxima semana",
+      "chapter": "Módulo 04 · Verbos e tempos",
+      "icon": "star",
+      "position": { "x": 2, "y": 1 },
+      "unlock": { "requires": ["p5-verb-f1"] },
+      "npc": {
+        "speaker": "Mestre Tempo",
+        "lines": [
+          "As expressões de tempo ajudam a escolher a forma verbal.",
+          "Procure pistas como ontem, agora e na próxima semana."
+        ]
+      },
+      "reward": { "itemId": "p5-selo-pistas", "label": "Selo das pistas" },
+      "lesson": {
+        "id": "lesson-p5-verb-f2",
+        "title": "Aplicar tempos no contexto",
+        "intro": "Complete as frases respeitando a pista de tempo e a concordância com o sujeito.",
+        "xpReward": 55,
+        "coinReward": 14,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-verb-f2-q1",
+            "type": "single-choice",
+            "prompt": "Complete: 'No ano passado, a turma ___ um museu.'",
+            "choices": [
+              { "id": "a", "label": "visitou" },
+              { "id": "b", "label": "visita" },
+              { "id": "c", "label": "visitará" },
+              { "id": "d", "label": "visitando" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "No ano passado indica passado, então usamos visitou."
+          },
+          {
+            "id": "p5-verb-f2-q2",
+            "type": "single-choice",
+            "prompt": "Complete: 'Agora, a turma ___ o projeto.'",
+            "choices": [
+              { "id": "a", "label": "apresenta" },
+              { "id": "b", "label": "apresentou" },
+              { "id": "c", "label": "apresentará" },
+              { "id": "d", "label": "apresentando" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Agora indica presente, então usamos apresenta."
+          },
+          {
+            "id": "p5-verb-f2-q3",
+            "type": "single-choice",
+            "prompt": "Complete: 'Na próxima semana, a turma ___ o trabalho.'",
+            "choices": [
+              { "id": "a", "label": "entregará" },
+              { "id": "b", "label": "entregou" },
+              { "id": "c", "label": "entrega" },
+              { "id": "d", "label": "entregando" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Na próxima semana indica futuro, então usamos entregará."
+          },
+          {
+            "id": "p5-verb-f2-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais frases estão no futuro?",
+            "choices": [
+              { "id": "a", "label": "Amanhã eu viajarei." },
+              { "id": "b", "label": "Na semana que vem, nós estudaremos." },
+              { "id": "c", "label": "Ontem eu viajei." },
+              { "id": "d", "label": "Nós estudamos agora." }
+            ],
+            "correctChoiceIds": ["a", "b"],
+            "explanation": "Viajarei e estudaremos estão no futuro. Viajei está no passado e estudamos agora está no presente."
+          },
+          {
+            "id": "p5-verb-f2-q5",
+            "type": "text",
+            "prompt": "Complete: 'Ontem, eles ___ (chegar) cedo.'",
+            "placeholder": "Escreva o verbo no passado",
+            "acceptedAnswers": ["chegaram", "chegaram."],
+            "explanation": "Ontem indica passado, e eles exige a forma chegaram."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-verb-f3",
+      "title": "Fase 3 · Verbos em fábulas",
+      "subtitle": "Tempo e ação na narrativa",
+      "chapter": "Módulo 04 · Verbos e tempos",
+      "icon": "chest",
+      "position": { "x": 1, "y": 2 },
+      "unlock": { "requires": ["p5-verb-f2"] },
+      "npc": {
+        "speaker": "Mestre Tempo",
+        "lines": [
+          "Nas fábulas, os verbos fazem a história avançar.",
+          "Vamos identificar a ação final e o tempo de cada verbo."
+        ]
+      },
+      "reward": { "itemId": "p5-bau-verbos", "label": "Baú dos verbos" },
+      "lesson": {
+        "id": "lesson-p5-verb-f3",
+        "title": "Verbos em síntese",
+        "intro": "Leia a fábula da lebre e da tartaruga e observe os verbos no passado.",
+        "xpReward": 60,
+        "coinReward": 16,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-verb-f3-q1",
+            "type": "single-choice",
+            "prompt": "Leia: 'A lebre corria veloz, enquanto a tartaruga caminhava devagar. No fim, a tartaruga venceu.' Qual verbo indica a ação final da tartaruga?",
+            "choices": [
+              { "id": "a", "label": "venceu" },
+              { "id": "b", "label": "corria" },
+              { "id": "c", "label": "caminhava" },
+              { "id": "d", "label": "veloz" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Venceu indica a ação final: a tartaruga ganhou a corrida."
+          },
+          {
+            "id": "p5-verb-f3-q2",
+            "type": "single-choice",
+            "prompt": "No trecho anterior, 'venceu' está no:",
+            "choices": [
+              { "id": "a", "label": "passado" },
+              { "id": "b", "label": "presente" },
+              { "id": "c", "label": "futuro" },
+              { "id": "d", "label": "infinitivo" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Venceu indica uma ação que já aconteceu, no passado."
+          },
+          {
+            "id": "p5-verb-f3-q3",
+            "type": "single-choice",
+            "prompt": "No trecho anterior, qual verbo está no presente?",
+            "choices": [
+              { "id": "a", "label": "corria" },
+              { "id": "b", "label": "caminhava" },
+              { "id": "c", "label": "venceu" },
+              { "id": "d", "label": "Nenhum" }
+            ],
+            "correctChoiceId": "d",
+            "explanation": "Corria, caminhava e venceu estão no passado. Nenhum verbo do trecho está no presente."
+          },
+          {
+            "id": "p5-verb-f3-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais verbos do trecho estão no passado?",
+            "choices": [
+              { "id": "a", "label": "corria" },
+              { "id": "b", "label": "caminhava" },
+              { "id": "c", "label": "venceu" },
+              { "id": "d", "label": "vence" }
+            ],
+            "correctChoiceIds": ["a", "b", "c"],
+            "explanation": "Corria, caminhava e venceu estão no passado. Vence está no presente."
+          },
+          {
+            "id": "p5-verb-f3-q5",
+            "type": "text",
+            "prompt": "Complete: 'A tartaruga ___ (vencer) a corrida ontem.'",
+            "placeholder": "Escreva o verbo no passado",
+            "acceptedAnswers": ["venceu", "venceu."],
+            "explanation": "Ontem indica passado, então usamos venceu."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-sint-f1",
+      "title": "Fase 1 · Frase e sujeito",
+      "subtitle": "Declarativa, interrogativa e exclamativa",
+      "chapter": "Módulo 05 · Sintaxe e pontuação",
+      "icon": "npc",
+      "position": { "x": 0, "y": 0 },
+      "unlock": { "requires": ["p5-verb-f3"] },
+      "npc": {
+        "speaker": "Sentinela da Frase",
+        "lines": [
+          "Vamos reconhecer o sujeito e o predicado e classificar as frases.",
+          "A pontuação muda a intenção da frase."
+        ]
+      },
+      "reward": { "itemId": "p5-selo-frase", "label": "Selo da frase" },
+      "lesson": {
+        "id": "lesson-p5-sint-f1",
+        "title": "Sujeito, predicado e tipos de frase",
+        "intro": "O sujeito é sobre quem se declara algo; o predicado é o que se declara. A pontuação indica a intenção.",
+        "xpReward": 50,
+        "coinReward": 12,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-sint-f1-q1",
+            "type": "single-choice",
+            "prompt": "Em 'O vento balançou as árvores', qual é o sujeito?",
+            "choices": [
+              { "id": "a", "label": "O vento" },
+              { "id": "b", "label": "balançou" },
+              { "id": "c", "label": "as árvores" },
+              { "id": "d", "label": "balançou as árvores" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O vento é o termo sobre o qual se declara que balançou as árvores."
+          },
+          {
+            "id": "p5-sint-f1-q2",
+            "type": "single-choice",
+            "prompt": "Na mesma frase, qual é o predicado?",
+            "choices": [
+              { "id": "a", "label": "balançou as árvores" },
+              { "id": "b", "label": "O vento" },
+              { "id": "c", "label": "as árvores" },
+              { "id": "d", "label": "vento" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O predicado é o que se declara sobre o sujeito: balançou as árvores."
+          },
+          {
+            "id": "p5-sint-f1-q3",
+            "type": "single-choice",
+            "prompt": "Qual frase é declarativa?",
+            "choices": [
+              { "id": "a", "label": "O dia está bonito." },
+              { "id": "b", "label": "Que dia bonito!" },
+              { "id": "c", "label": "Você viu o dia?" },
+              { "id": "d", "label": "Feche a janela." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "A frase declarativa afirma algo e termina com ponto final."
+          },
+          {
+            "id": "p5-sint-f1-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais frases são exclamativas?",
+            "choices": [
+              { "id": "a", "label": "Que susto!" },
+              { "id": "b", "label": "Como você cresceu!" },
+              { "id": "c", "label": "Você cresceu." },
+              { "id": "d", "label": "Onde está o livro?" }
+            ],
+            "correctChoiceIds": ["a", "b"],
+            "explanation": "As frases A e B expressam emoção e terminam com exclamação. C é declarativa e D é interrogativa."
+          },
+          {
+            "id": "p5-sint-f1-q5",
+            "type": "text",
+            "prompt": "Complete a frase com o sinal adequado: 'Que belo dia___'",
+            "placeholder": "Escreva o sinal",
+            "acceptedAnswers": ["!", "! ", "exclamação", "ponto de exclamação"],
+            "explanation": "A frase expressa entusiasmo, por isso deve terminar com ponto de exclamação."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-sint-f2",
+      "title": "Fase 2 · Travessão e dois-pontos",
+      "subtitle": "A voz dos personagens",
+      "chapter": "Módulo 05 · Sintaxe e pontuação",
+      "icon": "star",
+      "position": { "x": 2, "y": 1 },
+      "unlock": { "requires": ["p5-sint-f1"] },
+      "npc": {
+        "speaker": "Sentinela da Frase",
+        "lines": [
+          "Em um diálogo, os dois-pontos anunciam a fala e o travessão a inicia.",
+          "Vamos identificar cada sinal."
+        ]
+      },
+      "reward": { "itemId": "p5-selo-dialogo", "label": "Selo do diálogo" },
+      "lesson": {
+        "id": "lesson-p5-sint-f2",
+        "title": "Pontuação expressiva em diálogos",
+        "intro": "Observe como os dois-pontos e o travessão organizam a fala dos personagens.",
+        "xpReward": 55,
+        "coinReward": 14,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-sint-f2-q1",
+            "type": "single-choice",
+            "prompt": "Leia: 'A menina perguntou: — Você vem à festa?' Qual sinal introduz a fala?",
+            "choices": [
+              { "id": "a", "label": "dois-pontos" },
+              { "id": "b", "label": "travessão" },
+              { "id": "c", "label": "interrogação" },
+              { "id": "d", "label": "vírgula" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Os dois-pontos anunciam que a fala da menina virá em seguida."
+          },
+          {
+            "id": "p5-sint-f2-q2",
+            "type": "single-choice",
+            "prompt": "No trecho anterior, qual sinal marca a fala da menina?",
+            "choices": [
+              { "id": "a", "label": "travessão" },
+              { "id": "b", "label": "dois-pontos" },
+              { "id": "c", "label": "interrogação" },
+              { "id": "d", "label": "vírgula" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O travessão inicia a fala da personagem."
+          },
+          {
+            "id": "p5-sint-f2-q3",
+            "type": "single-choice",
+            "prompt": "Qual sinal usamos para introduzir uma explicação?",
+            "choices": [
+              { "id": "a", "label": "dois-pontos" },
+              { "id": "b", "label": "travessão" },
+              { "id": "c", "label": "exclamação" },
+              { "id": "d", "label": "ponto final" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Os dois-pontos podem introduzir uma explicação, uma lista ou uma fala."
+          },
+          {
+            "id": "p5-sint-f2-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais sinais aparecem em diálogos?",
+            "choices": [
+              { "id": "a", "label": "travessão" },
+              { "id": "b", "label": "dois-pontos" },
+              { "id": "c", "label": "interrogação" },
+              { "id": "d", "label": "sublinhado" }
+            ],
+            "correctChoiceIds": ["a", "b", "c"],
+            "explanation": "Travessão, dois-pontos e interrogação são sinais de pontuação usados em diálogos. Sublinhado não é pontuação."
+          },
+          {
+            "id": "p5-sint-f2-q5",
+            "type": "text",
+            "prompt": "Complete: 'O professor disse___ — Abram o livro na página 10.'",
+            "placeholder": "Escreva o sinal",
+            "acceptedAnswers": [":", "dois-pontos", "dois pontos"],
+            "explanation": "Os dois-pontos anunciam a fala que vem depois do travessão."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-sint-f3",
+      "title": "Fase 3 · Sintaxe e texto em síntese",
+      "subtitle": "Analisar um trecho completo",
+      "chapter": "Módulo 05 · Sintaxe e pontuação",
+      "icon": "chest",
+      "position": { "x": 1, "y": 2 },
+      "unlock": { "requires": ["p5-sint-f2"] },
+      "npc": {
+        "speaker": "Sentinela da Frase",
+        "lines": [
+          "Agora vamos analisar sujeito, predicado e pontuação em um pequeno texto.",
+          "Leia o trecho inteiro antes de responder."
+        ]
+      },
+      "reward": { "itemId": "p5-bau-sintaxe", "label": "Baú da sintaxe" },
+      "lesson": {
+        "id": "lesson-p5-sint-f3",
+        "title": "Sintaxe e pontuação em síntese",
+        "intro": "Leia o trecho e identifique a estrutura da oração e os sinais que organizam a fala.",
+        "xpReward": 60,
+        "coinReward": 16,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-sint-f3-q1",
+            "type": "single-choice",
+            "prompt": "Leia: 'O menino abriu a janela e viu o céu. Depois, disse: — Que dia bonito!' Qual é o sujeito da primeira oração?",
+            "choices": [
+              { "id": "a", "label": "O menino" },
+              { "id": "b", "label": "a janela" },
+              { "id": "c", "label": "o céu" },
+              { "id": "d", "label": "Que dia" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O menino é o termo sobre o qual se declara que abriu a janela e viu o céu."
+          },
+          {
+            "id": "p5-sint-f3-q2",
+            "type": "single-choice",
+            "prompt": "No trecho anterior, qual é o predicado da primeira oração?",
+            "choices": [
+              { "id": "a", "label": "abriu a janela e viu o céu" },
+              { "id": "b", "label": "O menino" },
+              { "id": "c", "label": "o céu" },
+              { "id": "d", "label": "Que dia bonito" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O predicado informa o que o menino fez: abriu a janela e viu o céu."
+          },
+          {
+            "id": "p5-sint-f3-q3",
+            "type": "single-choice",
+            "prompt": "No trecho anterior, qual sinal marca a fala do menino?",
+            "choices": [
+              { "id": "a", "label": "travessão" },
+              { "id": "b", "label": "dois-pontos" },
+              { "id": "c", "label": "exclamação" },
+              { "id": "d", "label": "vírgula" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O travessão inicia a fala: — Que dia bonito!"
+          },
+          {
+            "id": "p5-sint-f3-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais sinais aparecem no trecho anterior?",
+            "choices": [
+              { "id": "a", "label": "dois-pontos" },
+              { "id": "b", "label": "travessão" },
+              { "id": "c", "label": "exclamação" },
+              { "id": "d", "label": "interrogação" }
+            ],
+            "correctChoiceIds": ["a", "b", "c"],
+            "explanation": "O trecho tem dois-pontos, travessão e exclamação. Não há interrogação."
+          },
+          {
+            "id": "p5-sint-f3-q5",
+            "type": "text",
+            "prompt": "Transforme em pergunta: 'O dia está bonito.' → 'O dia está bonito___'",
+            "placeholder": "Escreva o sinal",
+            "acceptedAnswers": ["?", "? ", "interrogação", "ponto de interrogação"],
+            "explanation": "Para transformar a frase em pergunta, usamos o ponto de interrogação."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-gen-f1",
+      "title": "Fase 1 · Reconhecer gêneros",
+      "subtitle": "Fábula, bilhete e notícia",
+      "chapter": "Módulo 06 · Gêneros e interpretação",
+      "icon": "npc",
+      "position": { "x": 0, "y": 0 },
+      "unlock": { "requires": ["p5-sint-f3"] },
+      "npc": {
+        "speaker": "Contadora de Histórias",
+        "lines": [
+          "Cada gênero textual tem uma função e uma estrutura.",
+          "Vamos reconhecer fábulas, bilhetes e notícias."
+        ]
+      },
+      "reward": { "itemId": "p5-selo-generos", "label": "Selo dos gêneros" },
+      "lesson": {
+        "id": "lesson-p5-gen-f1",
+        "title": "Identificar gêneros textuais",
+        "intro": "A fábula ensina uma moral; o bilhete comunica algo curto; a notícia informa um fato recente.",
+        "xpReward": 50,
+        "coinReward": 12,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-gen-f1-q1",
+            "type": "single-choice",
+            "prompt": "Um texto curto com animais que falam e uma moral no final é uma:",
+            "choices": [
+              { "id": "a", "label": "fábula" },
+              { "id": "b", "label": "notícia" },
+              { "id": "c", "label": "bilhete" },
+              { "id": "d", "label": "receita" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "A fábula tem animais personificados e uma moral."
+          },
+          {
+            "id": "p5-gen-f1-q2",
+            "type": "single-choice",
+            "prompt": "Um texto que informa um fato recente, com quem, quando e onde, é uma:",
+            "choices": [
+              { "id": "a", "label": "notícia" },
+              { "id": "b", "label": "fábula" },
+              { "id": "c", "label": "bilhete" },
+              { "id": "d", "label": "poema" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "A notícia relata um fato recente e responde a perguntas como quem, quando, onde e o quê."
+          },
+          {
+            "id": "p5-gen-f1-q3",
+            "type": "single-choice",
+            "prompt": "Um texto curto escrito para alguém específico, com remetente e destinatário, é um:",
+            "choices": [
+              { "id": "a", "label": "bilhete" },
+              { "id": "b", "label": "notícia" },
+              { "id": "c", "label": "fábula" },
+              { "id": "d", "label": "relatório" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O bilhete é uma mensagem curta trocada entre pessoas."
+          },
+          {
+            "id": "p5-gen-f1-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais características são de uma notícia?",
+            "choices": [
+              { "id": "a", "label": "fato principal" },
+              { "id": "b", "label": "data e local" },
+              { "id": "c", "label": "moral no final" },
+              { "id": "d", "label": "animais que falam" }
+            ],
+            "correctChoiceIds": ["a", "b"],
+            "explanation": "A notícia apresenta um fato principal e costuma informar data e local. Moral e animais que falam são da fábula."
+          },
+          {
+            "id": "p5-gen-f1-q5",
+            "type": "text",
+            "prompt": "Qual é o gênero de um texto com moral e animais personificados?",
+            "placeholder": "Escreva o gênero",
+            "acceptedAnswers": ["fábula", "fabula", "fábula.", "fabula."],
+            "explanation": "Esse é o gênero da fábula."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-gen-f2",
+      "title": "Fase 2 · Interpretar fábula e bilhete",
+      "subtitle": "Moral, remetente e destinatário",
+      "chapter": "Módulo 06 · Gêneros e interpretação",
+      "icon": "star",
+      "position": { "x": 2, "y": 1 },
+      "unlock": { "requires": ["p5-gen-f1"] },
+      "npc": {
+        "speaker": "Contadora de Histórias",
+        "lines": [
+          "Agora vamos interpretar o que cada texto quer dizer.",
+          "Na fábula, procure a moral; no bilhete, procure quem escreve e para quem."
+        ]
+      },
+      "reward": { "itemId": "p5-selo-interpretacao", "label": "Selo da interpretação" },
+      "lesson": {
+        "id": "lesson-p5-gen-f2",
+        "title": "Interpretar fábula e bilhete",
+        "intro": "Leia os textos e identifique a moral, os personagens e as informações principais.",
+        "xpReward": 55,
+        "coinReward": 14,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-gen-f2-q1",
+            "type": "single-choice",
+            "prompt": "Leia: 'O leão poupou a vida do rato. Dias depois, o rato roeu a rede e libertou o leão.' Qual é a moral?",
+            "choices": [
+              { "id": "a", "label": "Pequenos gestos podem gerar grandes recompensas." },
+              { "id": "b", "label": "O leão é o rei da selva." },
+              { "id": "c", "label": "O rato é mais forte que o leão." },
+              { "id": "d", "label": "Nunca ajude ninguém." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O rato retribui a gentileza do leão, mostrando que pequenos gestos podem ter grandes consequências."
+          },
+          {
+            "id": "p5-gen-f2-q2",
+            "type": "single-choice",
+            "prompt": "No texto anterior, quem ajudou o leão?",
+            "choices": [
+              { "id": "a", "label": "o rato" },
+              { "id": "b", "label": "a rede" },
+              { "id": "c", "label": "a selva" },
+              { "id": "d", "label": "o caçador" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O rato roeu a rede e libertou o leão."
+          },
+          {
+            "id": "p5-gen-f2-q3",
+            "type": "single-choice",
+            "prompt": "Leia: 'João, amanhã não haverá aula. A professora avisou. Até segunda, Maria.' Quem escreveu o bilhete?",
+            "choices": [
+              { "id": "a", "label": "Maria" },
+              { "id": "b", "label": "João" },
+              { "id": "c", "label": "a professora" },
+              { "id": "d", "label": "a escola" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Maria assina o bilhete, então é a remetente. João é o destinatário."
+          },
+          {
+            "id": "p5-gen-f2-q4",
+            "type": "single-choice",
+            "prompt": "No bilhete anterior, qual é a mensagem principal?",
+            "choices": [
+              { "id": "a", "label": "Não haverá aula amanhã." },
+              { "id": "b", "label": "Maria vai à escola." },
+              { "id": "c", "label": "João é professor." },
+              { "id": "d", "label": "A aula será na segunda." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "Maria avisa João de que não haverá aula amanhã."
+          },
+          {
+            "id": "p5-gen-f2-q5",
+            "type": "multiple-choice",
+            "prompt": "Quais informações aparecem no bilhete?",
+            "choices": [
+              { "id": "a", "label": "destinatário" },
+              { "id": "b", "label": "remetente" },
+              { "id": "c", "label": "moral" },
+              { "id": "d", "label": "aviso sobre a aula" }
+            ],
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "O bilhete tem destinatário (João), remetente (Maria) e um aviso sobre a aula. Moral é característica da fábula."
+          }
+        ]
+      }
+    },
+    {
+      "id": "p5-gen-f3",
+      "title": "Fase 3 · Interpretar notícia",
+      "subtitle": "Fato, tempo e consequência",
+      "chapter": "Módulo 06 · Gêneros e interpretação",
+      "icon": "chest",
+      "position": { "x": 1, "y": 2 },
+      "unlock": { "requires": ["p5-gen-f2"] },
+      "npc": {
+        "speaker": "Contadora de Histórias",
+        "lines": [
+          "A notícia responde a perguntas essenciais: o quê, quando, onde e por quê.",
+          "Vamos interpretar uma notícia curta."
+        ]
+      },
+      "reward": { "itemId": "p5-bau-generos", "label": "Baú dos gêneros" },
+      "lesson": {
+        "id": "lesson-p5-gen-f3",
+        "title": "Notícia e síntese",
+        "intro": "Leia a notícia e identifique o fato principal, o tempo e a razão do destaque.",
+        "xpReward": 60,
+        "coinReward": 16,
+        "requiredCorrectRatio": 0.8,
+        "questions": [
+          {
+            "id": "p5-gen-f3-q1",
+            "type": "single-choice",
+            "prompt": "Leia: 'Na última terça-feira, alunos da Escola Vista Verde apresentaram uma horta comunitária. O projeto reaproveitou garrafas plásticas e ganhou destaque no bairro.' Qual é o fato principal?",
+            "choices": [
+              { "id": "a", "label": "Alunos apresentaram uma horta comunitária." },
+              { "id": "b", "label": "As garrafas plásticas." },
+              { "id": "c", "label": "A escola fica no bairro." },
+              { "id": "d", "label": "A última terça-feira." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O fato principal é a apresentação da horta comunitária pelos alunos."
+          },
+          {
+            "id": "p5-gen-f3-q2",
+            "type": "single-choice",
+            "prompt": "No texto anterior, quando ocorreu o fato?",
+            "choices": [
+              { "id": "a", "label": "na última terça-feira" },
+              { "id": "b", "label": "no mês passado" },
+              { "id": "c", "label": "no próximo ano" },
+              { "id": "d", "label": "no fim de semana" }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "A notícia informa que o fato ocorreu na última terça-feira."
+          },
+          {
+            "id": "p5-gen-f3-q3",
+            "type": "single-choice",
+            "prompt": "No texto anterior, por que o projeto ganhou destaque?",
+            "choices": [
+              { "id": "a", "label": "Porque reaproveitou garrafas plásticas." },
+              { "id": "b", "label": "Porque a escola é grande." },
+              { "id": "c", "label": "Porque os alunos faltaram." },
+              { "id": "d", "label": "Porque a horta secou." }
+            ],
+            "correctChoiceId": "a",
+            "explanation": "O projeto ganhou destaque por reaproveitar garrafas plásticas na horta comunitária."
+          },
+          {
+            "id": "p5-gen-f3-q4",
+            "type": "multiple-choice",
+            "prompt": "Quais elementos aparecem na notícia?",
+            "choices": [
+              { "id": "a", "label": "fato" },
+              { "id": "b", "label": "tempo" },
+              { "id": "c", "label": "local" },
+              { "id": "d", "label": "moral" }
+            ],
+            "correctChoiceIds": ["a", "b", "c"],
+            "explanation": "A notícia apresenta fato, tempo e local. Moral é característica da fábula."
+          },
+          {
+            "id": "p5-gen-f3-q5",
+            "type": "text",
+            "prompt": "Qual gênero textual tem como objetivo informar um fato recente?",
+            "placeholder": "Escreva o gênero",
+            "acceptedAnswers": ["notícia", "noticia", "notícia.", "noticia."],
+            "explanation": "A notícia informa um fato recente de interesse público."
+          }
+        ]
+      }
+    }
+  ]
+}
