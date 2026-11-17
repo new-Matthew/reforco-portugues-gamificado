@@ -10,6 +10,8 @@ export interface LessonOutcome {
   readonly totalQuestions: number;
   readonly xpEarned: number;
   readonly coinsEarned: number;
+  readonly hintsUsed: number;
+  readonly hintPenaltyXp: number;
   readonly itemId?: string;
   readonly itemLabel?: string;
   readonly isFirstCompletion: boolean;
@@ -32,6 +34,7 @@ export interface LessonSession {
   readonly wrongCount: number;
   readonly lives: number;
   readonly earnedXp: number;
+  readonly hintedQuestionIds: readonly string[];
   readonly status: SessionStatus;
   readonly startedAt: number;
   readonly outcome?: LessonOutcome;

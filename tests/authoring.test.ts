@@ -98,6 +98,28 @@ describe("authoring", () => {
     expect(node.lesson.requiredCorrectRatio).toBe(0.75);
   });
 
+  it("preserva a dica do Mestre ao publicar uma questão", () => {
+    const course = buildCatalog().courses[0];
+    if (!course) throw new Error("Fixture sem curso.");
+
+    const result = createLessonNodeFromDraft(
+      validLesson({
+        questions: [
+          validQuestion({
+            dicaCearense: "Oxe, olha o sujeito da oração com calma, visse?",
+          }),
+        ],
+      }),
+      course,
+    );
+    expect(result.ok).toBe(true);
+    if (!result.ok) return;
+
+    expect(result.value.lesson.questions[0]?.dicaCearense).toBe(
+      "Oxe, olha o sujeito da oração com calma, visse?",
+    );
+  });
+
   it("evita colisão de ids ao publicar títulos iguais", () => {
     const course = buildCatalog().courses[0];
     if (!course) throw new Error("Fixture sem curso.");

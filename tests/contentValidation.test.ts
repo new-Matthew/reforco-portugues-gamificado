@@ -27,6 +27,30 @@ describe("validateContentPacks", () => {
     expect(result.catalog.courses[1]?.nodes).toHaveLength(18);
   });
 
+  it("aceita dica cearense opcional e rejeita dica vazia", () => {
+    const accepted = cloneQuartoAno();
+    const acceptedNode = firstNode(accepted);
+    const acceptedLesson = acceptedNode.lesson as Record<string, unknown>;
+    const acceptedQuestions = acceptedLesson.questions as Array<Record<string, unknown>>;
+    acceptedQuestions[0]!.dicaCearense = "Oxe, olha a regra de novo, visse?";
+
+    expect(validateContentPacks([accepted]).ok).toBe(true);
+
+    const rejected = cloneQuartoAno();
+    const rejectedNode = firstNode(rejected);
+    const rejectedLesson = rejectedNode.lesson as Record<string, unknown>;
+    const rejectedQuestions = rejectedLesson.questions as Array<Record<string, unknown>>;
+    rejectedQuestions[0]!.dicaCearense = "   ";
+
+    const result = validateContentPacks([rejected]);
+    expect(result.ok).toBe(false);
+    if (!result.ok) {
+      expect(
+        result.issues.some((issue) => issue.path.includes("dicaCearense")),
+      ).toBe(true);
+    }
+  });
+
   it("rejeita alternativa correta inexistente", () => {
     const pack = cloneQuartoAno();
     const node = firstNode(pack);

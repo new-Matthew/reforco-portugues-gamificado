@@ -10,6 +10,7 @@ interface QuestionBase {
   readonly type: QuestionType;
   readonly prompt: string;
   readonly explanation?: string;
+  readonly dicaCearense?: string;
   readonly xp?: number;
 }
 

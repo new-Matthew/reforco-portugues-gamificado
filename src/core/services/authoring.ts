@@ -19,6 +19,7 @@ export interface QuestionDraft {
   readonly alternatives: readonly string[];
   readonly correctIndex: number;
   readonly explanation: string;
+  readonly dicaCearense?: string;
 }
 
 export interface LessonDraft {
@@ -171,6 +172,7 @@ export function createLessonNodeFromDraft(
       })),
       correctChoiceId: CHOICE_IDS[question.correctIndex] ?? "a",
       explanation: question.explanation.trim(),
+      dicaCearense: optionalText(question.dicaCearense),
       xp: 10,
     }),
   );

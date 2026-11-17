@@ -237,6 +237,7 @@ function parseQuestion(
   const id = readString(raw, "id", path, issues);
   const prompt = readString(raw, "prompt", path, issues);
   const explanation = readOptionalString(raw, "explanation", path, issues);
+  const dicaCearense = readOptionalString(raw, "dicaCearense", path, issues);
   const xp =
     raw.xp === undefined
       ? undefined
@@ -269,6 +270,7 @@ function parseQuestion(
       type,
       prompt,
       explanation,
+      dicaCearense,
       xp,
       choices,
       correctChoiceId,
@@ -306,6 +308,7 @@ function parseQuestion(
       type,
       prompt,
       explanation,
+      dicaCearense,
       xp,
       choices,
       correctChoiceIds,
@@ -325,6 +328,7 @@ function parseQuestion(
     type: "text",
     prompt,
     explanation,
+    dicaCearense,
     xp,
     acceptedAnswers,
     placeholder,

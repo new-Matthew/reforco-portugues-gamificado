@@ -68,6 +68,7 @@ const singleQuestion: Question = {
   ],
   correctChoiceId: "a",
   explanation: "Amar termina em -AR.",
+  dicaCearense: "Oxe, lembra que amar termina em -AR, visse?",
 };
 
 const textQuestion: Question = {
@@ -75,6 +76,7 @@ const textQuestion: Question = {
   type: "text",
   prompt: "Escreva um verbo terminado em -AR.",
   acceptedAnswers: ["Amar"],
+  dicaCearense: "Pensa num verbo que termina em -AR, tipo amar.",
 };
 
 const firstLesson: Lesson = {

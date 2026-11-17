@@ -301,6 +301,25 @@ export class GameEngine {
     return this.findQuestion(this.session, this.session.currentIndex);
   }
 
+  useHint(): string | null {
+    const session = this.requireSession();
+    if (session.status !== "active") {
+      throw new NoActiveSessionError();
+    }
+
+    const question = this.getCurrentQuestion();
+    if (!question?.dicaCearense) return null;
+    if (session.answers[question.id] !== undefined) return question.dicaCearense;
+
+    if (!session.hintedQuestionIds.includes(question.id)) {
+      this.session = {
+        ...session,
+        hintedQuestionIds: [...session.hintedQuestionIds, question.id],
+      };
+    }
+    return question.dicaCearense;
+  }
+
   startLesson(courseId: string, nodeId: string): LessonSession {
     if (this.session && this.session.status === "active") {
       throw new LessonAlreadyActiveError();
@@ -323,6 +342,7 @@ export class GameEngine {
       wrongCount: 0,
       lives: this.config.maxLives,
       earnedXp: 0,
+      hintedQuestionIds: [],
       status: "active",
       startedAt: this.clock.now(),
     };
@@ -478,9 +498,15 @@ export class GameEngine {
     const previous = this.player.completedNodes[node.id];
     const isFirstCompletion = previous === undefined;
     const multiplier = isFirstCompletion ? 1 : this.config.replayXpMultiplier;
+    const hintsUsed = session.hintedQuestionIds.length;
+    const hintPenaltyXp = passed ? hintsUsed * this.config.hintXpPenalty : 0;
 
     const xpEarned = passed
-      ? Math.round((node.lesson.xpReward + session.earnedXp) * multiplier)
+      ? Math.max(
+          0,
+          Math.round((node.lesson.xpReward + session.earnedXp) * multiplier) -
+            hintPenaltyXp,
+        )
       : 0;
     const coinsEarned = passed
       ? Math.round(
@@ -530,6 +556,8 @@ export class GameEngine {
       totalQuestions: total,
       xpEarned,
       coinsEarned,
+      hintsUsed,
+      hintPenaltyXp,
       itemId,
       itemLabel,
       isFirstCompletion,

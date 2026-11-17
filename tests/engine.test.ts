@@ -114,6 +114,30 @@ describe("GameEngine", () => {
     expect(engine.getPlayer().xp).toBe(50);
   });
 
+  it("concede uma dica por questão e desconta XP ao concluir", async () => {
+    const { engine } = createEngine();
+    await engine.init();
+
+    engine.startLesson("curso-teste", "n1");
+
+    const hint = engine.useHint();
+    expect(hint).toContain("amar");
+    expect(engine.useHint()).toBe(hint);
+
+    engine.answerCurrentQuestion({ choiceIds: ["a"] });
+    engine.advance();
+    engine.useHint();
+    engine.answerCurrentQuestion({ text: "amar" });
+    const outcome = engine.advance();
+
+    expect(engine.getSession()?.hintedQuestionIds).toEqual(["q1", "q2"]);
+    expect(outcome?.passed).toBe(true);
+    expect(outcome?.hintsUsed).toBe(2);
+    expect(outcome?.hintPenaltyXp).toBe(4);
+    expect(outcome?.xpEarned).toBe(36);
+    expect(engine.getPlayer().xp).toBe(36);
+  });
+
   it("persiste o progresso entre instâncias da engine", async () => {
     const store = new InMemoryProgressStore();
     const { engine } = createEngine({ store });

@@ -56,6 +56,17 @@ describe("GameController", () => {
     expect(snapshot.currentQuestion?.id).toBe("q3");
   });
 
+  it("registra a dica usada no snapshot da sessão", async () => {
+    const controller = createController();
+    await controller.init();
+
+    controller.startNode("n1");
+    controller.useHint();
+    controller.useHint();
+
+    expect(controller.getSnapshot().session?.hintedQuestionIds).toEqual(["q1"]);
+  });
+
   it("não oferece a próxima fase quando o nó seguinte está bloqueado", async () => {
     const catalog = buildCatalog();
     const lockedCatalog: ContentCatalog = {

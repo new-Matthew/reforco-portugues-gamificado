@@ -36,6 +36,7 @@ export interface ControllerSnapshot {
   readonly player: PlayerProgress;
   readonly levelInfo: LevelInfo;
   readonly maxLives: number;
+  readonly hintXpPenalty: number;
   readonly shopItems: readonly ShopItem[];
   readonly equippedAvatar: ShopItem | null;
   readonly equippedHat: ShopItem | null;
@@ -191,6 +192,16 @@ export class GameController {
     this.emit();
   }
 
+  useHint(): void {
+    try {
+      this.engine.useHint();
+      this.error = null;
+    } catch (error: unknown) {
+      this.error = toMessage(error);
+    }
+    this.emit();
+  }
+
   advance(): void {
     try {
       const outcome = this.engine.advance();
@@ -327,6 +338,7 @@ export class GameController {
       player: this.engine.getPlayer(),
       levelInfo: this.engine.getLevelInfo(),
       maxLives: this.engine.getConfig().maxLives,
+      hintXpPenalty: this.engine.getConfig().hintXpPenalty,
       shopItems: this.engine.getShopCatalog(),
       equippedAvatar: this.engine.getEquippedItem("avatar"),
       equippedHat: this.engine.getEquippedItem("hat"),

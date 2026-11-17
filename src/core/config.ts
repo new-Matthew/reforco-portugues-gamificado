@@ -8,6 +8,7 @@ export interface GameConfig {
   readonly maxLives: number;
   readonly xpPerQuestion: number;
   readonly xpPerLevel: number;
+  readonly hintXpPenalty: number;
   readonly replayXpMultiplier: number;
   readonly coinsPerStar: number;
   readonly defaultRequiredCorrectRatio: number;
@@ -19,6 +20,7 @@ export const DEFAULT_GAME_CONFIG: GameConfig = {
   maxLives: 3,
   xpPerQuestion: 10,
   xpPerLevel: 100,
+  hintXpPenalty: 2,
   replayXpMultiplier: 0.25,
   coinsPerStar: 5,
   defaultRequiredCorrectRatio: 1,
