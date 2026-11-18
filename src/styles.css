@@ -2605,3 +2605,66 @@ legend.field__label {
     display: none;
   }
 }
+
+/* Controle de som */
+
+.sound-toggle {
+  appearance: none;
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-height: 28px;
+  padding: 4px 8px;
+  font: inherit;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text);
+  background: var(--panel-2);
+  border: 2px solid var(--border-soft);
+  box-shadow: 0 3px 0 var(--shadow);
+  cursor: pointer;
+}
+
+.sound-toggle[aria-pressed="true"] {
+  color: var(--accent);
+  border-color: var(--accent-deep);
+}
+
+.sound-toggle[aria-pressed="false"] {
+  color: var(--muted);
+  border-color: var(--border);
+}
+
+.sound-toggle:hover {
+  color: var(--blue);
+  border-color: var(--blue);
+}
+
+.sound-toggle:focus-visible {
+  outline: 3px solid var(--blue);
+  outline-offset: 2px;
+}
+
+.sound-toggle__icon {
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+
+.sound-toggle__label {
+  line-height: 1;
+}
+
+.sound-toggle--compact {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+}
+
+.sound-toggle--compact .sound-toggle__label {
+  display: none;
+}
