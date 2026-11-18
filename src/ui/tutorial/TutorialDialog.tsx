@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import guideImage from "../../assets/personagem-tutorial.jpeg";
+import { GUIDE_NAME } from "../../content/guide";
 import type { TutorialStep } from "../../content/tutorialSteps";
 import { PixelButton } from "../pixel/PixelButton";
+import { TeacherAvatar } from "../pixel/TeacherAvatar";
 
 const TYPE_INTERVAL_MS = 18;
 
@@ -77,19 +78,18 @@ export function TutorialDialog({
         aria-labelledby="tutorial-dialog-title"
         aria-describedby="tutorial-dialog-text"
       >
-        <div className="tutorial-dialog__guide-frame" aria-hidden="true">
-          <img
+        <div className="tutorial-dialog__guide-frame">
+          <TeacherAvatar
             className="tutorial-dialog__guide"
-            src={guideImage}
-            alt=""
-            draggable={false}
+            size={72}
+            title={GUIDE_NAME}
           />
         </div>
 
         <div className="tutorial-dialog__body">
           <div className="tutorial-dialog__meta">
             <span className="eyebrow" id="tutorial-dialog-title">
-              Tia Thaís · {stepIndex + 1}/{totalSteps}
+              {GUIDE_NAME} · {stepIndex + 1}/{totalSteps}
             </span>
             <button
               type="button"

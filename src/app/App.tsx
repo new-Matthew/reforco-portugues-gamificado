@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { GUIDE_ERROR } from "../content/guide";
 import { TUTORIAL_STEPS } from "../content/tutorialSteps";
 import { PixelButton } from "../ui/pixel/PixelButton";
 import { PixelPanel } from "../ui/pixel/PixelPanel";
@@ -28,8 +29,8 @@ export function App() {
     return (
       <main className="app">
         <PixelPanel className="error-panel">
-          <h1>Ops!</h1>
-          <p>{snapshot.error ?? "Falha ao carregar o conteúdo."}</p>
+          <h1>Oxente!</h1>
+          <p>{snapshot.error ?? GUIDE_ERROR}</p>
           <PixelButton onClick={() => window.location.reload()}>Recarregar</PixelButton>
         </PixelPanel>
       </main>

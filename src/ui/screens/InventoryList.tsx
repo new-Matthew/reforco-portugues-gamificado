@@ -1,7 +1,7 @@
 import type { ShopItem, ShopItemCategory } from "../../core/entities/index";
 import { listOwnedItems } from "../../core/services/inventory";
 import { PixelButton } from "../pixel/PixelButton";
-import { PlayerAvatar } from "../pixel/PlayerAvatar";
+import { ItemThumbnail } from "../pixel/ItemThumbnail";
 
 interface InventoryListProps {
   readonly items: readonly ShopItem[];
@@ -55,13 +55,22 @@ export function InventoryList({
           item.category === "hat" ? item.spriteId : equippedHat?.spriteId ?? null;
 
         return (
-          <li key={item.id} className="shop-item">
+          <li
+            key={item.id}
+            className={[
+              "shop-item",
+              equipped ? "shop-item--equipped" : "",
+              "shop-item--owned",
+            ]
+              .filter(Boolean)
+              .join(" ")}
+          >
             <div className="shop-item__preview">
-              <PlayerAvatar
+              <ItemThumbnail
+                item={item}
                 avatarSpriteId={previewAvatarId}
                 hatSpriteId={previewHatId}
-                size={54}
-                title={`Prévia de ${item.name}`}
+                size={48}
               />
             </div>
             <div className="shop-item__info">

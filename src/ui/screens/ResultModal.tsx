@@ -51,7 +51,7 @@ export function ResultModal({
                 : npcSprite
             }
             size={80}
-            title={outcome.passed ? "Baú de recompensa" : "Tia Thaís"}
+            title={outcome.passed ? "Baú de recompensa" : "Professora Thaís"}
           />
           {outcome.passed ? (
             <span className="result__sparkles" aria-hidden="true">
@@ -64,7 +64,7 @@ export function ResultModal({
             ? leveledUp
               ? "Subiu de nível!"
               : "Lição concluída!"
-            : "Tente novamente"}
+            : "Oxente, bora de novo!"}
         </h2>
         <p className="result__subtitle">{outcome.nodeTitle}</p>
         <div className="result__stars" aria-label={`${outcome.stars} de 3 estrelas`}>

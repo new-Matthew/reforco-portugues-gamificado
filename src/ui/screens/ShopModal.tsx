@@ -3,7 +3,7 @@ import type { ShopItem, ShopItemCategory } from "../../core/entities/index";
 import { Modal } from "../pixel/Modal";
 import { PixelButton } from "../pixel/PixelButton";
 import { PixelSprite } from "../pixel/PixelSprite";
-import { PlayerAvatar } from "../pixel/PlayerAvatar";
+import { ItemThumbnail } from "../pixel/ItemThumbnail";
 import { coinSprite } from "../pixel/sprites";
 import { InventoryList } from "./InventoryList";
 
@@ -107,13 +107,22 @@ export function ShopModal({
                 item.category === "hat" ? item.spriteId : equippedHat?.spriteId ?? null;
 
               return (
-                <li key={item.id} className="shop-item">
+                <li
+                  key={item.id}
+                  className={[
+                    "shop-item",
+                    equipped ? "shop-item--equipped" : "",
+                    owned ? "shop-item--owned" : "",
+                  ]
+                    .filter(Boolean)
+                    .join(" ")}
+                >
                   <div className="shop-item__preview">
-                    <PlayerAvatar
+                    <ItemThumbnail
+                      item={item}
                       avatarSpriteId={previewAvatarId}
                       hatSpriteId={previewHatId}
-                      size={54}
-                      title={`Prévia de ${item.name}`}
+                      size={48}
                     />
                   </div>
                   <div className="shop-item__info">

@@ -1,8 +1,8 @@
+import { GUIDE_NAME, GUIDE_RETRY_FALLBACK, GUIDE_RETRY_TITLE } from "../../content/guide";
 import type { AnswerFeedback } from "../../core/entities/index";
 import { Modal } from "../pixel/Modal";
 import { PixelButton } from "../pixel/PixelButton";
-import { PixelSprite } from "../pixel/PixelSprite";
-import { npcSprite } from "../pixel/sprites";
+import { TeacherAvatar } from "../pixel/TeacherAvatar";
 
 interface PedagogicalFeedbackModalProps {
   readonly feedback: AnswerFeedback;
@@ -20,23 +20,25 @@ export function PedagogicalFeedbackModal({
   return (
     <Modal labelledBy="pedagogical-title">
       <div className="pedagogical">
-        <div className="pedagogical__portrait">
-          <PixelSprite sprite={npcSprite} size={64} title="Tia Thaís" />
+        <div className="pedagogical__guide">
+          <div className="pedagogical__portrait">
+            <TeacherAvatar size={64} title={GUIDE_NAME} />
+          </div>
+          <strong className="pedagogical__guide-name">{GUIDE_NAME}</strong>
         </div>
         <span className="eyebrow">Feedback de aprendizagem</span>
-        <h2 id="pedagogical-title">Quase lá! Vamos revisar.</h2>
+        <h2 id="pedagogical-title">{GUIDE_RETRY_TITLE}</h2>
         {feedback.expectedAnswers.length > 0 ? (
           <p className="pedagogical__answer">
             Resposta correta: <b>{feedback.expectedAnswers.join(" · ")}</b>
           </p>
         ) : null}
         <p className="pedagogical__explanation">
-          {feedback.explanation ??
-            "Releia a lição com calma e tente novamente para fixar o conteúdo."}
+          {feedback.explanation ?? GUIDE_RETRY_FALLBACK}
         </p>
         <p className="pedagogical__lives">
           {failed
-            ? "Suas vidas acabaram nesta tentativa."
+            ? "Oxente, as vidas acabaram nesta tentativa. Bora respirar e revisar?"
             : `Vidas restantes: ${feedback.livesLeft}`}
         </p>
         <div className="modal-actions">
