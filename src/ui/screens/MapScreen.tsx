@@ -12,6 +12,7 @@ import { PixelButton } from "../pixel/PixelButton";
 import { PixelSprite } from "../pixel/PixelSprite";
 import { PlayerAvatar } from "../pixel/PlayerAvatar";
 import { ProgressBar } from "../pixel/ProgressBar";
+import { SoundToggle } from "../pixel/SoundToggle";
 import { TrailPath } from "../pixel/TrailPath";
 import {
   chestSprite,
@@ -22,6 +23,7 @@ import {
   spriteForIcon,
 } from "../pixel/sprites";
 import { useElementWidth } from "../pixel/useElementWidth";
+import { playSoundEffect } from "../sound/soundManager";
 import { seedForGroup } from "../map/decorations";
 import { ForestBackdrop } from "../map/ForestBackdrop";
 import { NpcDialog } from "./NpcDialog";
@@ -224,7 +226,9 @@ function TrailGroup({
                     : "disponível"
               })`}
               onClick={() => {
-                if (isUnlocked) onOpenNode(node.id);
+                if (!isUnlocked) return;
+                playSoundEffect("click");
+                onOpenNode(node.id);
               }}
             >
               <span className="trail-node__sprite">
@@ -329,7 +333,10 @@ export function MapScreen({
           <button
             type="button"
             className="avatar-frame avatar-frame--button"
-            onClick={() => setInventoryOpen(true)}
+            onClick={() => {
+              playSoundEffect("click");
+              setInventoryOpen(true);
+            }}
             aria-label="Abrir inventário de customização"
             title="Abrir inventário"
           >
@@ -346,7 +353,10 @@ export function MapScreen({
             <button
               type="button"
               className="profile__inventory-link"
-              onClick={() => setInventoryOpen(true)}
+              onClick={() => {
+                playSoundEffect("click");
+                setInventoryOpen(true);
+              }}
             >
               Inventário
             </button>
@@ -372,15 +382,22 @@ export function MapScreen({
             type="button"
             className="shop-trigger"
             id="tutorial-target-shop"
-            onClick={() => setShopOpen(true)}
+            onClick={() => {
+              playSoundEffect("click");
+              setShopOpen(true);
+            }}
           >
             <PixelSprite sprite={chestSprite} size={14} />
             Loja
           </button>
+          <SoundToggle />
           <button
             type="button"
             className="help-trigger"
-            onClick={onHelp}
+            onClick={() => {
+              playSoundEffect("click");
+              onHelp();
+            }}
             aria-label="Reabrir tutorial"
             title="Reabrir tutorial"
           >
@@ -406,7 +423,10 @@ export function MapScreen({
             type="button"
             className="course-tab"
             aria-pressed={course.id === activeCourseId}
-            onClick={() => onSelectCourse(course.id)}
+            onClick={() => {
+              playSoundEffect("click");
+              onSelectCourse(course.id);
+            }}
           >
             {course.title}
             <span>

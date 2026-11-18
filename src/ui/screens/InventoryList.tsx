@@ -2,6 +2,7 @@ import type { ShopItem, ShopItemCategory } from "../../core/entities/index";
 import { listOwnedItems } from "../../core/services/inventory";
 import { PixelButton } from "../pixel/PixelButton";
 import { ItemThumbnail } from "../pixel/ItemThumbnail";
+import { playSoundEffect } from "../sound/soundManager";
 
 interface InventoryListProps {
   readonly items: readonly ShopItem[];
@@ -92,7 +93,13 @@ export function InventoryList({
                   </PixelButton>
                 </>
               ) : (
-                <PixelButton onClick={() => onEquip(item.id)}>
+                <PixelButton
+                  sound="none"
+                  onClick={() => {
+                    playSoundEffect("purchase");
+                    onEquip(item.id);
+                  }}
+                >
                   Equipar
                 </PixelButton>
               )}

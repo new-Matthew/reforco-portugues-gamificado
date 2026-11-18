@@ -1,4 +1,5 @@
 import type { ReactNode } from "react";
+import { playSoundEffect } from "../sound/soundManager";
 
 interface ModalProps {
   readonly children: ReactNode;
@@ -11,7 +12,11 @@ export function Modal({ children, onClose, labelledBy }: ModalProps) {
     <div
       className="modal-backdrop"
       role="presentation"
-      onClick={onClose}
+      onClick={() => {
+        if (!onClose) return;
+        playSoundEffect("click");
+        onClose();
+      }}
     >
       <div
         className="pixel-panel modal"

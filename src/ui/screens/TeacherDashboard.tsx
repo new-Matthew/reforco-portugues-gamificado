@@ -19,6 +19,7 @@ import {
   spriteForIcon,
   starSprite,
 } from "../pixel/sprites";
+import { playSoundEffect } from "../sound/soundManager";
 
 const ICONS = [
   { value: "star", label: "Estrela", sprite: starSprite },
@@ -216,6 +217,7 @@ export function TeacherDashboard({
                 className="course-tab"
                 aria-pressed={course.id === activeCourseId}
                 onClick={() => {
+                  playSoundEffect("click");
                   clearFeedback();
                   onSelectCourse(course.id);
                 }}
@@ -350,7 +352,10 @@ export function TeacherDashboard({
                       className="icon-option"
                       aria-label={option.label}
                       aria-pressed={icon === option.value}
-                      onClick={() => setIcon(option.value)}
+                      onClick={() => {
+                        playSoundEffect("click");
+                        setIcon(option.value);
+                      }}
                     >
                       <PixelSprite sprite={option.sprite} size={26} />
                     </button>
@@ -474,7 +479,10 @@ export function TeacherDashboard({
                     <button
                       type="button"
                       className="link-button"
-                      onClick={() => handleRemoveQuestion(index)}
+                      onClick={() => {
+                        playSoundEffect("click");
+                        handleRemoveQuestion(index);
+                      }}
                     >
                       Remover
                     </button>

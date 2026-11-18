@@ -8,6 +8,7 @@ import { LessonScreen } from "../ui/screens/LessonScreen";
 import { MapScreen } from "../ui/screens/MapScreen";
 import { ResultModal } from "../ui/screens/ResultModal";
 import { TeacherDashboard } from "../ui/screens/TeacherDashboard";
+import { playSoundEffect } from "../ui/sound/soundManager";
 import { TutorialDialog } from "../ui/tutorial/TutorialDialog";
 import { useGame } from "./useGame";
 
@@ -125,7 +126,13 @@ export function App() {
       {snapshot.error ? (
         <div className="error-toast" role="alert">
           <span>{snapshot.error}</span>
-          <button type="button" onClick={() => controller.dismissError()}>
+          <button
+            type="button"
+            onClick={() => {
+              playSoundEffect("click");
+              controller.dismissError();
+            }}
+          >
             ×
           </button>
         </div>

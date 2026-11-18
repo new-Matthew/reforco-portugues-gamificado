@@ -5,6 +5,7 @@ import { PixelButton } from "../pixel/PixelButton";
 import { PixelSprite } from "../pixel/PixelSprite";
 import { ItemThumbnail } from "../pixel/ItemThumbnail";
 import { coinSprite } from "../pixel/sprites";
+import { playSoundEffect } from "../sound/soundManager";
 import { InventoryList } from "./InventoryList";
 
 interface ShopModalProps {
@@ -59,7 +60,14 @@ export function ShopModal({
             <span className="eyebrow">Customização</span>
             <h2 id="shop-title">Loja de recompensas</h2>
           </div>
-          <button type="button" className="link-button" onClick={onClose}>
+          <button
+            type="button"
+            className="link-button"
+            onClick={() => {
+              playSoundEffect("click");
+              onClose();
+            }}
+          >
             Fechar ×
           </button>
         </div>
@@ -76,7 +84,10 @@ export function ShopModal({
               type="button"
               className="shop__tab"
               aria-pressed={category === tab.id}
-              onClick={() => setCategory(tab.id)}
+              onClick={() => {
+                playSoundEffect("click");
+                setCategory(tab.id);
+              }}
             >
               {tab.label}
             </button>
@@ -148,15 +159,25 @@ export function ShopModal({
                       ) : (
                         <>
                           <span className="shop-item__owned">Comprado</span>
-                          <PixelButton onClick={() => onEquip(item.id)}>
+                          <PixelButton
+                            sound="none"
+                            onClick={() => {
+                              playSoundEffect("purchase");
+                              onEquip(item.id);
+                            }}
+                          >
                             Equipar
                           </PixelButton>
                         </>
                       )
                     ) : (
                       <PixelButton
+                        sound="none"
                         disabled={!canAfford}
-                        onClick={() => onPurchase(item.id)}
+                        onClick={() => {
+                          playSoundEffect("purchase");
+                          onPurchase(item.id);
+                        }}
                       >
                         {canAfford
                           ? "Comprar"

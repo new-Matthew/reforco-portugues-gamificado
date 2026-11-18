@@ -14,7 +14,9 @@ import { Modal } from "../pixel/Modal";
 import { PixelButton } from "../pixel/PixelButton";
 import { PixelPanel } from "../pixel/PixelPanel";
 import { ProgressBar } from "../pixel/ProgressBar";
+import { SoundToggle } from "../pixel/SoundToggle";
 import { TeacherAvatar } from "../pixel/TeacherAvatar";
+import { playSoundEffect } from "../sound/soundManager";
 import { PedagogicalFeedbackModal } from "./PedagogicalFeedbackModal";
 
 interface LessonScreenProps {
@@ -101,6 +103,7 @@ export function LessonScreen({
 
   const handleSubmit = (): void => {
     if (!canSubmit) return;
+    playSoundEffect("click");
     const answer: UserAnswer =
       question.type === "text" ? { text } : { choiceIds: selected };
     onAnswer(answer);
@@ -115,10 +118,18 @@ export function LessonScreen({
   return (
     <div className="screen lesson-screen">
       <header className="lesson-bar">
-        <button type="button" className="link-button" onClick={onExit}>
+        <button
+          type="button"
+          className="link-button"
+          onClick={() => {
+            playSoundEffect("click");
+            onExit();
+          }}
+        >
           ← Sair
         </button>
         <div className="lesson-bar__title">{nodeTitle}</div>
+        <SoundToggle compact />
         <HeartRow lives={lives} max={maxLives} />
       </header>
 
@@ -195,7 +206,10 @@ export function LessonScreen({
                     .join(" ")}
                   aria-pressed={isSelected}
                   disabled={locked}
-                  onClick={() => toggleChoice(choice.id)}
+                  onClick={() => {
+                    playSoundEffect("click");
+                    toggleChoice(choice.id);
+                  }}
                 >
                   <span className="choice-button__marker" aria-hidden="true">
                     {marker}
@@ -228,7 +242,12 @@ export function LessonScreen({
       ) : null}
 
       {!feedback ? (
-        <PixelButton fullWidth disabled={!canSubmit} onClick={handleSubmit}>
+        <PixelButton
+          fullWidth
+          sound="none"
+          disabled={!canSubmit}
+          onClick={handleSubmit}
+        >
           Responder
         </PixelButton>
       ) : null}

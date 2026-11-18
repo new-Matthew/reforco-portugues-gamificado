@@ -1,6 +1,7 @@
 import type { ShopItem, ShopItemCategory } from "../../core/entities/index";
 import { Modal } from "../pixel/Modal";
 import { PlayerAvatar } from "../pixel/PlayerAvatar";
+import { playSoundEffect } from "../sound/soundManager";
 import { InventoryList } from "./InventoryList";
 
 interface InventoryModalProps {
@@ -32,7 +33,14 @@ export function InventoryModal({
             <span className="eyebrow">Mochila do explorador</span>
             <h2 id="inventory-title">Inventário</h2>
           </div>
-          <button type="button" className="link-button" onClick={onClose}>
+          <button
+            type="button"
+            className="link-button"
+            onClick={() => {
+              playSoundEffect("click");
+              onClose();
+            }}
+          >
             Fechar ×
           </button>
         </div>

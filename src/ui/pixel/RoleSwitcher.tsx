@@ -1,3 +1,5 @@
+import { playSoundEffect } from "../sound/soundManager";
+
 export type AppRole = "student" | "teacher";
 
 interface RoleSwitcherProps {
@@ -18,7 +20,10 @@ export function RoleSwitcher({ role, onChange }: RoleSwitcherProps) {
           key={option.value}
           type="button"
           aria-pressed={role === option.value}
-          onClick={() => onChange(option.value)}
+          onClick={() => {
+            playSoundEffect("click");
+            onChange(option.value);
+          }}
         >
           {option.label}
         </button>

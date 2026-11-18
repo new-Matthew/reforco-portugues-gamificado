@@ -3,6 +3,7 @@ import { GUIDE_NAME } from "../../content/guide";
 import type { TutorialStep } from "../../content/tutorialSteps";
 import { PixelButton } from "../pixel/PixelButton";
 import { TeacherAvatar } from "../pixel/TeacherAvatar";
+import { playSoundEffect } from "../sound/soundManager";
 
 const TYPE_INTERVAL_MS = 18;
 
@@ -94,7 +95,10 @@ export function TutorialDialog({
             <button
               type="button"
               className="tutorial-dialog__skip"
-              onClick={onSkip}
+              onClick={() => {
+                playSoundEffect("click");
+                onSkip();
+              }}
             >
               Pular
             </button>
@@ -104,7 +108,10 @@ export function TutorialDialog({
             type="button"
             className="tutorial-dialog__text"
             id="tutorial-dialog-text"
-            onClick={revealAll}
+            onClick={() => {
+              if (isTyping) playSoundEffect("click");
+              revealAll();
+            }}
             title={isTyping ? "Clique para completar o texto" : undefined}
             tabIndex={isTyping ? 0 : -1}
           >
