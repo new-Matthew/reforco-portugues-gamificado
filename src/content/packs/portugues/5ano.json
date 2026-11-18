@@ -15,10 +15,10 @@
       "position": { "x": 0, "y": 0 },
       "unlock": { "requires": [] },
       "npc": {
-        "speaker": "Guardiã da Escrita",
+        "speaker": "Professora Thaís",
         "lines": [
-          "No 5º ano, vamos revisar a ortografia e usá-la em textos maiores.",
-          "Comece observando as palavras escritas corretamente."
+          "No 5º ano, bora revisar a ortografia e usar ela em textos maiores, visse?",
+          "Começa observando as palavras escritas corretamente. Não fica avexado."
         ]
       },
       "reward": { "itemId": "p5-selo-ortografia", "label": "Selo da ortografia" },
@@ -42,7 +42,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Passarinho é escrito com SS entre as vogais A e I.",
-            "dicaCearense": "Oxe, calma aí! Passarinho é escrito com SS entre as vogais A e I. Dá uma olhada nas opções de novo que tu acha!"
+            "dicaCearense": "Olha só, macho: Passarinho é escrito com SS entre as vogais A e I. Compara as alternativas."
           },
           {
             "id": "p5-ort-f1-q2",
@@ -56,7 +56,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Tempo é escrito com M antes de P.",
-            "dicaCearense": "Bora desenrolar isso aqui! Tempo é escrito com M antes de P. Lê as alternativas com calma e elimina o que não combina."
+            "dicaCearense": "Vamos revisar: Tempo é escrito com M antes de P. Tu dá conta, macho."
           },
           {
             "id": "p5-ort-f1-q3",
@@ -70,7 +70,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Em caixa, o X soa como CH. Em táxi, soa como KS; em exame, como Z; em próximo, como S.",
-            "dicaCearense": "Num tem perigo, não! Em caixa, o X soa como CH. Em táxi, soa como KS; em exame, como Z; em próximo, como S. Relê o enunciado e confia no teu raciocínio."
+            "dicaCearense": "Oxe, bora de leve: Em caixa, o X soa como CH. Em táxi, soa como KS; em exame, como Z; em próximo, como S."
           },
           {
             "id": "p5-ort-f1-q4",
@@ -84,7 +84,7 @@
             ],
             "correctChoiceIds": ["a", "b", "c"],
             "explanation": "Carro tem RR, casa tem S com som de Z e passado tem SS. Caza está errada: o correto é casa.",
-            "dicaCearense": "Visse? Presta atenção: Carro tem RR, casa tem S com som de Z e passado tem SS. Caza está errada: o correto é casa. Vai com calma e seleciona apenas o que combina com a regra."
+            "dicaCearense": "Confere aí: Carro tem RR, casa tem S com som de Z e passado tem SS. Caza está errada: o correto é casa. Pensa com calma antes de responder."
           },
           {
             "id": "p5-ort-f1-q5",
@@ -93,7 +93,7 @@
             "placeholder": "Escreva o animal",
             "acceptedAnswers": ["cachorro", "cachorro."],
             "explanation": "Cachorro é escrito com RR entre as vogais O e O.",
-            "dicaCearense": "Mermão, olha a regra: Cachorro é escrito com RR entre as vogais O e O. Tenta escrever com calma e confia no que tu aprendeu."
+            "dicaCearense": "Oxe, não fica avexado: Cachorro é escrito com RR entre as vogais O e O. Tu dá conta, macho."
           }
         ]
       }
@@ -107,10 +107,10 @@
       "position": { "x": 2, "y": 1 },
       "unlock": { "requires": ["p5-ort-f1"] },
       "npc": {
-        "speaker": "Guardiã da Escrita",
+        "speaker": "Professora Thaís",
         "lines": [
-          "Agora a ortografia aparece dentro de uma pequena história.",
-          "Procure as pistas no texto antes de responder."
+          "Agora a ortografia aparece dentro de uma pequena história, macho.",
+          "Procura as pistas no texto antes de responder. Tu é desenrolado."
         ]
       },
       "reward": { "itemId": "p5-selo-historia", "label": "Selo da micro-história" },
@@ -134,7 +134,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Passarinho é escrito com SS entre as vogais A e I.",
-            "dicaCearense": "Arretado de bom! Vamos revisar: Passarinho é escrito com SS entre as vogais A e I. Lê as alternativas com calma e elimina o que não combina."
+            "dicaCearense": "Bora desenrolar: Passarinho é escrito com SS entre as vogais A e I. Lê tudo antes de marcar."
           },
           {
             "id": "p5-ort-f2-q2",
@@ -148,7 +148,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Em pousou, o S fica entre as vogais U e O e tem som de Z.",
-            "dicaCearense": "Oxe, calma aí! Em pousou, o S fica entre as vogais U e O e tem som de Z. Relê o enunciado e confia no teu raciocínio."
+            "dicaCearense": "Vamos por partes: Em pousou, o S fica entre as vogais U e O e tem som de Z. Relê com calma, visse?"
           },
           {
             "id": "p5-ort-f2-q3",
@@ -162,7 +162,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Enxame é escrito com X depois de EN e é o coletivo de abelhas.",
-            "dicaCearense": "Bora desenrolar isso aqui! Enxame é escrito com X depois de EN e é o coletivo de abelhas. Respira, revisa a regra e tenta de novo."
+            "dicaCearense": "Calma aí, macho: Enxame é escrito com X depois de EN e é o coletivo de abelhas."
           },
           {
             "id": "p5-ort-f2-q4",
@@ -176,7 +176,7 @@
             ],
             "correctChoiceIds": ["a", "c", "d"],
             "explanation": "Sempre tem M antes de P; chave tem CH; xícara tem X. O correto é campo, com M.",
-            "dicaCearense": "Num tem perigo, não! Sempre tem M antes de P; chave tem CH; xícara tem X. O correto é campo, com M. Confere cada alternativa com calma, uma por uma."
+            "dicaCearense": "Presta atenção: Sempre tem M antes de P; chave tem CH; xícara tem X. O correto é campo, com M. Compara as alternativas."
           },
           {
             "id": "p5-ort-f2-q5",
@@ -185,7 +185,7 @@
             "placeholder": "Escreva a palavra",
             "acceptedAnswers": ["xícara", "xicara", "xícara."],
             "explanation": "Xícara é escrito com X e acento na sílaba XÍ.",
-            "dicaCearense": "Visse? Presta atenção: Xícara é escrito com X e acento na sílaba XÍ. Pensa na regra e escreve a palavra sem pressa."
+            "dicaCearense": "Vamos revisar: Xícara é escrito com X e acento na sílaba XÍ. Revisa a regra e tenta de novo."
           }
         ]
       }
@@ -199,10 +199,10 @@
       "position": { "x": 1, "y": 2 },
       "unlock": { "requires": ["p5-ort-f2"] },
       "npc": {
-        "speaker": "Guardiã da Escrita",
+        "speaker": "Professora Thaís",
         "lines": [
-          "Hora de corrigir frases e reconhecer todas as regras juntas.",
-          "Leia com atenção e compare as opções."
+          "Só a massa! Hora de corrigir frases e reconhecer todas as regras juntas.",
+          "Lê com atenção e compara as opções. Vixe, mas é só revisar!"
         ]
       },
       "reward": { "itemId": "p5-bau-ortografia", "label": "Baú da ortografia" },
@@ -226,7 +226,7 @@
             ],
             "correctChoiceId": "c",
             "explanation": "As palavras com RR são carro, cachorro e correu.",
-            "dicaCearense": "Mermão, olha a regra: As palavras com RR são carro, cachorro e correu. Relê o enunciado e confia no teu raciocínio."
+            "dicaCearense": "Sem pressa, avexado não ajuda: As palavras com RR são carro, cachorro e correu. Relê o enunciado com atenção."
           },
           {
             "id": "p5-ort-f3-q2",
@@ -240,7 +240,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Passou tem SS com som de S forte. Em praça, o Ç também tem som de S, mas não é a letra S.",
-            "dicaCearense": "Arretado de bom! Vamos revisar: Passou tem SS com som de S forte. Em praça, o Ç também tem som de S, mas não é a letra S. Respira, revisa a regra e tenta de novo."
+            "dicaCearense": "Confere aí: Passou tem SS com som de S forte. Em praça, o Ç também tem som de S, mas não é a letra S. Confia, macho, tu já sabe."
           },
           {
             "id": "p5-ort-f3-q3",
@@ -254,7 +254,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Peixe é com X; campo tem M antes de P; sempre tem M antes de P.",
-            "dicaCearense": "Oxe, calma aí! Peixe é com X; campo tem M antes de P; sempre tem M antes de P. Dá uma olhada nas opções de novo que tu acha!"
+            "dicaCearense": "Olha só, macho: Peixe é com X; campo tem M antes de P; sempre tem M antes de P."
           },
           {
             "id": "p5-ort-f3-q4",
@@ -268,7 +268,7 @@
             ],
             "correctChoiceIds": ["a", "b", "c"],
             "explanation": "Enxugar, encharcar e mexer estão corretas. Mecher está errada: o correto é mexer.",
-            "dicaCearense": "Bora desenrolar isso aqui! Enxugar, encharcar e mexer estão corretas. Mecher está errada: o correto é mexer. Marque só o que segue a regra, sem pressa."
+            "dicaCearense": "Guarda essa ideia: Enxugar, encharcar e mexer estão corretas. Mecher está errada: o correto é mexer. Lê tudo antes de marcar."
           },
           {
             "id": "p5-ort-f3-q5",
@@ -277,7 +277,7 @@
             "placeholder": "Escreva a palavra",
             "acceptedAnswers": ["passarinho", "passarinho."],
             "explanation": "Passarinho é escrito com SS entre as vogais A e I.",
-            "dicaCearense": "Num tem perigo, não! Passarinho é escrito com SS entre as vogais A e I. Relembra como a palavra aparece no dia a dia e tenta de novo."
+            "dicaCearense": "Oxe, bora de leve: Passarinho é escrito com SS entre as vogais A e I. Bora desenrolar, visse?"
           }
         ]
       }
@@ -291,10 +291,10 @@
       "position": { "x": 0, "y": 0 },
       "unlock": { "requires": ["p5-ort-f3"] },
       "npc": {
-        "speaker": "Mestre Acento",
+        "speaker": "Professora Thaís",
         "lines": [
-          "No 5º ano, vamos reconhecer a tônica com mais precisão.",
-          "Conte as sílabas e localize a mais forte."
+          "No 5º ano, bora reconhecer a tônica com mais precisão, visse?",
+          "Conta as sílabas e localiza a mais forte. Sem avexar, macho."
         ]
       },
       "reward": { "itemId": "p5-selo-tonica", "label": "Selo da tonicidade" },
@@ -318,7 +318,7 @@
             ],
             "correctChoiceId": "c",
             "explanation": "A sílaba tônica de jacaré é RÉ, a última. Por isso, é oxítona.",
-            "dicaCearense": "Visse? Presta atenção: A sílaba tônica de jacaré é RÉ, a última. Por isso, é oxítona. Respira, revisa a regra e tenta de novo."
+            "dicaCearense": "Vixe, macho, olha só: A sílaba tônica de jacaré é RÉ, a última. Por isso, é oxítona. Lê as alternativas com calma."
           },
           {
             "id": "p5-acen-f1-q2",
@@ -332,7 +332,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "A sílaba tônica de árvore é ÁR, a antepenúltima. Por isso, é proparoxítona.",
-            "dicaCearense": "Mermão, olha a regra: A sílaba tônica de árvore é ÁR, a antepenúltima. Por isso, é proparoxítona. Dá uma olhada nas opções de novo que tu acha!"
+            "dicaCearense": "Presta atenção: A sílaba tônica de árvore é ÁR, a antepenúltima. Por isso, é proparoxítona. Respira e lê de novo."
           },
           {
             "id": "p5-acen-f1-q3",
@@ -346,7 +346,7 @@
             ],
             "correctChoiceId": "b",
             "explanation": "A sílaba tônica de caderno é DER, a penúltima. Por isso, é paroxítona.",
-            "dicaCearense": "Arretado de bom! Vamos revisar: A sílaba tônica de caderno é DER, a penúltima. Por isso, é paroxítona. Lê as alternativas com calma e elimina o que não combina."
+            "dicaCearense": "Bora desenrolar: A sílaba tônica de caderno é DER, a penúltima. Por isso, é paroxítona."
           },
           {
             "id": "p5-acen-f1-q4",
@@ -360,7 +360,7 @@
             ],
             "correctChoiceIds": ["a", "b", "d"],
             "explanation": "Música, página e lâmpada têm a tônica na antepenúltima sílaba. Café é oxítona.",
-            "dicaCearense": "Oxe, calma aí! Música, página e lâmpada têm a tônica na antepenúltima sílaba. Café é oxítona. Olha todas as opções antes de responder, visse?"
+            "dicaCearense": "Lembra disso: Música, página e lâmpada têm a tônica na antepenúltima sílaba. Café é oxítona. Relê o enunciado com atenção."
           },
           {
             "id": "p5-acen-f1-q5",
@@ -369,7 +369,7 @@
             "placeholder": "Ex.: oxítona",
             "acceptedAnswers": ["oxítona", "oxitona", "oxítona.", "oxitona."],
             "explanation": "Sofá tem a tônica na última sílaba (FÁ), por isso é oxítona.",
-            "dicaCearense": "Bora desenrolar isso aqui! Sofá tem a tônica na última sílaba (FÁ), por isso é oxítona. Num tem perigo, não! Escreve com calma que tu consegue."
+            "dicaCearense": "Confere aí: Sofá tem a tônica na última sílaba (FÁ), por isso é oxítona. Pensa com calma antes de responder."
           }
         ]
       }
@@ -383,10 +383,10 @@
       "position": { "x": 2, "y": 1 },
       "unlock": { "requires": ["p5-acen-f1"] },
       "npc": {
-        "speaker": "Mestre Acento",
+        "speaker": "Professora Thaís",
         "lines": [
-          "As proparoxítonas são sempre acentuadas.",
-          "As oxítonas e paroxítonas dependem da terminação."
+          "As proparoxítonas são sempre acentuadas. Só a massa!",
+          "As oxítonas e paroxítonas dependem da terminação. Bora ficar atento."
         ]
       },
       "reward": { "itemId": "p5-selo-regras", "label": "Selo das regras" },
@@ -410,7 +410,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Café é oxítona terminada em E e recebe acento agudo.",
-            "dicaCearense": "Num tem perigo, não! Café é oxítona terminada em E e recebe acento agudo. Dá uma olhada nas opções de novo que tu acha!"
+            "dicaCearense": "Vixe, presta atenção: Café é oxítona terminada em E e recebe acento agudo. Confere cada alternativa."
           },
           {
             "id": "p5-acen-f2-q2",
@@ -424,7 +424,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Fácil é paroxítona terminada em -L e recebe acento na penúltima sílaba.",
-            "dicaCearense": "Visse? Presta atenção: Fácil é paroxítona terminada em -L e recebe acento na penúltima sílaba. Lê as alternativas com calma e elimina o que não combina."
+            "dicaCearense": "Guarda essa ideia: Fácil é paroxítona terminada em -L e recebe acento na penúltima sílaba. Vixe, mas é só revisar."
           },
           {
             "id": "p5-acen-f2-q3",
@@ -438,7 +438,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Página é proparoxítona e recebe acento na antepenúltima sílaba.",
-            "dicaCearense": "Mermão, olha a regra: Página é proparoxítona e recebe acento na antepenúltima sílaba. Relê o enunciado e confia no teu raciocínio."
+            "dicaCearense": "Sem pressa, avexado não ajuda: Página é proparoxítona e recebe acento na antepenúltima sílaba."
           },
           {
             "id": "p5-acen-f2-q4",
@@ -452,7 +452,7 @@
             ],
             "correctChoiceIds": ["a", "b", "c"],
             "explanation": "As formas corretas são você, café e árvore. Escola é paroxítona terminada em -A e não recebe acento.",
-            "dicaCearense": "Arretado de bom! Vamos revisar: As formas corretas são você, café e árvore. Escola é paroxítona terminada em -A e não recebe acento. Vai com calma e seleciona apenas o que combina com a regra."
+            "dicaCearense": "Olha a regra: As formas corretas são você, café e árvore. Escola é paroxítona terminada em -A e não recebe acento. Lê as alternativas com calma."
           },
           {
             "id": "p5-acen-f2-q5",
@@ -461,7 +461,7 @@
             "placeholder": "Escreva com acento",
             "acceptedAnswers": ["matemática", "matemática."],
             "explanation": "Matemática é proparoxítona e recebe acento na antepenúltima sílaba.",
-            "dicaCearense": "Oxe, calma aí! Matemática é proparoxítona e recebe acento na antepenúltima sílaba. Tenta escrever com calma e confia no que tu aprendeu."
+            "dicaCearense": "Olha só, macho: Matemática é proparoxítona e recebe acento na antepenúltima sílaba. Não fica avexado, não."
           }
         ]
       }
@@ -475,10 +475,10 @@
       "position": { "x": 1, "y": 2 },
       "unlock": { "requires": ["p5-acen-f2"] },
       "npc": {
-        "speaker": "Mestre Acento",
+        "speaker": "Professora Thaís",
         "lines": [
-          "O acento pode diferenciar palavras e mudar o sentido da frase.",
-          "Compare sabia e sabiá, por exemplo."
+          "O acento pode diferenciar palavras e mudar o sentido da frase, visse?",
+          "Compara sabia e sabiá. Vixe, uma letrinha muda tudo!"
         ]
       },
       "reward": { "itemId": "p5-bau-acentuacao", "label": "Baú da acentuação" },
@@ -502,7 +502,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Sabia (verbo ou adjetivo) e sabiá (ave) têm significados diferentes por causa do acento.",
-            "dicaCearense": "Bora desenrolar isso aqui! Sabia (verbo ou adjetivo) e sabiá (ave) têm significados diferentes por causa do acento. Lê as alternativas com calma e elimina o que não combina."
+            "dicaCearense": "Presta atenção nisso: Sabia (verbo ou adjetivo) e sabiá (ave) têm significados diferentes por causa do acento. Revisa a regra e tenta de novo."
           },
           {
             "id": "p5-acen-f3-q2",
@@ -516,7 +516,7 @@
             ],
             "correctChoiceId": "b",
             "explanation": "Apenas árvore é proparoxítona. Sabiá é oxítona e canta é paroxítona.",
-            "dicaCearense": "Num tem perigo, não! Apenas árvore é proparoxítona. Sabiá é oxítona e canta é paroxítona. Relê o enunciado e confia no teu raciocínio."
+            "dicaCearense": "Lembra disso: Apenas árvore é proparoxítona. Sabiá é oxítona e canta é paroxítona. Tu é desenrolado, vai acertar."
           },
           {
             "id": "p5-acen-f3-q3",
@@ -530,7 +530,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Música tem a tônica na antepenúltima sílaba: MÚ-SI-CA.",
-            "dicaCearense": "Visse? Presta atenção: Música tem a tônica na antepenúltima sílaba: MÚ-SI-CA. Respira, revisa a regra e tenta de novo."
+            "dicaCearense": "Vixe, macho, olha só: Música tem a tônica na antepenúltima sílaba: MÚ-SI-CA."
           },
           {
             "id": "p5-acen-f3-q4",
@@ -544,7 +544,7 @@
             ],
             "correctChoiceIds": ["a", "b", "c"],
             "explanation": "Pássaro e lâmpada são proparoxítonas; café é oxítona. O correto é árvore, com acento.",
-            "dicaCearense": "Mermão, olha a regra: Pássaro e lâmpada são proparoxítonas; café é oxítona. O correto é árvore, com acento. Confere cada alternativa com calma, uma por uma."
+            "dicaCearense": "Bora entender: Pássaro e lâmpada são proparoxítonas; café é oxítona. O correto é árvore, com acento. Confere cada alternativa."
           },
           {
             "id": "p5-acen-f3-q5",
@@ -553,7 +553,7 @@
             "placeholder": "Escreva com acento",
             "acceptedAnswers": ["sabiá", "sabiá."],
             "explanation": "O sabiá é uma ave. Sem acento, sabia é uma forma do verbo saber.",
-            "dicaCearense": "Arretado de bom! Vamos revisar: O sabiá é uma ave. Sem acento, sabia é uma forma do verbo saber. Pensa na regra e escreve a palavra sem pressa."
+            "dicaCearense": "Guarda essa ideia: O sabiá é uma ave. Sem acento, sabia é uma forma do verbo saber. Lê tudo antes de marcar."
           }
         ]
       }
@@ -567,10 +567,10 @@
       "position": { "x": 0, "y": 0 },
       "unlock": { "requires": ["p5-acen-f3"] },
       "npc": {
-        "speaker": "Guardião da Gramática",
+        "speaker": "Professora Thaís",
         "lines": [
-          "Vamos revisar as classes que já conhecemos e observar como trabalham juntas.",
-          "Em uma frase, cada palavra tem uma função."
+          "Bora revisar as classes que tu já conhece e ver como elas trabalham juntas.",
+          "Numa frase, cada palavra tem uma função. Não fica avexado, que a gente desenrola."
         ]
       },
       "reward": { "itemId": "p5-selo-classes", "label": "Selo das classes" },
@@ -594,7 +594,7 @@
             ],
             "correctChoiceId": "c",
             "explanation": "Meninas é o substantivo que nomeia os seres de quem se fala.",
-            "dicaCearense": "Oxe, calma aí! Meninas é o substantivo que nomeia os seres de quem se fala. Relê o enunciado e confia no teu raciocínio."
+            "dicaCearense": "Bora revisar: Meninas é o substantivo que nomeia os seres de quem se fala. Olha as opções com atenção."
           },
           {
             "id": "p5-morf-f1-q2",
@@ -608,7 +608,7 @@
             ],
             "correctChoiceId": "c",
             "explanation": "Inteligentes caracteriza as meninas, por isso é adjetivo.",
-            "dicaCearense": "Bora desenrolar isso aqui! Inteligentes caracteriza as meninas, por isso é adjetivo. Respira, revisa a regra e tenta de novo."
+            "dicaCearense": "Olha a regra: Inteligentes caracteriza as meninas, por isso é adjetivo. Bora desenrolar, visse?"
           },
           {
             "id": "p5-morf-f1-q3",
@@ -622,7 +622,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Duas indica a quantidade de meninas e é um numeral cardinal.",
-            "dicaCearense": "Num tem perigo, não! Duas indica a quantidade de meninas e é um numeral cardinal. Dá uma olhada nas opções de novo que tu acha!"
+            "dicaCearense": "Vixe, presta atenção: Duas indica a quantidade de meninas e é um numeral cardinal."
           },
           {
             "id": "p5-morf-f1-q4",
@@ -636,7 +636,7 @@
             ],
             "correctChoiceIds": ["a", "b", "d"],
             "explanation": "O, uma e os são artigos. Menino é substantivo.",
-            "dicaCearense": "Visse? Presta atenção: O, uma e os são artigos. Menino é substantivo. Marque só o que segue a regra, sem pressa."
+            "dicaCearense": "Vamos revisar: O, uma e os são artigos. Menino é substantivo. Revisa a regra e tenta de novo."
           },
           {
             "id": "p5-morf-f1-q5",
@@ -645,7 +645,7 @@
             "placeholder": "Escreva próprio ou comum",
             "acceptedAnswers": ["próprio", "proprio", "próprio.", "proprio."],
             "explanation": "Brasil é o nome específico de um país, por isso é substantivo próprio.",
-            "dicaCearense": "Mermão, olha a regra: Brasil é o nome específico de um país, por isso é substantivo próprio. Relembra como a palavra aparece no dia a dia e tenta de novo."
+            "dicaCearense": "Sem pressa, avexado não ajuda: Brasil é o nome específico de um país, por isso é substantivo próprio. Confia, macho, tu já sabe."
           }
         ]
       }
@@ -659,10 +659,10 @@
       "position": { "x": 2, "y": 1 },
       "unlock": { "requires": ["p5-morf-f1"] },
       "npc": {
-        "speaker": "Guardião da Gramática",
+        "speaker": "Professora Thaís",
         "lines": [
-          "Substantivo, adjetivo, artigo e verbo precisam concordar.",
-          "Observe o gênero e o número antes de escolher."
+          "Substantivo, adjetivo, artigo e verbo precisam concordar, visse?",
+          "Observa o gênero e o número antes de escolher. Tu é desenrolado."
         ]
       },
       "reward": { "itemId": "p5-selo-concordancia", "label": "Selo da concordância" },
@@ -686,7 +686,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "As crianças é sujeito no plural, então o verbo fica brincaram.",
-            "dicaCearense": "Arretado de bom! Vamos revisar: As crianças é sujeito no plural, então o verbo fica brincaram. Respira, revisa a regra e tenta de novo."
+            "dicaCearense": "Bora com calma: As crianças é sujeito no plural, então o verbo fica brincaram. Pensa com calma antes de responder."
           },
           {
             "id": "p5-morf-f2-q2",
@@ -700,7 +700,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Bola é feminino singular, então o adjetivo deve ser nova.",
-            "dicaCearense": "Oxe, calma aí! Bola é feminino singular, então o adjetivo deve ser nova. Dá uma olhada nas opções de novo que tu acha!"
+            "dicaCearense": "Bora entender: Bola é feminino singular, então o adjetivo deve ser nova. Aí é só a massa."
           },
           {
             "id": "p5-morf-f2-q3",
@@ -714,7 +714,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Os livros é sujeito no plural, então usamos estão.",
-            "dicaCearense": "Bora desenrolar isso aqui! Os livros é sujeito no plural, então usamos estão. Lê as alternativas com calma e elimina o que não combina."
+            "dicaCearense": "Presta atenção nisso: Os livros é sujeito no plural, então usamos estão."
           },
           {
             "id": "p5-morf-f2-q4",
@@ -728,7 +728,7 @@
             ],
             "correctChoiceIds": ["a", "b"],
             "explanation": "Em A e B, substantivo, adjetivo e verbo concordam. Em C e D, há desencontro de gênero e número.",
-            "dicaCearense": "Num tem perigo, não! Em A e B, substantivo, adjetivo e verbo concordam. Em C e D, há desencontro de gênero e número. Olha todas as opções antes de responder, visse?"
+            "dicaCearense": "Vamos por partes: Em A e B, substantivo, adjetivo e verbo concordam. Em C e D, há desencontro de gênero e número. Olha as opções com atenção."
           },
           {
             "id": "p5-morf-f2-q5",
@@ -737,7 +737,7 @@
             "placeholder": "Escreva o adjetivo",
             "acceptedAnswers": ["feliz", "feliz."],
             "explanation": "Feliz é um adjetivo uniforme: tem a mesma forma no masculino e no feminino.",
-            "dicaCearense": "Visse? Presta atenção: Feliz é um adjetivo uniforme: tem a mesma forma no masculino e no feminino. Num tem perigo, não! Escreve com calma que tu consegue."
+            "dicaCearense": "Olha a regra: Feliz é um adjetivo uniforme: tem a mesma forma no masculino e no feminino. Lê as alternativas com calma."
           }
         ]
       }
@@ -751,10 +751,10 @@
       "position": { "x": 1, "y": 2 },
       "unlock": { "requires": ["p5-morf-f2"] },
       "npc": {
-        "speaker": "Guardião da Gramática",
+        "speaker": "Professora Thaís",
         "lines": [
-          "Vamos analisar uma frase inteira e reconhecer as classes e os coletivos.",
-          "Cada detalhe importa!"
+          "Agora bora analisar uma frase inteira e reconhecer as classes e os coletivos.",
+          "Cada detalhe importa, macho. Se tu olha tudo, é só a massa!"
         ]
       },
       "reward": { "itemId": "p5-bau-morfologia", "label": "Baú da morfologia" },
@@ -778,7 +778,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "O único adjetivo é curiosos. Três é numeral, amigos e floresta são substantivos.",
-            "dicaCearense": "Mermão, olha a regra: O único adjetivo é curiosos. Três é numeral, amigos e floresta são substantivos. Dá uma olhada nas opções de novo que tu acha!"
+            "dicaCearense": "Oxe, não fica avexado: O único adjetivo é curiosos. Três é numeral, amigos e floresta são substantivos. Compara as alternativas."
           },
           {
             "id": "p5-morf-f3-q2",
@@ -792,7 +792,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Três indica a quantidade de amigos e é um numeral cardinal.",
-            "dicaCearense": "Arretado de bom! Vamos revisar: Três indica a quantidade de amigos e é um numeral cardinal. Lê as alternativas com calma e elimina o que não combina."
+            "dicaCearense": "Vamos revisar: Três indica a quantidade de amigos e é um numeral cardinal. Olha as opções com calma."
           },
           {
             "id": "p5-morf-f3-q3",
@@ -806,7 +806,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Floresta é um substantivo coletivo que nomeia um conjunto de árvores.",
-            "dicaCearense": "Oxe, calma aí! Floresta é um substantivo coletivo que nomeia um conjunto de árvores. Relê o enunciado e confia no teu raciocínio."
+            "dicaCearense": "Bora revisar: Floresta é um substantivo coletivo que nomeia um conjunto de árvores."
           },
           {
             "id": "p5-morf-f3-q4",
@@ -820,7 +820,7 @@
             ],
             "correctChoiceIds": ["a", "b"],
             "explanation": "Curiosos e valentes caracterizam seres. Mesas e floresta são substantivos.",
-            "dicaCearense": "Bora desenrolar isso aqui! Curiosos e valentes caracterizam seres. Mesas e floresta são substantivos. Vai com calma e seleciona apenas o que combina com a regra."
+            "dicaCearense": "Confere aí: Curiosos e valentes caracterizam seres. Mesas e floresta são substantivos. Pensa com calma antes de responder."
           },
           {
             "id": "p5-morf-f3-q5",
@@ -829,7 +829,7 @@
             "placeholder": "Escreva o adjetivo",
             "acceptedAnswers": ["curiosos", "curiosos."],
             "explanation": "Meninos é masculino plural, então o adjetivo fica curiosos.",
-            "dicaCearense": "Num tem perigo, não! Meninos é masculino plural, então o adjetivo fica curiosos. Tenta escrever com calma e confia no que tu aprendeu."
+            "dicaCearense": "Vixe, presta atenção: Meninos é masculino plural, então o adjetivo fica curiosos. Olha as opções com calma."
           }
         ]
       }
@@ -843,10 +843,10 @@
       "position": { "x": 0, "y": 0 },
       "unlock": { "requires": ["p5-morf-f3"] },
       "npc": {
-        "speaker": "Mestre Tempo",
+        "speaker": "Professora Thaís",
         "lines": [
-          "No 5º ano, vamos observar os tempos verbais com mais atenção.",
-          "O indicativo situa a ação no presente, no passado ou no futuro."
+          "No 5º ano, bora observar os tempos verbais com mais atenção, visse?",
+          "O indicativo situa a ação no presente, no passado ou no futuro. Guarda isso."
         ]
       },
       "reward": { "itemId": "p5-selo-tempos", "label": "Selo dos tempos" },
@@ -870,7 +870,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Todos os dias indica uma ação habitual, no presente.",
-            "dicaCearense": "Visse? Presta atenção: Todos os dias indica uma ação habitual, no presente. Lê as alternativas com calma e elimina o que não combina."
+            "dicaCearense": "Oxente, olha isso: Todos os dias indica uma ação habitual, no presente. Lê tudo antes de marcar."
           },
           {
             "id": "p5-verb-f1-q2",
@@ -884,7 +884,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Ontem indica passado, e estudou é a forma do passado.",
-            "dicaCearense": "Mermão, olha a regra: Ontem indica passado, e estudou é a forma do passado. Relê o enunciado e confia no teu raciocínio."
+            "dicaCearense": "Vamos por partes: Ontem indica passado, e estudou é a forma do passado. Não fica avexado, não."
           },
           {
             "id": "p5-verb-f1-q3",
@@ -898,7 +898,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Amanhã e estudaremos indicam uma ação que ainda vai acontecer.",
-            "dicaCearense": "Arretado de bom! Vamos revisar: Amanhã e estudaremos indicam uma ação que ainda vai acontecer. Respira, revisa a regra e tenta de novo."
+            "dicaCearense": "Bora com calma: Amanhã e estudaremos indicam uma ação que ainda vai acontecer."
           },
           {
             "id": "p5-verb-f1-q4",
@@ -912,7 +912,7 @@
             ],
             "correctChoiceIds": ["a", "b"],
             "explanation": "Cantou e correu estão no passado. Canta está no presente e correrá no futuro.",
-            "dicaCearense": "Oxe, calma aí! Cantou e correu estão no passado. Canta está no presente e correrá no futuro. Confere cada alternativa com calma, uma por uma."
+            "dicaCearense": "Presta atenção: Cantou e correu estão no passado. Canta está no presente e correrá no futuro. Compara as alternativas."
           },
           {
             "id": "p5-verb-f1-q5",
@@ -921,7 +921,7 @@
             "placeholder": "Ex.: aprendo",
             "acceptedAnswers": ["aprendo", "aprendo."],
             "explanation": "Eu aprendo está no presente do indicativo.",
-            "dicaCearense": "Bora desenrolar isso aqui! Eu aprendo está no presente do indicativo. Pensa na regra e escreve a palavra sem pressa."
+            "dicaCearense": "Vamos revisar: Eu aprendo está no presente do indicativo. Revisa a regra e tenta de novo."
           }
         ]
       }
@@ -935,10 +935,10 @@
       "position": { "x": 2, "y": 1 },
       "unlock": { "requires": ["p5-verb-f1"] },
       "npc": {
-        "speaker": "Mestre Tempo",
+        "speaker": "Professora Thaís",
         "lines": [
-          "As expressões de tempo ajudam a escolher a forma verbal.",
-          "Procure pistas como ontem, agora e na próxima semana."
+          "As expressões de tempo ajudam a escolher a forma verbal. Não fica avexado.",
+          "Procura pistas como ontem, agora e na próxima semana. Tu desenrola."
         ]
       },
       "reward": { "itemId": "p5-selo-pistas", "label": "Selo das pistas" },
@@ -962,7 +962,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "No ano passado indica passado, então usamos visitou.",
-            "dicaCearense": "Num tem perigo, não! No ano passado indica passado, então usamos visitou. Relê o enunciado e confia no teu raciocínio."
+            "dicaCearense": "Oxe, bora de leve: No ano passado indica passado, então usamos visitou. Relê o enunciado com atenção."
           },
           {
             "id": "p5-verb-f2-q2",
@@ -976,7 +976,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Agora indica presente, então usamos apresenta.",
-            "dicaCearense": "Visse? Presta atenção: Agora indica presente, então usamos apresenta. Respira, revisa a regra e tenta de novo."
+            "dicaCearense": "Confere aí: Agora indica presente, então usamos apresenta. Confia no teu raciocínio."
           },
           {
             "id": "p5-verb-f2-q3",
@@ -990,7 +990,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Na próxima semana indica futuro, então usamos entregará.",
-            "dicaCearense": "Mermão, olha a regra: Na próxima semana indica futuro, então usamos entregará. Dá uma olhada nas opções de novo que tu acha!"
+            "dicaCearense": "Oxe, não fica avexado: Na próxima semana indica futuro, então usamos entregará."
           },
           {
             "id": "p5-verb-f2-q4",
@@ -1004,7 +1004,7 @@
             ],
             "correctChoiceIds": ["a", "b"],
             "explanation": "Viajarei e estudaremos estão no futuro. Viajei está no passado e estudamos agora está no presente.",
-            "dicaCearense": "Arretado de bom! Vamos revisar: Viajarei e estudaremos estão no futuro. Viajei está no passado e estudamos agora está no presente. Marque só o que segue a regra, sem pressa."
+            "dicaCearense": "Guarda essa ideia: Viajarei e estudaremos estão no futuro. Viajei está no passado e estudamos agora está no presente. Lê tudo antes de marcar."
           },
           {
             "id": "p5-verb-f2-q5",
@@ -1013,7 +1013,7 @@
             "placeholder": "Escreva o verbo no passado",
             "acceptedAnswers": ["chegaram", "chegaram."],
             "explanation": "Ontem indica passado, e eles exige a forma chegaram.",
-            "dicaCearense": "Oxe, calma aí! Ontem indica passado, e eles exige a forma chegaram. Relembra como a palavra aparece no dia a dia e tenta de novo."
+            "dicaCearense": "Bora revisar: Ontem indica passado, e eles exige a forma chegaram. Confia no teu raciocínio."
           }
         ]
       }
@@ -1027,10 +1027,10 @@
       "position": { "x": 1, "y": 2 },
       "unlock": { "requires": ["p5-verb-f2"] },
       "npc": {
-        "speaker": "Mestre Tempo",
+        "speaker": "Professora Thaís",
         "lines": [
-          "Nas fábulas, os verbos fazem a história avançar.",
-          "Vamos identificar a ação final e o tempo de cada verbo."
+          "Nas fábulas, os verbos fazem a história avançar. Vixe, eles dão vida ao texto!",
+          "Bora identificar a ação final e o tempo de cada verbo. Sem pressa, macho."
         ]
       },
       "reward": { "itemId": "p5-bau-verbos", "label": "Baú dos verbos" },
@@ -1054,7 +1054,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Venceu indica a ação final: a tartaruga ganhou a corrida.",
-            "dicaCearense": "Bora desenrolar isso aqui! Venceu indica a ação final: a tartaruga ganhou a corrida. Respira, revisa a regra e tenta de novo."
+            "dicaCearense": "Calma aí, macho: Venceu indica a ação final: a tartaruga ganhou a corrida. Lê as alternativas com calma."
           },
           {
             "id": "p5-verb-f3-q2",
@@ -1068,7 +1068,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Venceu indica uma ação que já aconteceu, no passado.",
-            "dicaCearense": "Num tem perigo, não! Venceu indica uma ação que já aconteceu, no passado. Dá uma olhada nas opções de novo que tu acha!"
+            "dicaCearense": "Presta atenção: Venceu indica uma ação que já aconteceu, no passado. Vai com calma e sem pressa."
           },
           {
             "id": "p5-verb-f3-q3",
@@ -1082,7 +1082,7 @@
             ],
             "correctChoiceId": "d",
             "explanation": "Corria, caminhava e venceu estão no passado. Nenhum verbo do trecho está no presente.",
-            "dicaCearense": "Visse? Presta atenção: Corria, caminhava e venceu estão no passado. Nenhum verbo do trecho está no presente. Lê as alternativas com calma e elimina o que não combina."
+            "dicaCearense": "Oxente, olha isso: Corria, caminhava e venceu estão no passado. Nenhum verbo do trecho está no presente."
           },
           {
             "id": "p5-verb-f3-q4",
@@ -1096,7 +1096,7 @@
             ],
             "correctChoiceIds": ["a", "b", "c"],
             "explanation": "Corria, caminhava e venceu estão no passado. Vence está no presente.",
-            "dicaCearense": "Mermão, olha a regra: Corria, caminhava e venceu estão no passado. Vence está no presente. Olha todas as opções antes de responder, visse?"
+            "dicaCearense": "Lembra disso: Corria, caminhava e venceu estão no passado. Vence está no presente. Relê o enunciado com atenção."
           },
           {
             "id": "p5-verb-f3-q5",
@@ -1105,7 +1105,7 @@
             "placeholder": "Escreva o verbo no passado",
             "acceptedAnswers": ["venceu", "venceu."],
             "explanation": "Ontem indica passado, então usamos venceu.",
-            "dicaCearense": "Arretado de bom! Vamos revisar: Ontem indica passado, então usamos venceu. Num tem perigo, não! Escreve com calma que tu consegue."
+            "dicaCearense": "Confere aí: Ontem indica passado, então usamos venceu. Pensa com calma antes de responder."
           }
         ]
       }
@@ -1119,10 +1119,10 @@
       "position": { "x": 0, "y": 0 },
       "unlock": { "requires": ["p5-verb-f3"] },
       "npc": {
-        "speaker": "Sentinela da Frase",
+        "speaker": "Professora Thaís",
         "lines": [
-          "Vamos reconhecer o sujeito e o predicado e classificar as frases.",
-          "A pontuação muda a intenção da frase."
+          "Bora reconhecer o sujeito e o predicado e classificar as frases, visse?",
+          "A pontuação muda a intenção da frase. Quando tu percebe isso, é só a massa!"
         ]
       },
       "reward": { "itemId": "p5-selo-frase", "label": "Selo da frase" },
@@ -1146,7 +1146,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "O vento é o termo sobre o qual se declara que balançou as árvores.",
-            "dicaCearense": "Oxe, calma aí! O vento é o termo sobre o qual se declara que balançou as árvores. Dá uma olhada nas opções de novo que tu acha!"
+            "dicaCearense": "Olha só, macho: O vento é o termo sobre o qual se declara que balançou as árvores. Confere cada alternativa."
           },
           {
             "id": "p5-sint-f1-q2",
@@ -1160,7 +1160,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "O predicado é o que se declara sobre o sujeito: balançou as árvores.",
-            "dicaCearense": "Bora desenrolar isso aqui! O predicado é o que se declara sobre o sujeito: balançou as árvores. Lê as alternativas com calma e elimina o que não combina."
+            "dicaCearense": "Guarda essa ideia: O predicado é o que se declara sobre o sujeito: balançou as árvores. Tu dá conta, macho."
           },
           {
             "id": "p5-sint-f1-q3",
@@ -1174,7 +1174,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "A frase declarativa afirma algo e termina com ponto final.",
-            "dicaCearense": "Num tem perigo, não! A frase declarativa afirma algo e termina com ponto final. Relê o enunciado e confia no teu raciocínio."
+            "dicaCearense": "Oxe, bora de leve: A frase declarativa afirma algo e termina com ponto final."
           },
           {
             "id": "p5-sint-f1-q4",
@@ -1188,7 +1188,7 @@
             ],
             "correctChoiceIds": ["a", "b"],
             "explanation": "As frases A e B expressam emoção e terminam com exclamação. C é declarativa e D é interrogativa.",
-            "dicaCearense": "Visse? Presta atenção: As frases A e B expressam emoção e terminam com exclamação. C é declarativa e D é interrogativa. Vai com calma e seleciona apenas o que combina com a regra."
+            "dicaCearense": "Olha a regra: As frases A e B expressam emoção e terminam com exclamação. C é declarativa e D é interrogativa. Lê as alternativas com calma."
           },
           {
             "id": "p5-sint-f1-q5",
@@ -1197,7 +1197,7 @@
             "placeholder": "Escreva o sinal",
             "acceptedAnswers": ["!", "! ", "exclamação", "ponto de exclamação"],
             "explanation": "A frase expressa entusiasmo, por isso deve terminar com ponto de exclamação.",
-            "dicaCearense": "Mermão, olha a regra: A frase expressa entusiasmo, por isso deve terminar com ponto de exclamação. Tenta escrever com calma e confia no que tu aprendeu."
+            "dicaCearense": "Oxe, não fica avexado: A frase expressa entusiasmo, por isso deve terminar com ponto de exclamação. Tu dá conta, macho."
           }
         ]
       }
@@ -1211,10 +1211,10 @@
       "position": { "x": 2, "y": 1 },
       "unlock": { "requires": ["p5-sint-f1"] },
       "npc": {
-        "speaker": "Sentinela da Frase",
+        "speaker": "Professora Thaís",
         "lines": [
-          "Em um diálogo, os dois-pontos anunciam a fala e o travessão a inicia.",
-          "Vamos identificar cada sinal."
+          "Num diálogo, os dois-pontos anunciam a fala e o travessão inicia ela.",
+          "Bora identificar cada sinal. Não fica avexado, que é simples."
         ]
       },
       "reward": { "itemId": "p5-selo-dialogo", "label": "Selo do diálogo" },
@@ -1238,7 +1238,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Os dois-pontos anunciam que a fala da menina virá em seguida.",
-            "dicaCearense": "Arretado de bom! Vamos revisar: Os dois-pontos anunciam que a fala da menina virá em seguida. Lê as alternativas com calma e elimina o que não combina."
+            "dicaCearense": "Bora desenrolar: Os dois-pontos anunciam que a fala da menina virá em seguida. Revisa a regra e tenta de novo."
           },
           {
             "id": "p5-sint-f2-q2",
@@ -1252,7 +1252,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "O travessão inicia a fala da personagem.",
-            "dicaCearense": "Oxe, calma aí! O travessão inicia a fala da personagem. Relê o enunciado e confia no teu raciocínio."
+            "dicaCearense": "Lembra disso: O travessão inicia a fala da personagem. Relê com calma, visse?"
           },
           {
             "id": "p5-sint-f2-q3",
@@ -1266,7 +1266,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Os dois-pontos podem introduzir uma explicação, uma lista ou uma fala.",
-            "dicaCearense": "Bora desenrolar isso aqui! Os dois-pontos podem introduzir uma explicação, uma lista ou uma fala. Respira, revisa a regra e tenta de novo."
+            "dicaCearense": "Calma aí, macho: Os dois-pontos podem introduzir uma explicação, uma lista ou uma fala."
           },
           {
             "id": "p5-sint-f2-q4",
@@ -1280,7 +1280,7 @@
             ],
             "correctChoiceIds": ["a", "b", "c"],
             "explanation": "Travessão, dois-pontos e interrogação são sinais de pontuação usados em diálogos. Sublinhado não é pontuação.",
-            "dicaCearense": "Num tem perigo, não! Travessão, dois-pontos e interrogação são sinais de pontuação usados em diálogos. Sublinhado não é pontuação. Confere cada alternativa com calma, uma por uma."
+            "dicaCearense": "Bora entender: Travessão, dois-pontos e interrogação são sinais de pontuação usados em diálogos. Sublinhado não é pontuação. Confere cada alternativa."
           },
           {
             "id": "p5-sint-f2-q5",
@@ -1289,7 +1289,7 @@
             "placeholder": "Escreva o sinal",
             "acceptedAnswers": [":", "dois-pontos", "dois pontos"],
             "explanation": "Os dois-pontos anunciam a fala que vem depois do travessão.",
-            "dicaCearense": "Visse? Presta atenção: Os dois-pontos anunciam a fala que vem depois do travessão. Pensa na regra e escreve a palavra sem pressa."
+            "dicaCearense": "Guarda essa ideia: Os dois-pontos anunciam a fala que vem depois do travessão. Lê tudo antes de marcar."
           }
         ]
       }
@@ -1303,10 +1303,10 @@
       "position": { "x": 1, "y": 2 },
       "unlock": { "requires": ["p5-sint-f2"] },
       "npc": {
-        "speaker": "Sentinela da Frase",
+        "speaker": "Professora Thaís",
         "lines": [
-          "Agora vamos analisar sujeito, predicado e pontuação em um pequeno texto.",
-          "Leia o trecho inteiro antes de responder."
+          "Agora bora analisar sujeito, predicado e pontuação num pequeno texto, macho.",
+          "Lê o trecho inteiro antes de responder. Tu é desenrolado, vai dar conta."
         ]
       },
       "reward": { "itemId": "p5-bau-sintaxe", "label": "Baú da sintaxe" },
@@ -1330,7 +1330,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "O menino é o termo sobre o qual se declara que abriu a janela e viu o céu.",
-            "dicaCearense": "Mermão, olha a regra: O menino é o termo sobre o qual se declara que abriu a janela e viu o céu. Relê o enunciado e confia no teu raciocínio."
+            "dicaCearense": "Sem pressa, avexado não ajuda: O menino é o termo sobre o qual se declara que abriu a janela e viu o céu. Olha as opções com atenção."
           },
           {
             "id": "p5-sint-f3-q2",
@@ -1344,7 +1344,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "O predicado informa o que o menino fez: abriu a janela e viu o céu.",
-            "dicaCearense": "Arretado de bom! Vamos revisar: O predicado informa o que o menino fez: abriu a janela e viu o céu. Respira, revisa a regra e tenta de novo."
+            "dicaCearense": "Olha a regra: O predicado informa o que o menino fez: abriu a janela e viu o céu. Confia, macho, tu já sabe."
           },
           {
             "id": "p5-sint-f3-q3",
@@ -1358,7 +1358,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "O travessão inicia a fala: — Que dia bonito!",
-            "dicaCearense": "Oxe, calma aí! O travessão inicia a fala: — Que dia bonito! Dá uma olhada nas opções de novo que tu acha!"
+            "dicaCearense": "Olha só, macho: O travessão inicia a fala: — Que dia bonito!"
           },
           {
             "id": "p5-sint-f3-q4",
@@ -1372,7 +1372,7 @@
             ],
             "correctChoiceIds": ["a", "b", "c"],
             "explanation": "O trecho tem dois-pontos, travessão e exclamação. Não há interrogação.",
-            "dicaCearense": "Bora desenrolar isso aqui! O trecho tem dois-pontos, travessão e exclamação. Não há interrogação. Marque só o que segue a regra, sem pressa."
+            "dicaCearense": "Vamos revisar: O trecho tem dois-pontos, travessão e exclamação. Não há interrogação. Revisa a regra e tenta de novo."
           },
           {
             "id": "p5-sint-f3-q5",
@@ -1381,7 +1381,7 @@
             "placeholder": "Escreva o sinal",
             "acceptedAnswers": ["?", "? ", "interrogação", "ponto de interrogação"],
             "explanation": "Para transformar a frase em pergunta, usamos o ponto de interrogação.",
-            "dicaCearense": "Num tem perigo, não! Para transformar a frase em pergunta, usamos o ponto de interrogação. Relembra como a palavra aparece no dia a dia e tenta de novo."
+            "dicaCearense": "Oxe, bora de leve: Para transformar a frase em pergunta, usamos o ponto de interrogação. Bora desenrolar, visse?"
           }
         ]
       }
@@ -1395,10 +1395,10 @@
       "position": { "x": 0, "y": 0 },
       "unlock": { "requires": ["p5-sint-f3"] },
       "npc": {
-        "speaker": "Contadora de Histórias",
+        "speaker": "Professora Thaís",
         "lines": [
-          "Cada gênero textual tem uma função e uma estrutura.",
-          "Vamos reconhecer fábulas, bilhetes e notícias."
+          "Cada gênero textual tem uma função e uma estrutura, visse?",
+          "Bora reconhecer fábulas, bilhetes e notícias. Só a massa!"
         ]
       },
       "reward": { "itemId": "p5-selo-generos", "label": "Selo dos gêneros" },
@@ -1422,7 +1422,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "A fábula tem animais personificados e uma moral.",
-            "dicaCearense": "Visse? Presta atenção: A fábula tem animais personificados e uma moral. Respira, revisa a regra e tenta de novo."
+            "dicaCearense": "Vixe, macho, olha só: A fábula tem animais personificados e uma moral. Pensa com calma antes de responder."
           },
           {
             "id": "p5-gen-f1-q2",
@@ -1436,7 +1436,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "A notícia relata um fato recente e responde a perguntas como quem, quando, onde e o quê.",
-            "dicaCearense": "Mermão, olha a regra: A notícia relata um fato recente e responde a perguntas como quem, quando, onde e o quê. Dá uma olhada nas opções de novo que tu acha!"
+            "dicaCearense": "Bora entender: A notícia relata um fato recente e responde a perguntas como quem, quando, onde e o quê. Respira e lê de novo."
           },
           {
             "id": "p5-gen-f1-q3",
@@ -1450,7 +1450,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "O bilhete é uma mensagem curta trocada entre pessoas.",
-            "dicaCearense": "Arretado de bom! Vamos revisar: O bilhete é uma mensagem curta trocada entre pessoas. Lê as alternativas com calma e elimina o que não combina."
+            "dicaCearense": "Bora desenrolar: O bilhete é uma mensagem curta trocada entre pessoas."
           },
           {
             "id": "p5-gen-f1-q4",
@@ -1464,7 +1464,7 @@
             ],
             "correctChoiceIds": ["a", "b"],
             "explanation": "A notícia apresenta um fato principal e costuma informar data e local. Moral e animais que falam são da fábula.",
-            "dicaCearense": "Oxe, calma aí! A notícia apresenta um fato principal e costuma informar data e local. Moral e animais que falam são da fábula. Olha todas as opções antes de responder, visse?"
+            "dicaCearense": "Vamos por partes: A notícia apresenta um fato principal e costuma informar data e local. Moral e animais que falam são da fábula. Olha as opções com atenção."
           },
           {
             "id": "p5-gen-f1-q5",
@@ -1473,7 +1473,7 @@
             "placeholder": "Escreva o gênero",
             "acceptedAnswers": ["fábula", "fabula", "fábula.", "fabula."],
             "explanation": "Esse é o gênero da fábula.",
-            "dicaCearense": "Bora desenrolar isso aqui! Esse é o gênero da fábula. Num tem perigo, não! Escreve com calma que tu consegue."
+            "dicaCearense": "Olha a regra: Esse é o gênero da fábula. Lê as alternativas com calma."
           }
         ]
       }
@@ -1487,10 +1487,10 @@
       "position": { "x": 2, "y": 1 },
       "unlock": { "requires": ["p5-gen-f1"] },
       "npc": {
-        "speaker": "Contadora de Histórias",
+        "speaker": "Professora Thaís",
         "lines": [
-          "Agora vamos interpretar o que cada texto quer dizer.",
-          "Na fábula, procure a moral; no bilhete, procure quem escreve e para quem."
+          "Agora bora interpretar o que cada texto quer dizer, sem avexar.",
+          "Na fábula, procura a moral; no bilhete, procura quem escreve e para quem. Visse?"
         ]
       },
       "reward": { "itemId": "p5-selo-interpretacao", "label": "Selo da interpretação" },
@@ -1514,7 +1514,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "O rato retribui a gentileza do leão, mostrando que pequenos gestos podem ter grandes consequências.",
-            "dicaCearense": "Num tem perigo, não! O rato retribui a gentileza do leão, mostrando que pequenos gestos podem ter grandes consequências. Dá uma olhada nas opções de novo que tu acha!"
+            "dicaCearense": "Vixe, presta atenção: O rato retribui a gentileza do leão, mostrando que pequenos gestos podem ter grandes consequências. Compara as alternativas."
           },
           {
             "id": "p5-gen-f2-q2",
@@ -1528,7 +1528,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "O rato roeu a rede e libertou o leão.",
-            "dicaCearense": "Visse? Presta atenção: O rato roeu a rede e libertou o leão. Lê as alternativas com calma e elimina o que não combina."
+            "dicaCearense": "Vamos revisar: O rato roeu a rede e libertou o leão. Vixe, mas é só revisar."
           },
           {
             "id": "p5-gen-f2-q3",
@@ -1542,7 +1542,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Maria assina o bilhete, então é a remetente. João é o destinatário.",
-            "dicaCearense": "Mermão, olha a regra: Maria assina o bilhete, então é a remetente. João é o destinatário. Relê o enunciado e confia no teu raciocínio."
+            "dicaCearense": "Sem pressa, avexado não ajuda: Maria assina o bilhete, então é a remetente. João é o destinatário."
           },
           {
             "id": "p5-gen-f2-q4",
@@ -1556,7 +1556,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "Maria avisa João de que não haverá aula amanhã.",
-            "dicaCearense": "Arretado de bom! Vamos revisar: Maria avisa João de que não haverá aula amanhã. Respira, revisa a regra e tenta de novo."
+            "dicaCearense": "Confere aí: Maria avisa João de que não haverá aula amanhã. Pensa com calma antes de responder."
           },
           {
             "id": "p5-gen-f2-q5",
@@ -1570,7 +1570,7 @@
             ],
             "correctChoiceIds": ["a", "b", "d"],
             "explanation": "O bilhete tem destinatário (João), remetente (Maria) e um aviso sobre a aula. Moral é característica da fábula.",
-            "dicaCearense": "Oxe, calma aí! O bilhete tem destinatário (João), remetente (Maria) e um aviso sobre a aula. Moral é característica da fábula. Confere cada alternativa com calma, uma por uma."
+            "dicaCearense": "Olha só, macho: O bilhete tem destinatário (João), remetente (Maria) e um aviso sobre a aula. Moral é característica da fábula. Não fica avexado, não."
           }
         ]
       }
@@ -1584,10 +1584,10 @@
       "position": { "x": 1, "y": 2 },
       "unlock": { "requires": ["p5-gen-f2"] },
       "npc": {
-        "speaker": "Contadora de Histórias",
+        "speaker": "Professora Thaís",
         "lines": [
           "A notícia responde a perguntas essenciais: o quê, quando, onde e por quê.",
-          "Vamos interpretar uma notícia curta."
+          "Bora interpretar uma notícia curta. Vixe, mas tu desenrola isso rapidinho!"
         ]
       },
       "reward": { "itemId": "p5-bau-generos", "label": "Baú dos gêneros" },
@@ -1611,7 +1611,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "O fato principal é a apresentação da horta comunitária pelos alunos.",
-            "dicaCearense": "Bora desenrolar isso aqui! O fato principal é a apresentação da horta comunitária pelos alunos. Lê as alternativas com calma e elimina o que não combina."
+            "dicaCearense": "Presta atenção nisso: O fato principal é a apresentação da horta comunitária pelos alunos. Lê tudo antes de marcar."
           },
           {
             "id": "p5-gen-f3-q2",
@@ -1625,7 +1625,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "A notícia informa que o fato ocorreu na última terça-feira.",
-            "dicaCearense": "Num tem perigo, não! A notícia informa que o fato ocorreu na última terça-feira. Relê o enunciado e confia no teu raciocínio."
+            "dicaCearense": "Vamos por partes: A notícia informa que o fato ocorreu na última terça-feira. Tu é desenrolado, vai acertar."
           },
           {
             "id": "p5-gen-f3-q3",
@@ -1639,7 +1639,7 @@
             ],
             "correctChoiceId": "a",
             "explanation": "O projeto ganhou destaque por reaproveitar garrafas plásticas na horta comunitária.",
-            "dicaCearense": "Visse? Presta atenção: O projeto ganhou destaque por reaproveitar garrafas plásticas na horta comunitária. Respira, revisa a regra e tenta de novo."
+            "dicaCearense": "Vixe, macho, olha só: O projeto ganhou destaque por reaproveitar garrafas plásticas na horta comunitária."
           },
           {
             "id": "p5-gen-f3-q4",
@@ -1653,7 +1653,7 @@
             ],
             "correctChoiceIds": ["a", "b", "c"],
             "explanation": "A notícia apresenta fato, tempo e local. Moral é característica da fábula.",
-            "dicaCearense": "Mermão, olha a regra: A notícia apresenta fato, tempo e local. Moral é característica da fábula. Confere cada alternativa com calma, uma por uma."
+            "dicaCearense": "Presta atenção: A notícia apresenta fato, tempo e local. Moral é característica da fábula. Compara as alternativas."
           },
           {
             "id": "p5-gen-f3-q5",
@@ -1662,7 +1662,7 @@
             "placeholder": "Escreva o gênero",
             "acceptedAnswers": ["notícia", "noticia", "notícia.", "noticia."],
             "explanation": "A notícia informa um fato recente de interesse público.",
-            "dicaCearense": "Arretado de bom! Vamos revisar: A notícia informa um fato recente de interesse público. Pensa na regra e escreve a palavra sem pressa."
+            "dicaCearense": "Vamos revisar: A notícia informa um fato recente de interesse público. Revisa a regra e tenta de novo."
           }
         ]
       }
