@@ -911,6 +911,7 @@ ul {
 /* Feedback */
 
 .feedback {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -2405,6 +2406,7 @@ legend.field__label {
   line-height: 1.45;
 }
 
+
 /* Camadas do avatar customizado */
 
 .player-avatar .pixel-sprite {
@@ -2416,4 +2418,190 @@ legend.field__label {
 .trail-node__player {
   display: grid;
   place-items: center;
+}
+
+/* Juice do quiz: acerto, erro e XP flutuante */
+
+.question-card--correct {
+  border-color: var(--green);
+  box-shadow:
+    0 6px 0 var(--shadow),
+    inset 0 0 0 3px #1a1527,
+    0 0 22px rgba(87, 214, 141, 0.24);
+  animation: quiz-card-success 420ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.question-card--wrong {
+  border-color: var(--red);
+  box-shadow:
+    0 6px 0 var(--shadow),
+    inset 0 0 0 3px #1a1527,
+    0 0 20px rgba(255, 107, 107, 0.24);
+  animation: quiz-card-shake 360ms cubic-bezier(0.36, 0.07, 0.19, 0.97);
+}
+
+.choice-button--correct,
+.choice-button--correct:disabled {
+  border-color: var(--green);
+  background:
+    linear-gradient(180deg, rgba(87, 214, 141, 0.3), rgba(87, 214, 141, 0.1)),
+    var(--panel-2);
+  box-shadow:
+    inset 0 0 0 2px rgba(87, 214, 141, 0.35),
+    0 0 18px rgba(87, 214, 141, 0.45);
+  opacity: 1;
+  animation: choice-correct 520ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.choice-button--wrong,
+.choice-button--wrong:disabled {
+  border-color: var(--red);
+  background:
+    linear-gradient(180deg, rgba(255, 107, 107, 0.3), rgba(255, 107, 107, 0.08)),
+    var(--panel-2);
+  box-shadow:
+    inset 0 0 0 2px rgba(255, 107, 107, 0.3),
+    0 0 16px rgba(255, 107, 107, 0.35);
+  opacity: 1;
+  animation: choice-wrong 460ms ease-out;
+}
+
+.choice-button--correct .choice-button__marker {
+  color: var(--green);
+}
+
+.choice-button--wrong .choice-button__marker {
+  color: var(--red);
+}
+
+.quiz-xp-pop {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  z-index: 120;
+  padding: 6px 12px;
+  color: var(--accent);
+  background: rgba(11, 9, 19, 0.92);
+  border: 2px solid var(--accent);
+  box-shadow:
+    0 3px 0 #000,
+    0 0 18px rgba(255, 207, 92, 0.45);
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  pointer-events: none;
+  animation: quiz-xp-float 1.05s cubic-bezier(0.2, 0.8, 0.2, 1) forwards;
+}
+
+@keyframes quiz-card-success {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.012);
+  }
+  65% {
+    transform: scale(0.997);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes quiz-card-shake {
+  10%,
+  90% {
+    transform: translateX(-2px);
+  }
+  20%,
+  80% {
+    transform: translateX(3px);
+  }
+  30%,
+  50%,
+  70% {
+    transform: translateX(-4px);
+  }
+  40%,
+  60% {
+    transform: translateX(4px);
+  }
+}
+
+@keyframes choice-correct {
+  0% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+  30% {
+    transform: scale(1.035);
+    filter: brightness(1.35);
+  }
+  55% {
+    transform: scale(0.995);
+    filter: brightness(1.1);
+  }
+  100% {
+    transform: scale(1);
+    filter: brightness(1);
+  }
+}
+
+@keyframes choice-wrong {
+  0%,
+  100% {
+    transform: translateX(0);
+    filter: brightness(1);
+  }
+  15% {
+    transform: translateX(-3px);
+    filter: brightness(1.4);
+  }
+  30% {
+    transform: translateX(3px);
+    filter: brightness(1.15);
+  }
+  45% {
+    transform: translateX(-2px);
+  }
+  60% {
+    transform: translateX(2px);
+  }
+  75% {
+    transform: translateX(-1px);
+  }
+}
+
+@keyframes quiz-xp-float {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, 12px) scale(0.8);
+  }
+  22% {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1.06);
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -70px) scale(0.95);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .question-card--correct,
+  .question-card--wrong,
+  .choice-button--correct,
+  .choice-button--correct:disabled,
+  .choice-button--wrong,
+  .choice-button--wrong:disabled {
+    animation: none;
+  }
+
+  .quiz-xp-pop {
+    display: none;
+  }
 }

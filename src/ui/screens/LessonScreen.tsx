@@ -1,11 +1,20 @@
 import { useEffect, useState } from "react";
-import guideImage from "../../assets/personagem-tutorial.jpeg";
+import {
+  GUIDE_HINT_SIGNATURE,
+  GUIDE_HINT_TITLE,
+  GUIDE_NAME,
+} from "../../content/guide";
 import type { AnswerFeedback, Question, UserAnswer } from "../../core/entities/index";
+import { prefersReducedMotion } from "../effects/confetti";
+import { FloatingXp } from "../effects/FloatingXp";
+import { choiceFeedbackState, xpGainLabel } from "../effects/quizFeedback";
+import { useQuizFeedback } from "../effects/useQuizFeedback";
 import { HeartRow } from "../pixel/HeartRow";
 import { Modal } from "../pixel/Modal";
 import { PixelButton } from "../pixel/PixelButton";
 import { PixelPanel } from "../pixel/PixelPanel";
 import { ProgressBar } from "../pixel/ProgressBar";
+import { TeacherAvatar } from "../pixel/TeacherAvatar";
 import { PedagogicalFeedbackModal } from "./PedagogicalFeedbackModal";
 
 interface LessonScreenProps {
@@ -42,6 +51,9 @@ export function LessonScreen({
   const [selected, setSelected] = useState<string[]>([]);
   const [text, setText] = useState("");
   const [hintOpen, setHintOpen] = useState(false);
+  const [wrongFeedbackReady, setWrongFeedbackReady] = useState(false);
+
+  useQuizFeedback(feedback);
 
   useEffect(() => {
     setSelected([]);
@@ -49,7 +61,28 @@ export function LessonScreen({
     setHintOpen(false);
   }, [question.id]);
 
+  useEffect(() => {
+    setWrongFeedbackReady(false);
+    if (!feedback || feedback.correct) return;
+
+    if (prefersReducedMotion()) {
+      setWrongFeedbackReady(true);
+      return;
+    }
+
+    const timer = window.setTimeout(() => setWrongFeedbackReady(true), 260);
+    return () => window.clearTimeout(timer);
+  }, [feedback?.questionId, feedback?.correct]);
+
   const locked = feedback !== null;
+  const xpGain = xpGainLabel(feedback);
+  const questionCardClass = [
+    "question-card",
+    feedback?.correct ? "question-card--correct" : "",
+    feedback && !feedback.correct ? "question-card--wrong" : "",
+  ]
+    .filter(Boolean)
+    .join(" ");
   const canSubmit =
     !locked && (question.type === "text" ? text.trim().length > 0 : selected.length > 0);
 
@@ -101,21 +134,15 @@ export function LessonScreen({
           <PixelButton
             variant="secondary"
             className="hint-button"
-            aria-label="Pedir dica para Tia Thaís"
+            aria-label={`Pedir dica para ${GUIDE_NAME}`}
             onClick={handleHint}
           >
-            <img
-              className="hint-button__guide"
-              src={guideImage}
-              alt=""
-              draggable={false}
-            />
             <span>Pedir dica</span>
           </PixelButton>
         </div>
       ) : null}
 
-      <PixelPanel className="question-card">
+      <PixelPanel className={questionCardClass}>
         <span className="eyebrow">
           {question.type === "multiple-choice"
             ? "Escolha uma ou mais respostas"
@@ -140,17 +167,38 @@ export function LessonScreen({
           <div className="choice-list">
             {question.choices.map((choice) => {
               const isSelected = selected.includes(choice.id);
+              const state = choiceFeedbackState(
+                question,
+                choice.id,
+                selected,
+                feedback,
+              );
+              const marker =
+                state === "correct"
+                  ? "✓"
+                  : state === "wrong"
+                    ? "✕"
+                    : isSelected
+                      ? "■"
+                      : "□";
               return (
                 <button
                   key={choice.id}
                   type="button"
-                  className={`choice-button${isSelected ? " choice-button--selected" : ""}`}
+                  className={[
+                    "choice-button",
+                    state === "selected" ? "choice-button--selected" : "",
+                    state === "correct" ? "choice-button--correct" : "",
+                    state === "wrong" ? "choice-button--wrong" : "",
+                  ]
+                    .filter(Boolean)
+                    .join(" ")}
                   aria-pressed={isSelected}
                   disabled={locked}
                   onClick={() => toggleChoice(choice.id)}
                 >
                   <span className="choice-button__marker" aria-hidden="true">
-                    {isSelected ? "■" : "□"}
+                    {marker}
                   </span>
                   {choice.label}
                 </button>
@@ -162,9 +210,15 @@ export function LessonScreen({
 
       {feedback?.correct ? (
         <PixelPanel className="feedback feedback--correct">
-          <div className="feedback__head">
-            <strong>Acertou!</strong>
-            <span>+{feedback.earnedXp} XP</span>
+          <FloatingXp key={feedback.questionId} amount={feedback.earnedXp} />
+          <div
+            className="feedback__head"
+            role="status"
+            aria-live="polite"
+            aria-atomic="true"
+          >
+            <strong>Acertou, visse!</strong>
+            <span>{xpGain ?? `+${feedback.earnedXp} XP`}</span>
           </div>
           {feedback.explanation ? <p>{feedback.explanation}</p> : null}
           <PixelButton fullWidth onClick={onNext}>
@@ -179,7 +233,7 @@ export function LessonScreen({
         </PixelButton>
       ) : null}
 
-      {feedback && !feedback.correct ? (
+      {feedback && !feedback.correct && wrongFeedbackReady ? (
         <PedagogicalFeedbackModal
           feedback={feedback}
           onContinue={onNext}
@@ -191,23 +245,22 @@ export function LessonScreen({
         <Modal labelledBy="hint-title" onClose={() => setHintOpen(false)}>
           <div className="hint-dialog">
             <div className="hint-dialog__portrait">
-              <img
+              <TeacherAvatar
                 className="hint-dialog__guide"
-                src={guideImage}
-                alt="Tia Thaís"
-                draggable={false}
+                size={76}
+                title={GUIDE_NAME}
               />
             </div>
             <div className="hint-dialog__bubble">
-              <span className="eyebrow">Dica da Tia Thaís</span>
-              <h2 id="hint-title">Bora desenrolar isso!</h2>
+              <span className="eyebrow">{GUIDE_HINT_SIGNATURE}</span>
+              <h2 id="hint-title">{GUIDE_HINT_TITLE}</h2>
               <p>{question.dicaCearense}</p>
               <p className="hint-dialog__penalty">
                 Usar a dica reduz {hintXpPenalty} XP da recompensa final, uma vez
-                por questão.
+                por questão. Visse?
               </p>
               <PixelButton fullWidth onClick={() => setHintOpen(false)}>
-                Entendi, bora tentar!
+                Visse? Bora tentar!
               </PixelButton>
             </div>
           </div>
