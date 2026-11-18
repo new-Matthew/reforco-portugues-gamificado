@@ -1,5 +1,10 @@
+import type { CSSProperties } from "react";
 import { PixelSprite } from "./PixelSprite";
-import { composeAvatarSprites, spriteForAvatar, spriteForHat } from "./customizationSprites";
+import {
+  hatOffsetY,
+  spriteForAvatar,
+  spriteForHat,
+} from "./customizationSprites";
 
 interface PlayerAvatarProps {
   readonly avatarSpriteId?: string | null;
@@ -16,17 +21,31 @@ export function PlayerAvatar({
   title = "Avatar do explorador",
   className,
 }: PlayerAvatarProps) {
-  const sprite = composeAvatarSprites(
-    spriteForAvatar(avatarSpriteId),
-    spriteForHat(hatSpriteId),
-  );
+  const avatar = spriteForAvatar(avatarSpriteId);
+  const hat = spriteForHat(hatSpriteId);
+  const classes = ["player-avatar", className].filter(Boolean).join(" ");
+  const style = { "--avatar-size": `${size}px` } as CSSProperties;
 
   return (
-    <PixelSprite
-      sprite={sprite}
-      size={size}
-      title={title}
-      className={className}
-    />
+    <div
+      className={classes}
+      style={style}
+      role="img"
+      aria-label={title}
+    >
+      <PixelSprite
+        className="player-avatar__base"
+        sprite={avatar}
+        size={size}
+      />
+      {hat ? (
+        <PixelSprite
+          className="player-avatar__hat"
+          sprite={hat}
+          size={size}
+          style={{ top: `${hatOffsetY(hat, avatar, size)}px` }}
+        />
+      ) : null}
+    </div>
   );
 }

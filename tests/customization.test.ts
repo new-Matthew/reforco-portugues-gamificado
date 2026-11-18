@@ -2,11 +2,11 @@ import { describe, expect, it } from "vitest";
 import { createInitialStreak } from "../src/core/entities/player";
 import { nextStreak, studyDayKey } from "../src/core/services/progression";
 import {
-  composeAvatarSprites,
+  hatOffsetY,
   spriteForAvatar,
   spriteForHat,
 } from "../src/ui/pixel/customizationSprites";
-import { heroSprite } from "../src/ui/pixel/sprites";
+import { heroSprite, npcSprite } from "../src/ui/pixel/sprites";
 
 const DAY = new Date(2026, 2, 5, 10, 0, 0).getTime();
 const PREVIOUS_DAY = new Date(2026, 2, 4, 23, 0, 0).getTime();
@@ -54,19 +54,38 @@ describe("avatares customizados", () => {
     expect(spriteForHat("hat-inexistente")).toBeNull();
   });
 
-  it("compõe chapéu sobre o avatar mesclando paletas", () => {
+  it("ancora o item equipado na cabeça do avatar", () => {
+    const avatar = spriteForAvatar("avatar-hero");
+    const wizard = spriteForHat("hat-wizard");
+    const crown = spriteForHat("hat-crown");
+    const glasses = spriteForHat("hat-glasses");
+    if (!wizard || !crown || !glasses) {
+      throw new Error("Sprites de chapéu ausentes.");
+    }
+
+    expect(hatOffsetY(wizard, avatar, 48)).toBeCloseTo(-24);
+    expect(hatOffsetY(wizard, avatar, 32)).toBeCloseTo(-16);
+    expect(hatOffsetY(crown, avatar, 48)).toBeCloseTo(-16);
+    expect(hatOffsetY(glasses, avatar, 48)).toBeCloseTo(-4);
+  });
+
+  it("mantém o chapéu de mago pontudo e com aba mais larga", () => {
     const hat = spriteForHat("hat-wizard");
     if (!hat) throw new Error("Sprite de chapéu ausente.");
+    const filled = (row: string): number =>
+      [...row].filter((char) => char !== ".").length;
 
-    const composed = composeAvatarSprites(heroSprite, hat);
-
-    expect(composed.rows).toHaveLength(heroSprite.rows.length);
-    expect(composed.rows[0]).toContain("1");
-    expect(composed.palette["1"]).toBe("#6b3fd1");
-    expect(composed.palette["k"]).toBe(heroSprite.palette["k"]);
+    expect(filled(hat.rows[0])).toBeLessThan(filled(hat.rows[6]));
+    expect(hat.palette["1"]).toBe("#6b3fd1");
+    expect(hat.palette["3"]).toBe("#ffe38a");
   });
 
-  it("retorna o próprio avatar quando não há chapéu", () => {
-    expect(composeAvatarSprites(heroSprite, null)).toBe(heroSprite);
+  it("aplica capa ao avatar de mago", () => {
+    const mage = spriteForAvatar("avatar-mage");
+
+    expect(mage).not.toBe(npcSprite);
+    expect(mage.rows.some((row) => row.includes("P"))).toBe(true);
+    expect(mage.palette["P"]).toBe("#1f2a63");
   });
+
 });

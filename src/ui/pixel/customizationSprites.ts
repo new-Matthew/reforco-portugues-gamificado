@@ -1,4 +1,34 @@
-import { heroSprite, npcSprite, type PixelSprite } from "./sprites";
+import { heroSprite, type PixelSprite } from "./sprites";
+
+export interface HatSprite extends PixelSprite {
+  readonly anchorRow: number;
+  readonly targetRow: number;
+}
+
+const mageAvatarSprite: PixelSprite = {
+  palette: {
+    k: "#171122",
+    p: "#7b4fd6",
+    P: "#1f2a63",
+    s: "#f2c29b",
+    e: "#241a33",
+    y: "#ffe38a",
+  },
+  rows: [
+    "....pppp....",
+    "...pppppp...",
+    "..pppppppp..",
+    "...kkkkkk...",
+    "..kssssssk..",
+    "..ksessesk..",
+    "..kssssssk..",
+    "..kppppppk..",
+    ".kPppppppPk.",
+    "kPppyyppppPk",
+    "kPppppppppPk",
+    ".kPPPPPPPPk.",
+  ],
+};
 
 const knightAvatarSprite: PixelSprite = {
   palette: {
@@ -47,17 +77,19 @@ const rangerAvatarSprite: PixelSprite = {
   ],
 };
 
-const wizardHatSprite: PixelSprite = {
-  palette: { 1: "#6b3fd1", 2: "#b388ff" },
+const wizardHatSprite: HatSprite = {
+  palette: { 1: "#6b3fd1", 2: "#b388ff", 3: "#ffe38a" },
+  anchorRow: 7,
+  targetRow: 1,
   rows: [
     "......11....",
     ".....1211...",
     ".....1221...",
     "....12221...",
+    "....122221..",
     "...1222221..",
-    "..12222221..",
-    ".1111111111.",
-    "..11111111..",
+    "..1111111111",
+    "..1311111131",
     "............",
     "............",
     "............",
@@ -65,11 +97,12 @@ const wizardHatSprite: PixelSprite = {
   ],
 };
 
-const crownHatSprite: PixelSprite = {
+const crownHatSprite: HatSprite = {
   palette: { 3: "#f2c14e", 4: "#ffe38a" },
+  anchorRow: 5,
+  targetRow: 1,
   rows: [
-    "............",
-    "..4..33..4..",
+    "..3..33..3..",
     "..34.33.43..",
     "..33333333..",
     ".3333333333.",
@@ -80,11 +113,14 @@ const crownHatSprite: PixelSprite = {
     "............",
     "............",
     "............",
+    "............",
   ],
 };
 
-const knightHelmetSprite: PixelSprite = {
+const knightHelmetSprite: HatSprite = {
   palette: { 3: "#2b2b3a", 4: "#8f9aa6" },
+  anchorRow: 7,
+  targetRow: 6,
   rows: [
     "...444444...",
     "..44444444..",
@@ -101,8 +137,10 @@ const knightHelmetSprite: PixelSprite = {
   ],
 };
 
-const glassesHatSprite: PixelSprite = {
+const glassesHatSprite: HatSprite = {
   palette: { 3: "#241a33", 4: "#7fd7ff" },
+  anchorRow: 5,
+  targetRow: 4,
   rows: [
     "............",
     "............",
@@ -110,7 +148,7 @@ const glassesHatSprite: PixelSprite = {
     "............",
     "...33..33...",
     "..3.43.43...",
-    "...33..33...",
+    "............",
     "............",
     "............",
     "............",
@@ -121,12 +159,12 @@ const glassesHatSprite: PixelSprite = {
 
 const AVATAR_SPRITES: Readonly<Record<string, PixelSprite>> = {
   "avatar-hero": heroSprite,
-  "avatar-mage": npcSprite,
+  "avatar-mage": mageAvatarSprite,
   "avatar-knight": knightAvatarSprite,
   "avatar-ranger": rangerAvatarSprite,
 };
 
-const HAT_SPRITES: Readonly<Record<string, PixelSprite>> = {
+const HAT_SPRITES: Readonly<Record<string, HatSprite>> = {
   "hat-wizard": wizardHatSprite,
   "hat-crown": crownHatSprite,
   "hat-knight": knightHelmetSprite,
@@ -138,39 +176,20 @@ export function spriteForAvatar(spriteId?: string | null): PixelSprite {
   return AVATAR_SPRITES[spriteId] ?? heroSprite;
 }
 
-export function spriteForHat(spriteId?: string | null): PixelSprite | null {
+export function spriteForHat(spriteId?: string | null): HatSprite | null {
   if (!spriteId) return null;
   return HAT_SPRITES[spriteId] ?? null;
 }
 
-export function composeAvatarSprites(
+export function hatOffsetY(
+  hat: HatSprite,
   avatar: PixelSprite,
-  hat: PixelSprite | null,
-): PixelSprite {
-  if (!hat) return avatar;
-
-  const width = Math.max(
-    ...avatar.rows.map((row) => row.length),
-    ...hat.rows.map((row) => row.length),
-    1,
+  size: number,
+): number {
+  const avatarWidth = Math.max(...avatar.rows.map((row) => row.length), 1);
+  const hatWidth = Math.max(...hat.rows.map((row) => row.length), 1);
+  return (
+    hat.targetRow * (size / avatarWidth) -
+    hat.anchorRow * (size / hatWidth)
   );
-  const height = Math.max(avatar.rows.length, hat.rows.length);
-  const rows: string[] = [];
-
-  for (let y = 0; y < height; y += 1) {
-    const base = (avatar.rows[y] ?? "").padEnd(width, ".");
-    const overlay = (hat.rows[y] ?? "").padEnd(width, ".");
-    let row = "";
-    for (let x = 0; x < width; x += 1) {
-      const hatChar = overlay[x] ?? ".";
-      const hatColor = hat.palette[hatChar];
-      row += hatChar !== "." && hatColor ? hatChar : base[x] ?? ".";
-    }
-    rows.push(row);
-  }
-
-  return {
-    rows,
-    palette: { ...avatar.palette, ...hat.palette },
-  };
 }

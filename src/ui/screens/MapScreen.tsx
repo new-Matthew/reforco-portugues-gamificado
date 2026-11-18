@@ -228,7 +228,7 @@ function TrailGroup({
               }}
             >
               <span className="trail-node__sprite">
-                <PixelSprite sprite={spriteForIcon(node.icon)} size={42} />
+                <PixelSprite sprite={spriteForIcon(node.icon)} size={48} />
               </span>
               {!isUnlocked ? (
                 <span className="trail-node__lock">
@@ -242,7 +242,7 @@ function TrailGroup({
                 <PlayerAvatar
                   avatarSpriteId={avatarSpriteId}
                   hatSpriteId={hatSpriteId}
-                  size={30}
+                  size={32}
                   title="Seu avatar no mapa"
                 />
               </span>
@@ -336,7 +336,7 @@ export function MapScreen({
             <PlayerAvatar
               avatarSpriteId={equippedAvatarSpriteId}
               hatSpriteId={equippedHatSpriteId}
-              size={44}
+              size={48}
               title="Avatar do explorador"
             />
           </button>

@@ -2137,3 +2137,36 @@ legend.field__label {
     animation: none;
   }
 }
+
+/* Avatar em camadas: corpo e item equipado ancorado na cabeça */
+
+.player-avatar {
+  position: relative;
+  display: inline-block;
+  flex: none;
+  width: var(--avatar-size, 44px);
+  height: var(--avatar-size, 44px);
+  line-height: 0;
+  overflow: visible;
+}
+
+.player-avatar__hat {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  pointer-events: none;
+  filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.45));
+}
+
+/* Camadas do avatar customizado */
+
+.player-avatar .pixel-sprite {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.trail-node__player {
+  display: grid;
+  place-items: center;
+}
