@@ -31,7 +31,7 @@ describe("extensibilidade por dados", () => {
     ]);
 
     // O curso do 4º ano não existe no código da engine: ele vem apenas do JSON.
-    const session = engine.startLesson("portugues-4ano", "p4-ort-r-s-f1");
+    const session = engine.startLesson("portugues-4ano", "p4-n1-reconhecimento");
     expect(session.questionIds).toHaveLength(5);
     expect(engine.getCurrentQuestion()?.type).toBe("single-choice");
 

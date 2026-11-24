@@ -23,7 +23,7 @@ describe("validateContentPacks", () => {
       "Língua Portuguesa · 4º Ano",
       "Língua Portuguesa · 5º Ano",
     ]);
-    expect(result.catalog.courses[0]?.nodes).toHaveLength(21);
+    expect(result.catalog.courses[0]?.nodes).toHaveLength(5);
     expect(result.catalog.courses[1]?.nodes).toHaveLength(18);
   });
 
@@ -101,7 +101,7 @@ describe("validateContentPacks", () => {
   it("rejeita ciclos de desbloqueio", () => {
     const pack = cloneQuartoAno();
     const nodes = pack.nodes as Array<Record<string, unknown>>;
-    nodes[0]!.unlock = { requires: ["p4-ort-r-s-f3"] };
+    nodes[0]!.unlock = { requires: [nodes[nodes.length - 1]!.id] };
 
     const result = validateContentPacks([pack]);
     expect(result.ok).toBe(false);

@@ -25,44 +25,67 @@ describe("conteúdo do Ensino Fundamental I", () => {
     ]);
   });
 
-  it("mantém a progressão em escada com 3 fases por módulo", () => {
+  it("mantém a progressão linear dos níveis e fases", () => {
     const result = validateContentPacks(packs);
     if (!result.ok) throw new Error("Packs inválidos.");
 
     const quarto = requireCourse(result.catalog.courses, "portugues-4ano");
     const quinto = requireCourse(result.catalog.courses, "portugues-5ano");
 
-    expect(quarto.nodes).toHaveLength(21);
+    expect(quarto.nodes).toHaveLength(5);
     expect(quinto.nodes).toHaveLength(18);
 
     for (const course of [quarto, quinto]) {
-      const chapters = new Map<string, typeof course.nodes>();
-      for (const node of course.nodes) {
-        const chapter = node.chapter ?? "sem módulo";
-        chapters.set(chapter, [...(chapters.get(chapter) ?? []), node]);
-      }
+      expect(course.nodes[0]?.unlock.requires ?? []).toEqual([]);
 
-      for (const [chapter, nodes] of chapters) {
-        expect(nodes, chapter).toHaveLength(3);
-        expect(nodes[0]?.title).toContain("Fase 1");
-        expect(nodes[1]?.title).toContain("Fase 2");
-        expect(nodes[2]?.title).toContain("Fase 3");
-        expect(nodes[1]?.unlock.requires).toEqual([nodes[0]?.id]);
-        expect(nodes[2]?.unlock.requires).toEqual([nodes[1]?.id]);
+      for (let index = 1; index < course.nodes.length; index += 1) {
+        expect(course.nodes[index]?.unlock.requires).toEqual([
+          course.nodes[index - 1]?.id,
+        ]);
       }
+    }
+
+    expect(quarto.nodes.map((node) => node.title)).toEqual([
+      "Nível 1 · Reconhecimento",
+      "Nível 2 · Compreensão",
+      "Nível 3 · Aplicação",
+      "Nível 4 · Análise",
+      "Nível 5 · Domínio",
+    ]);
+
+    const chapters = new Map<string, typeof quinto.nodes>();
+    for (const node of quinto.nodes) {
+      const chapter = node.chapter ?? "sem módulo";
+      chapters.set(chapter, [...(chapters.get(chapter) ?? []), node]);
+    }
+
+    for (const [chapter, nodes] of chapters) {
+      expect(nodes, chapter).toHaveLength(3);
+      expect(nodes[0]?.title).toContain("Fase 1");
+      expect(nodes[1]?.title).toContain("Fase 2");
+      expect(nodes[2]?.title).toContain("Fase 3");
+      expect(nodes[1]?.unlock.requires).toEqual([nodes[0]?.id]);
+      expect(nodes[2]?.unlock.requires).toEqual([nodes[1]?.id]);
     }
   });
 
-  it("garante 5 questões com feedback pedagógico em cada lição", () => {
+  it("garante questões com feedback pedagógico em cada lição", () => {
     const result = validateContentPacks(packs);
     if (!result.ok) throw new Error("Packs inválidos.");
 
-    const questionIds = new Set<string>();
-    for (const course of result.catalog.courses) {
-      expect(course.nodes[0]?.unlock.requires ?? []).toEqual([]);
+    const quarto = requireCourse(result.catalog.courses, "portugues-4ano");
+    const quinto = requireCourse(result.catalog.courses, "portugues-5ano");
 
+    expect(quarto.nodes.map((node) => node.lesson.questions.length)).toEqual([
+      5, 4, 5, 4, 4,
+    ]);
+    expect(quinto.nodes.map((node) => node.lesson.questions.length)).toEqual(
+      Array.from({ length: 18 }, () => 5),
+    );
+
+    const questionIds = new Set<string>();
+    for (const course of [quarto, quinto]) {
       for (const node of course.nodes) {
-        expect(node.lesson.questions, node.id).toHaveLength(5);
         expect(node.lesson.requiredCorrectRatio).toBe(0.8);
         expect(node.lesson.intro?.trim().length ?? 0).toBeGreaterThan(0);
 
@@ -74,6 +97,22 @@ describe("conteúdo do Ensino Fundamental I", () => {
           questionIds.add(question.id);
           expect(question.explanation?.trim().length ?? 0).toBeGreaterThan(0);
           expect(question.dicaCearense?.trim().length ?? 0).toBeGreaterThan(0);
+        }
+      }
+    }
+  });
+
+  it("mantém diálogos de NPC alinhados à guia", () => {
+    const result = validateContentPacks(packs);
+    if (!result.ok) throw new Error("Packs inválidos.");
+
+    for (const course of result.catalog.courses) {
+      for (const node of course.nodes) {
+        expect(node.npc?.speaker, node.id).toBe("Professora Thaís");
+        expect(node.npc?.lines.length ?? 0, node.id).toBeGreaterThanOrEqual(2);
+
+        for (const line of node.npc?.lines ?? []) {
+          expect(line.trim().length, node.id).toBeGreaterThan(0);
         }
       }
     }
