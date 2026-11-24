@@ -2,14 +2,14 @@
   "id": "portugues-5ano",
   "subject": "portugues",
   "title": "Língua Portuguesa · 5º Ano",
-  "description": "Trilha de aprofundamento do 5º ano: ortografia em contexto, acentuação, morfologia, verbos, sintaxe e leitura de gêneros textuais.",
-  "version": "1.0.0",
+  "description": "Trilha pedagógica gradual para o 5º ano estruturada pela Taxonomia de Bloom: Reconhecimento, Compreensão, Aplicação, Análise e Domínio em ortografia, acentuação, morfologia, verbos, sintaxe e leitura crítica.",
+  "version": "2.0.0",
   "locale": "pt-BR",
   "nodes": [
     {
       "id": "p5-ort-f1",
-      "title": "Fase 1 · Revisão integrada",
-      "subtitle": "R/RR, S/SS, M/P/B e X/CH",
+      "title": "Fase 1 · Padrões e regularidades ortográficas",
+      "subtitle": "R/RR, S/SS, M antes de P/B e sons do X",
       "chapter": "Módulo 01 · Ortografia em contexto",
       "icon": "npc",
       "position": { "x": 0, "y": 0 },
@@ -17,15 +17,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "No 5º ano, bora revisar a ortografia e usar ela em textos maiores, visse?",
-          "Começa observando as palavras escritas corretamente. Não fica avexado."
+          "No 5º ano a gente não chuta letrinha: a gente entende a regra do jogo.",
+          "Aqui tu vai reconhecer X com som de CH, SS entre vogais, M antes de P e B e palavras com enx-."
         ]
       },
-      "reward": { "itemId": "p5-selo-ortografia", "label": "Selo da ortografia" },
+      "reward": { "itemId": "p5-selo-ortografia", "label": "Selo de Regularidade Ortográfica" },
       "lesson": {
         "id": "lesson-p5-ort-f1",
-        "title": "Reconhecer grafias corretas",
-        "intro": "Revise R/RR, S/SS, M antes de P/B e X/CH. Observe a posição das letras e o som que elas representam.",
+        "title": "Dominar os padrões ortográficos fundamentais",
+        "intro": "Cada som da língua segue regras de posição e ambiente fonético. Compreenda o motivo pelo qual escrevemos com RR, SS, M ou X.",
         "xpReward": 50,
         "coinReward": 12,
         "requiredCorrectRatio": 0.8,
@@ -33,75 +33,75 @@
           {
             "id": "p5-ort-f1-q1",
             "type": "single-choice",
-            "prompt": "Qual palavra está escrita corretamente?",
+            "prompt": "[Nível 1 · Reconhecimento] Em qual das palavras a letra X representa o mesmo fonema (som) que o dígrafo CH em 'chuva'?",
             "choices": [
-              { "id": "a", "label": "passarinho" },
-              { "id": "b", "label": "pasarinho" },
-              { "id": "c", "label": "passarino" },
-              { "id": "d", "label": "pasarino" }
+              { "id": "a", "label": "enxada" },
+              { "id": "b", "label": "exame" },
+              { "id": "c", "label": "táxi" },
+              { "id": "d", "label": "próximo" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Passarinho é escrito com SS entre as vogais A e I.",
-            "dicaCearense": "Olha só, macho: Passarinho é escrito com SS entre as vogais A e I. Compara as alternativas."
+            "explanation": "Na palavra 'enxada', o X soa como /ch/. Em 'exame' soa como /z/, em 'táxi' como /ks/ e em 'próximo' como /s/.",
+            "dicaCearense": "Repara no chiado da palavra, macho: 'enxada' chia igualzinho a 'chuva'."
           },
           {
             "id": "p5-ort-f1-q2",
             "type": "single-choice",
-            "prompt": "Qual palavra tem M antes de P?",
+            "prompt": "[Nível 2 · Compreensão] Por que a palavra 'compasso' é escrita com SS e não apenas com um S?",
             "choices": [
-              { "id": "a", "label": "tempo" },
-              { "id": "b", "label": "tenpo" },
-              { "id": "c", "label": "tem po" },
-              { "id": "d", "label": "tênpo" }
+              { "id": "a", "label": "Porque um S sozinho entre duas vogais teria som de Z; para manter o som de S forte é necessário dobrar." },
+              { "id": "b", "label": "Porque toda palavra terminada em 'asso' exige obrigatoriamente duas letras S." },
+              { "id": "c", "label": "Porque o S nunca pode aparecer sozinho no meio de palavras da língua portuguesa." },
+              { "id": "d", "label": "Porque o dígrafo SS é usado sempre que a palavra anterior for um substantivo masculino." }
             ],
             "correctChoiceId": "a",
-            "explanation": "Tempo é escrito com M antes de P.",
-            "dicaCearense": "Vamos revisar: Tempo é escrito com M antes de P. Tu dá conta, macho."
+            "explanation": "Entre duas vogais, a letra S assume som de /z/ (como em 'mesa'). Para representar o fonema /s/ forte nesse ambiente, usa-se o dígrafo SS.",
+            "dicaCearense": "Se deixar só um S no meio de duas vogais, ele vira Z num estalo! Pra manter o som forte, dobra ele!"
           },
           {
             "id": "p5-ort-f1-q3",
             "type": "single-choice",
-            "prompt": "Qual palavra tem X com som de CH?",
+            "prompt": "[Nível 3 · Aplicação] Complete a frase aplicando a regra ortográfica do M antes de P e B: 'Durante a tempestade, o cam___onês acendeu a lâm___ada do galpão.'",
             "choices": [
-              { "id": "a", "label": "caixa" },
-              { "id": "b", "label": "táxi" },
-              { "id": "c", "label": "exame" },
-              { "id": "d", "label": "próximo" }
+              { "id": "a", "label": "camponês e lâmpada (ambas com M)" },
+              { "id": "b", "label": "camponês com N e lâmpada com M" },
+              { "id": "c", "label": "camponês com M e lâmpada com N" },
+              { "id": "d", "label": "canponês e lânpada (ambas com N)" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Em caixa, o X soa como CH. Em táxi, soa como KS; em exame, como Z; em próximo, como S.",
-            "dicaCearense": "Oxe, bora de leve: Em caixa, o X soa como CH. Em táxi, soa como KS; em exame, como Z; em próximo, como S."
+            "explanation": "Usa-se a letra M antes das consoantes P e B (camponês, lâmpada). Antes das demais consoantes, emprega-se N.",
+            "dicaCearense": "Regrinha de ouro: antes de P e B, a mamãe M sempre vem na frente."
           },
           {
             "id": "p5-ort-f1-q4",
             "type": "multiple-choice",
-            "prompt": "Quais palavras estão escritas corretamente?",
+            "prompt": "[Nível 4 · Análise] Quais das opções apresentam TODAS as palavras escritas em total conformidade com as normas ortográficas?",
             "choices": [
-              { "id": "a", "label": "carro" },
-              { "id": "b", "label": "casa" },
-              { "id": "c", "label": "passado" },
-              { "id": "d", "label": "caza" }
+              { "id": "a", "label": "carrossel · assombro · enxaguar" },
+              { "id": "b", "label": "descer · pretensioso · exceção" },
+              { "id": "c", "label": "canpanha · travesseiro · exausto" },
+              { "id": "d", "label": "ansioso · enxame · passagem" }
             ],
-            "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "Carro tem RR, casa tem S com som de Z e passado tem SS. Caza está errada: o correto é casa.",
-            "dicaCearense": "Confere aí: Carro tem RR, casa tem S com som de Z e passado tem SS. Caza está errada: o correto é casa. Pensa com calma antes de responder."
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "A opção C erra ao grafar 'canpanha' (o correto é 'campanha', com M antes de P). As demais opções estão impecáveis.",
+            "dicaCearense": "Olha bem o arrumado de cada alternativa: tem uma pegadinha de M antes de P ali na C!"
           },
           {
             "id": "p5-ort-f1-q5",
             "type": "text",
-            "prompt": "Complete: 'O ___ é um animal que late.' (com RR)",
-            "placeholder": "Escreva o animal",
-            "acceptedAnswers": ["cachorro", "cachorro."],
-            "explanation": "Cachorro é escrito com RR entre as vogais O e O.",
-            "dicaCearense": "Oxe, não fica avexado: Cachorro é escrito com RR entre as vogais O e O. Tu dá conta, macho."
+            "prompt": "[Nível 5 · Domínio] Complete com a palavra que define um grande grupo de abelhas (coletivo), lembrando que após a sílaba inicial 'en-' emprega-se a letra X.",
+            "placeholder": "Digite a palavra correta",
+            "acceptedAnswers": ["enxame", "o enxame", "enxame."],
+            "explanation": "A palavra correta é 'enxame', grafada com X segundo a regra após o prefixo/sílaba inicial 'en-'.",
+            "dicaCearense": "Depois de 'en-', o normal é X mandar ver! Escreve sem medo de errar."
           }
         ]
       }
     },
     {
       "id": "p5-ort-f2",
-      "title": "Fase 2 · Ortografia na micro-história",
-      "subtitle": "Ler, observar e completar",
+      "title": "Fase 2 · Ortografia e etimologia na narrativa",
+      "subtitle": "Casos especiais: X após ditongo, derivados e homófonos",
       "chapter": "Módulo 01 · Ortografia em contexto",
       "icon": "star",
       "position": { "x": 2, "y": 1 },
@@ -109,15 +109,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "Agora a ortografia aparece dentro de uma pequena história, macho.",
-          "Procura as pistas no texto antes de responder. Tu é desenrolado."
+          "Agora a história fica mais interessante: X depois de ditongo, mexer e encher, viagem e viajem e os homófonos vão perder o mistério.",
+          "Presta atenção na família das palavras e no contexto para não cair nas armadilhas da escrita."
         ]
       },
-      "reward": { "itemId": "p5-selo-historia", "label": "Selo da micro-história" },
+      "reward": { "itemId": "p5-selo-historia", "label": "Selo de Ortografia Contextual" },
       "lesson": {
         "id": "lesson-p5-ort-f2",
-        "title": "Ortografia em contexto",
-        "intro": "Leia a micro-história e observe as palavras com SS, S, X e CH. O contexto ajuda a confirmar a grafia.",
+        "title": "Ortografia reflexiva no texto",
+        "intro": "Palavras como mexer, encher, viagem e viajem exigem análise morfológica e contextual. Aplique os critérios com perspicácia.",
         "xpReward": 55,
         "coinReward": 14,
         "requiredCorrectRatio": 0.8,
@@ -125,75 +125,75 @@
           {
             "id": "p5-ort-f2-q1",
             "type": "single-choice",
-            "prompt": "Leia: 'O passarinho pousou na janela e comeu as migalhas.' Qual palavra tem SS?",
+            "prompt": "[Nível 1 · Reconhecimento] Leia a oração: 'Após o almoço, guardamos o queijo e a ameixa na gaveta limpa.' Qual palavra exemplifica o uso de X após ditongo?",
             "choices": [
-              { "id": "a", "label": "passarinho" },
-              { "id": "b", "label": "janela" },
-              { "id": "c", "label": "comeu" },
-              { "id": "d", "label": "migalhas" }
+              { "id": "a", "label": "ameixa" },
+              { "id": "b", "label": "almoço" },
+              { "id": "c", "label": "queijo" },
+              { "id": "d", "label": "limpa" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Passarinho é escrito com SS entre as vogais A e I.",
-            "dicaCearense": "Bora desenrolar: Passarinho é escrito com SS entre as vogais A e I. Lê tudo antes de marcar."
+            "explanation": "Em 'ameixa', o X vem logo após o ditongo 'ei'. A regra prescreve o uso de X após ditongos (ex.: peixe, faixa, ameixa).",
+            "dicaCearense": "Ditongo é o encontro de duas vogais na mesma sílaba. Achou 'ei'? O X vem atrás sorrindo!"
           },
           {
             "id": "p5-ort-f2-q2",
             "type": "single-choice",
-            "prompt": "No trecho 'O passarinho pousou na janela', qual palavra tem S com som de Z?",
+            "prompt": "[Nível 2 · Compreensão] Por que 'mexer' é grafado com X, enquanto 'encher' se escreve com CH?",
             "choices": [
-              { "id": "a", "label": "pousou" },
-              { "id": "b", "label": "passarinho" },
-              { "id": "c", "label": "janela" },
-              { "id": "d", "label": "migalhas" }
+              { "id": "a", "label": "A grafia de 'mexer' com X é fixada pela tradição e pela etimologia; 'encher' deriva de 'cheio' e preserva o CH da raiz." },
+              { "id": "b", "label": "Porque 'mexer' é um substantivo e 'encher' é um verbo transitivo direto." },
+              { "id": "c", "label": "Porque a letra X não pode ser usada diante da vogal E em verbos de ação." },
+              { "id": "d", "label": "Não há motivo gramatical; trata-se apenas de uma exceção arbitrária." }
             ],
             "correctChoiceId": "a",
-            "explanation": "Em pousou, o S fica entre as vogais U e O e tem som de Z.",
-            "dicaCearense": "Vamos por partes: Em pousou, o S fica entre as vogais U e O e tem som de Z. Relê com calma, visse?"
+            "explanation": "'Mexer' e 'mexilhão' são grafados com X por tradição etimológica, não por uma regra geral de 'me-'. Já 'encher' provém da família de 'cheio', conservando o CH do radical.",
+            "dicaCearense": "Família de palavra é coisa forte! Quem é filho de 'cheio' não troca CH por X de jeito nenhum."
           },
           {
             "id": "p5-ort-f2-q3",
             "type": "single-choice",
-            "prompt": "Complete: 'O ___ é o coletivo de abelhas.'",
+            "prompt": "[Nível 3 · Aplicação] Identifique a alternativa que preenche adequadamente a frase: 'Espero que eles ___ logo, pois a ___ para o sertão será longa.'",
             "choices": [
-              { "id": "a", "label": "enxame" },
-              { "id": "b", "label": "enchame" },
-              { "id": "c", "label": "enxami" },
-              { "id": "d", "label": "enchami" }
+              { "id": "a", "label": "viajem (verbo com J) / viagem (substantivo com G)" },
+              { "id": "b", "label": "viagem (verbo com G) / viajem (substantivo com J)" },
+              { "id": "c", "label": "viajem (verbo com J) / viajem (substantivo com J)" },
+              { "id": "d", "label": "viagem (verbo com G) / viagem (substantivo com G)" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Enxame é escrito com X depois de EN e é o coletivo de abelhas.",
-            "dicaCearense": "Calma aí, macho: Enxame é escrito com X depois de EN e é o coletivo de abelhas."
+            "explanation": "A forma verbal do presente do subjuntivo (que eles viajem) é grafada com J. O substantivo que nomeia o deslocamento (a viagem) é grafado com G.",
+            "dicaCearense": "Quando for ação de viajar, bota J de 'já vou'! Quando tiver 'a' na frente (substantivo), vai de G."
           },
           {
             "id": "p5-ort-f2-q4",
             "type": "multiple-choice",
-            "prompt": "Quais palavras estão escritas corretamente?",
+            "prompt": "[Nível 4 · Análise] Analise as afirmações sobre homófonos e grafias semelhantes e assinale as verdadeiras:",
             "choices": [
-              { "id": "a", "label": "sempre" },
-              { "id": "b", "label": "canpo" },
-              { "id": "c", "label": "chave" },
-              { "id": "d", "label": "xícara" }
+              { "id": "a", "label": "'Concerto' com C refere-se a espetáculo musical ou harmonia." },
+              { "id": "b", "label": "'Conserto' com S significa reparo, restauração ou ajuste." },
+              { "id": "c", "label": "As palavras 'sessão' (reunião/cinema) e 'seção' (divisão/repartição) têm significados idênticos." },
+              { "id": "d", "label": "Em 'cenoura' e 'senado', o som de /s/ inicial é grafado por letras distintas." }
             ],
-            "correctChoiceIds": ["a", "c", "d"],
-            "explanation": "Sempre tem M antes de P; chave tem CH; xícara tem X. O correto é campo, com M.",
-            "dicaCearense": "Presta atenção: Sempre tem M antes de P; chave tem CH; xícara tem X. O correto é campo, com M. Compara as alternativas."
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "A afirmação C está errada porque 'sessão' (espaço de tempo de uma reunião ou filme) e 'seção' (departamento, corte) possuem sentidos completamente diferentes.",
+            "dicaCearense": "Concerto com C é de cantor e violino; conserto com S é de sapato furado. Não confunde!"
           },
           {
             "id": "p5-ort-f2-q5",
             "type": "text",
-            "prompt": "Complete: 'A ___ serve para tomar café.' (X ou CH)",
-            "placeholder": "Escreva a palavra",
-            "acceptedAnswers": ["xícara", "xicara", "xícara."],
-            "explanation": "Xícara é escrito com X e acento na sílaba XÍ.",
-            "dicaCearense": "Vamos revisar: Xícara é escrito com X e acento na sílaba XÍ. Revisa a regra e tenta de novo."
+            "prompt": "[Nível 5 · Domínio] Escreva o substantivo derivado do adjetivo 'limpo' que nomeia o ato de higienizar (dica: termina com o sufixo -eza).",
+            "placeholder": "Digite a palavra",
+            "acceptedAnswers": ["limpeza", "a limpeza", "limpeza."],
+            "explanation": "Substantivos abstratos derivados de adjetivos são grafados com Z no sufixo -eza (limpo -> limpeza; belo -> beleza).",
+            "dicaCearense": "Vem de adjetivo e termina com som de 'eza'? O Z carimba a resposta na hora!"
           }
         ]
       }
     },
     {
       "id": "p5-ort-f3",
-      "title": "Fase 3 · Síntese ortográfica",
-      "subtitle": "Corrigir e reescrever",
+      "title": "Fase 3 · Edição e diagnóstico textual",
+      "subtitle": "Identificar equívocos e consolidar a norma culta",
       "chapter": "Módulo 01 · Ortografia em contexto",
       "icon": "chest",
       "position": { "x": 1, "y": 2 },
@@ -201,15 +201,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "Só a massa! Hora de corrigir frases e reconhecer todas as regras juntas.",
-          "Lê com atenção e compara as opções. Vixe, mas é só revisar!"
+          "Agora é papel de revisor! Vais corrigir compaixão, ascender, membro, ansioso e campinho no texto.",
+          "Passe o pente fino nas palavras e mostre que sua ortografia é afiada."
         ]
       },
-      "reward": { "itemId": "p5-bau-ortografia", "label": "Baú da ortografia" },
+      "reward": { "itemId": "p5-bau-ortografia", "label": "Baú do Mestre da Ortografia" },
       "lesson": {
         "id": "lesson-p5-ort-f3",
-        "title": "Corrigir e reescrever",
-        "intro": "Use todas as regras ortográficas para escolher a frase correta e completar palavras.",
+        "title": "Correção, crítica e reconstrução ortográfica",
+        "intro": "Avalie períodos inteiros, localize inconsistências e restaure a grafia padrão com autonomia.",
         "xpReward": 60,
         "coinReward": 16,
         "requiredCorrectRatio": 0.8,
@@ -217,75 +217,75 @@
           {
             "id": "p5-ort-f3-q1",
             "type": "single-choice",
-            "prompt": "Leia: 'O carro passou na praça e o cachorro correu atrás.' Quantas palavras têm RR?",
+            "prompt": "[Nível 1 · Reconhecimento] No período 'O garoto sentiu um cansaço imenso, mas teve compaixão dos viajantes', qual palavra apresenta o som de CH grafado com X?",
             "choices": [
-              { "id": "a", "label": "1" },
-              { "id": "b", "label": "2" },
-              { "id": "c", "label": "3" },
-              { "id": "d", "label": "4" }
+              { "id": "a", "label": "compaixão" },
+              { "id": "b", "label": "cansaço" },
+              { "id": "c", "label": "imenso" },
+              { "id": "d", "label": "viajantes" }
             ],
-            "correctChoiceId": "c",
-            "explanation": "As palavras com RR são carro, cachorro e correu.",
-            "dicaCearense": "Sem pressa, avexado não ajuda: As palavras com RR são carro, cachorro e correu. Relê o enunciado com atenção."
+            "correctChoiceId": "a",
+            "explanation": "Na palavra 'compaixão', a letra X representa o fonema /ʃ/ (som de CH), enquanto 'cansaço' usa Ç e 'imenso' usa S.",
+            "dicaCearense": "Compaixão tem o X fazendo som de chiado suave. Reconheceu?"
           },
           {
             "id": "p5-ort-f3-q2",
             "type": "single-choice",
-            "prompt": "No trecho anterior, qual palavra tem S com som de S forte?",
+            "prompt": "[Nível 2 · Compreensão] Em 'O pesquisador hesitou antes de ascender a tocha', qual é a razão para o emprego do dígrafo SC em 'ascender'?",
             "choices": [
-              { "id": "a", "label": "passou" },
-              { "id": "b", "label": "praça" },
-              { "id": "c", "label": "carro" },
-              { "id": "d", "label": "cachorro" }
+              { "id": "a", "label": "'Ascender' provém do latim e significa subir/elevar-se; já 'acender' (sem S) significa atear fogo/iluminar." },
+              { "id": "b", "label": "O dígrafo SC é obrigatório em todos os verbos no infinitivo da língua portuguesa." },
+              { "id": "c", "label": "Trata-se de um erro de digitação, pois não existem palavras com SC em início de raiz no português." },
+              { "id": "d", "label": "O S antes de C serve apenas para alongar a pronúncia da vogal anterior." }
             ],
             "correctChoiceId": "a",
-            "explanation": "Passou tem SS com som de S forte. Em praça, o Ç também tem som de S, mas não é a letra S.",
-            "dicaCearense": "Confere aí: Passou tem SS com som de S forte. Em praça, o Ç também tem som de S, mas não é a letra S. Confia, macho, tu já sabe."
+            "explanation": "Existe diferença semântica crucial: 'acender' é ligar/fazer arder a chama; 'ascender' (com SC) é subir, ascender aos céus.",
+            "dicaCearense": "Acender a fogueira não tem S! Ascender na vida com esforço tem SC de subida!"
           },
           {
             "id": "p5-ort-f3-q3",
             "type": "single-choice",
-            "prompt": "Qual reescrita está correta?",
+            "prompt": "[Nível 3 · Aplicação] Qual das reescritas a seguir corrige perfeitamente todas as falhas ortográficas da frase original: 'O menbro da equipe ficou ancioso com a escuridão do canpinho.'?",
             "choices": [
-              { "id": "a", "label": "O peixe nada no lago e o campo está sempre verde." },
-              { "id": "b", "label": "O peiche nada no lago e o campo está sempre verde." },
-              { "id": "c", "label": "O peixe nada no lago e o canpo está sempre verde." },
-              { "id": "d", "label": "O peixe nada no lago e o campo está senpre verde." }
+              { "id": "a", "label": "O membro da equipe ficou ansioso com a escuridão do campinho." },
+              { "id": "b", "label": "O menbro da equipe ficou ansioso com a escuridão do campinho." },
+              { "id": "c", "label": "O membro da equipe ficou ancioso com a escuridão do canpinho." },
+              { "id": "d", "label": "O membro da equipe ficou ançioso com a escuridão do campinho." }
             ],
             "correctChoiceId": "a",
-            "explanation": "Peixe é com X; campo tem M antes de P; sempre tem M antes de P.",
-            "dicaCearense": "Olha só, macho: Peixe é com X; campo tem M antes de P; sempre tem M antes de P."
+            "explanation": "As correções necessárias eram: 'membro' (M antes de B), 'ansioso' (com S) e 'campinho' (M antes de P).",
+            "dicaCearense": "Cuidado com 'ansioso': é com S de sossego (ou da falta dele)! E M antes de P e B sempre."
           },
           {
             "id": "p5-ort-f3-q4",
             "type": "multiple-choice",
-            "prompt": "Quais palavras estão escritas corretamente?",
+            "prompt": "[Nível 4 · Análise] Quais das seguintes orações NÃO possuem nenhum desvio quanto às regras ortográficas?",
             "choices": [
-              { "id": "a", "label": "enxugar" },
-              { "id": "b", "label": "encharcar" },
-              { "id": "c", "label": "mexer" },
-              { "id": "d", "label": "mecher" }
+              { "id": "a", "label": "Eles trouxeram as caixas de ferramentas para a oficina." },
+              { "id": "b", "label": "O excesso de bagagem causou grande comoção entre os passageiros." },
+              { "id": "c", "label": "A compreenção das regras exige atençao constante." },
+              { "id": "d", "label": "O professor explicou a diferença entre paroxítonas e proparoxítonas." }
             ],
-            "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "Enxugar, encharcar e mexer estão corretas. Mecher está errada: o correto é mexer.",
-            "dicaCearense": "Guarda essa ideia: Enxugar, encharcar e mexer estão corretas. Mecher está errada: o correto é mexer. Lê tudo antes de marcar."
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "A frase C contém dois erros graves: o correto é 'compreensão' (com S) e 'atenção' (com til no A). As frases A, B e D estão perfeitas.",
+            "dicaCearense": "Em 'compreensão', o som de /s/ é com S! Na C o autor vacilou duas vezes."
           },
           {
             "id": "p5-ort-f3-q5",
             "type": "text",
-            "prompt": "Complete com SS: 'O ___ é uma ave que canta.'",
-            "placeholder": "Escreva a palavra",
-            "acceptedAnswers": ["passarinho", "passarinho."],
-            "explanation": "Passarinho é escrito com SS entre as vogais A e I.",
-            "dicaCearense": "Oxe, bora de leve: Passarinho é escrito com SS entre as vogais A e I. Bora desenrolar, visse?"
+            "prompt": "[Nível 5 · Domínio] Na oração 'Aquele rapaz é muito compasivo com os animais', há uma palavra com erro de grafia. Escreva apenas essa palavra corrigida:",
+            "placeholder": "Digite a palavra corrigida",
+            "acceptedAnswers": ["compassivo", "compassivo."],
+            "explanation": "A grafia correta é 'compassivo', com dígrafo SS entre as vogais A e I para manter o som forte de S.",
+            "dicaCearense": "Entre duas vogais, se quer som de S tem que dobrar! Escreve 'compassivo' com convicção."
           }
         ]
       }
     },
     {
       "id": "p5-acen-f1",
-      "title": "Fase 1 · Classificar a tonicidade",
-      "subtitle": "Oxítona, paroxítona e proparoxítona",
+      "title": "Fase 1 · Tonicidade e posição rítmica",
+      "subtitle": "Identificar e classificar a sílaba forte",
       "chapter": "Módulo 02 · Acentuação e tonicidade",
       "icon": "npc",
       "position": { "x": 0, "y": 0 },
@@ -293,15 +293,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "No 5º ano, bora reconhecer a tônica com mais precisão, visse?",
-          "Conta as sílabas e localiza a mais forte. Sem avexar, macho."
+          "Toda palavra falada tem um pulso: uma sílaba que a gente fala com mais fôlego.",
+          "Vamos localizar a tônica em projetor, horizonte, médico e maracujá pra nunca mais errar um acento!"
         ]
       },
-      "reward": { "itemId": "p5-selo-tonica", "label": "Selo da tonicidade" },
+      "reward": { "itemId": "p5-selo-tonica", "label": "Selo de Maestria em Tonicidade" },
       "lesson": {
         "id": "lesson-p5-acen-f1",
-        "title": "Classificar palavras",
-        "intro": "Jacaré é oxítona, caderno é paroxítona e árvore é proparoxítona. Observe a posição da tônica.",
+        "title": "Mapear a intensidade sonora das palavras",
+        "intro": "A acentuação gráfica não existe por acaso: ela orienta a leitura correta das sílabas tônicas.",
         "xpReward": 50,
         "coinReward": 12,
         "requiredCorrectRatio": 0.8,
@@ -309,75 +309,75 @@
           {
             "id": "p5-acen-f1-q1",
             "type": "single-choice",
-            "prompt": "Em 'jacaré', qual é a sílaba tônica?",
+            "prompt": "[Nível 1 · Reconhecimento] Ao pronunciar a palavra 'projetor', qual sílaba soa com maior intensidade?",
             "choices": [
-              { "id": "a", "label": "ja" },
-              { "id": "b", "label": "ca" },
-              { "id": "c", "label": "ré" },
-              { "id": "d", "label": "nenhuma" }
+              { "id": "a", "label": "tor (a última)" },
+              { "id": "b", "label": "je (a penúltima)" },
+              { "id": "c", "label": "pro (a antepenúltima)" },
+              { "id": "d", "label": "Todas têm exatamente a mesma intensidade sonora." }
             ],
-            "correctChoiceId": "c",
-            "explanation": "A sílaba tônica de jacaré é RÉ, a última. Por isso, é oxítona.",
-            "dicaCearense": "Vixe, macho, olha só: A sílaba tônica de jacaré é RÉ, a última. Por isso, é oxítona. Lê as alternativas com calma."
+            "correctChoiceId": "a",
+            "explanation": "A sílaba tônica de 'projetor' é 'tor'. Como é a última sílaba, trata-se de uma palavra oxítona.",
+            "dicaCearense": "Chama a palavra como se estivesse chamando o vizinho no portão: 'Ô projetooor!' A que você esticar mais é a tônica!"
           },
           {
             "id": "p5-acen-f1-q2",
             "type": "single-choice",
-            "prompt": "Em 'árvore', qual é a sílaba tônica?",
+            "prompt": "[Nível 2 · Compreensão] Por que a palavra 'horizonte' é classificada como paroxítona, mesmo não recebendo acento gráfico?",
             "choices": [
-              { "id": "a", "label": "ár" },
-              { "id": "b", "label": "vo" },
-              { "id": "c", "label": "re" },
-              { "id": "d", "label": "nenhuma" }
+              { "id": "a", "label": "Porque a sílaba tônica é 'zon' (penúltima), e nem toda paroxítona leva acento gráfico no português." },
+              { "id": "b", "label": "Porque só recebem acento gráfico as palavras que terminam em consoantes nasais." },
+              { "id": "c", "label": "Porque apenas as proparoxítonas possuem sílaba tônica real." },
+              { "id": "d", "label": "Trata-se de um erro da língua, pois todas as paroxítonas deveriam ser acentuadas." }
             ],
             "correctChoiceId": "a",
-            "explanation": "A sílaba tônica de árvore é ÁR, a antepenúltima. Por isso, é proparoxítona.",
-            "dicaCearense": "Presta atenção: A sílaba tônica de árvore é ÁR, a antepenúltima. Por isso, é proparoxítona. Respira e lê de novo."
+            "explanation": "A imensa maioria das palavras em língua portuguesa é paroxítona natural (tônica na penúltima sílaba) e, por isso, a regra só exige acento nas terminações menos comuns.",
+            "dicaCearense": "Toda palavra tem sílaba tônica, mas só algumas levam 'chapéu' ou 'grampo'! Não confunda tônica com acentuada."
           },
           {
             "id": "p5-acen-f1-q3",
             "type": "single-choice",
-            "prompt": "Em 'caderno', qual é a sílaba tônica?",
+            "prompt": "[Nível 3 · Aplicação] Na oração 'O médico recomendou repouso imediato ao paciente', qual das palavras destacadas é proparoxítona?",
             "choices": [
-              { "id": "a", "label": "ca" },
-              { "id": "b", "label": "der" },
-              { "id": "c", "label": "no" },
-              { "id": "d", "label": "nenhuma" }
+              { "id": "a", "label": "médico" },
+              { "id": "b", "label": "repouso" },
+              { "id": "c", "label": "imediato" },
+              { "id": "d", "label": "paciente" }
             ],
-            "correctChoiceId": "b",
-            "explanation": "A sílaba tônica de caderno é DER, a penúltima. Por isso, é paroxítona.",
-            "dicaCearense": "Bora desenrolar: A sílaba tônica de caderno é DER, a penúltima. Por isso, é paroxítona."
+            "correctChoiceId": "a",
+            "explanation": "Em 'médico' (mé-di-co), a sílaba tônica é 'mé', a antepenúltima, fazendo dela proparoxítona. As outras três são paroxítonas.",
+            "dicaCearense": "Conta de trás pra frente: última, penúltima, antepenúltima! Caiu na antepenúltima? É proparoxítona na veia."
           },
           {
             "id": "p5-acen-f1-q4",
             "type": "multiple-choice",
-            "prompt": "Quais palavras são proparoxítonas?",
+            "prompt": "[Nível 4 · Análise] Quais das seguintes palavras possuem a mesmíssima classificação quanto à posição da sílaba tônica?",
             "choices": [
-              { "id": "a", "label": "música" },
-              { "id": "b", "label": "página" },
-              { "id": "c", "label": "café" },
-              { "id": "d", "label": "lâmpada" }
+              { "id": "a", "label": "pássaro" },
+              { "id": "b", "label": "relâmpago" },
+              { "id": "c", "label": "tambor" },
+              { "id": "d", "label": "esplêndido" }
             ],
             "correctChoiceIds": ["a", "b", "d"],
-            "explanation": "Música, página e lâmpada têm a tônica na antepenúltima sílaba. Café é oxítona.",
-            "dicaCearense": "Lembra disso: Música, página e lâmpada têm a tônica na antepenúltima sílaba. Café é oxítona. Relê o enunciado com atenção."
+            "explanation": "'Pássaro', 'relâmpago' e 'esplêndido' têm a tônica na antepenúltima sílaba (são proparoxítonas). 'Tambor' é oxítona (última sílaba).",
+            "dicaCearense": "Três delas são proparoxítonas e levam acento garantido. 'Tambor' é oxítona durona e fica de fora!"
           },
           {
             "id": "p5-acen-f1-q5",
             "type": "text",
-            "prompt": "Classifique a palavra 'sofá' quanto à tonicidade.",
-            "placeholder": "Ex.: oxítona",
+            "prompt": "[Nível 5 · Domínio] Classifique a palavra 'maracujá' quanto à sua tonicidade (oxítona, paroxítona ou proparoxítona):",
+            "placeholder": "Digite a classificação",
             "acceptedAnswers": ["oxítona", "oxitona", "oxítona.", "oxitona."],
-            "explanation": "Sofá tem a tônica na última sílaba (FÁ), por isso é oxítona.",
-            "dicaCearense": "Confere aí: Sofá tem a tônica na última sílaba (FÁ), por isso é oxítona. Pensa com calma antes de responder."
+            "explanation": "Como a sílaba mais forte é 'já' (a última da palavra), 'maracujá' é classificada como oxítona.",
+            "dicaCearense": "A força tá na pontinha da palavra? É oxítona, com certeza!"
           }
         ]
       }
     },
     {
       "id": "p5-acen-f2",
-      "title": "Fase 2 · Aplicar as regras",
-      "subtitle": "Acento certo, palavra certa",
+      "title": "Fase 2 · Regras fundamentais de acentuação",
+      "subtitle": "Oxítonas, paroxítonas e a regra absoluta das proparoxítonas",
       "chapter": "Módulo 02 · Acentuação e tonicidade",
       "icon": "star",
       "position": { "x": 2, "y": 1 },
@@ -385,15 +385,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "As proparoxítonas são sempre acentuadas. Só a massa!",
-          "As oxítonas e paroxítonas dependem da terminação. Bora ficar atento."
+          "Aqui a gente aprende o porquê de cada acento existir: proparoxítonas, oxítonas e paroxítonas têm regras próprias.",
+          "Dominando as terminações certas, você nunca mais fica em dúvida diante de uma prova."
         ]
       },
-      "reward": { "itemId": "p5-selo-regras", "label": "Selo das regras" },
+      "reward": { "itemId": "p5-selo-regras", "label": "Selo das Leis da Acentuação" },
       "lesson": {
         "id": "lesson-p5-acen-f2",
-        "title": "Acentuar com segurança",
-        "intro": "Compare as palavras sem acento e com acento para perceber a regra de cada grupo.",
+        "title": "Aplicar regras de oxítonas e paroxítonas",
+        "intro": "Descubra por que acentuamos cajá mas não acentuamos caju; por que acentuamos táxi mas não acentuamos tatu.",
         "xpReward": 55,
         "coinReward": 14,
         "requiredCorrectRatio": 0.8,
@@ -401,75 +401,75 @@
           {
             "id": "p5-acen-f2-q1",
             "type": "single-choice",
-            "prompt": "Qual palavra é uma oxítona acentuada?",
+            "prompt": "[Nível 1 · Reconhecimento] Qual das palavras abaixo é acentuada pela regra geral que determina que TODAS as palavras de sua classe de tonicidade devem levar acento?",
             "choices": [
-              { "id": "a", "label": "café" },
-              { "id": "b", "label": "cafe" },
-              { "id": "c", "label": "cáfe" },
-              { "id": "d", "label": "cafè" }
+              { "id": "a", "label": "fenômeno" },
+              { "id": "b", "label": "cipó" },
+              { "id": "c", "label": "caráter" },
+              { "id": "d", "label": "armazém" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Café é oxítona terminada em E e recebe acento agudo.",
-            "dicaCearense": "Vixe, presta atenção: Café é oxítona terminada em E e recebe acento agudo. Confere cada alternativa."
+            "explanation": "'Fenômeno' é proparoxítona. Em português, 100% das palavras proparoxítonas são acentuadas graficamente.",
+            "dicaCearense": "Essa é a regra mais amiga do estudante: é proparoxítona? Taca acento sem pestanejar!"
           },
           {
             "id": "p5-acen-f2-q2",
             "type": "single-choice",
-            "prompt": "Qual palavra é uma paroxítona acentuada?",
+            "prompt": "[Nível 2 · Compreensão] Por que 'café' e 'marajá' são acentuadas, mas 'saci' e 'bambu' não recebem acento gráfico?",
             "choices": [
-              { "id": "a", "label": "fácil" },
-              { "id": "b", "label": "facil" },
-              { "id": "c", "label": "fáçil" },
-              { "id": "d", "label": "facíl" }
+              { "id": "a", "label": "As oxítonas terminadas em -A, -E, -O (seguidas ou não de S), -EM e -ENS recebem acento; as terminadas em -I e -U não recebem." },
+              { "id": "b", "label": "Palavras que contêm a letra U nunca recebem acento na língua portuguesa." },
+              { "id": "c", "label": "Porque 'café' e 'marajá' vêm do francês e mantêm a grafia estrangeira." },
+              { "id": "d", "label": "Porque as palavras terminadas em I e U são sempre proparoxítonas." }
             ],
             "correctChoiceId": "a",
-            "explanation": "Fácil é paroxítona terminada em -L e recebe acento na penúltima sílaba.",
-            "dicaCearense": "Guarda essa ideia: Fácil é paroxítona terminada em -L e recebe acento na penúltima sílaba. Vixe, mas é só revisar."
+            "explanation": "A regra das oxítonas delimita que apenas as terminadas em A, E, O (com ou sem S), EM e ENS recebem acento gráfico. Por isso bambu e saci não levam acento.",
+            "dicaCearense": "Grava o grupo vencedor das oxítonas: A, E, O, EM, ENS! Se terminar em I ou U solto, nada de acento."
           },
           {
             "id": "p5-acen-f2-q3",
             "type": "single-choice",
-            "prompt": "Qual palavra é uma proparoxítona acentuada?",
+            "prompt": "[Nível 3 · Aplicação] Em qual alternativa a palavra paroxítona foi acentuada pelo MESMO motivo da palavra 'túnel'?",
             "choices": [
-              { "id": "a", "label": "página" },
-              { "id": "b", "label": "pagina" },
-              { "id": "c", "label": "págína" },
-              { "id": "d", "label": "pagína" }
+              { "id": "a", "label": "fácil (paroxítona terminada em -L)" },
+              { "id": "b", "label": "repórter (paroxítona terminada em -R)" },
+              { "id": "c", "label": "órfão (paroxítona terminada em -ÃO)" },
+              { "id": "d", "label": "álbum (paroxítona terminada em -UM)" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Página é proparoxítona e recebe acento na antepenúltima sílaba.",
-            "dicaCearense": "Sem pressa, avexado não ajuda: Página é proparoxítona e recebe acento na antepenúltima sílaba."
+            "explanation": "Tanto 'túnel' quanto 'fácil' são paroxítonas terminadas na consoante 'L', compartilhando a mesmíssima justificativa normativa.",
+            "dicaCearense": "Olha pro finalzinho das duas: ambas são paroxítonas e terminam em L. Irmãs de regra!"
           },
           {
             "id": "p5-acen-f2-q4",
             "type": "multiple-choice",
-            "prompt": "Quais palavras devem receber acento?",
+            "prompt": "[Nível 4 · Análise] Analise as palavras abaixo e selecione as que DEVEM receber acento gráfico obrigatoriamente:",
             "choices": [
-              { "id": "a", "label": "voce" },
-              { "id": "b", "label": "cafe" },
-              { "id": "c", "label": "arvore" },
-              { "id": "d", "label": "escola" }
+              { "id": "a", "label": "lampada (proparoxítona)" },
+              { "id": "b", "label": "tambem (oxítona terminada em -em)" },
+              { "id": "c", "label": "jovem (paroxítona terminada em -em)" },
+              { "id": "d", "label": "açucar (paroxítona terminada em -r)" }
             ],
-            "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "As formas corretas são você, café e árvore. Escola é paroxítona terminada em -A e não recebe acento.",
-            "dicaCearense": "Olha a regra: As formas corretas são você, café e árvore. Escola é paroxítona terminada em -A e não recebe acento. Lê as alternativas com calma."
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "'Lâmpada' (proparoxítona), 'também' (oxítona em -em) e 'açúcar' (paroxítona em -r) devem ser acentuadas. Já 'jovem' é paroxítona terminada em -em, e paroxítonas em -em não recebem acento.",
+            "dicaCearense": "Cuidado com o 'jovem': oxítona terminada em -EM leva acento (alguém, parabéns), mas paroxítona em -EM não leva acento nenhum!"
           },
           {
             "id": "p5-acen-f2-q5",
             "type": "text",
-            "prompt": "Complete com acento: 'A ___ é a ciência dos números.' (matematica)",
-            "placeholder": "Escreva com acento",
-            "acceptedAnswers": ["matemática", "matemática."],
-            "explanation": "Matemática é proparoxítona e recebe acento na antepenúltima sílaba.",
-            "dicaCearense": "Olha só, macho: Matemática é proparoxítona e recebe acento na antepenúltima sílaba. Não fica avexado, não."
+            "prompt": "[Nível 5 · Domínio] Escreva a palavra 'relogio' aplicando a acentuação correta devida por se tratar de uma paroxítona terminada em ditongo crescente:",
+            "placeholder": "Digite com acento",
+            "acceptedAnswers": ["relógio", "relógio.", "Relógio"],
+            "explanation": "Paroxítonas terminadas em ditongo oral (crescente ou decrescente), como em 're-ló-gio', recebem acento na penúltima sílaba.",
+            "dicaCearense": "Terminou em ditongo e é paroxítona? Grampinho no 'ló' e corre pro abraço!"
           }
         ]
       }
     },
     {
       "id": "p5-acen-f3",
-      "title": "Fase 3 · Acentuação e sentido",
-      "subtitle": "Palavras que mudam de significado",
+      "title": "Fase 3 · Acento distintivo e sentido contextual",
+      "subtitle": "Pares mínimos e efeitos de sentido na leitura",
       "chapter": "Módulo 02 · Acentuação e tonicidade",
       "icon": "chest",
       "position": { "x": 1, "y": 2 },
@@ -477,15 +477,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "O acento pode diferenciar palavras e mudar o sentido da frase, visse?",
-          "Compara sabia e sabiá. Vixe, uma letrinha muda tudo!"
+          "Um acento não muda só a pronúncia: muda o sentido inteiro da história!",
+          "Você vai ver como 'sabia', 'sábia' e 'sabiá', 'pôde' e 'pode' viram palavras diferentes no texto."
         ]
       },
-      "reward": { "itemId": "p5-bau-acentuacao", "label": "Baú da acentuação" },
+      "reward": { "itemId": "p5-bau-acentuacao", "label": "Baú da Acentuação Avançada" },
       "lesson": {
         "id": "lesson-p5-acen-f3",
-        "title": "Acentuação em síntese",
-        "intro": "Classifique palavras no texto e reconheça pares que mudam de sentido com o acento.",
+        "title": "Acentuação distintiva e precisão semântica",
+        "intro": "Diferencie classes gramaticais e significados através da acentuação gráfica correta em contextos reais.",
         "xpReward": 60,
         "coinReward": 16,
         "requiredCorrectRatio": 0.8,
@@ -493,75 +493,75 @@
           {
             "id": "p5-acen-f3-q1",
             "type": "single-choice",
-            "prompt": "Qual par de palavras muda de sentido por causa do acento?",
+            "prompt": "[Nível 1 · Reconhecimento] Identifique o trio em que as três palavras possuem significados e classes distintas apenas pela alteração do acento e tonicidade:",
             "choices": [
-              { "id": "a", "label": "sabia / sabiá" },
-              { "id": "b", "label": "casa / caza" },
-              { "id": "c", "label": "menino / menina" },
-              { "id": "d", "label": "forte / fraco" }
+              { "id": "a", "label": "sabia (verbo) · sábia (adjetivo) · sabiá (ave)" },
+              { "id": "b", "label": "casa · casarão · casinha" },
+              { "id": "c", "label": "menino · garoto · piá" },
+              { "id": "d", "label": "pato · pata · patinhos" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Sabia (verbo ou adjetivo) e sabiá (ave) têm significados diferentes por causa do acento.",
-            "dicaCearense": "Presta atenção nisso: Sabia (verbo ou adjetivo) e sabiá (ave) têm significados diferentes por causa do acento. Revisa a regra e tenta de novo."
+            "explanation": "'Sabia' (verbo saber), 'sábia' (paroxítona que indica inteligência) e 'sabiá' (oxítona que designa a ave) mudam completamente pela tonicidade e acentuação.",
+            "dicaCearense": "É o trio clássico! Quem sabia que a sábia conhecia o canto do sabiá?"
           },
           {
             "id": "p5-acen-f3-q2",
             "type": "single-choice",
-            "prompt": "Em 'O sabiá canta na árvore', quantas palavras proparoxítonas há?",
+            "prompt": "[Nível 2 · Compreensão] Qual é a diferença gramatical expressa pelo acento na frase: 'Ele não pôde comparecer ontem, mas hoje ele pode'?",
             "choices": [
-              { "id": "a", "label": "0" },
-              { "id": "b", "label": "1" },
-              { "id": "c", "label": "2" },
-              { "id": "d", "label": "3" }
+              { "id": "a", "label": "'Pôde' com circunflexo indica passado (pretérito perfeito); 'pode' sem acento indica tempo presente." },
+              { "id": "b", "label": "'Pôde' é um substantivo concreto e 'pode' é um verbo auxiliar." },
+              { "id": "c", "label": "O acento circunflexo é usado para indicar que a frase é negativa." },
+              { "id": "d", "label": "Não há diferença gramatical, sendo apenas uma preferência estilística do escritor." }
             ],
-            "correctChoiceId": "b",
-            "explanation": "Apenas árvore é proparoxítona. Sabiá é oxítona e canta é paroxítona.",
-            "dicaCearense": "Lembra disso: Apenas árvore é proparoxítona. Sabiá é oxítona e canta é paroxítona. Tu é desenrolado, vai acertar."
+            "correctChoiceId": "a",
+            "explanation": "Trata-se de acento diferencial obrigatório: 'pôde' (com som fechado de Ô) marca o pretérito; 'pode' (com som aberto de Ó) marca o presente.",
+            "dicaCearense": "Ontem ele 'pôde' (fechadinho, já passou). Hoje ele 'pode' (aberto pro presente)!"
           },
           {
             "id": "p5-acen-f3-q3",
             "type": "single-choice",
-            "prompt": "Em 'A música começou cedo', qual palavra é proparoxítona?",
+            "prompt": "[Nível 3 · Aplicação] Escolha a alternativa que preenche com coerência o enunciado: 'O homem ___ diante do ___ para anunciar o resultado.'",
             "choices": [
-              { "id": "a", "label": "música" },
-              { "id": "b", "label": "começou" },
-              { "id": "c", "label": "cedo" },
-              { "id": "d", "label": "A" }
+              { "id": "a", "label": "parou / público" },
+              { "id": "b", "label": "publicou / publico" },
+              { "id": "c", "label": "publico / público" },
+              { "id": "d", "label": "parou / publico" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Música tem a tônica na antepenúltima sílaba: MÚ-SI-CA.",
-            "dicaCearense": "Vixe, macho, olha só: Música tem a tônica na antepenúltima sílaba: MÚ-SI-CA."
+            "explanation": "'Público' (com acento) é substantivo que indica a plateia/audiência; 'publico' (sem acento) seria a forma verbal 'eu publico'.",
+            "dicaCearense": "Falar para a plateia é falar para o 'público', com acento agudo no U!"
           },
           {
             "id": "p5-acen-f3-q4",
             "type": "multiple-choice",
-            "prompt": "Quais palavras estão corretamente acentuadas?",
+            "prompt": "[Nível 4 · Análise] Leia as sentenças e selecione as que apresentam acentuação rigorosamente ADEQUADA ao contexto:",
             "choices": [
-              { "id": "a", "label": "pássaro" },
-              { "id": "b", "label": "lâmpada" },
-              { "id": "c", "label": "café" },
-              { "id": "d", "label": "arvore" }
+              { "id": "a", "label": "A enfermeira cuidou do ferimento com muito zelo e técnica." },
+              { "id": "b", "label": "O guarda de trânsito pediu que o motorista não transite por aquela via." },
+              { "id": "c", "label": "Eles tem muitos livros guardados no sotão de casa." },
+              { "id": "d", "label": "A história contada pelo avô emocionou a plateia." }
             ],
-            "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "Pássaro e lâmpada são proparoxítonas; café é oxítona. O correto é árvore, com acento.",
-            "dicaCearense": "Bora entender: Pássaro e lâmpada são proparoxítonas; café é oxítona. O correto é árvore, com acento. Confere cada alternativa."
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "A sentença C errou duplamente: o plural de 'ter' leva acento circunflexo ('Eles têm') e 'sótão' exige acento no ó por ser paroxítona terminada em -ão.",
+            "dicaCearense": "Ele tem (singular, sem acento); eles têm (plural, com circunflexo)! E sótão sem acento ninguém merece."
           },
           {
             "id": "p5-acen-f3-q5",
             "type": "text",
-            "prompt": "Complete: 'O ___ é uma ave que canta.' (sabia)",
-            "placeholder": "Escreva com acento",
-            "acceptedAnswers": ["sabiá", "sabiá."],
-            "explanation": "O sabiá é uma ave. Sem acento, sabia é uma forma do verbo saber.",
-            "dicaCearense": "Guarda essa ideia: O sabiá é uma ave. Sem acento, sabia é uma forma do verbo saber. Lê tudo antes de marcar."
+            "prompt": "[Nível 5 · Domínio] Complete a oração com a forma correta do verbo TER no plural: 'Os alunos dedicados ___ orgulho de seus trabalhos.'",
+            "placeholder": "Digite a forma verbal",
+            "acceptedAnswers": ["têm", "têm.", "Têm"],
+            "explanation": "No presente do indicativo, a 3ª pessoa do singular é 'ele tem' (sem acento) e a 3ª pessoa do plural é 'eles têm' (com acento circunflexo diferencial).",
+            "dicaCearense": "Se o sujeito tá no plural (os alunos), o verbo 'ter' ganha chapeuzinho circunflexo: 'têm'!"
           }
         ]
       }
     },
     {
       "id": "p5-morf-f1",
-      "title": "Fase 1 · Classes gramaticais",
-      "subtitle": "Substantivo, adjetivo, artigo e numeral",
+      "title": "Fase 1 · Classes fundamentais de palavras",
+      "subtitle": "Identificação e papéis morfológicos",
       "chapter": "Módulo 03 · Morfologia e concordância",
       "icon": "npc",
       "position": { "x": 0, "y": 0 },
@@ -569,15 +569,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "Bora revisar as classes que tu já conhece e ver como elas trabalham juntas.",
-          "Numa frase, cada palavra tem uma função. Não fica avexado, que a gente desenrola."
+          "Cada palavra numa oração tem uma profissão: umas dão nome, outras qualificam, outras quantificam.",
+          "Vamos separar substantivo, artigo, numeral e adjetivo pra montar frases perfeitas."
         ]
       },
-      "reward": { "itemId": "p5-selo-classes", "label": "Selo das classes" },
+      "reward": { "itemId": "p5-selo-classes", "label": "Selo de Identificação Morfológica" },
       "lesson": {
         "id": "lesson-p5-morf-f1",
-        "title": "Reconhecer as classes",
-        "intro": "Substantivo nomeia, adjetivo caracteriza, artigo determina e numeral indica quantidade ou ordem.",
+        "title": "Substantivo, adjetivo, artigo e numeral",
+        "intro": "Aprenda a reconhecer o substantivo como núcleo da oração e veja como seus determinantes giram ao seu redor.",
         "xpReward": 50,
         "coinReward": 12,
         "requiredCorrectRatio": 0.8,
@@ -585,75 +585,75 @@
           {
             "id": "p5-morf-f1-q1",
             "type": "single-choice",
-            "prompt": "Em 'As duas meninas inteligentes chegaram', qual palavra é substantivo?",
+            "prompt": "[Nível 1 · Reconhecimento] Na oração 'Dois velhos pescadores avistaram um enorme cardume na baía', qual palavra atua como substantivo coletivo?",
             "choices": [
-              { "id": "a", "label": "As" },
-              { "id": "b", "label": "duas" },
-              { "id": "c", "label": "meninas" },
-              { "id": "d", "label": "inteligentes" }
+              { "id": "a", "label": "cardume" },
+              { "id": "b", "label": "pescadores" },
+              { "id": "c", "label": "dois" },
+              { "id": "d", "label": "enorme" }
             ],
-            "correctChoiceId": "c",
-            "explanation": "Meninas é o substantivo que nomeia os seres de quem se fala.",
-            "dicaCearense": "Bora revisar: Meninas é o substantivo que nomeia os seres de quem se fala. Olha as opções com atenção."
+            "correctChoiceId": "a",
+            "explanation": "'Cardume' é substantivo coletivo porque, mesmo no singular, designa um conjunto de peixes da mesma espécie.",
+            "dicaCearense": "Coletivo dá nome a um bando de uma vez só! 'Cardume' é a reunião da peixada inteira."
           },
           {
             "id": "p5-morf-f1-q2",
             "type": "single-choice",
-            "prompt": "Na mesma frase, qual palavra é adjetivo?",
+            "prompt": "[Nível 2 · Compreensão] Qual é a diferença de sentido e função entre o artigo definido e o artigo indefinido nas expressões 'Procuro o médico' e 'Procuro um médico'?",
             "choices": [
-              { "id": "a", "label": "duas" },
-              { "id": "b", "label": "meninas" },
-              { "id": "c", "label": "inteligentes" },
-              { "id": "d", "label": "chegaram" }
+              { "id": "a", "label": "'O médico' indica um profissional específico e conhecido; 'um médico' indica qualquer profissional da área, de modo indeterminado." },
+              { "id": "b", "label": "'O médico' refere-se ao tempo pretérito, e 'um médico' ao tempo futuro." },
+              { "id": "c", "label": "Não há nenhuma diferença, pois ambos têm exatamente o mesmo valor sintático e semântico." },
+              { "id": "d", "label": "'O' indica pluralidade e 'um' indica que o médico é experiente." }
             ],
-            "correctChoiceId": "c",
-            "explanation": "Inteligentes caracteriza as meninas, por isso é adjetivo.",
-            "dicaCearense": "Olha a regra: Inteligentes caracteriza as meninas, por isso é adjetivo. Bora desenrolar, visse?"
+            "correctChoiceId": "a",
+            "explanation": "O artigo definido (o, a, os, as) individualiza e particulariza o ser; o indefinido (um, uma, uns, umas) generaliza de maneira imprecisa.",
+            "dicaCearense": "'O' médico é aquele doutor de confiança que você conhece. 'Um' médico é qualquer um que estiver de plantão!"
           },
           {
             "id": "p5-morf-f1-q3",
             "type": "single-choice",
-            "prompt": "Na mesma frase, qual palavra é numeral?",
+            "prompt": "[Nível 3 · Aplicação] Na frase 'O atleta conquistou o terceiro troféu na corrida', o termo 'terceiro' classifica-se como:",
             "choices": [
-              { "id": "a", "label": "duas" },
-              { "id": "b", "label": "meninas" },
-              { "id": "c", "label": "inteligentes" },
-              { "id": "d", "label": "As" }
+              { "id": "a", "label": "numeral ordinal (indica ordem e posição numa sucessão)" },
+              { "id": "b", "label": "numeral cardinal (indica quantidade bruta)" },
+              { "id": "c", "label": "adjetivo pátrio (indica origem geográfica)" },
+              { "id": "d", "label": "pronome possessivo (indica posse de um objeto)" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Duas indica a quantidade de meninas e é um numeral cardinal.",
-            "dicaCearense": "Vixe, presta atenção: Duas indica a quantidade de meninas e é um numeral cardinal."
+            "explanation": "'Terceiro' é um numeral ordinal, pois expressa a posição ou ordem de chegada/classificação em uma sequência.",
+            "dicaCearense": "Primeiro, segundo, terceiro... marcam a fila ou a ordem de chegada: numeral ordinal!"
           },
           {
             "id": "p5-morf-f1-q4",
             "type": "multiple-choice",
-            "prompt": "Quais palavras são artigos?",
+            "prompt": "[Nível 4 · Análise] Leia a frase: 'Aquelas três jovens cientistas brasileiras descobriram a fórmula.' Selecione as afirmações morfológicas corretas:",
             "choices": [
-              { "id": "a", "label": "o" },
-              { "id": "b", "label": "uma" },
-              { "id": "c", "label": "menino" },
-              { "id": "d", "label": "os" }
+              { "id": "a", "label": "'cientistas' é um substantivo que atua como núcleo do sujeito." },
+              { "id": "b", "label": "'brasileiras' é um adjetivo pátrio que caracteriza as cientistas." },
+              { "id": "c", "label": "'três' é um numeral cardinal que quantifica as jovens." },
+              { "id": "d", "label": "'fórmula' é um verbo conjugado no tempo presente." }
             ],
-            "correctChoiceIds": ["a", "b", "d"],
-            "explanation": "O, uma e os são artigos. Menino é substantivo.",
-            "dicaCearense": "Vamos revisar: O, uma e os são artigos. Menino é substantivo. Revisa a regra e tenta de novo."
+            "correctChoiceIds": ["a", "b", "c"],
+            "explanation": "A afirmação D é incorreta porque 'fórmula' é um substantivo comum precedido pelo artigo 'a'. As afirmações A, B e C estão corretas.",
+            "dicaCearense": "'Fórmula' dá nome à descoberta, então é substantivo e não verbo de ação!"
           },
           {
             "id": "p5-morf-f1-q5",
             "type": "text",
-            "prompt": "Classifique o substantivo 'Brasil' (próprio ou comum).",
-            "placeholder": "Escreva próprio ou comum",
-            "acceptedAnswers": ["próprio", "proprio", "próprio.", "proprio."],
-            "explanation": "Brasil é o nome específico de um país, por isso é substantivo próprio.",
-            "dicaCearense": "Sem pressa, avexado não ajuda: Brasil é o nome específico de um país, por isso é substantivo próprio. Confia, macho, tu já sabe."
+            "prompt": "[Nível 5 · Domínio] Na expressão 'O sertanejo valente não teme a seca', qual é a classe gramatical da palavra 'valente'?",
+            "placeholder": "Digite a classe gramatical",
+            "acceptedAnswers": ["adjetivo", "adjetivo.", "Adjetivo"],
+            "explanation": "A palavra 'valente' atribui uma característica/qualidade ao substantivo 'sertanejo', atuando como adjetivo.",
+            "dicaCearense": "Dá qualidade ou característica ao substantivo? Pode carimbar que é adjetivo!"
           }
         ]
       }
     },
     {
       "id": "p5-morf-f2",
-      "title": "Fase 2 · Concordância em contexto",
-      "subtitle": "Gênero, número e verbo",
+      "title": "Fase 2 · Harmonia sintática e concordância nominal",
+      "subtitle": "Ajustar gênero e número entre as palavras",
       "chapter": "Módulo 03 · Morfologia e concordância",
       "icon": "star",
       "position": { "x": 2, "y": 1 },
@@ -661,15 +661,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "Substantivo, adjetivo, artigo e verbo precisam concordar, visse?",
-          "Observa o gênero e o número antes de escolher. Tu é desenrolado."
+          "As palavras dentro da frase formam uma família unida: se o substantivo vai pro plural ou pro feminino, os companheiros têm que acompanhar!",
+          "Vamos afinar esse ouvido pra perceber qualquer desacordo em 'lápis e caneta novos' e 'professoras e alunos entusiasmados'."
         ]
       },
-      "reward": { "itemId": "p5-selo-concordancia", "label": "Selo da concordância" },
+      "reward": { "itemId": "p5-selo-concordancia", "label": "Selo da Concordância Impecável" },
       "lesson": {
         "id": "lesson-p5-morf-f2",
-        "title": "Concordar corretamente",
-        "intro": "A concordância liga as palavras da frase. Se o substantivo está no plural, o adjetivo e o verbo também mudam.",
+        "title": "Concordância nominal em frases complexas",
+        "intro": "Pratique a concordância entre substantivos, artigos, numerais e adjetivos diante de sujeitos compostos e adjetivos uniformes.",
         "xpReward": 55,
         "coinReward": 14,
         "requiredCorrectRatio": 0.8,
@@ -677,75 +677,75 @@
           {
             "id": "p5-morf-f2-q1",
             "type": "single-choice",
-            "prompt": "Complete: 'As crianças ___ no parque.'",
+            "prompt": "[Nível 1 · Reconhecimento] Qual das palavras abaixo é um adjetivo UNIFORME, ou seja, que possui uma única forma tanto para o masculino quanto para o feminino?",
             "choices": [
-              { "id": "a", "label": "brincaram" },
-              { "id": "b", "label": "brincou" },
-              { "id": "c", "label": "brincamos" },
-              { "id": "d", "label": "brincar" }
+              { "id": "a", "label": "veloz (o carro veloz / a moto veloz)" },
+              { "id": "b", "label": "bonito (o vaso bonito / a flor bonita)" },
+              { "id": "c", "label": "alto (o muro alto / a torre alta)" },
+              { "id": "d", "label": "simpático (o vizinho simpático / a vizinha simpática)" }
             ],
             "correctChoiceId": "a",
-            "explanation": "As crianças é sujeito no plural, então o verbo fica brincaram.",
-            "dicaCearense": "Bora com calma: As crianças é sujeito no plural, então o verbo fica brincaram. Pensa com calma antes de responder."
+            "explanation": "Adjetivos uniformes mantêm a mesma terminação para ambos os gêneros gramaticais (menino veloz / menina veloz). Os biformes variam (bonito/bonita).",
+            "dicaCearense": "O adjetivo uniforme não muda a roupagem: serve pro macho e pra fêmea sem mexer numa vírgula!"
           },
           {
             "id": "p5-morf-f2-q2",
             "type": "single-choice",
-            "prompt": "Complete: 'O menino comprou uma bola ___.'",
+            "prompt": "[Nível 2 · Compreensão] Em 'A garota comprou lápis e caneta ___', qual adjetivo preenche adequadamente a oração concordando com ambos os substantivos?",
             "choices": [
-              { "id": "a", "label": "nova" },
-              { "id": "b", "label": "novo" },
-              { "id": "c", "label": "novos" },
-              { "id": "d", "label": "novas" }
+              { "id": "a", "label": "novos (concordando no plural masculino com ambos os substantivos de gêneros diferentes)" },
+              { "id": "b", "label": "nova (concordando apenas com lápis no masculino singular)" },
+              { "id": "c", "label": "novas (ignorando o gênero do substantivo masculino lápis)" },
+              { "id": "d", "label": "novo (deixando ambos no singular arbitrariamente)" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Bola é feminino singular, então o adjetivo deve ser nova.",
-            "dicaCearense": "Bora entender: Bola é feminino singular, então o adjetivo deve ser nova. Aí é só a massa."
+            "explanation": "Quando um adjetivo posposto qualifica substantivos de gêneros diferentes (o lápis - masc. / a caneta - fem.), ele vai para o plural no gênero masculino (novos), ou concorda com o mais próximo (nova). Entre as opções dadas, 'novos' é a forma canônica correta.",
+            "dicaCearense": "Misturou masculino e feminino no plural geral? O adjetivo vai pro masculino plural: 'lápis e caneta novos'!"
           },
           {
             "id": "p5-morf-f2-q3",
             "type": "single-choice",
-            "prompt": "Complete: 'Os livros ___ sobre a mesa.'",
+            "prompt": "[Nível 3 · Aplicação] Complete a frase com a concordância adequada: 'As professoras e os alunos ficaram ___ com o resultado da gincana.'",
             "choices": [
-              { "id": "a", "label": "estão" },
-              { "id": "b", "label": "está" },
-              { "id": "c", "label": "estamos" },
-              { "id": "d", "label": "estar" }
+              { "id": "a", "label": "entusiasmados" },
+              { "id": "b", "label": "entusiasmadas" },
+              { "id": "c", "label": "entusiasmado" },
+              { "id": "d", "label": "entusiasta" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Os livros é sujeito no plural, então usamos estão.",
-            "dicaCearense": "Presta atenção nisso: Os livros é sujeito no plural, então usamos estão."
+            "explanation": "Havendo sujeitos de gêneros distintos no plural (professoras + alunos), o adjetivo predicativo concorda no masculino plural: 'entusiasmados'.",
+            "dicaCearense": "Com sujeitos combinados no plural, o adjetivo predica todo mundo no masculino plural: ficaram 'entusiasmados'."
           },
           {
             "id": "p5-morf-f2-q4",
             "type": "multiple-choice",
-            "prompt": "Quais frases têm concordância correta?",
+            "prompt": "[Nível 4 · Análise] Quais das seguintes orações apresentam concordância nominal inteiramente CORRETA?",
             "choices": [
-              { "id": "a", "label": "As flores são bonitas." },
-              { "id": "b", "label": "Os carros são rápidos." },
-              { "id": "c", "label": "As flores são bonito." },
-              { "id": "d", "label": "O carro são rápido." }
+              { "id": "a", "label": "As antigas tradições sertanejas foram preservadas pela comunidade." },
+              { "id": "b", "label": "Os livros e os cadernos novos foram organizados na estante." },
+              { "id": "c", "label": "As crianças comeram bastante frutas maduro durante o recreio." },
+              { "id": "d", "label": "A água fresca e o suco gelado estavam saborosos." }
             ],
-            "correctChoiceIds": ["a", "b"],
-            "explanation": "Em A e B, substantivo, adjetivo e verbo concordam. Em C e D, há desencontro de gênero e número.",
-            "dicaCearense": "Vamos por partes: Em A e B, substantivo, adjetivo e verbo concordam. Em C e D, há desencontro de gênero e número. Olha as opções com atenção."
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "A oração C apresenta grave descompasso: 'frutas maduro' deveria ser 'frutas maduras', e 'bastante' deveria flexionar em 'bastantes frutas' (muitas frutas). As outras orações estão corretíssimas.",
+            "dicaCearense": "'Frutas maduro' doeu no ouvido, né não? Frutas pede maduras! Fica esperto na alternativa C."
           },
           {
             "id": "p5-morf-f2-q5",
             "type": "text",
-            "prompt": "Complete: 'A menina está ___ (feliz) com o presente.'",
-            "placeholder": "Escreva o adjetivo",
-            "acceptedAnswers": ["feliz", "feliz."],
-            "explanation": "Feliz é um adjetivo uniforme: tem a mesma forma no masculino e no feminino.",
-            "dicaCearense": "Olha a regra: Feliz é um adjetivo uniforme: tem a mesma forma no masculino e no feminino. Lê as alternativas com calma."
+            "prompt": "[Nível 5 · Domínio] Reescreva o adjetivo entre parênteses concordando com os termos: 'A cientista realizou pesquisas e experimentos ___ (fantástico).' ",
+            "placeholder": "Digite a forma do adjetivo",
+            "acceptedAnswers": ["fantásticos", "fantásticos.", "Fantásticos"],
+            "explanation": "Como qualifica 'pesquisas' (feminino) e 'experimentos' (masculino), o adjetivo pluraliza-se no masculino: 'fantásticos'.",
+            "dicaCearense": "Pesquisas (elas) + experimentos (eles) = fantásticos! Escreve no capricho."
           }
         ]
       }
     },
     {
       "id": "p5-morf-f3",
-      "title": "Fase 3 · Morfologia em síntese",
-      "subtitle": "Analisar uma frase completa",
+      "title": "Fase 3 · Pronomes e coesão anafórica",
+      "subtitle": "Evitar repetições e costurar o texto",
       "chapter": "Módulo 03 · Morfologia e concordância",
       "icon": "chest",
       "position": { "x": 1, "y": 2 },
@@ -753,15 +753,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "Agora bora analisar uma frase inteira e reconhecer as classes e os coletivos.",
-          "Cada detalhe importa, macho. Se tu olha tudo, é só a massa!"
+          "Texto bom é texto que flui sem ficar repetindo a mesma palavra toda hora.",
+          "Os pronomes 'ela', 'este', 'aquele' e 'nossa' são nossos aliados para costurar uma frase na outra com elegância."
         ]
       },
-      "reward": { "itemId": "p5-bau-morfologia", "label": "Baú da morfologia" },
+      "reward": { "itemId": "p5-bau-morfologia", "label": "Baú da Coesão Textual" },
       "lesson": {
         "id": "lesson-p5-morf-f3",
-        "title": "Análise morfológica em síntese",
-        "intro": "Leia 'Os três amigos curiosos exploraram a floresta' e identifique numeral, adjetivo e substantivo coletivo.",
+        "title": "Pronomes pessoais, possessivos e demonstrativos",
+        "intro": "Use pronomes para substituir termos, indicar relações de posse e situar elementos no tempo e no espaço do texto.",
         "xpReward": 60,
         "coinReward": 16,
         "requiredCorrectRatio": 0.8,
@@ -769,75 +769,75 @@
           {
             "id": "p5-morf-f3-q1",
             "type": "single-choice",
-            "prompt": "Leia: 'Os três amigos curiosos exploraram a floresta.' Quantos adjetivos há?",
+            "prompt": "[Nível 1 · Reconhecimento] Leia: 'Marina regou a pequena horta. Ela sabia que os vegetais precisavam de água.' O pronome 'Ela' foi utilizado para retomar qual termo?",
             "choices": [
-              { "id": "a", "label": "1" },
-              { "id": "b", "label": "2" },
-              { "id": "c", "label": "3" },
-              { "id": "d", "label": "4" }
+              { "id": "a", "label": "Marina" },
+              { "id": "b", "label": "horta" },
+              { "id": "c", "label": "vegetais" },
+              { "id": "d", "label": "água" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O único adjetivo é curiosos. Três é numeral, amigos e floresta são substantivos.",
-            "dicaCearense": "Oxe, não fica avexado: O único adjetivo é curiosos. Três é numeral, amigos e floresta são substantivos. Compara as alternativas."
+            "explanation": "O pronome pessoal do caso reto 'Ela' substitui e retoma o substantivo próprio 'Marina', evitando sua repetição desnecessária.",
+            "dicaCearense": "'Ela' tá apontando o dedo pra trás, chamando Marina de volta sem precisar repetir o nome dela."
           },
           {
             "id": "p5-morf-f3-q2",
             "type": "single-choice",
-            "prompt": "No trecho anterior, qual palavra é numeral?",
+            "prompt": "[Nível 2 · Compreensão] Em 'Não comprei este casaco aqui na loja; encomendei aquele que vimos semana passada', qual é a diferença entre os pronomes demonstrativos 'este' e 'aquele'?",
             "choices": [
-              { "id": "a", "label": "três" },
-              { "id": "b", "label": "amigos" },
-              { "id": "c", "label": "curiosos" },
-              { "id": "d", "label": "floresta" }
+              { "id": "a", "label": "'Este' indica o objeto próximo da pessoa que fala; 'aquele' indica o objeto distante tanto de quem fala quanto de quem ouve." },
+              { "id": "b", "label": "'Este' é usado apenas para seres vivos, enquanto 'aquele' serve unicamente para roupas e objetos inanimados." },
+              { "id": "c", "label": "'Este' indica um tempo que ainda não aconteceu, e 'aquele' marca o presente imediato." },
+              { "id": "d", "label": "Trata-se de uma diferença puramente rítmica, sem nenhum critério espacial ou temporal." }
             ],
             "correctChoiceId": "a",
-            "explanation": "Três indica a quantidade de amigos e é um numeral cardinal.",
-            "dicaCearense": "Vamos revisar: Três indica a quantidade de amigos e é um numeral cardinal. Olha as opções com calma."
+            "explanation": "Os pronomes demonstrativos situam seres no espaço: 'este' (perto do emissor), 'esse' (perto do interlocutor) e 'aquele' (afastado de ambos).",
+            "dicaCearense": "'Este' aqui tá na minha mão; 'aquele' lá tá longe de nós dois!"
           },
           {
             "id": "p5-morf-f3-q3",
             "type": "single-choice",
-            "prompt": "No trecho anterior, qual substantivo coletivo poderia substituir 'conjunto de árvores'?",
+            "prompt": "[Nível 3 · Aplicação] Qual pronome oblíquo substitui adequadamente o termo 'a correspondência' na frase: 'O carteiro entregou a correspondência ao destinatário'?",
             "choices": [
-              { "id": "a", "label": "floresta" },
-              { "id": "b", "label": "amigos" },
-              { "id": "c", "label": "três" },
-              { "id": "d", "label": "curiosos" }
+              { "id": "a", "label": "O carteiro entregou-a ao destinatário." },
+              { "id": "b", "label": "O carteiro entregou-lhe a correspondência." },
+              { "id": "c", "label": "O carteiro entregou-o ao destinatário." },
+              { "id": "d", "label": "O carteiro entregou ela ao destinatário." }
             ],
             "correctChoiceId": "a",
-            "explanation": "Floresta é um substantivo coletivo que nomeia um conjunto de árvores.",
-            "dicaCearense": "Bora revisar: Floresta é um substantivo coletivo que nomeia um conjunto de árvores."
+            "explanation": "'A correspondência' é objeto direto feminino singular. Na norma padrão, é substituído pelo pronome oblíquo 'a' ('entregou-a'). A forma 'entregou ela' é coloquial e desvia da norma culta.",
+            "dicaCearense": "Substituir objeto direto feminino pede pronome 'a': 'entregou-a com elegância'."
           },
           {
             "id": "p5-morf-f3-q4",
             "type": "multiple-choice",
-            "prompt": "Quais palavras podem ser adjetivos?",
+            "prompt": "[Nível 4 · Análise] Leia o trecho: 'Os garotos guardaram suas mochilas e seguiram para a quadra. Lá, eles encontraram os adversários.' Analise as afirmações verdadeiras:",
             "choices": [
-              { "id": "a", "label": "curiosos" },
-              { "id": "b", "label": "valentes" },
-              { "id": "c", "label": "mesas" },
-              { "id": "d", "label": "floresta" }
+              { "id": "a", "label": "'suas' é um pronome possessivo que indica a posse das mochilas pelos garotos." },
+              { "id": "b", "label": "'eles' é um pronome pessoal do caso reto que atua como sujeito do segundo período." },
+              { "id": "c", "label": "'Lá' é um pronome adjetivo demonstrativo de valor nominal." },
+              { "id": "d", "label": "O uso de 'eles' garante a coesão do texto sem repetir 'os garotos'." }
             ],
-            "correctChoiceIds": ["a", "b"],
-            "explanation": "Curiosos e valentes caracterizam seres. Mesas e floresta são substantivos.",
-            "dicaCearense": "Confere aí: Curiosos e valentes caracterizam seres. Mesas e floresta são substantivos. Pensa com calma antes de responder."
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "A afirmativa C é incorreta porque 'Lá' é um advérbio de lugar, e não pronome demonstrativo. As afirmativas A, B e D estão certas.",
+            "dicaCearense": "Cuidado com o 'Lá': ele indica lugar, logo é advérbio de lugar e não pronome!"
           },
           {
             "id": "p5-morf-f3-q5",
             "type": "text",
-            "prompt": "Reescreva no plural: 'O menino curioso chegou.' → 'Os meninos ___ chegaram.'",
-            "placeholder": "Escreva o adjetivo",
-            "acceptedAnswers": ["curiosos", "curiosos."],
-            "explanation": "Meninos é masculino plural, então o adjetivo fica curiosos.",
-            "dicaCearense": "Vixe, presta atenção: Meninos é masculino plural, então o adjetivo fica curiosos. Olha as opções com calma."
+            "prompt": "[Nível 5 · Domínio] Complete a frase com o pronome possessivo feminino que concorda com 'nós': 'Nós organizamos ___ sala de aula com muita dedicação.'",
+            "placeholder": "Digite o pronome possessivo",
+            "acceptedAnswers": ["nossa", "a nossa", "nossa.", "Nossa"],
+            "explanation": "O pronome possessivo de primeira pessoa do plural feminino singular é 'nossa' (referente a 'nós' e concordando com 'sala').",
+            "dicaCearense": "Se fomos nós que arrumamos, a sala é 'nossa'! Coloca aí bem bonito."
           }
         ]
       }
     },
     {
       "id": "p5-verb-f1",
-      "title": "Fase 1 · Tempos do indicativo",
-      "subtitle": "Presente, passado e futuro",
+      "title": "Fase 1 · Tempos do modo indicativo",
+      "subtitle": "Presente, pretéritos e futuro do presente",
       "chapter": "Módulo 04 · Verbos e tempos",
       "icon": "npc",
       "position": { "x": 0, "y": 0 },
@@ -845,15 +845,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "No 5º ano, bora observar os tempos verbais com mais atenção, visse?",
-          "O indicativo situa a ação no presente, no passado ou no futuro. Guarda isso."
+          "Verbo é o motor da língua portuguesa: é ele quem faz o tempo correr, parar ou voltar atrás!",
+          "Vamos entender a diferença entre pretérito perfeito, imperfeito e futuro do presente."
         ]
       },
-      "reward": { "itemId": "p5-selo-tempos", "label": "Selo dos tempos" },
+      "reward": { "itemId": "p5-selo-tempos", "label": "Selo de Domínio dos Tempos Verbais" },
       "lesson": {
         "id": "lesson-p5-verb-f1",
-        "title": "Reconhecer tempos verbais",
-        "intro": "Observe a forma do verbo e as pistas de tempo da frase para identificar o tempo verbal.",
+        "title": "Pretérito perfeito, imperfeito e futuro",
+        "intro": "Diferencie fatos pontuais concluídos de ações rotineiras no passado e projete ações no futuro do indicativo.",
         "xpReward": 50,
         "coinReward": 12,
         "requiredCorrectRatio": 0.8,
@@ -861,75 +861,75 @@
           {
             "id": "p5-verb-f1-q1",
             "type": "single-choice",
-            "prompt": "Em 'Nós estudamos todos os dias', o verbo está no:",
+            "prompt": "[Nível 1 · Reconhecimento] Em qual das frases o verbo expressa uma ação totalmente CONCLUÍDA em um momento específico do passado (pretérito perfeito)?",
             "choices": [
-              { "id": "a", "label": "presente" },
-              { "id": "b", "label": "passado" },
-              { "id": "c", "label": "futuro" },
-              { "id": "d", "label": "infinitivo" }
+              { "id": "a", "label": "Ontem o time venceu a partida final." },
+              { "id": "b", "label": "Antigamente nós jogávamos bola na rua todas as tardes." },
+              { "id": "c", "label": "Amanhã os alunos apresentarão a maquete." },
+              { "id": "d", "label": "Neste momento a torcida canta entusiasmada." }
             ],
             "correctChoiceId": "a",
-            "explanation": "Todos os dias indica uma ação habitual, no presente.",
-            "dicaCearense": "Oxente, olha isso: Todos os dias indica uma ação habitual, no presente. Lê tudo antes de marcar."
+            "explanation": "'Venceu' indica ação pontual, finalizada e acabada no passado (pretérito perfeito). 'Jogávamos' é imperfeito (hábito/duração).",
+            "dicaCearense": "Pretérito perfeito é aquilo que começou e terminou redondinho: pá, venceu e pronto!"
           },
           {
             "id": "p5-verb-f1-q2",
             "type": "single-choice",
-            "prompt": "Em 'Ele estudou ontem', o verbo está no:",
+            "prompt": "[Nível 2 · Compreensão] Qual é a diferença de sentido entre 'Lucas leu o livro' e 'Lucas lia o livro quando o telefone tocou'?",
             "choices": [
-              { "id": "a", "label": "passado" },
-              { "id": "b", "label": "presente" },
-              { "id": "c", "label": "futuro" },
-              { "id": "d", "label": "gerúndio" }
+              { "id": "a", "label": "'Leu' expressa uma ação acabada; 'lia' expressa uma ação contínua em andamento que foi interrompida no passado." },
+              { "id": "b", "label": "'Leu' está no futuro e 'lia' expressa um desejo incerto." },
+              { "id": "c", "label": "Ambas significam rigorosamente a mesma coisa, tratando-se de simples sinônimos." },
+              { "id": "d", "label": "'Lia' indica que a ação de leitura nunca aconteceu na realidade." }
             ],
             "correctChoiceId": "a",
-            "explanation": "Ontem indica passado, e estudou é a forma do passado.",
-            "dicaCearense": "Vamos por partes: Ontem indica passado, e estudou é a forma do passado. Não fica avexado, não."
+            "explanation": "O pretérito perfeito ('leu') fecha o processo; o pretérito imperfeito ('lia') descreve o desenrolar de uma ação contínua ou duradoura no passado.",
+            "dicaCearense": "'Leu' é ponto final; 'lia' é filme passando na tela até algo acontecer no meio."
           },
           {
             "id": "p5-verb-f1-q3",
             "type": "single-choice",
-            "prompt": "Em 'Nós estudaremos amanhã', o verbo está no:",
+            "prompt": "[Nível 3 · Aplicação] Complete a frase com a forma verbal do futuro do presente: 'No próximo sábado, a comunidade ___ uma grande feira de artesanato.'",
             "choices": [
-              { "id": "a", "label": "futuro" },
-              { "id": "b", "label": "presente" },
-              { "id": "c", "label": "passado" },
-              { "id": "d", "label": "imperativo" }
+              { "id": "a", "label": "organizará" },
+              { "id": "b", "label": "organizou" },
+              { "id": "c", "label": "organizava" },
+              { "id": "d", "label": "organize" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Amanhã e estudaremos indicam uma ação que ainda vai acontecer.",
-            "dicaCearense": "Bora com calma: Amanhã e estudaremos indicam uma ação que ainda vai acontecer."
+            "explanation": "'No próximo sábado' exige o futuro do presente do indicativo: 'organizará' (ação certa que ocorrerá em momento posterior).",
+            "dicaCearense": "É coisa que ainda vai acontecer com certeza no sábado? 'Organizará' no futuro!"
           },
           {
             "id": "p5-verb-f1-q4",
             "type": "multiple-choice",
-            "prompt": "Quais verbos estão no passado?",
+            "prompt": "[Nível 4 · Análise] Quais das seguintes orações trazem verbos flexionados no PRETÉRITO IMPERFEITO do indicativo?",
             "choices": [
-              { "id": "a", "label": "cantou" },
-              { "id": "b", "label": "correu" },
-              { "id": "c", "label": "canta" },
-              { "id": "d", "label": "correrá" }
+              { "id": "a", "label": "Meu avô contava histórias fascinantes à beira da fogueira." },
+              { "id": "b", "label": "As crianças corriam pelo pátio enquanto chovia lá fora." },
+              { "id": "c", "label": "O menino quebrou o lápis novo de propósito." },
+              { "id": "d", "label": "Nós sempre dividíamos o lanche com os colegas." }
             ],
-            "correctChoiceIds": ["a", "b"],
-            "explanation": "Cantou e correu estão no passado. Canta está no presente e correrá no futuro.",
-            "dicaCearense": "Presta atenção: Cantou e correu estão no passado. Canta está no presente e correrá no futuro. Compara as alternativas."
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "'Contava', 'corriam', 'chovia' e 'dividíamos' são pretéritos imperfeitos (costume, continuidade no passado com desinências -va e -ia). 'Quebrou' é pretérito perfeito.",
+            "dicaCearense": "A terminação -ava ou -ia de costume passado entrega o pretérito imperfeito na hora!"
           },
           {
             "id": "p5-verb-f1-q5",
             "type": "text",
-            "prompt": "Escreva o verbo 'aprender' no presente para 'eu'.",
-            "placeholder": "Ex.: aprendo",
-            "acceptedAnswers": ["aprendo", "aprendo."],
-            "explanation": "Eu aprendo está no presente do indicativo.",
-            "dicaCearense": "Vamos revisar: Eu aprendo está no presente do indicativo. Revisa a regra e tenta de novo."
+            "prompt": "[Nível 5 · Domínio] Escreva o verbo 'escrever' conjugado na 1ª pessoa do singular (Eu) no pretérito perfeito do indicativo (ação concluída ontem):",
+            "placeholder": "Digite a forma verbal",
+            "acceptedAnswers": ["escrevi", "escrevi.", "Escrevi"],
+            "explanation": "No pretérito perfeito do indicativo para o pronome 'eu', o verbo escrever flexiona-se como 'eu escrevi'.",
+            "dicaCearense": "Ontem eu sentei e... 'escrevi'! Bota o verbo no passado fechado."
           }
         ]
       }
     },
     {
       "id": "p5-verb-f2",
-      "title": "Fase 2 · Tempos e pistas contextuais",
-      "subtitle": "Ontem, agora e na próxima semana",
+      "title": "Fase 2 · Articulação temporal na narrativa",
+      "subtitle": "Concordância temporal entre marcadores e verbos",
       "chapter": "Módulo 04 · Verbos e tempos",
       "icon": "star",
       "position": { "x": 2, "y": 1 },
@@ -937,15 +937,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "As expressões de tempo ajudam a escolher a forma verbal. Não fica avexado.",
-          "Procura pistas como ontem, agora e na próxima semana. Tu desenrola."
+          "Quando a gente conta uma história, os verbos precisam marchar no mesmo compasso do tempo.",
+          "Marcador de tempo e verbo andam de braços dados para o leitor não ficar perdido na narrativa."
         ]
       },
-      "reward": { "itemId": "p5-selo-pistas", "label": "Selo das pistas" },
+      "reward": { "itemId": "p5-selo-pistas", "label": "Selo de Coerência Temporal" },
       "lesson": {
         "id": "lesson-p5-verb-f2",
-        "title": "Aplicar tempos no contexto",
-        "intro": "Complete as frases respeitando a pista de tempo e a concordância com o sujeito.",
+        "title": "Advérbios de tempo e coerência verbal",
+        "intro": "Perceba como expressões temporais (ontem, amiúde, outrora, futuramente) exigem flexões verbais específicas.",
         "xpReward": 55,
         "coinReward": 14,
         "requiredCorrectRatio": 0.8,
@@ -953,75 +953,75 @@
           {
             "id": "p5-verb-f2-q1",
             "type": "single-choice",
-            "prompt": "Complete: 'No ano passado, a turma ___ um museu.'",
+            "prompt": "[Nível 1 · Reconhecimento] Na frase 'Frequentemente os pássaros construíam seus ninhos naquele galho', qual expressão atua como marcador temporal de repetição?",
             "choices": [
-              { "id": "a", "label": "visitou" },
-              { "id": "b", "label": "visita" },
-              { "id": "c", "label": "visitará" },
-              { "id": "d", "label": "visitando" }
+              { "id": "a", "label": "Frequentemente" },
+              { "id": "b", "label": "construíam" },
+              { "id": "c", "label": "naquele galho" },
+              { "id": "d", "label": "seus ninhos" }
             ],
             "correctChoiceId": "a",
-            "explanation": "No ano passado indica passado, então usamos visitou.",
-            "dicaCearense": "Oxe, bora de leve: No ano passado indica passado, então usamos visitou. Relê o enunciado com atenção."
+            "explanation": "'Frequentemente' é um advérbio de tempo que expressa frequência habitual, casando harmonicamente com o pretérito imperfeito 'construíam'.",
+            "dicaCearense": "Mostra a frequência com que o fato acontecia: 'frequentemente' é o marcador de tempo!"
           },
           {
             "id": "p5-verb-f2-q2",
             "type": "single-choice",
-            "prompt": "Complete: 'Agora, a turma ___ o projeto.'",
+            "prompt": "[Nível 2 · Compreensão] Em uma narrativa de mistério, o autor escreveu: 'A noite estava fria e o vento uivava lá fora. De repente, uma porta bateu com estrondo.' Qual é a função da transição do imperfeito para o perfeito?",
             "choices": [
-              { "id": "a", "label": "apresenta" },
-              { "id": "b", "label": "apresentou" },
-              { "id": "c", "label": "apresentará" },
-              { "id": "d", "label": "apresentando" }
+              { "id": "a", "label": "O imperfeito ('estava/uivava') cria o cenário de fundo contínuo, e o perfeito ('bateu') introduz a ação pontual que rompe o equilíbrio." },
+              { "id": "b", "label": "O autor cometeu um erro de concordância verbal ao misturar tempos." },
+              { "id": "c", "label": "Ambos os tempos indicam que a porta demorou várias horas para fechar." },
+              { "id": "d", "label": "O tempo pretérito perfeito serve para demonstrar que o vento era mais forte que a porta." }
             ],
             "correctChoiceId": "a",
-            "explanation": "Agora indica presente, então usamos apresenta.",
-            "dicaCearense": "Confere aí: Agora indica presente, então usamos apresenta. Confia no teu raciocínio."
+            "explanation": "Na tessitura narrativa clássica, o imperfeito constrói a atmosfera e ambientação (cenário duradouro), enquanto o perfeito marca o evento súbito que desencadeia a trama.",
+            "dicaCearense": "O cenário tava lá calminho no imperfeito, aí... PÁ! O perfeito bateu a porta e assustou todo mundo!"
           },
           {
             "id": "p5-verb-f2-q3",
             "type": "single-choice",
-            "prompt": "Complete: 'Na próxima semana, a turma ___ o trabalho.'",
+            "prompt": "[Nível 3 · Aplicação] Complete a frase mantendo a coerência temporal: 'Na próxima década, os pesquisadores ___ novas tecnologias limpas para despoluir as lagoas.'",
             "choices": [
-              { "id": "a", "label": "entregará" },
-              { "id": "b", "label": "entregou" },
-              { "id": "c", "label": "entrega" },
-              { "id": "d", "label": "entregando" }
+              { "id": "a", "label": "desenvolverão" },
+              { "id": "b", "label": "desenvolveram" },
+              { "id": "c", "label": "desenvolviam" },
+              { "id": "d", "label": "desenvolvem" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Na próxima semana indica futuro, então usamos entregará.",
-            "dicaCearense": "Oxe, não fica avexado: Na próxima semana indica futuro, então usamos entregará."
+            "explanation": "'Na próxima década' situa a ação num futuro distante, exigindo a terminação -ão de futuro do indicativo ('desenvolverão'). A terminação -am indicaria passado ('desenvolveram').",
+            "dicaCearense": "Atenção máxima no 5º ano: futuro é com -ÃO (desenvolverão); passado é com -AM (desenvolveram)!"
           },
           {
             "id": "p5-verb-f2-q4",
             "type": "multiple-choice",
-            "prompt": "Quais frases estão no futuro?",
+            "prompt": "[Nível 4 · Análise] Quais das seguintes orações apresentam INCOERÊNCIA temporal entre o advérbio e a forma verbal empregada?",
             "choices": [
-              { "id": "a", "label": "Amanhã eu viajarei." },
-              { "id": "b", "label": "Na semana que vem, nós estudaremos." },
-              { "id": "c", "label": "Ontem eu viajei." },
-              { "id": "d", "label": "Nós estudamos agora." }
+              { "id": "a", "label": "Amanhã pela manhã nós fomos ao zoológico municipal." },
+              { "id": "b", "label": "Ano passado, eles terminarão todo o ensino fundamental." },
+              { "id": "c", "label": "Hoje cedo, o carteiro entregou a correspondência pontualmente." },
+              { "id": "d", "label": "Em breve, novas árvores florescerão no jardim da escola." }
             ],
             "correctChoiceIds": ["a", "b"],
-            "explanation": "Viajarei e estudaremos estão no futuro. Viajei está no passado e estudamos agora está no presente.",
-            "dicaCearense": "Guarda essa ideia: Viajarei e estudaremos estão no futuro. Viajei está no passado e estudamos agora está no presente. Lê tudo antes de marcar."
+            "explanation": "A oração A junta 'amanhã' (futuro) com 'fomos' (passado). A oração B junta 'ano passado' (passado) com 'terminarão' (futuro). Ambas estão incoerentes.",
+            "dicaCearense": "Misturar 'amanhã' com 'fomos' dá um nó na cabeça de qualquer um! Essas duas tão tortas."
           },
           {
             "id": "p5-verb-f2-q5",
             "type": "text",
-            "prompt": "Complete: 'Ontem, eles ___ (chegar) cedo.'",
-            "placeholder": "Escreva o verbo no passado",
-            "acceptedAnswers": ["chegaram", "chegaram."],
-            "explanation": "Ontem indica passado, e eles exige a forma chegaram.",
-            "dicaCearense": "Bora revisar: Ontem indica passado, e eles exige a forma chegaram. Confia no teu raciocínio."
+            "prompt": "[Nível 5 · Domínio] Reescreva o verbo 'chegar' na forma correta do pretérito perfeito para completar: 'Ontem à noite, eles ___ (chegar) muito cansados da viagem.'",
+            "placeholder": "Digite o verbo no passado",
+            "acceptedAnswers": ["chegaram", "chegaram.", "Chegaram"],
+            "explanation": "Com o sujeito 'eles' no pretérito perfeito, a terminação é -am: 'chegaram'.",
+            "dicaCearense": "Se foi ontem (passado), termina com -AM: 'eles chegaram'!"
           }
         ]
       }
     },
     {
       "id": "p5-verb-f3",
-      "title": "Fase 3 · Verbos em fábulas",
-      "subtitle": "Tempo e ação na narrativa",
+      "title": "Fase 3 · Verbos de elocução e discursos",
+      "subtitle": "Dar vida, tom e intenção à voz das personagens",
       "chapter": "Módulo 04 · Verbos e tempos",
       "icon": "chest",
       "position": { "x": 1, "y": 2 },
@@ -1029,15 +1029,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "Nas fábulas, os verbos fazem a história avançar. Vixe, eles dão vida ao texto!",
-          "Bora identificar a ação final e o tempo de cada verbo. Sem pressa, macho."
+          "Em um bom texto, ninguém apenas 'diz' ou 'fala': os personagens murmuram, exclamam, contestam e confessam!",
+          "Os verbos de elocução mostram a alma da personagem sem precisar de explicação comprida."
         ]
       },
-      "reward": { "itemId": "p5-bau-verbos", "label": "Baú dos verbos" },
+      "reward": { "itemId": "p5-bau-verbos", "label": "Baú da Expressividade Verbal" },
       "lesson": {
         "id": "lesson-p5-verb-f3",
-        "title": "Verbos em síntese",
-        "intro": "Leia a fábula da lebre e da tartaruga e observe os verbos no passado.",
+        "title": "Verbos dicendi e expressividade narrativa",
+        "intro": "Domine a escolha precisa dos verbos que introduzem falas para enriquecer a dramaticidade dos diálogos.",
         "xpReward": 60,
         "coinReward": 16,
         "requiredCorrectRatio": 0.8,
@@ -1045,75 +1045,75 @@
           {
             "id": "p5-verb-f3-q1",
             "type": "single-choice",
-            "prompt": "Leia: 'A lebre corria veloz, enquanto a tartaruga caminhava devagar. No fim, a tartaruga venceu.' Qual verbo indica a ação final da tartaruga?",
+            "prompt": "[Nível 1 · Reconhecimento] Na passagem '— Fale baixo, há guardas por perto! — sussurrou o mensageiro', qual verbo introduz e caracteriza a fala?",
             "choices": [
-              { "id": "a", "label": "venceu" },
-              { "id": "b", "label": "corria" },
-              { "id": "c", "label": "caminhava" },
-              { "id": "d", "label": "veloz" }
+              { "id": "a", "label": "sussurrou" },
+              { "id": "b", "label": "Fale" },
+              { "id": "c", "label": "há" },
+              { "id": "d", "label": "perto" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Venceu indica a ação final: a tartaruga ganhou a corrida.",
-            "dicaCearense": "Calma aí, macho: Venceu indica a ação final: a tartaruga ganhou a corrida. Lê as alternativas com calma."
+            "explanation": "'Sussurrou' é um verbo de elocução (dicendi) que qualifica a maneira silenciosa e cautelosa como o mensageiro pronunciou sua fala.",
+            "dicaCearense": "O verbo de elocução é o que conta COMO a personagem abriu a boca pra falar: foi cochichando, 'sussurrou'!"
           },
           {
             "id": "p5-verb-f3-q2",
             "type": "single-choice",
-            "prompt": "No trecho anterior, 'venceu' está no:",
+            "prompt": "[Nível 2 · Compreensão] Em vez de usar repetidamente o verbo 'disse', qual verbo de elocução confere ideia de discordância firme e imediata?",
             "choices": [
-              { "id": "a", "label": "passado" },
-              { "id": "b", "label": "presente" },
-              { "id": "c", "label": "futuro" },
-              { "id": "d", "label": "infinitivo" }
+              { "id": "a", "label": "retrucou" },
+              { "id": "b", "label": "concordou" },
+              { "id": "c", "label": "indagou" },
+              { "id": "d", "label": "murmurou" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Venceu indica uma ação que já aconteceu, no passado.",
-            "dicaCearense": "Presta atenção: Venceu indica uma ação que já aconteceu, no passado. Vai com calma e sem pressa."
+            "explanation": "'Retrucar' significa responder prontamente rebatendo ou contestando um argumento anterior. 'Indagar' é perguntar; 'murmurar' é falar baixinho.",
+            "dicaCearense": "Bateu e rebateu com resposta afiada? A personagem 'retrucou' sem pestanejar!"
           },
           {
             "id": "p5-verb-f3-q3",
             "type": "single-choice",
-            "prompt": "No trecho anterior, qual verbo está no presente?",
+            "prompt": "[Nível 3 · Aplicação] Leia o contexto dramático: 'O detetive apontou as provas cabais sobre a mesa. Encurralado, o suspeito finalmente ___: — Fui eu quem pegou a relíquia.' Qual verbo melhor expressa essa confissão?",
             "choices": [
-              { "id": "a", "label": "corria" },
-              { "id": "b", "label": "caminhava" },
-              { "id": "c", "label": "venceu" },
-              { "id": "d", "label": "Nenhum" }
+              { "id": "a", "label": "admitiu" },
+              { "id": "b", "label": "perguntou" },
+              { "id": "c", "label": "ordenou" },
+              { "id": "d", "label": "festejou" }
             ],
-            "correctChoiceId": "d",
-            "explanation": "Corria, caminhava e venceu estão no passado. Nenhum verbo do trecho está no presente.",
-            "dicaCearense": "Oxente, olha isso: Corria, caminhava e venceu estão no passado. Nenhum verbo do trecho está no presente."
+            "correctChoiceId": "a",
+            "explanation": "Diante do reconhecimento de culpa sob pressão de provas, o verbo de elocução preciso é 'admitiu' (confessou, reconheceu a verdade).",
+            "dicaCearense": "Sem saída e confessando a travessura? O suspeito 'admitiu' tudo na lata!"
           },
           {
             "id": "p5-verb-f3-q4",
             "type": "multiple-choice",
-            "prompt": "Quais verbos do trecho estão no passado?",
+            "prompt": "[Nível 4 · Análise] Quais dos verbos a seguir podem funcionar tipicamente como verbos de elocução em um diálogo literário?",
             "choices": [
-              { "id": "a", "label": "corria" },
-              { "id": "b", "label": "caminhava" },
-              { "id": "c", "label": "venceu" },
-              { "id": "d", "label": "vence" }
+              { "id": "a", "label": "ponderou" },
+              { "id": "b", "label": "exclamou" },
+              { "id": "c", "label": "trovejou (em sentido figurado: '— Chega! — trovejou o rei')" },
+              { "id": "d", "label": "caminhou (indicando apenas deslocamento físico neutro)" }
             ],
             "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "Corria, caminhava e venceu estão no passado. Vence está no presente.",
-            "dicaCearense": "Lembra disso: Corria, caminhava e venceu estão no passado. Vence está no presente. Relê o enunciado com atenção."
+            "explanation": "'Ponderou', 'exclamou' e até 'trovejou' (em linguagem conotativa de voz estrondosa) introduzem falas. 'Caminhou' denota movimento de locomoção, não de elocução.",
+            "dicaCearense": "Até 'trovejou' serve como verbo de fala quando o cabra tá bravo gritando! Mas caminhar é só perna se mexendo."
           },
           {
             "id": "p5-verb-f3-q5",
             "type": "text",
-            "prompt": "Complete: 'A tartaruga ___ (vencer) a corrida ontem.'",
-            "placeholder": "Escreva o verbo no passado",
-            "acceptedAnswers": ["venceu", "venceu."],
-            "explanation": "Ontem indica passado, então usamos venceu.",
-            "dicaCearense": "Confere aí: Ontem indica passado, então usamos venceu. Pensa com calma antes de responder."
+            "prompt": "[Nível 5 · Domínio] Complete a frase com o verbo de elocução sinônimo de 'perguntou' que inicia pela letra I: 'Curioso com o mapa, o menino ___ ao capitão onde estava o tesouro.'",
+            "placeholder": "Digite o verbo no passado",
+            "acceptedAnswers": ["indagou", "interrogou", "indagou.", "interrogou.", "Indagou"],
+            "explanation": "O verbo 'indagar' (ou 'interrogar') significa fazer uma pergunta, investigar por meio de questionamento.",
+            "dicaCearense": "Começa com 'in-' e quer dizer perguntar com curiosidade: ele 'indagou'!"
           }
         ]
       }
     },
     {
       "id": "p5-sint-f1",
-      "title": "Fase 1 · Frase e sujeito",
-      "subtitle": "Declarativa, interrogativa e exclamativa",
+      "title": "Fase 1 · A estrutura da oração: Sujeito e predicado",
+      "subtitle": "Identificar quem realiza/sofre e o que se declara",
       "chapter": "Módulo 05 · Sintaxe e pontuação",
       "icon": "npc",
       "position": { "x": 0, "y": 0 },
@@ -1121,15 +1121,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "Bora reconhecer o sujeito e o predicado e classificar as frases, visse?",
-          "A pontuação muda a intenção da frase. Quando tu percebe isso, é só a massa!"
+          "Toda oração tem uma espinha dorsal: alguém de quem a gente fala e aquilo que a gente declara sobre esse alguém.",
+          "Separar sujeito de predicado é a chave mestra pra pontuar qualquer texto como um escritor profissional."
         ]
       },
-      "reward": { "itemId": "p5-selo-frase", "label": "Selo da frase" },
+      "reward": { "itemId": "p5-selo-frase", "label": "Selo de Maestria em Sintaxe" },
       "lesson": {
         "id": "lesson-p5-sint-f1",
-        "title": "Sujeito, predicado e tipos de frase",
-        "intro": "O sujeito é sobre quem se declara algo; o predicado é o que se declara. A pontuação indica a intenção.",
+        "title": "Os dois termos essenciais da oração",
+        "intro": "Localize o verbo, faça a pergunta certa e descubra o sujeito e o predicado, inclusive quando a frase estiver em ordem invertida.",
         "xpReward": 50,
         "coinReward": 12,
         "requiredCorrectRatio": 0.8,
@@ -1137,75 +1137,75 @@
           {
             "id": "p5-sint-f1-q1",
             "type": "single-choice",
-            "prompt": "Em 'O vento balançou as árvores', qual é o sujeito?",
+            "prompt": "[Nível 1 · Reconhecimento] Na oração 'Os antigos moradores da vila preservaram as fontes de água', qual é o sujeito completo?",
             "choices": [
-              { "id": "a", "label": "O vento" },
-              { "id": "b", "label": "balançou" },
-              { "id": "c", "label": "as árvores" },
-              { "id": "d", "label": "balançou as árvores" }
+              { "id": "a", "label": "Os antigos moradores da vila" },
+              { "id": "b", "label": "moradores" },
+              { "id": "c", "label": "preservaram as fontes de água" },
+              { "id": "d", "label": "as fontes de água" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O vento é o termo sobre o qual se declara que balançou as árvores.",
-            "dicaCearense": "Olha só, macho: O vento é o termo sobre o qual se declara que balançou as árvores. Confere cada alternativa."
+            "explanation": "O sujeito completo engloba o núcleo e todos os seus modificadores: 'Os antigos moradores da vila'. A palavra 'moradores' é apenas o núcleo.",
+            "dicaCearense": "Pergunta pro verbo: 'Quem é que preservou as fontes?' A resposta inteirinha é o sujeito completo!"
           },
           {
             "id": "p5-sint-f1-q2",
             "type": "single-choice",
-            "prompt": "Na mesma frase, qual é o predicado?",
+            "prompt": "[Nível 2 · Compreensão] Em 'Desceram velozes pela montanha os ciclistas corajosos', por que 'os ciclistas corajosos' continua sendo o sujeito, mesmo estando no final da frase?",
             "choices": [
-              { "id": "a", "label": "balançou as árvores" },
-              { "id": "b", "label": "O vento" },
-              { "id": "c", "label": "as árvores" },
-              { "id": "d", "label": "vento" }
+              { "id": "a", "label": "Porque a ordem da oração é invertida; sintaticamente, são os ciclistas que realizam a ação de descer expressa pelo verbo." },
+              { "id": "b", "label": "Porque toda palavra no plural no final de frase atua automaticamente como sujeito." },
+              { "id": "c", "label": "Porque 'montanha' não pode ser sujeito de verbos de movimento." },
+              { "id": "d", "label": "Houve um erro sintático grave, pois em português o sujeito jamais pode vir depois do verbo." }
             ],
             "correctChoiceId": "a",
-            "explanation": "O predicado é o que se declara sobre o sujeito: balançou as árvores.",
-            "dicaCearense": "Guarda essa ideia: O predicado é o que se declara sobre o sujeito: balançou as árvores. Tu dá conta, macho."
+            "explanation": "Em português, a ordem dos termos é flexível. Em ordem indireta (invertida), o predicado pode anteceder o sujeito: quem desceu? 'Os ciclistas corajosos'.",
+            "dicaCearense": "A frase deu uma cambalhota, mas a pergunta não falha: quem desceu? Os ciclistas! Sujeito posposto desenrolado."
           },
           {
             "id": "p5-sint-f1-q3",
             "type": "single-choice",
-            "prompt": "Qual frase é declarativa?",
+            "prompt": "[Nível 3 · Aplicação] Identifique o predicado na oração: 'Aquele jovem cientista cearense ganhou um importante prêmio internacional.'",
             "choices": [
-              { "id": "a", "label": "O dia está bonito." },
-              { "id": "b", "label": "Que dia bonito!" },
-              { "id": "c", "label": "Você viu o dia?" },
-              { "id": "d", "label": "Feche a janela." }
+              { "id": "a", "label": "ganhou um importante prêmio internacional" },
+              { "id": "b", "label": "Aquele jovem cientista cearense" },
+              { "id": "c", "label": "um importante prêmio internacional" },
+              { "id": "d", "label": "cientista cearense ganhou" }
             ],
             "correctChoiceId": "a",
-            "explanation": "A frase declarativa afirma algo e termina com ponto final.",
-            "dicaCearense": "Oxe, bora de leve: A frase declarativa afirma algo e termina com ponto final."
+            "explanation": "Predicado é tudo o que se declara a respeito do sujeito, contendo obrigatoriamente o verbo ('ganhou um importante prêmio internacional').",
+            "dicaCearense": "Tirou o sujeito da frente? Tudo o que sobrou, com o verbo dentro, é o predicado!"
           },
           {
             "id": "p5-sint-f1-q4",
             "type": "multiple-choice",
-            "prompt": "Quais frases são exclamativas?",
+            "prompt": "[Nível 4 · Análise] Quais das seguintes orações possuem SUJEITO COMPOSTO (mais de um núcleo nominal)?",
             "choices": [
-              { "id": "a", "label": "Que susto!" },
-              { "id": "b", "label": "Como você cresceu!" },
-              { "id": "c", "label": "Você cresceu." },
-              { "id": "d", "label": "Onde está o livro?" }
+              { "id": "a", "label": "O vento forte e a chuva torrencial derrubaram galhos na estrada." },
+              { "id": "b", "label": "Os atletas da equipe venceram o campeonato com garra." },
+              { "id": "c", "label": "A coragem e a determinação guiaram os desbravadores." },
+              { "id": "d", "label": "Um bando barulhento de maritacas pousou no coqueiro." }
             ],
-            "correctChoiceIds": ["a", "b"],
-            "explanation": "As frases A e B expressam emoção e terminam com exclamação. C é declarativa e D é interrogativa.",
-            "dicaCearense": "Olha a regra: As frases A e B expressam emoção e terminam com exclamação. C é declarativa e D é interrogativa. Lê as alternativas com calma."
+            "correctChoiceIds": ["a", "c"],
+            "explanation": "Em A os núcleos são 'vento' e 'chuva' (sujeito composto). Em C os núcleos são 'coragem' e 'determinação' (sujeito composto). Em B o sujeito é simples (núcleo: 'atletas') e em D também é simples (núcleo: 'bando').",
+            "dicaCearense": "Não confunda palavra no plural ou coletivo com sujeito composto! Sujeito composto tem que ter dois ou mais núcleos independentes."
           },
           {
             "id": "p5-sint-f1-q5",
             "type": "text",
-            "prompt": "Complete a frase com o sinal adequado: 'Que belo dia___'",
-            "placeholder": "Escreva o sinal",
-            "acceptedAnswers": ["!", "! ", "exclamação", "ponto de exclamação"],
-            "explanation": "A frase expressa entusiasmo, por isso deve terminar com ponto de exclamação.",
-            "dicaCearense": "Oxe, não fica avexado: A frase expressa entusiasmo, por isso deve terminar com ponto de exclamação. Tu dá conta, macho."
+            "prompt": "[Nível 5 · Domínio] Na oração 'As doces melodias da flauta acalmaram o bebê chorão', escreva apenas o NÚCLEO do sujeito (a palavra principal sem artigos ou adjetivos):",
+            "placeholder": "Digite o núcleo do sujeito",
+            "acceptedAnswers": ["melodias", "melodias.", "Melodias"],
+            "explanation": "O sujeito é 'As doces melodias da flauta'. O núcleo substantivo que carrega a ideia central é 'melodias'.",
+            "dicaCearense": "Descasca os artigos e adjetivos: a palavra mais importante que sobra no sujeito é o núcleo!"
           }
         ]
       }
     },
     {
       "id": "p5-sint-f2",
-      "title": "Fase 2 · Travessão e dois-pontos",
-      "subtitle": "A voz dos personagens",
+      "title": "Fase 2 · Pontuação expressiva e sintática",
+      "subtitle": "Vírgula, dois-pontos, travessão e a regra sagrada",
       "chapter": "Módulo 05 · Sintaxe e pontuação",
       "icon": "star",
       "position": { "x": 2, "y": 1 },
@@ -1213,15 +1213,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "Num diálogo, os dois-pontos anunciam a fala e o travessão inicia ela.",
-          "Bora identificar cada sinal. Não fica avexado, que é simples."
+          "Vírgula não é pausa de respiração nem descanso pro pulmão: vírgula é conexão sintática!",
+          "E guarde a regra de ouro: nunca, jamais se separa o sujeito do seu verbo com vírgula!"
         ]
       },
-      "reward": { "itemId": "p5-selo-dialogo", "label": "Selo do diálogo" },
+      "reward": { "itemId": "p5-selo-dialogo", "label": "Selo de Pontuação Precisa" },
       "lesson": {
         "id": "lesson-p5-sint-f2",
-        "title": "Pontuação expressiva em diálogos",
-        "intro": "Observe como os dois-pontos e o travessão organizam a fala dos personagens.",
+        "title": "Funções da vírgula e estrutura do diálogo",
+        "intro": "Aprenda a pontuar vocativos, enumerações e a organizar a alternância de falas em discursos diretos.",
         "xpReward": 55,
         "coinReward": 14,
         "requiredCorrectRatio": 0.8,
@@ -1229,75 +1229,75 @@
           {
             "id": "p5-sint-f2-q1",
             "type": "single-choice",
-            "prompt": "Leia: 'A menina perguntou: — Você vem à festa?' Qual sinal introduz a fala?",
+            "prompt": "[Nível 1 · Reconhecimento] Na oração 'Mariana, traga os cadernos de desenho imediatamente', a vírgula foi empregada para isolar um:",
             "choices": [
-              { "id": "a", "label": "dois-pontos" },
-              { "id": "b", "label": "travessão" },
-              { "id": "c", "label": "interrogação" },
-              { "id": "d", "label": "vírgula" }
+              { "id": "a", "label": "vocativo (termo usado para chamar, interpelar ou invocar o interlocutor)" },
+              { "id": "b", "label": "sujeito paciente de oração reflexiva" },
+              { "id": "c", "label": "predicado verbal deslocado" },
+              { "id": "d", "label": "ponto de exclamação disfarçado" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Os dois-pontos anunciam que a fala da menina virá em seguida.",
-            "dicaCearense": "Bora desenrolar: Os dois-pontos anunciam que a fala da menina virá em seguida. Revisa a regra e tenta de novo."
+            "explanation": "'Mariana' é um vocativo (chamamento). O vocativo deve ser obrigatoriamente isolado por vírgula em qualquer posição da oração.",
+            "dicaCearense": "Chamou alguém pelo nome para dar um recado? Vírgula logo depois do chamado: é o famoso vocativo!"
           },
           {
             "id": "p5-sint-f2-q2",
             "type": "single-choice",
-            "prompt": "No trecho anterior, qual sinal marca a fala da menina?",
+            "prompt": "[Nível 2 · Compreensão] Por que a frase 'O diretor da renomada escola municipal, premiou os melhores alunos' comete um erro gramatical gravíssimo?",
             "choices": [
-              { "id": "a", "label": "travessão" },
-              { "id": "b", "label": "dois-pontos" },
-              { "id": "c", "label": "interrogação" },
-              { "id": "d", "label": "vírgula" }
+              { "id": "a", "label": "Porque separou indevidamente com vírgula o sujeito ('O diretor da renomada escola municipal') do seu respectivo verbo ('premiou')." },
+              { "id": "b", "label": "Porque faltou um travessão antes do nome da escola." },
+              { "id": "c", "label": "Porque a palavra 'premiou' deveria ter sido escrita antes do sujeito." },
+              { "id": "d", "label": "Porque antes de verbos transitivos exige-se ponto e vírgula." }
             ],
             "correctChoiceId": "a",
-            "explanation": "O travessão inicia a fala da personagem.",
-            "dicaCearense": "Lembra disso: O travessão inicia a fala da personagem. Relê com calma, visse?"
+            "explanation": "A regra sintática mais fundamental da língua portuguesa veda terminantemente o uso de vírgula simples entre o sujeito e o predicado/verbo.",
+            "dicaCearense": "Bota na cabeça: sujeito e verbo são colados! Botar vírgula entre eles é pecado mortal na redação."
           },
           {
             "id": "p5-sint-f2-q3",
             "type": "single-choice",
-            "prompt": "Qual sinal usamos para introduzir uma explicação?",
+            "prompt": "[Nível 3 · Aplicação] Qual das opções organiza adequadamente a pontuação de um diálogo em discurso direto?",
             "choices": [
-              { "id": "a", "label": "dois-pontos" },
-              { "id": "b", "label": "travessão" },
-              { "id": "c", "label": "exclamação" },
-              { "id": "d", "label": "ponto final" }
+              { "id": "a", "label": "O ancião olhou para o horizonte e avisou:\n— A tempestade chegará antes do anoitecer." },
+              { "id": "b", "label": "O ancião olhou para o horizonte e avisou,\n... A tempestade chegará antes do anoitecer." },
+              { "id": "c", "label": "O ancião olhou para o horizonte e avisou?\n— A tempestade chegará antes do anoitecer!" },
+              { "id": "d", "label": "O ancião olhou para o horizonte e avisou:\n(A tempestade chegará antes do anoitecer.)" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Os dois-pontos podem introduzir uma explicação, uma lista ou uma fala.",
-            "dicaCearense": "Calma aí, macho: Os dois-pontos podem introduzir uma explicação, uma lista ou uma fala."
+            "explanation": "Usa-se dois-pontos ao final da oração introdutória para anunciar a fala e travessão no início da linha seguinte para marcar o início da voz da personagem.",
+            "dicaCearense": "Dois-pontos avisa: 'Lá vem a fala!' E o travessão puxa a fala na linha de baixo."
           },
           {
             "id": "p5-sint-f2-q4",
             "type": "multiple-choice",
-            "prompt": "Quais sinais aparecem em diálogos?",
+            "prompt": "[Nível 4 · Análise] Como a posição da vírgula altera drasticamente o sentido das sentenças? Analise e selecione as afirmações verdadeiras:",
             "choices": [
-              { "id": "a", "label": "travessão" },
-              { "id": "b", "label": "dois-pontos" },
-              { "id": "c", "label": "interrogação" },
-              { "id": "d", "label": "sublinhado" }
+              { "id": "a", "label": "Em 'Não queremos guerra', nega-se a guerra; em 'Não, queremos guerra', afirma-se que a guerra é desejada." },
+              { "id": "b", "label": "Em 'Vamos almoçar, crianças!', faz-se um convite afetuoso às crianças (vocativo)." },
+              { "id": "c", "label": "Em 'Vamos almoçar crianças!', sem vírgula, a frase sugere absurdamente que as crianças serão o almoço." },
+              { "id": "d", "label": "A presença da vírgula em vocativos não exerce nenhum impacto no significado das frases." }
             ],
             "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "Travessão, dois-pontos e interrogação são sinais de pontuação usados em diálogos. Sublinhado não é pontuação.",
-            "dicaCearense": "Bora entender: Travessão, dois-pontos e interrogação são sinais de pontuação usados em diálogos. Sublinhado não é pontuação. Confere cada alternativa."
+            "explanation": "A pontuação é produtora de sentido: sem vírgula no vocativo ('almoçar crianças'), 'crianças' vira objeto direto do verbo comer/almoçar! A afirmativa D é totalmente falsa.",
+            "dicaCearense": "Salvem as crianças com uma vírgula! 'Vamos almoçar, crianças' chama pro rango; sem vírgula vira banquete de monstro!"
           },
           {
             "id": "p5-sint-f2-q5",
             "type": "text",
-            "prompt": "Complete: 'O professor disse___ — Abram o livro na página 10.'",
-            "placeholder": "Escreva o sinal",
-            "acceptedAnswers": [":", "dois-pontos", "dois pontos"],
-            "explanation": "Os dois-pontos anunciam a fala que vem depois do travessão.",
-            "dicaCearense": "Guarda essa ideia: Os dois-pontos anunciam a fala que vem depois do travessão. Lê tudo antes de marcar."
+            "prompt": "[Nível 5 · Domínio] Qual sinal de pontuação deve ser colocado no final da frase para transformá-la em uma pergunta que denota surpresa e dúvida ao mesmo tempo: 'Você realmente teve coragem de dizer aquilo___'",
+            "placeholder": "Digite o sinal de pontuação",
+            "acceptedAnswers": ["?", "?!", "!?", "ponto de interrogação", "interrogação"],
+            "explanation": "A interrogação '?' (ou combinada com exclamação '?!') é necessária para formular uma oração interrogativa direta.",
+            "dicaCearense": "Fez pergunta com espanto? O ponto de interrogação '?' tem que fechar a conta."
           }
         ]
       }
     },
     {
       "id": "p5-sint-f3",
-      "title": "Fase 3 · Sintaxe e texto em síntese",
-      "subtitle": "Analisar um trecho completo",
+      "title": "Fase 3 · Sintaxe textual e entonação expressiva",
+      "subtitle": "Reticências, parênteses e tipos de frases no texto",
       "chapter": "Módulo 05 · Sintaxe e pontuação",
       "icon": "chest",
       "position": { "x": 1, "y": 2 },
@@ -1305,15 +1305,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "Agora bora analisar sujeito, predicado e pontuação num pequeno texto, macho.",
-          "Lê o trecho inteiro antes de responder. Tu é desenrolado, vai dar conta."
+          "A pontuação é a música da escrita: dá pausa, suspense, emoção e sussurro.",
+          "Vamos ver como pequenos sinais mudam o ritmo de um conto e tocam o coração do leitor."
         ]
       },
-      "reward": { "itemId": "p5-bau-sintaxe", "label": "Baú da sintaxe" },
+      "reward": { "itemId": "p5-bau-sintaxe", "label": "Baú da Mestria Sintática" },
       "lesson": {
         "id": "lesson-p5-sint-f3",
-        "title": "Sintaxe e pontuação em síntese",
-        "intro": "Leia o trecho e identifique a estrutura da oração e os sinais que organizam a fala.",
+        "title": "Pontuação em textos literários e expressivos",
+        "intro": "Compreenda o impacto de reticências, parênteses e aspas na construção da atmosfera narrativa.",
         "xpReward": 60,
         "coinReward": 16,
         "requiredCorrectRatio": 0.8,
@@ -1321,75 +1321,75 @@
           {
             "id": "p5-sint-f3-q1",
             "type": "single-choice",
-            "prompt": "Leia: 'O menino abriu a janela e viu o céu. Depois, disse: — Que dia bonito!' Qual é o sujeito da primeira oração?",
+            "prompt": "[Nível 1 · Reconhecimento] No trecho 'O explorador caminhou até a beirada do abismo e olhou para baixo... Algo se mexia nas sombras', o que as RETICÊNCIAS expressam principalmente?",
             "choices": [
-              { "id": "a", "label": "O menino" },
-              { "id": "b", "label": "a janela" },
-              { "id": "c", "label": "o céu" },
-              { "id": "d", "label": "Que dia" }
+              { "id": "a", "label": "Suspense, hesitação e interrupção sugestiva do pensamento" },
+              { "id": "b", "label": "A certeza absoluta de um fato consumado" },
+              { "id": "c", "label": "Que a frase é uma pergunta de múltipla escolha" },
+              { "id": "d", "label": "Um erro de gramática do autor da história" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O menino é o termo sobre o qual se declara que abriu a janela e viu o céu.",
-            "dicaCearense": "Sem pressa, avexado não ajuda: O menino é o termo sobre o qual se declara que abriu a janela e viu o céu. Olha as opções com atenção."
+            "explanation": "As reticências (...) criam suspensão da narrativa, gerando clima de suspense, pausa reflexiva ou hesitação psicológica.",
+            "dicaCearense": "Os três pontinhos deixam o mistério no ar... Segura a respiração que vem coisa aí!"
           },
           {
             "id": "p5-sint-f3-q2",
             "type": "single-choice",
-            "prompt": "No trecho anterior, qual é o predicado da primeira oração?",
+            "prompt": "[Nível 2 · Compreensão] Qual é a função dos PARÊNTESES na sentença: 'A Caatinga (único bioma exclusivamente brasileiro) abriga espécies fascinantes'?",
             "choices": [
-              { "id": "a", "label": "abriu a janela e viu o céu" },
-              { "id": "b", "label": "O menino" },
-              { "id": "c", "label": "o céu" },
-              { "id": "d", "label": "Que dia bonito" }
+              { "id": "a", "label": "Isolar uma explicação acessória ou informação complementar sem quebrar a estrutura principal." },
+              { "id": "b", "label": "Indicar que a informação contida dentro deles é mentirosa ou sem importância." },
+              { "id": "c", "label": "Substituir o ponto final no término de parágrafos longos." },
+              { "id": "d", "label": "Destacar a fala de uma personagem em discurso direto." }
             ],
             "correctChoiceId": "a",
-            "explanation": "O predicado informa o que o menino fez: abriu a janela e viu o céu.",
-            "dicaCearense": "Olha a regra: O predicado informa o que o menino fez: abriu a janela e viu o céu. Confia, macho, tu já sabe."
+            "explanation": "Os parênteses servem para inserir notas explicativas, reflexões à parte ou esclarecimentos complementares dentro do texto.",
+            "dicaCearense": "É um comentário explicativo que você cochicha no ouvido do leitor entre duas curvinhas."
           },
           {
             "id": "p5-sint-f3-q3",
             "type": "single-choice",
-            "prompt": "No trecho anterior, qual sinal marca a fala do menino?",
+            "prompt": "[Nível 3 · Aplicação] Transforme a oração declarativa 'O menino encontrou a chave perdida' em uma oração IMPERATIVA que expresse uma ordem ou pedido direto:",
             "choices": [
-              { "id": "a", "label": "travessão" },
-              { "id": "b", "label": "dois-pontos" },
-              { "id": "c", "label": "exclamação" },
-              { "id": "d", "label": "vírgula" }
+              { "id": "a", "label": "Menino, encontre a chave perdida agora!" },
+              { "id": "b", "label": "Será que o menino encontrou a chave perdida?" },
+              { "id": "c", "label": "Como o menino encontrou a chave perdida!" },
+              { "id": "d", "label": "O menino talvez encontrasse a chave perdida." }
             ],
             "correctChoiceId": "a",
-            "explanation": "O travessão inicia a fala: — Que dia bonito!",
-            "dicaCearense": "Olha só, macho: O travessão inicia a fala: — Que dia bonito!"
+            "explanation": "Frases imperativas transmitem ordens, conselhos, súplicas ou pedidos diretos, geralmente com o verbo no modo imperativo ('encontre!').",
+            "dicaCearense": "Imperativo manda, pede ou dá instrução firme: 'Encontre a chave agora!'"
           },
           {
             "id": "p5-sint-f3-q4",
             "type": "multiple-choice",
-            "prompt": "Quais sinais aparecem no trecho anterior?",
+            "prompt": "[Nível 4 · Análise] Quais das seguintes orações trazem o uso LEGÍTIMO das aspas segundo a norma culta?",
             "choices": [
-              { "id": "a", "label": "dois-pontos" },
-              { "id": "b", "label": "travessão" },
-              { "id": "c", "label": "exclamação" },
-              { "id": "d", "label": "interrogação" }
+              { "id": "a", "label": "O garoto disse que comeria uma \"pizza\" caseira hoje à noite sem motivo algum." },
+              { "id": "b", "label": "O filósofo afirmou: \"A educação transforma as pessoas\"." },
+              { "id": "c", "label": "Ele agiu com tamanha \"gentileza\" que empurrou todos na fila (ironia)." },
+              { "id": "d", "label": "O termo \"software\" é um estrangeirismo comum na informática." }
             ],
-            "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "O trecho tem dois-pontos, travessão e exclamação. Não há interrogação.",
-            "dicaCearense": "Vamos revisar: O trecho tem dois-pontos, travessão e exclamação. Não há interrogação. Revisa a regra e tenta de novo."
+            "correctChoiceIds": ["b", "c", "d"],
+            "explanation": "As aspas servem para citações textuais diretas (B), indicar ironia com sentido figurado oposto (C) e destacar termos estrangeiros/neologismos (D). Na alternativa A o uso é incorreto e redundante.",
+            "dicaCearense": "Aspas pra citação de alguém, pra ironizar com sarcasmo ou pra palavra em outra língua. Nada de aspar comida à toa como na A!"
           },
           {
             "id": "p5-sint-f3-q5",
             "type": "text",
-            "prompt": "Transforme em pergunta: 'O dia está bonito.' → 'O dia está bonito___'",
-            "placeholder": "Escreva o sinal",
-            "acceptedAnswers": ["?", "? ", "interrogação", "ponto de interrogação"],
-            "explanation": "Para transformar a frase em pergunta, usamos o ponto de interrogação.",
-            "dicaCearense": "Oxe, bora de leve: Para transformar a frase em pergunta, usamos o ponto de interrogação. Bora desenrolar, visse?"
+            "prompt": "[Nível 5 · Domínio] Complete a frase pontuando a enumeração com o sinal que separa os itens listados: 'Comprei cadernos___ lápis___ borrachas e réguas.'",
+            "placeholder": "Digite o sinal de pontuação",
+            "acceptedAnswers": [",", "vírgula", "virgula", "a vírgula"],
+            "explanation": "A vírgula é o sinal gramatical que separa termos coordenados de mesma função sintática em uma enumeração.",
+            "dicaCearense": "Vai listando as compras da feira ou do estojo? Separa item por item com vírgula!"
           }
         ]
       }
     },
     {
       "id": "p5-gen-f1",
-      "title": "Fase 1 · Reconhecer gêneros",
-      "subtitle": "Fábula, bilhete e notícia",
+      "title": "Fase 1 · Gêneros textuais e intencionalidade",
+      "subtitle": "Fábula, notícia, cartaz e bilhete",
       "chapter": "Módulo 06 · Gêneros e interpretação",
       "icon": "npc",
       "position": { "x": 0, "y": 0 },
@@ -1397,15 +1397,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "Cada gênero textual tem uma função e uma estrutura, visse?",
-          "Bora reconhecer fábulas, bilhetes e notícias. Só a massa!"
+          "Ninguém escreve sem um motivo: a gente escreve pra ensinar, pra avisar, pra emocionar ou pra noticiar um fato.",
+          "Cada gênero tem um formato próprio e uma plateia certa para a qual ele fala."
         ]
       },
-      "reward": { "itemId": "p5-selo-generos", "label": "Selo dos gêneros" },
+      "reward": { "itemId": "p5-selo-generos", "label": "Selo de Identificação de Gêneros" },
       "lesson": {
         "id": "lesson-p5-gen-f1",
-        "title": "Identificar gêneros textuais",
-        "intro": "A fábula ensina uma moral; o bilhete comunica algo curto; a notícia informa um fato recente.",
+        "title": "A estrutura e a finalidade dos gêneros",
+        "intro": "Diferencie textos ficcionais com moral daqueles jornalísticos orientados para a informação objetiva.",
         "xpReward": 50,
         "coinReward": 12,
         "requiredCorrectRatio": 0.8,
@@ -1413,75 +1413,75 @@
           {
             "id": "p5-gen-f1-q1",
             "type": "single-choice",
-            "prompt": "Um texto curto com animais que falam e uma moral no final é uma:",
+            "prompt": "[Nível 1 · Reconhecimento] Um texto narrativo curto cujos personagens são animais com comportamentos humanos (personificação) e que termina com um ensinamento ético explícito classifica-se como:",
             "choices": [
               { "id": "a", "label": "fábula" },
-              { "id": "b", "label": "notícia" },
-              { "id": "c", "label": "bilhete" },
-              { "id": "d", "label": "receita" }
+              { "id": "b", "label": "notícia de jornal" },
+              { "id": "c", "label": "verbete de dicionário" },
+              { "id": "d", "label": "ata de reunião" }
             ],
             "correctChoiceId": "a",
-            "explanation": "A fábula tem animais personificados e uma moral.",
-            "dicaCearense": "Vixe, macho, olha só: A fábula tem animais personificados e uma moral. Pensa com calma antes de responder."
+            "explanation": "A fábula caracteriza-se essencialmente pelo protagonismo de animais personificados (alegoria) e pela presença de uma moral da história final.",
+            "dicaCearense": "Bichos falando e ensinamento no finalzinho? É fábula com certeza, igualzinha à da tartaruga e da lebre!"
           },
           {
             "id": "p5-gen-f1-q2",
             "type": "single-choice",
-            "prompt": "Um texto que informa um fato recente, com quem, quando e onde, é uma:",
+            "prompt": "[Nível 2 · Compreensão] Em uma NOTÍCIA jornalística, o primeiro parágrafo (chamado de lide ou lead) tem como objetivo principal:",
             "choices": [
-              { "id": "a", "label": "notícia" },
-              { "id": "b", "label": "fábula" },
-              { "id": "c", "label": "bilhete" },
-              { "id": "d", "label": "poema" }
+              { "id": "a", "label": "Apresentar rapidamente o resumo dos fatos respondendo: o que aconteceu, com quem, quando, onde e por quê." },
+              { "id": "b", "label": "Rimar os versos para deixar o texto poético e sonoro." },
+              { "id": "c", "label": "Contar uma piada para descontrair o público leitor." },
+              { "id": "d", "label": "Ensinar uma receita culinária passo a passo." }
             ],
             "correctChoiceId": "a",
-            "explanation": "A notícia relata um fato recente e responde a perguntas como quem, quando, onde e o quê.",
-            "dicaCearense": "Bora entender: A notícia relata um fato recente e responde a perguntas como quem, quando, onde e o quê. Respira e lê de novo."
+            "explanation": "O lide jornalístico traz as informações nucleares do acontecimento (quem, o quê, onde, quando, como, por quê) logo na abertura da notícia.",
+            "dicaCearense": "O lide é direto ao ponto: entrega logo quem fez o que, onde e quando aconteceu o babado!"
           },
           {
             "id": "p5-gen-f1-q3",
             "type": "single-choice",
-            "prompt": "Um texto curto escrito para alguém específico, com remetente e destinatário, é um:",
+            "prompt": "[Nível 3 · Aplicação] Observe o texto: 'Mãe, fui à biblioteca com o Lucas devolver o livro de ciências. Volto antes das cinco. Beijos, Clara.' Qual é o gênero e seu propósito comunicativo?",
             "choices": [
-              { "id": "a", "label": "bilhete" },
-              { "id": "b", "label": "notícia" },
-              { "id": "c", "label": "fábula" },
-              { "id": "d", "label": "relatório" }
+              { "id": "a", "label": "Bilhete — mensagem curta do cotidiano para dar um aviso prático a alguém próximo." },
+              { "id": "b", "label": "Reportagem — investigação profunda sobre a rotina das bibliotecas públicas." },
+              { "id": "c", "label": "Conto de fadas — narrativa fantástica com princesas e seres mágicos." },
+              { "id": "d", "label": "Cardápio — descrição dos pratos disponíveis para o jantar." }
             ],
             "correctChoiceId": "a",
-            "explanation": "O bilhete é uma mensagem curta trocada entre pessoas.",
-            "dicaCearense": "Bora desenrolar: O bilhete é uma mensagem curta trocada entre pessoas."
+            "explanation": "O bilhete é um gênero textual informal de circulação cotidiana, com mensagem sucinta, remetente e destinatário.",
+            "dicaCearense": "Mensagem rápida de geladeira ou de mesa pra avisar onde foi? É bilhete purinho!"
           },
           {
             "id": "p5-gen-f1-q4",
             "type": "multiple-choice",
-            "prompt": "Quais características são de uma notícia?",
+            "prompt": "[Nível 4 · Análise] Quais das seguintes características são EXCLUSIVAS de textos informativos/jornalísticos (como notícias e reportagens) e NÃO pertencem às fábulas?",
             "choices": [
-              { "id": "a", "label": "fato principal" },
-              { "id": "b", "label": "data e local" },
-              { "id": "c", "label": "moral no final" },
-              { "id": "d", "label": "animais que falam" }
+              { "id": "a", "label": "Busca pela objetividade e compromisso com fatos reais comprováveis." },
+              { "id": "b", "label": "Presença de data precisa, local dos acontecimentos e identificação de fontes." },
+              { "id": "c", "label": "Presença de animais mágicos que ensinam virtudes morais." },
+              { "id": "d", "label": "Linguagem em conformidade com o padrão formal da imprensa." }
             ],
-            "correctChoiceIds": ["a", "b"],
-            "explanation": "A notícia apresenta um fato principal e costuma informar data e local. Moral e animais que falam são da fábula.",
-            "dicaCearense": "Vamos por partes: A notícia apresenta um fato principal e costuma informar data e local. Moral e animais que falam são da fábula. Olha as opções com atenção."
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "Animais personificados mágicos pertencem ao universo ficcional da fábula. As alternativas A, B e D definem o gênero jornalístico informativo.",
+            "dicaCearense": "Notícia trabalha com a verdade nua e crua dos fatos; fábula cria bichos falantes pra passar lição de vida."
           },
           {
             "id": "p5-gen-f1-q5",
             "type": "text",
-            "prompt": "Qual é o gênero de um texto com moral e animais personificados?",
-            "placeholder": "Escreva o gênero",
-            "acceptedAnswers": ["fábula", "fabula", "fábula.", "fabula."],
-            "explanation": "Esse é o gênero da fábula.",
-            "dicaCearense": "Olha a regra: Esse é o gênero da fábula. Lê as alternativas com calma."
+            "prompt": "[Nível 5 · Domínio] Qual é o nome do título principal em letras destacadas que abre uma notícia de jornal com o objetivo de chamar a atenção do leitor?",
+            "placeholder": "Digite o nome técnico",
+            "acceptedAnswers": ["manchete", "a manchete", "manchete.", "Manchete"],
+            "explanation": "O título principal e chamativo de uma notícia jornalística recebe o nome técnico de manchete.",
+            "dicaCearense": "Aquelas letras grandonas na capa do jornal que dão a notícia principal chamam-se 'manchete'!"
           }
         ]
       }
     },
     {
       "id": "p5-gen-f2",
-      "title": "Fase 2 · Interpretar fábula e bilhete",
-      "subtitle": "Moral, remetente e destinatário",
+      "title": "Fase 2 · Interpretação e inferência textual",
+      "subtitle": "Ler nas entrelinhas e reconhecer sentidos implícitos",
       "chapter": "Módulo 06 · Gêneros e interpretação",
       "icon": "star",
       "position": { "x": 2, "y": 1 },
@@ -1489,15 +1489,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "Agora bora interpretar o que cada texto quer dizer, sem avexar.",
-          "Na fábula, procura a moral; no bilhete, procura quem escreve e para quem. Visse?"
+          "Um bom leitor não lê apenas o que tá escrito preto no branco: ele pesca o que tá nas entrelinhas!",
+          "Vamos investigar pistas no texto para descobrir as verdadeiras intenções dos personagens."
         ]
       },
-      "reward": { "itemId": "p5-selo-interpretacao", "label": "Selo da interpretação" },
+      "reward": { "itemId": "p5-selo-interpretacao", "label": "Selo de Leitura Crítica" },
       "lesson": {
         "id": "lesson-p5-gen-f2",
-        "title": "Interpretar fábula e bilhete",
-        "intro": "Leia os textos e identifique a moral, os personagens e as informações principais.",
+        "title": "Inferência de sentido e leitura analítica",
+        "intro": "Desenvolva a capacidade de inferir sentimentos, intenções não ditas e lições morais profundas em contos e fábulas.",
         "xpReward": 55,
         "coinReward": 14,
         "requiredCorrectRatio": 0.8,
@@ -1505,80 +1505,75 @@
           {
             "id": "p5-gen-f2-q1",
             "type": "single-choice",
-            "prompt": "Leia: 'O leão poupou a vida do rato. Dias depois, o rato roeu a rede e libertou o leão.' Qual é a moral?",
+            "prompt": "[Nível 1 · Reconhecimento] Leia o trecho da fábula: 'A raposa olhou para os cachos no alto da parreira, pulou várias vezes sem alcançá-los e, dando de ombros, afastou-se murmurando: — Estão verdes mesmo, não me servem.' O que a raposa realmente sentiu ao se afastar?",
             "choices": [
-              { "id": "a", "label": "Pequenos gestos podem gerar grandes recompensas." },
-              { "id": "b", "label": "O leão é o rei da selva." },
-              { "id": "c", "label": "O rato é mais forte que o leão." },
-              { "id": "d", "label": "Nunca ajude ninguém." }
+              { "id": "a", "label": "Frustração e orgulho ferido por não conseguir pegar as uvas que tanto desejava." },
+              { "id": "b", "label": "Alegria incontida por ter descoberto frutas estragadas." },
+              { "id": "c", "label": "Sono profundo e vontade de hibernar debaixo da parreira." },
+              { "id": "d", "label": "Medo de que as uvas caíssem sobre sua cabeça." }
             ],
             "correctChoiceId": "a",
-            "explanation": "O rato retribui a gentileza do leão, mostrando que pequenos gestos podem ter grandes consequências.",
-            "dicaCearense": "Vixe, presta atenção: O rato retribui a gentileza do leão, mostrando que pequenos gestos podem ter grandes consequências. Compara as alternativas."
+            "explanation": "A raposa finge desdém ('estão verdes') para disfarçar sua incapacidade e frustração diante do fracasso em apanhar as uvas.",
+            "dicaCearense": "Ela só disse que a uva tava azeda porque não deu conta de alcançar! Puro orgulho ferido."
           },
           {
             "id": "p5-gen-f2-q2",
             "type": "single-choice",
-            "prompt": "No texto anterior, quem ajudou o leão?",
+            "prompt": "[Nível 2 · Compreensão] Em 'O leão caiu na armadilha dos caçadores e urrou de desespero até que o pequeno rato roeu as cordas e o libertou', qual é a moral implícita da relação entre os animais?",
             "choices": [
-              { "id": "a", "label": "o rato" },
-              { "id": "b", "label": "a rede" },
-              { "id": "c", "label": "a selva" },
-              { "id": "d", "label": "o caçador" }
+              { "id": "a", "label": "Nenhum ato de gentileza é em vão, e ninguém é tão fraco ou pequeno que nunca possa ajudar um grande." },
+              { "id": "b", "label": "Animais carnívoros devem sempre evitar amizades com roedores." },
+              { "id": "c", "label": "A força física bruta é a única virtude que garante a sobrevivência na floresta." },
+              { "id": "d", "label": "Os leões deveriam caçar apenas ratos velozes." }
             ],
             "correctChoiceId": "a",
-            "explanation": "O rato roeu a rede e libertou o leão.",
-            "dicaCearense": "Vamos revisar: O rato roeu a rede e libertou o leão. Vixe, mas é só revisar."
+            "explanation": "A fábula 'O Leão e o Ratinho' ensina a reciprocidade e demonstra que o tamanho ou poder aparente não determinam a capacidade de prestar auxílio.",
+            "dicaCearense": "Nunca subestime quem é miúdo! O ratinho pequenininho salvou o rei da floresta com a força do dente."
           },
           {
             "id": "p5-gen-f2-q3",
             "type": "single-choice",
-            "prompt": "Leia: 'João, amanhã não haverá aula. A professora avisou. Até segunda, Maria.' Quem escreveu o bilhete?",
+            "prompt": "[Nível 3 · Aplicação] No trecho narrativo: 'Ao receber o boletim, os olhos de Pedro faiscaram e um sorriso de orelha a orelha iluminou seu rosto enquanto corria para casa', o que se pode inferir sobre as notas do menino?",
             "choices": [
-              { "id": "a", "label": "Maria" },
-              { "id": "b", "label": "João" },
-              { "id": "c", "label": "a professora" },
-              { "id": "d", "label": "a escola" }
+              { "id": "a", "label": "Pedro obteve excelentes notas e estava eufórico para contar à família." },
+              { "id": "b", "label": "Pedro foi reprovado e estava assustado com a reação dos pais." },
+              { "id": "c", "label": "O menino perdeu o documento no caminho da escola." },
+              { "id": "d", "label": "As notas foram medianas e não provocaram nenhum sentimento nele." }
             ],
             "correctChoiceId": "a",
-            "explanation": "Maria assina o bilhete, então é a remetente. João é o destinatário.",
-            "dicaCearense": "Sem pressa, avexado não ajuda: Maria assina o bilhete, então é a remetente. João é o destinatário."
+            "explanation": "As pistas contextuais ('olhos faiscaram', 'sorriso de orelha a orelha', 'corria para casa') indicam entusiasmo, alegria e orgulho decorrentes de ótimo desempenho.",
+            "dicaCearense": "Sorriso de orelha a orelha não engana ninguém: o menino tirou só nota boa e foi voando comemorar!"
           },
           {
             "id": "p5-gen-f2-q4",
-            "type": "single-choice",
-            "prompt": "No bilhete anterior, qual é a mensagem principal?",
+            "type": "multiple-choice",
+            "prompt": "[Nível 4 · Análise] Leia a tirinha descrita: No primeiro quadro, um menino olha para a chuva caindo torrencialmente. No segundo quadro, olha para a bola de futebol murcha no canto. No terceiro quadro, suspira fundo e abre um livro de aventuras. Quais deduções são coerentes?",
             "choices": [
-              { "id": "a", "label": "Não haverá aula amanhã." },
-              { "id": "b", "label": "Maria vai à escola." },
-              { "id": "c", "label": "João é professor." },
-              { "id": "d", "label": "A aula será na segunda." }
+              { "id": "a", "label": "O menino teve seus planos iniciais de jogar futebol frustrados pelo mau tempo." },
+              { "id": "b", "label": "A leitura do livro foi uma alternativa encontrada por ele para se divertir dentro de casa." },
+              { "id": "c", "label": "O garoto odeia futebol e comemorou a chuva desde o primeiro instante." },
+              { "id": "d", "label": "A linguagem não verbal (olhar para a bola, suspirar) expressa resignação diante do imprevisto." }
             ],
-            "correctChoiceId": "a",
-            "explanation": "Maria avisa João de que não haverá aula amanhã.",
-            "dicaCearense": "Confere aí: Maria avisa João de que não haverá aula amanhã. Pensa com calma antes de responder."
+            "correctChoiceIds": ["a", "b", "d"],
+            "explanation": "A afirmativa C é incorreta porque o suspiro e o olhar para a bola murcha denotam desapontamento com o cancelamento da partida. As afirmativas A, B e D interpretam com perfeição a narrativa visual.",
+            "dicaCearense": "Choveu e melou o futebol? Ele respirou fundo e foi ler pra viajar na imaginação. Interpretação visual afiada!"
           },
           {
             "id": "p5-gen-f2-q5",
-            "type": "multiple-choice",
-            "prompt": "Quais informações aparecem no bilhete?",
-            "choices": [
-              { "id": "a", "label": "destinatário" },
-              { "id": "b", "label": "remetente" },
-              { "id": "c", "label": "moral" },
-              { "id": "d", "label": "aviso sobre a aula" }
-            ],
-            "correctChoiceIds": ["a", "b", "d"],
-            "explanation": "O bilhete tem destinatário (João), remetente (Maria) e um aviso sobre a aula. Moral é característica da fábula.",
-            "dicaCearense": "Olha só, macho: O bilhete tem destinatário (João), remetente (Maria) e um aviso sobre a aula. Moral é característica da fábula. Não fica avexado, não."
+            "type": "text",
+            "prompt": "[Nível 5 · Domínio] Na frase 'Aquele jogador veterano é uma verdadeira muralha na defesa', a expressão 'uma muralha' foi empregada em sentido figurado (conotativo) para transmitir a ideia de que o jogador é muito:",
+            "placeholder": "Digite uma característica (ex.: forte, seguro, firme)",
+            "acceptedAnswers": ["forte", "firme", "seguro", "impenetrável", "resistente", "sólido", "bloqueador"],
+            "explanation": "A metáfora 'ser uma muralha' transfere as qualidades de uma parede fortificada (solidez, firmeza, segurança) para a capacidade defensiva do jogador.",
+            "dicaCearense": "Chamar o zagueiro de muralha significa que ninguém passa por ele: o cabra é forte e seguro demais!"
           }
         ]
       }
     },
     {
       "id": "p5-gen-f3",
-      "title": "Fase 3 · Interpretar notícia",
-      "subtitle": "Fato, tempo e consequência",
+      "title": "Fase 3 · Notícia, cidadania e senso crítico",
+      "subtitle": "Distinguir fato de opinião em textos informativos",
       "chapter": "Módulo 06 · Gêneros e interpretação",
       "icon": "chest",
       "position": { "x": 1, "y": 2 },
@@ -1586,15 +1581,15 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "A notícia responde a perguntas essenciais: o quê, quando, onde e por quê.",
-          "Bora interpretar uma notícia curta. Vixe, mas tu desenrola isso rapidinho!"
+          "Chegamos ao topo da montanha! Agora você é um leitor maduro e cidadão consciente.",
+          "Saber separar o fato acontecido da opinião de quem conta é o maior superpoder contra as fake news!"
         ]
       },
-      "reward": { "itemId": "p5-bau-generos", "label": "Baú dos gêneros" },
+      "reward": { "itemId": "p5-bau-generos", "label": "Baú de Ouro do Leitor Crítico" },
       "lesson": {
         "id": "lesson-p5-gen-f3",
-        "title": "Notícia e síntese",
-        "intro": "Leia a notícia e identifique o fato principal, o tempo e a razão do destaque.",
+        "title": "Fato contra opinião e análise de mídia",
+        "intro": "Avalie reportagens reais adaptadas, identifique marcas de julgamento pessoal e consolide sua autonomia interpretativa.",
         "xpReward": 60,
         "coinReward": 16,
         "requiredCorrectRatio": 0.8,
@@ -1602,67 +1597,67 @@
           {
             "id": "p5-gen-f3-q1",
             "type": "single-choice",
-            "prompt": "Leia: 'Na última terça-feira, alunos da Escola Vista Verde apresentaram uma horta comunitária. O projeto reaproveitou garrafas plásticas e ganhou destaque no bairro.' Qual é o fato principal?",
+            "prompt": "[Nível 1 · Reconhecimento] Leia as frases extraídas de uma matéria sobre feira de ciências. Qual delas expressa um FATO (dado objetivo comprovável) e não uma opinião pessoal?",
             "choices": [
-              { "id": "a", "label": "Alunos apresentaram uma horta comunitária." },
-              { "id": "b", "label": "As garrafas plásticas." },
-              { "id": "c", "label": "A escola fica no bairro." },
-              { "id": "d", "label": "A última terça-feira." }
+              { "id": "a", "label": "A feira recebeu mais de mil visitantes durante os três dias de exposição." },
+              { "id": "b", "label": "Os projetos deste ano foram incrivelmente mais bonitos do que os do ano passado." },
+              { "id": "c", "label": "O estande de robótica era o mais chato de toda a escola." },
+              { "id": "d", "label": "A palestra de abertura foi muito longa e cansativa para as crianças." }
             ],
             "correctChoiceId": "a",
-            "explanation": "O fato principal é a apresentação da horta comunitária pelos alunos.",
-            "dicaCearense": "Presta atenção nisso: O fato principal é a apresentação da horta comunitária pelos alunos. Lê tudo antes de marcar."
+            "explanation": "O número de visitantes (mil pessoas) é um fato mensurável e estatisticamente comprovável. As outras alternativas expressam julgamentos subjetivos de valor ('mais bonitos', 'mais chato', 'cansativa').",
+            "dicaCearense": "Fato não depende de gosto: mil pessoas passaram pela roleta e ponto final! O resto é opinião de quem achou bonito ou chato."
           },
           {
             "id": "p5-gen-f3-q2",
             "type": "single-choice",
-            "prompt": "No texto anterior, quando ocorreu o fato?",
+            "prompt": "[Nível 2 · Compreensão] Por que as notícias sérias costumam incluir DEPOIMENTOS entre aspas de especialistas e testemunhas?",
             "choices": [
-              { "id": "a", "label": "na última terça-feira" },
-              { "id": "b", "label": "no mês passado" },
-              { "id": "c", "label": "no próximo ano" },
-              { "id": "d", "label": "no fim de semana" }
+              { "id": "a", "label": "Para conferir credibilidade, veracidade e diferentes pontos de vista à apuração jornalística." },
+              { "id": "b", "label": "Porque o jornalista não sabe escrever o texto sozinho e precisa de ajuda." },
+              { "id": "c", "label": "Para deixar a página do jornal mais cheia e gastar tinta." },
+              { "id": "d", "label": "Apenas para fazer propaganda pessoal das testemunhas entrevistadas." }
             ],
             "correctChoiceId": "a",
-            "explanation": "A notícia informa que o fato ocorreu na última terça-feira.",
-            "dicaCearense": "Vamos por partes: A notícia informa que o fato ocorreu na última terça-feira. Tu é desenrolado, vai acertar."
+            "explanation": "A citação de fontes qualificadas e de testemunhas oculares enriquece a reportagem, traz transparência e comprova que os acontecimentos foram rigorosamente investigados.",
+            "dicaCearense": "Ouvir quem entende do assunto dá peso e verdade à notícia. É a garantia de que o repórter não tirou a história da cachola!"
           },
           {
             "id": "p5-gen-f3-q3",
             "type": "single-choice",
-            "prompt": "No texto anterior, por que o projeto ganhou destaque?",
+            "prompt": "[Nível 3 · Aplicação] Leia o trecho: 'A prefeitura inaugurou ontem o novo parque ecológico municipal. O espaço, que na minha visão é o mais agradável da cidade, conta com duas pistas de caminhada e um lago artificial.' Qual trecho expressa exclusivamente a OPINIÃO do repórter?",
             "choices": [
-              { "id": "a", "label": "Porque reaproveitou garrafas plásticas." },
-              { "id": "b", "label": "Porque a escola é grande." },
-              { "id": "c", "label": "Porque os alunos faltaram." },
-              { "id": "d", "label": "Porque a horta secou." }
+              { "id": "a", "label": "'que na minha visão é o mais agradável da cidade'" },
+              { "id": "b", "label": "'A prefeitura inaugurou ontem o novo parque ecológico municipal'" },
+              { "id": "c", "label": "'conta com duas pistas de caminhada'" },
+              { "id": "d", "label": "'e um lago artificial'" }
             ],
             "correctChoiceId": "a",
-            "explanation": "O projeto ganhou destaque por reaproveitar garrafas plásticas na horta comunitária.",
-            "dicaCearense": "Vixe, macho, olha só: O projeto ganhou destaque por reaproveitar garrafas plásticas na horta comunitária."
+            "explanation": "A expressão 'na minha visão é o mais agradável' marca um juízo subjetivo particular do autor. A inauguração, as pistas e o lago são fatos objetivos descritivos.",
+            "dicaCearense": "Olha a pista descarada: 'na minha visão'! Quando o autor fala o que acha, é opinião carimbada."
           },
           {
             "id": "p5-gen-f3-q4",
             "type": "multiple-choice",
-            "prompt": "Quais elementos aparecem na notícia?",
+            "prompt": "[Nível 4 · Análise] Observe as duas manchetes sobre a mesma partida de futebol:\nManchete 1: 'Com gol nos acréscimos, Ceará vence clássico por 1 a 0.'\nManchete 2: 'Em jogo marcado por violência e péssima arbitragem, time alvinegro escapa com vitória sofrida.'\nQuais análises comparativas são corretas?",
             "choices": [
-              { "id": "a", "label": "fato" },
-              { "id": "b", "label": "tempo" },
-              { "id": "c", "label": "local" },
-              { "id": "d", "label": "moral" }
+              { "id": "a", "label": "A Manchete 1 foca no fato central de modo objetivo e neutro." },
+              { "id": "b", "label": "A Manchete 2 carrega adjetivações avaliativas de opinião ('violência', 'péssima arbitragem', 'vitória sofrida')." },
+              { "id": "c", "label": "Ambas as manchetes tratam do mesmo fato esportivo real, mas sob enquadramentos jornalísticos muito diferentes." },
+              { "id": "d", "label": "A Manchete 1 é uma fábula moral e a Manchete 2 é um anúncio publicitário comercial." }
             ],
             "correctChoiceIds": ["a", "b", "c"],
-            "explanation": "A notícia apresenta fato, tempo e local. Moral é característica da fábula.",
-            "dicaCearense": "Presta atenção: A notícia apresenta fato, tempo e local. Moral é característica da fábula. Compara as alternativas."
+            "explanation": "A alternativa D é absurda (ambas são manchetes jornalísticas). A, B e C mostram como a escolha vocabular do jornalista transmite neutralidade ou juízo de valor explícito.",
+            "dicaCearense": "Veja como as palavras mudam a sensação: na primeira foi só o placar; na segunda o jornalista desceu a lenha no juiz!"
           },
           {
             "id": "p5-gen-f3-q5",
             "type": "text",
-            "prompt": "Qual gênero textual tem como objetivo informar um fato recente?",
-            "placeholder": "Escreva o gênero",
-            "acceptedAnswers": ["notícia", "noticia", "notícia.", "noticia."],
-            "explanation": "A notícia informa um fato recente de interesse público.",
-            "dicaCearense": "Vamos revisar: A notícia informa um fato recente de interesse público. Revisa a regra e tenta de novo."
+            "prompt": "[Nível 5 · Domínio] Escreva o termo que designa um julgamento pessoal, ponto de vista ou interpretação individual sobre um fato (dica: começa com a letra O):",
+            "placeholder": "Digite a palavra",
+            "acceptedAnswers": ["opinião", "opiniao", "opinião.", "opiniao.", "Opinião"],
+            "explanation": "A 'opinião' é a manifestação de um ponto de vista pessoal, sentimento ou interpretação individual que não pode ser tratada como verdade absoluta universal.",
+            "dicaCearense": "Cada um tem a sua e expressa o que pensa e sente: é a famosa 'opinião'!"
           }
         ]
       }
