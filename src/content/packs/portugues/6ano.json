@@ -1,0 +1,931 @@
+
+{
+  "id": "portugues-6ano",
+  "subject": "portugues",
+  "title": "Língua Portuguesa · 6º Ano",
+  "description": "Trilha do 6º ano organizada em fases de Fonologia e morfologia, com progressão pela Taxonomia de Bloom e diálogos da Professora Thaís.",
+  "version": "1.0.0",
+  "locale": "pt-BR",
+  "nodes": [
+  {
+    "id": "p6-port-f1",
+    "title": "Fase 1 · Fonema e letra",
+    "subtitle": "Sons da fala, letras e representação gráfica",
+    "chapter": "Módulo 06 · Fonologia e morfologia",
+    "icon": "npc",
+    "position": { "x": 0, "y": 0 },
+    "unlock": { "requires": [] },
+    "npc": {
+      "speaker": "Professora Thaís",
+      "lines": [
+        "Toda palavra tem uma história sonora! Nem sempre a quantidade de letras corresponde à quantidade de sons.",
+        "Vamos descobrir a diferença entre fonema e letra sem cair nas pegadinhas!"
+      ]
+    },
+    "reward": { "itemId": "p6-selo-fonema", "label": "Selo dos Sons da Língua" },
+    "lesson": {
+      "id": "lesson-p6-port-f1",
+      "title": "Diferenciar fonemas e letras",
+      "intro": "Compreenda como os sons da fala são representados pelas letras e identifique diferenças entre escrita e pronúncia.",
+      "xpReward": 50,
+      "coinReward": 12,
+      "requiredCorrectRatio": 0.8,
+      "questions": [
+        {
+          "id": "p6-port-f1-q1",
+          "type": "single-choice",
+          "prompt": "[Nível 1 · Reconhecimento] O que é um fonema?",
+          "choices": [
+            { "id": "a", "label": "A representação escrita de uma palavra." },
+            { "id": "b", "label": "A menor unidade sonora capaz de distinguir palavras." },
+            { "id": "c", "label": "O conjunto de sílabas de uma palavra." },
+            { "id": "d", "label": "A quantidade de letras de uma frase." }
+          ],
+          "correctChoiceId": "b",
+          "explanation": "Fonema é a menor unidade sonora capaz de estabelecer diferenças de significado entre palavras, como /p/ e /b/ em 'pato' e 'bato'.",
+          "dicaCearense": "Fonema é o som que a gente fala; letra é o sinal que a gente escreve. Não misture os dois!"
+        },
+        {
+          "id": "p6-port-f1-q2",
+          "type": "single-choice",
+          "prompt": "[Nível 2 · Compreensão] Qual palavra apresenta mais letras do que fonemas?",
+          "choices": [
+            { "id": "a", "label": "Casa" },
+            { "id": "b", "label": "Mala" },
+            { "id": "c", "label": "Chuva" },
+            { "id": "d", "label": "Bola" }
+          ],
+          "correctChoiceId": "c",
+          "explanation": "Em 'chuva', existem cinco letras, mas o dígrafo CH representa um único fonema. Portanto, são quatro fonemas.",
+          "dicaCearense": "O CH trabalha em dupla, mas faz um som só. É uma pegadinha clássica!"
+        },
+        {
+          "id": "p6-port-f1-q3",
+          "type": "single-choice",
+          "prompt": "[Nível 3 · Aplicação] Quantos fonemas existem na palavra 'carro'?",
+          "choices": [
+            { "id": "a", "label": "3" },
+            { "id": "b", "label": "4" },
+            { "id": "c", "label": "5" },
+            { "id": "d", "label": "6" }
+          ],
+          "correctChoiceId": "b",
+          "explanation": "A palavra 'carro' possui cinco letras, mas o RR representa um único fonema. Assim, temos /k/, /a/, /ʁ/, /u/: quatro fonemas.",
+          "dicaCearense": "Não conte letra por letra, macho! RR é um dígrafo e representa um som só."
+        },
+        {
+          "id": "p6-port-f1-q4",
+          "type": "multiple-choice",
+          "prompt": "[Nível 4 · Análise] Assinale as afirmações CORRETAS sobre fonemas e letras.",
+          "choices": [
+            { "id": "a", "label": "A palavra 'chuva' possui cinco letras e quatro fonemas." },
+            { "id": "b", "label": "A palavra 'casa' possui quatro letras e quatro fonemas." },
+            { "id": "c", "label": "A palavra 'carro' possui cinco fonemas porque tem cinco letras." },
+            { "id": "d", "label": "Os fonemas são unidades sonoras da língua." }
+          ],
+          "correctChoiceIds": ["a", "b", "d"],
+          "explanation": "As alternativas A, B e D estão corretas. Em 'carro', o RR representa um único fonema, portanto existem quatro fonemas.",
+          "dicaCearense": "Oxe! A quantidade de letras nem sempre é a quantidade de sons. Confira os dígrafos!"
+        },
+        {
+        "id": "p6-port-f1-q5",
+        "type": "text",
+        "prompt": "[Nível 5 · Domínio] Quantos fonemas existem na palavra 'ninho'?",
+        "placeholder": "Digite somente o número",
+        "acceptedAnswers": ["4", "quatro"],
+        "explanation": "A palavra 'ninho' possui cinco letras e quatro fonemas. O dígrafo NH representa um único fonema; as vogais I e O e a consoante N inicial representam os outros três.",
+        "dicaCearense": "Oxe, não conte o NH separado! N e H juntos representam um som só."
+        }
+      ]
+    }
+  },
+  {
+    "id": "p6-port-f2",
+    "title": "Fase 2 · Encontros vocálicos",
+    "subtitle": "Ditongo, tritongo e hiato",
+    "chapter": "Módulo 06 · Fonologia e morfologia",
+    "icon": "star",
+    "position": { "x": 2, "y": 1 },
+    "unlock": { "requires": ["p6-port-f1"] },
+    "npc": {
+      "speaker": "Professora Thaís",
+      "lines": [
+        "Agora vamos observar como as vogais se encontram dentro das palavras.",
+        "Ditongo, tritongo e hiato parecem complicados, mas cada um tem seu jeito de acontecer!"
+      ]
+    },
+    "reward": { "itemId": "p6-selo-vocalico", "label": "Selo dos Encontros Vocálicos" },
+    "lesson": {
+      "id": "lesson-p6-port-f2",
+      "title": "Identificar os encontros vocálicos",
+      "intro": "Aprenda a reconhecer encontros de sons vocálicos e diferenciar aqueles que permanecem na mesma sílaba dos que se separam.",
+      "xpReward": 55,
+      "coinReward": 14,
+      "requiredCorrectRatio": 0.8,
+      "questions": [
+        {
+          "id": "p6-port-f2-q1",
+          "type": "single-choice",
+          "prompt": "[Nível 1 · Reconhecimento] O que caracteriza um ditongo?",
+          "choices": [
+            { "id": "a", "label": "Duas vogais pronunciadas em sílabas diferentes." },
+            { "id": "b", "label": "Dois sons vocálicos na mesma sílaba." },
+            { "id": "c", "label": "Três vogais em sílabas diferentes." },
+            { "id": "d", "label": "Duas consoantes juntas na mesma sílaba." }
+          ],
+          "correctChoiceId": "b",
+          "explanation": "Ditongo é o encontro de uma vogal e uma semivogal, ou vice-versa, na mesma sílaba, como em 'pai'.",
+          "dicaCearense": "Se os dois sons vocálicos ficam juntinhos na mesma sílaba, temos ditongo!"
+        },
+        {
+          "id": "p6-port-f2-q2",
+          "type": "single-choice",
+          "prompt": "[Nível 2 · Compreensão] Qual palavra apresenta um hiato?",
+          "choices": [
+            { "id": "a", "label": "Pai" },
+            { "id": "b", "label": "Noite" },
+            { "id": "c", "label": "Saúde" },
+            { "id": "d", "label": "Caixa" }
+          ],
+          "correctChoiceId": "c",
+          "explanation": "Em 'saúde', as vogais A e Ú ficam em sílabas diferentes: sa-ú-de. Isso caracteriza um hiato.",
+          "dicaCearense": "No hiato, as vogais se separam! Sa-ú-de: cada uma no seu canto."
+        },
+        {
+          "id": "p6-port-f2-q3",
+          "type": "single-choice",
+          "prompt": "[Nível 3 · Aplicação] Qual alternativa apresenta corretamente um tritongo?",
+          "choices": [
+            { "id": "a", "label": "Pai" },
+            { "id": "b", "label": "Saída" },
+            { "id": "c", "label": "Uruguai" },
+            { "id": "d", "label": "Poeta" }
+          ],
+          "correctChoiceId": "c",
+          "explanation": "Em 'Uruguai', a sequência UAI forma um tritongo na última sílaba: guai. O tritongo reúne semivogal, vogal e semivogal na mesma sílaba.",
+          "dicaCearense": "Tritongo tem três sons vocálicos na mesma sílaba. Uruguai é um exemplo!"
+        },
+        {
+          "id": "p6-port-f2-q4",
+          "type": "multiple-choice",
+          "prompt": "[Nível 4 · Análise] Relacione as palavras aos encontros vocálicos e marque as classificações CORRETAS.",
+          "choices": [
+            { "id": "a", "label": "'Pai' apresenta ditongo." },
+            { "id": "b", "label": "'Saúde' apresenta hiato." },
+            { "id": "c", "label": "'Uruguai' apresenta tritongo." },
+            { "id": "d", "label": "'Poeta' apresenta ditongo." }
+          ],
+          "correctChoiceIds": ["a", "b", "c"],
+          "explanation": "Pai possui ditongo; saúde possui hiato; Uruguai possui tritongo. Em poeta, as vogais O e E ficam em sílabas diferentes: po-e-ta, formando hiato.",
+          "dicaCearense": "Não vá só pela aparência da palavra! Pronuncie devagar e observe a separação silábica."
+        },
+        {
+          "id": "p6-port-f2-q5",
+          "type": "text",
+          "prompt": "[Nível 5 · Domínio] Classifique o encontro vocálico da palavra 'saída'. Digite: ditongo, tritongo ou hiato.",
+          "placeholder": "Digite a classificação",
+          "acceptedAnswers": ["hiato", "Hiato"],
+          "explanation": "Em sa-í-da, as vogais A e Í pertencem a sílabas diferentes. Portanto, temos um hiato.",
+          "dicaCearense": "Sa-í-da: separou as vogais? Então é hiato!"
+        }
+      ]
+    }
+  },
+  {
+    "id": "p6-port-f3",
+    "title": "Fase 3 · Encontros consonantais e dígrafos",
+    "subtitle": "Consoantes juntas e sons representados por duas letras",
+    "chapter": "Módulo 06 · Fonologia e morfologia",
+    "icon": "npc",
+    "position": { "x": 1, "y": 2 },
+    "unlock": { "requires": ["p6-port-f2"] },
+    "npc": {
+      "speaker": "Professora Thaís",
+      "lines": [
+        "Duas consoantes juntas nem sempre formam um dígrafo!",
+        "Nesta fase, você vai aprender a separar encontros consonantais de dígrafos sem confundir as letras com os sons."
+      ]
+    },
+    "reward": { "itemId": "p6-selo-consoantes", "label": "Selo das Consoantes" },
+    "lesson": {
+      "id": "lesson-p6-port-f3",
+      "title": "Reconhecer dígrafos e encontros consonantais",
+      "intro": "Diferencie sequências de consoantes que representam dois sons dos dígrafos que representam um único som.",
+      "xpReward": 60,
+      "coinReward": 15,
+      "requiredCorrectRatio": 0.8,
+      "questions": [
+        {
+          "id": "p6-port-f3-q1",
+          "type": "single-choice",
+          "prompt": "[Nível 1 · Reconhecimento] O que é um dígrafo?",
+          "choices": [
+            { "id": "a", "label": "Duas letras que representam um único fonema." },
+            { "id": "b", "label": "Duas sílabas pronunciadas juntas." },
+            { "id": "c", "label": "Duas vogais em sílabas diferentes." },
+            { "id": "d", "label": "Duas letras que sempre representam dois sons." }
+          ],
+          "correctChoiceId": "a",
+          "explanation": "Dígrafo é o encontro de duas letras que representam um único fonema, como CH em chuva e NH em ninho.",
+          "dicaCearense": "Duas letras, um som só! Essa é a ideia principal do dígrafo."
+        },
+        {
+          "id": "p6-port-f3-q2",
+          "type": "single-choice",
+          "prompt": "[Nível 2 · Compreensão] Qual palavra apresenta um encontro consonantal?",
+          "choices": [
+            { "id": "a", "label": "Chave" },
+            { "id": "b", "label": "Ninho" },
+            { "id": "c", "label": "Prato" },
+            { "id": "d", "label": "Carro" }
+          ],
+          "correctChoiceId": "c",
+          "explanation": "Em 'prato', as consoantes P e R são pronunciadas separadamente, caracterizando um encontro consonantal.",
+          "dicaCearense": "Em prato, dá para ouvir o P e o R. Cada consoante mantém seu som!"
+        },
+        {
+          "id": "p6-port-f3-q3",
+          "type": "single-choice",
+          "prompt": "[Nível 3 · Aplicação] Qual alternativa apresenta um dígrafo consonantal?",
+          "choices": [
+            { "id": "a", "label": "Blusa" },
+            { "id": "b", "label": "Trave" },
+            { "id": "c", "label": "Folha" },
+            { "id": "d", "label": "Cravo" }
+          ],
+          "correctChoiceId": "c",
+          "explanation": "Em 'folha', LH representa um único fonema. As demais palavras apresentam encontros consonantais com sons distintos.",
+          "dicaCearense": "LH é uma dupla que representa um som só. Folha não tem mistério!"
+        },
+        {
+          "id": "p6-port-f3-q4",
+          "type": "multiple-choice",
+          "prompt": "[Nível 4 · Análise] Assinale as palavras que apresentam dígrafos consonantais.",
+          "choices": [
+            { "id": "a", "label": "Chave" },
+            { "id": "b", "label": "Prato" },
+            { "id": "c", "label": "Ninho" },
+            { "id": "d", "label": "Carro" }
+          ],
+          "correctChoiceIds": ["a", "c", "d"],
+          "explanation": "Chave possui CH, ninho possui NH e carro possui RR. Esses encontros de duas letras representam um único fonema. Prato apresenta encontro consonantal.",
+          "dicaCearense": "CH, NH e RR são dígrafos. PR de prato é encontro consonantal!"
+        },
+        {
+          "id": "p6-port-f3-q5",
+          "type": "text",
+          "prompt": "[Nível 5 · Domínio] Quantos dígrafos consonantais existem na palavra 'passarinho'?",
+          "placeholder": "Digite somente o número",
+          "acceptedAnswers": ["2", "dois"],
+          "explanation": "Em 'passarinho', temos SS, NH e o RR não aparece. Portanto, são dois dígrafos consonantais: SS e NH.",
+          "dicaCearense": "Calma, macho! Lembra que dígrafo consonantal é quando duas consoantes juntinhas fazem um som só. Vai separando os sons da palavra 'passarinho' com calma que tu conta certinho."
+        }
+      ]
+    }
+  },
+  {
+    "id": "p6-port-f4",
+    "title": "Fase 4 · Divisão silábica",
+    "subtitle": "Separação correta e estrutura das sílabas",
+    "chapter": "Módulo 06 · Fonologia e morfologia",
+    "icon": "star",
+    "position": { "x": 0, "y": 3 },
+    "unlock": { "requires": ["p6-port-f3"] },
+    "npc": {
+      "speaker": "Professora Thaís",
+      "lines": [
+        "Agora é hora de dividir as palavras do jeito certo!",
+        "Cuidado: dígrafos, encontros consonantais e hiatos podem mudar a separação das sílabas."
+      ]
+    },
+    "reward": { "itemId": "p6-selo-silabas", "label": "Selo da Divisão Silábica" },
+    "lesson": {
+      "id": "lesson-p6-port-f4",
+      "title": "Aplicar as regras de divisão silábica",
+      "intro": "Aprenda a separar palavras respeitando os encontros vocálicos, consonantais e os dígrafos.",
+      "xpReward": 65,
+      "coinReward": 16,
+      "requiredCorrectRatio": 0.8,
+      "questions": [
+        {
+          "id": "p6-port-f4-q1",
+          "type": "single-choice",
+          "prompt": "[Nível 1 · Reconhecimento] Qual é a divisão silábica correta da palavra 'escola'?",
+          "choices": [
+            { "id": "a", "label": "e-sco-la" },
+            { "id": "b", "label": "es-co-la" },
+            { "id": "c", "label": "esc-o-la" },
+            { "id": "d", "label": "es-col-a" }
+          ],
+          "correctChoiceId": "b",
+          "explanation": "A divisão correta é es-co-la. A consoante S permanece na sílaba anterior, enquanto o grupo consonantal CL inicia a sílaba seguinte.",
+          "dicaCearense": "Não separe o C do L nesse caso. A divisão é es-co-la!"
+        },
+        {
+          "id": "p6-port-f4-q2",
+          "type": "single-choice",
+          "prompt": "[Nível 2 · Compreensão] Como deve ser separada a palavra 'passarinho'?",
+          "choices": [
+            { "id": "a", "label": "pas-sa-ri-nho" },
+            { "id": "b", "label": "pa-ssa-ri-nho" },
+            { "id": "c", "label": "pas-sar-in-ho" },
+            { "id": "d", "label": "pass-a-ri-nho" }
+          ],
+          "correctChoiceId": "a",
+          "explanation": "A divisão correta é pas-sa-ri-nho. Os dígrafos SS e NH não devem ser separados.",
+          "dicaCearense": "SS se separa na divisão silábica; NH fica juntinho. Atenção a essa diferença!"
+        },
+        {
+          "id": "p6-port-f4-q3",
+          "type": "single-choice",
+          "prompt": "[Nível 3 · Aplicação] Qual é a separação correta da palavra 'saúde'?",
+          "choices": [
+            { "id": "a", "label": "sau-de" },
+            { "id": "b", "label": "sa-ú-de" },
+            { "id": "c", "label": "saú-de" },
+            { "id": "d", "label": "s-a-ú-de" }
+          ],
+          "correctChoiceId": "b",
+          "explanation": "A divisão correta é sa-ú-de. As vogais A e Ú pertencem a sílabas diferentes, pois formam um hiato.",
+          "dicaCearense": "Lembra do hiato? As vogais se separam: sa-ú-de!"
+        },
+        {
+          "id": "p6-port-f4-q4",
+          "type": "multiple-choice",
+          "prompt": "[Nível 4 · Análise] Quais divisões silábicas estão CORRETAS?",
+          "choices": [
+            { "id": "a", "label": "Carro: car-ro" },
+            { "id": "b", "label": "Chave: cha-ve" },
+            { "id": "c", "label": "Prato: pra-to" },
+            { "id": "d", "label": "Ninho: nin-ho" }
+          ],
+          "correctChoiceIds": ["a", "b", "c"],
+          "explanation": "Carro divide-se car-ro, chave divide-se cha-ve e prato divide-se pra-to. Em ninho, NH é inseparável: nin-ho não é correto; a divisão é ni-nho.",
+          "dicaCearense": "Oxe, cuidado com os dígrafos! NH não se separa, mas RR se separa."
+        },
+        {
+          "id": "p6-port-f4-q5",
+          "type": "text",
+          "prompt": "[Nível 5 · Domínio] Quantas sílabas possui a palavra 'extraordinário'?",
+          "placeholder": "Digite somente o número",
+          "acceptedAnswers": ["6", "seis"],
+          "explanation": "A divisão é ex-tra-or-di-ná-rio. A palavra possui seis sílabas.",
+          "dicaCearense": "Separe com calma: ex-tra-or-di-ná-rio. Conte cada grupo pronunciado!"
+        }
+      ]
+    }
+  },
+  {
+    "id": "p6-port-f5",
+    "title": "Fase 5 · Acentuação gráfica",
+    "subtitle": "Oxítonas, paroxítonas, proparoxítonas e hiatos",
+    "chapter": "Módulo 06 · Fonologia e morfologia",
+    "icon": "npc",
+    "position": { "x": 2, "y": 4 },
+    "unlock": { "requires": ["p6-port-f4"] },
+    "npc": {
+      "speaker": "Professora Thaís",
+      "lines": [
+        "Chegou a hora de descobrir por que algumas palavras recebem acento e outras não.",
+        "A posição da sílaba tônica é a chave para vencer esta fase!"
+      ]
+    },
+    "reward": { "itemId": "p6-selo-acentuacao", "label": "Selo da Acentuação" },
+    "lesson": {
+      "id": "lesson-p6-port-f5",
+      "title": "Dominar as regras de acentuação",
+      "intro": "Identifique a sílaba tônica e aplique as regras de acentuação gráfica das palavras da língua portuguesa.",
+      "xpReward": 70,
+      "coinReward": 18,
+      "requiredCorrectRatio": 0.8,
+      "questions": [
+        {
+          "id": "p6-port-f5-q1",
+          "type": "single-choice",
+          "prompt": "[Nível 1 · Reconhecimento] Qual alternativa apresenta uma palavra proparoxítona?",
+          "choices": [
+            { "id": "a", "label": "Café" },
+            { "id": "b", "label": "Fácil" },
+            { "id": "c", "label": "Médico" },
+            { "id": "d", "label": "Papel" }
+          ],
+          "correctChoiceId": "c",
+          "explanation": "Em médico, a sílaba tônica é MÉ, a antepenúltima sílaba. Toda palavra proparoxítona recebe acento gráfico.",
+          "dicaCearense": "Proparoxítona tem a força na antepenúltima sílaba. MÉ-di-co!"
+        },
+        {
+          "id": "p6-port-f5-q2",
+          "type": "single-choice",
+          "prompt": "[Nível 2 · Compreensão] Qual alternativa apresenta uma palavra paroxítona?",
+          "choices": [
+            { "id": "a", "label": "Café" },
+            { "id": "b", "label": "Lápis" },
+            { "id": "c", "label": "Abacaxi" },
+            { "id": "d", "label": "Coração" }
+          ],
+          "correctChoiceId": "b",
+          "explanation": "Em lápis, a sílaba tônica é LÁ, a penúltima. Portanto, é uma palavra paroxítona.",
+          "dicaCearense": "A força está na penúltima: LÁ-pis. É paroxítona!"
+        },
+        {
+          "id": "p6-port-f5-q3",
+          "type": "single-choice",
+          "prompt": "[Nível 3 · Aplicação] Qual alternativa apresenta corretamente uma palavra oxítona que deve receber acento gráfico?",
+          "choices": [
+            { "id": "a", "label": "Caderno" },
+            { "id": "b", "label": "Janela" },
+            { "id": "c", "label": "Café" },
+            { "id": "d", "label": "Mesa" }
+          ],
+          "correctChoiceId": "c",
+          "explanation": "Café é oxítona terminada em E, por isso recebe acento agudo. Oxítonas terminadas em A, E e O, seguidas ou não de S, são acentuadas.",
+          "dicaCearense": "A última sílaba manda: ca-FÉ! Terminou em E, leva acento."
+        },
+        {
+          "id": "p6-port-f5-q4",
+          "type": "multiple-choice",
+          "prompt": "[Nível 4 · Análise] Assinale as afirmações CORRETAS sobre a acentuação gráfica.",
+          "choices": [
+            { "id": "a", "label": "Todas as palavras proparoxítonas são acentuadas." },
+            { "id": "b", "label": "A palavra 'café' é oxítona." },
+            { "id": "c", "label": "A palavra 'lápis' é paroxítona." },
+            { "id": "d", "label": "A palavra 'saúde' recebe acento por ser proparoxítona." }
+          ],
+          "correctChoiceIds": ["a", "b", "c"],
+          "explanation": "A, B e C estão corretas. Saúde é acentuada porque apresenta hiato, com a vogal U tônica formando sílaba sozinha, e não por ser proparoxítona.",
+          "dicaCearense": "Nem todo acento é explicado pela posição da sílaba tônica. Saúde tem uma regra especial!"
+        },
+        {
+          "id": "p6-port-f5-q5",
+          "type": "text",
+          "prompt": "[Nível 5 · Domínio] Como se classifica a palavra 'abacaxi' quanto à posição da sílaba tônica?",
+          "placeholder": "Digite oxítona, paroxítona ou proparoxítona",
+          "acceptedAnswers": ["oxítona", "Oxítona"],
+          "explanation": "A palavra abacaxi tem a última sílaba como tônica: a-ba-ca-XI. Portanto, é oxítona.",
+          "dicaCearense": "A força está no final: XI! Então é oxítona."
+        }
+      ]
+    }
+  },
+  {
+    "id": "p6-port-f6",
+    "title": "Fase 6 · Substantivos e adjetivos",
+    "subtitle": "Classificação, flexão e locuções adjetivas",
+    "chapter": "Módulo 06 · Fonologia e morfologia",
+    "icon": "star",
+    "position": { "x": 1, "y": 5 },
+    "unlock": { "requires": ["p6-port-f5"] },
+    "npc": {
+      "speaker": "Professora Thaís",
+      "lines": [
+        "Agora vamos descobrir como as palavras nomeiam e caracterizam tudo ao nosso redor.",
+        "Substantivos, adjetivos e locuções adjetivas serão seus próximos desafios!"
+      ]
+    },
+    "reward": { "itemId": "p6-selo-substantivos", "label": "Selo das Classes Nominais" },
+    "lesson": {
+      "id": "lesson-p6-port-f6",
+      "title": "Identificar substantivos e adjetivos",
+      "intro": "Reconheça as classes de palavras que nomeiam seres e caracterizam suas qualidades, incluindo as locuções adjetivas.",
+      "xpReward": 75,
+      "coinReward": 19,
+      "requiredCorrectRatio": 0.8,
+      "questions": [
+        {
+          "id": "p6-port-f6-q1",
+          "type": "single-choice",
+          "prompt": "[Nível 1 · Reconhecimento] Na frase 'O menino alegre brincava no parque', qual palavra é um substantivo?",
+          "choices": [
+            { "id": "a", "label": "Alegre" },
+            { "id": "b", "label": "Brincava" },
+            { "id": "c", "label": "Menino" },
+            { "id": "d", "label": "No" }
+          ],
+          "correctChoiceId": "c",
+          "explanation": "Menino é substantivo porque nomeia um ser. Alegre é adjetivo, brincava é verbo e no é a combinação de em + o.",
+          "dicaCearense": "Substantivo dá nome! Quem está brincando? O menino!"
+        },
+        {
+          "id": "p6-port-f6-q2",
+          "type": "single-choice",
+          "prompt": "[Nível 2 · Compreensão] Qual alternativa apresenta um substantivo coletivo?",
+          "choices": [
+            { "id": "a", "label": "Beleza" },
+            { "id": "b", "label": "Enxame" },
+            { "id": "c", "label": "Bonito" },
+            { "id": "d", "label": "Correr" }
+          ],
+          "correctChoiceId": "b",
+          "explanation": "Enxame é substantivo coletivo porque designa um conjunto de abelhas.",
+          "dicaCearense": "Um enxame representa muitas abelhas de uma vez. É coletivo!"
+        },
+        {
+          "id": "p6-port-f6-q3",
+          "type": "single-choice",
+          "prompt": "[Nível 3 · Aplicação] Na expressão 'amor de mãe', qual expressão pode substituir 'de mãe' mantendo a ideia de caracterização?",
+          "choices": [
+            { "id": "a", "label": "Materno" },
+            { "id": "b", "label": "Amorosamente" },
+            { "id": "c", "label": "Amar" },
+            { "id": "d", "label": "Maternidade" }
+          ],
+          "correctChoiceId": "a",
+          "explanation": "De mãe é uma locução adjetiva que pode ser substituída pelo adjetivo materno.",
+          "dicaCearense": "Locução adjetiva é uma expressão com valor de adjetivo. De mãe = materno!"
+        },
+        {
+          "id": "p6-port-f6-q4",
+          "type": "multiple-choice",
+          "prompt": "[Nível 4 · Análise] Assinale as alternativas que apresentam substantivos derivados.",
+          "choices": [
+            { "id": "a", "label": "Pedreiro" },
+            { "id": "b", "label": "Pedra" },
+            { "id": "c", "label": "Livraria" },
+            { "id": "d", "label": "Flor" }
+          ],
+          "correctChoiceIds": ["a", "c"],
+          "explanation": "Pedreiro deriva de pedra e livraria deriva de livro. Pedra e flor são substantivos primitivos nesses pares de formação.",
+          "dicaCearense": "Derivado vem de outra palavra. Pedreiro vem de pedra e livraria vem de livro!"
+        },
+        {
+          "id": "p6-port-f6-q5",
+          "type": "text",
+          "prompt": "[Nível 5 · Domínio] Na expressão 'amor de pai', escreva o adjetivo que substitui a locução 'de pai'.",
+          "placeholder": "Digite o adjetivo",
+          "acceptedAnswers": ["paterno", "Paterno", "paterno."],
+          "explanation": "A locução adjetiva 'de pai' corresponde ao adjetivo 'paterno'.",
+          "dicaCearense": "De pai é paterno; de mãe é materno. Fácil de guardar!"
+        }
+      ]
+    }
+  },
+  {
+    "id": "p6-port-f7",
+    "title": "Fase 7 · Artigos e numerais",
+    "subtitle": "Determinação dos substantivos e indicação de quantidade",
+    "chapter": "Módulo 06 · Fonologia e morfologia",
+    "icon": "npc",
+    "position": { "x": 0, "y": 6 },
+    "unlock": { "requires": ["p6-port-f6"] },
+    "npc": {
+      "speaker": "Professora Thaís",
+      "lines": [
+        "Uma palavra pode indicar se estamos falando de algo específico ou de algo indefinido.",
+        "Também vamos aprender a identificar quantidades, posições e multiplicações por meio dos numerais!"
+      ]
+    },
+    "reward": { "itemId": "p6-selo-artigos", "label": "Selo dos Determinantes" },
+    "lesson": {
+      "id": "lesson-p6-port-f7",
+      "title": "Reconhecer artigos e numerais",
+      "intro": "Diferencie artigos definidos e indefinidos e identifique os tipos de numerais empregados nas frases.",
+      "xpReward": 80,
+      "coinReward": 20,
+      "requiredCorrectRatio": 0.8,
+      "questions": [
+        {
+          "id": "p6-port-f7-q1",
+          "type": "single-choice",
+          "prompt": "[Nível 1 · Reconhecimento] Qual alternativa apresenta somente artigos definidos?",
+          "choices": [
+            { "id": "a", "label": "Um, uma, uns, umas" },
+            { "id": "b", "label": "O, a, os, as" },
+            { "id": "c", "label": "Este, essa, aquele" },
+            { "id": "d", "label": "Meu, minha, nosso" }
+          ],
+          "correctChoiceId": "b",
+          "explanation": "O, a, os e as são artigos definidos, pois determinam o substantivo de maneira específica.",
+          "dicaCearense": "Artigo definido: O, A, OS, AS. É para identificar algo determinado!"
+        },
+        {
+          "id": "p6-port-f7-q2",
+          "type": "single-choice",
+          "prompt": "[Nível 2 · Compreensão] Na frase 'Uma criança encontrou o cachorro', qual palavra é um artigo indefinido?",
+          "choices": [
+            { "id": "a", "label": "Criança" },
+            { "id": "b", "label": "Encontrou" },
+            { "id": "c", "label": "Uma" },
+            { "id": "d", "label": "O" }
+          ],
+          "correctChoiceId": "c",
+          "explanation": "Uma é artigo indefinido feminino singular, pois apresenta uma criança sem especificá-la.",
+          "dicaCearense": "Uma criança qualquer: artigo indefinido. O cachorro determinado: artigo definido!"
+        },
+        {
+          "id": "p6-port-f7-q3",
+          "type": "single-choice",
+          "prompt": "[Nível 3 · Aplicação] Na frase 'Pedro conquistou o terceiro lugar', o numeral destacado é classificado como:",
+          "choices": [
+            { "id": "a", "label": "Cardinal" },
+            { "id": "b", "label": "Ordinal" },
+            { "id": "c", "label": "Multiplicativo" },
+            { "id": "d", "label": "Fracionário" }
+          ],
+          "correctChoiceId": "b",
+          "explanation": "Terceiro é numeral ordinal, pois indica a posição ocupada em uma sequência.",
+          "dicaCearense": "Primeiro, segundo, terceiro... Está indicando posição? É ordinal!"
+        },
+        {
+          "id": "p6-port-f7-q4",
+          "type": "multiple-choice",
+          "prompt": "[Nível 4 · Análise] Identifique as classificações CORRETAS dos numerais.",
+          "choices": [
+            { "id": "a", "label": "Dois: numeral cardinal." },
+            { "id": "b", "label": "Quinto: numeral ordinal." },
+            { "id": "c", "label": "Dobro: numeral multiplicativo." },
+            { "id": "d", "label": "Meio: numeral ordinal." }
+          ],
+          "correctChoiceIds": ["a", "b", "c"],
+          "explanation": "Dois indica quantidade, quinto indica posição e dobro indica multiplicação. Meio é numeral fracionário, pois representa uma das partes de um todo dividido.",
+          "dicaCearense": "Dobro multiplica; meio divide. Não troque as classificações!"
+        },
+        {
+          "id": "p6-port-f7-q5",
+          "type": "text",
+          "prompt": "[Nível 5 · Domínio] Como se classifica o numeral 'quádruplo', que indica quatro vezes uma quantidade?",
+          "placeholder": "Digite a classificação",
+          "acceptedAnswers": ["multiplicativo", "Multiplicativo"],
+          "explanation": "Quádruplo é numeral multiplicativo porque indica uma quantidade quatro vezes maior.",
+          "dicaCearense": "Dobro, triplo e quádruplo: todos indicam multiplicação!"
+        }
+      ]
+    }
+  },
+  {
+    "id": "p6-port-f8",
+    "title": "Fase 8 · Pronomes",
+    "subtitle": "Pessoais, possessivos e demonstrativos",
+    "chapter": "Módulo 06 · Fonologia e morfologia",
+    "icon": "star",
+    "position": { "x": 2, "y": 7 },
+    "unlock": { "requires": ["p6-port-f7"] },
+    "npc": {
+      "speaker": "Professora Thaís",
+      "lines": [
+        "Os pronomes ajudam a evitar repetições e indicam pessoas, posse e localização.",
+        "Vamos descobrir quando usar eu, mim, meu, este, esse e aquele!"
+      ]
+    },
+    "reward": { "itemId": "p6-selo-pronomes", "label": "Selo dos Pronomes" },
+    "lesson": {
+      "id": "lesson-p6-port-f8",
+      "title": "Identificar e utilizar os pronomes",
+      "intro": "Reconheça pronomes pessoais retos e oblíquos, possessivos e demonstrativos em diferentes contextos.",
+      "xpReward": 85,
+      "coinReward": 21,
+      "requiredCorrectRatio": 0.8,
+      "questions": [
+        {
+          "id": "p6-port-f8-q1",
+          "type": "single-choice",
+          "prompt": "[Nível 1 · Reconhecimento] Qual alternativa apresenta somente pronomes pessoais do caso reto?",
+          "choices": [
+            { "id": "a", "label": "Eu, tu, ele, nós" },
+            { "id": "b", "label": "Me, te, se, nos" },
+            { "id": "c", "label": "Meu, teu, nosso, seu" },
+            { "id": "d", "label": "Este, esse, aquele, isto" }
+          ],
+          "correctChoiceId": "a",
+          "explanation": "Eu, tu, ele e nós são pronomes pessoais do caso reto, geralmente empregados como sujeito da oração.",
+          "dicaCearense": "Eu, tu, ele, nós, vós e eles: memorize os pronomes retos!"
+        },
+        {
+          "id": "p6-port-f8-q2",
+          "type": "single-choice",
+          "prompt": "[Nível 2 · Compreensão] Na frase 'Mariana trouxe seu caderno', o pronome 'seu' indica:",
+          "choices": [
+            { "id": "a", "label": "Uma ação" },
+            { "id": "b", "label": "Uma posse" },
+            { "id": "c", "label": "Uma localização" },
+            { "id": "d", "label": "Uma quantidade" }
+          ],
+          "correctChoiceId": "b",
+          "explanation": "Seu é pronome possessivo porque estabelece uma relação de posse entre a pessoa mencionada e o caderno.",
+          "dicaCearense": "Seu caderno, minha mochila, nosso material... Está indicando posse!"
+        },
+        {
+          "id": "p6-port-f8-q3",
+          "type": "single-choice",
+          "prompt": "[Nível 3 · Aplicação] Complete corretamente: '_____ livro aqui na minha mão é interessante.'",
+          "choices": [
+            { "id": "a", "label": "Aquele" },
+            { "id": "b", "label": "Esse" },
+            { "id": "c", "label": "Este" },
+            { "id": "d", "label": "Meu" }
+          ],
+          "correctChoiceId": "c",
+          "explanation": "Este é pronome demonstrativo utilizado tradicionalmente para indicar algo próximo de quem fala.",
+          "dicaCearense": "Aqui comigo é ESTE; aí contigo é ESSE; lá longe é AQUELE!"
+        },
+        {
+          "id": "p6-port-f8-q4",
+          "type": "multiple-choice",
+          "prompt": "[Nível 4 · Análise] Assinale as classificações CORRETAS dos pronomes destacados.",
+          "choices": [
+            { "id": "a", "label": "Em 'Eu estudei', EU é pronome pessoal reto." },
+            { "id": "b", "label": "Em 'Ela me chamou', ME é pronome pessoal oblíquo." },
+            { "id": "c", "label": "Em 'Nossa escola', NOSSA é pronome possessivo." },
+            { "id": "d", "label": "Em 'Aquele carro', AQUELE é pronome pessoal." }
+          ],
+          "correctChoiceIds": ["a", "b", "c"],
+          "explanation": "Eu é pronome pessoal reto; me é pronome pessoal oblíquo; nossa é possessivo. Aquele é pronome demonstrativo.",
+          "dicaCearense": "Aquele aponta, nossa indica posse e eu representa quem fala!"
+        },
+        {
+          "id": "p6-port-f8-q5",
+          "type": "text",
+          "prompt": "[Nível 5 · Domínio] Na frase 'O presente é para mim', qual é a classificação do pronome 'mim'?",
+          "placeholder": "Digite a classificação",
+          "acceptedAnswers": ["pessoal oblíquo", "pronome pessoal oblíquo"],
+          "explanation": "Mim é pronome pessoal do caso oblíquo, utilizado após a preposição para.",
+          "dicaCearense": "Depois de preposição, aparece mim: para mim, de mim, por mim!"
+        }
+      ]
+    }
+  },
+  {
+    "id": "p6-port-f9",
+    "title": "Fase 9 · Frase, oração e período",
+    "subtitle": "Organização e estrutura das construções linguísticas",
+    "chapter": "Módulo 06 · Fonologia e morfologia",
+    "icon": "npc",
+    "position": { "x": 1, "y": 8 },
+    "unlock": { "requires": ["p6-port-f8"] },
+    "npc": {
+      "speaker": "Professora Thaís",
+      "lines": [
+        "Agora a gente sai das palavras isoladas e começa a entender como as ideias são organizadas.",
+        "Frase, oração e período têm diferenças importantes. Vamos colocar cada um no seu lugar!"
+      ]
+    },
+    "reward": { "itemId": "p6-selo-oracao", "label": "Selo da Estrutura da Oração" },
+    "lesson": {
+      "id": "lesson-p6-port-f9",
+      "title": "Diferenciar frase, oração e período",
+      "intro": "Identifique enunciados com ou sem verbo e reconheça períodos simples e compostos pela quantidade de orações.",
+      "xpReward": 90,
+      "coinReward": 23,
+      "requiredCorrectRatio": 0.8,
+      "questions": [
+        {
+          "id": "p6-port-f9-q1",
+          "type": "single-choice",
+          "prompt": "[Nível 1 · Reconhecimento] O que caracteriza uma oração?",
+          "choices": [
+            { "id": "a", "label": "Uma palavra que obrigatoriamente expressa emoção." },
+            { "id": "b", "label": "Um enunciado organizado em torno de um verbo ou locução verbal." },
+            { "id": "c", "label": "Uma sequência de palavras sem verbo." },
+            { "id": "d", "label": "Um conjunto de letras que forma uma sílaba." }
+          ],
+          "correctChoiceId": "b",
+          "explanation": "A oração é uma estrutura linguística organizada em torno de um verbo ou locução verbal.",
+          "dicaCearense": "Achou um verbo ou uma locução verbal? Já tem uma oração!"
+        },
+        {
+          "id": "p6-port-f9-q2",
+          "type": "single-choice",
+          "prompt": "[Nível 2 · Compreensão] Qual alternativa apresenta uma frase nominal, ou seja, sem verbo?",
+          "choices": [
+            { "id": "a", "label": "Os alunos chegaram cedo." },
+            { "id": "b", "label": "Que dia maravilhoso!" },
+            { "id": "c", "label": "Maria comprou um livro." },
+            { "id": "d", "label": "O cachorro latiu muito." }
+          ],
+          "correctChoiceId": "b",
+          "explanation": "'Que dia maravilhoso!' transmite uma mensagem completa sem apresentar verbo, sendo uma frase nominal.",
+          "dicaCearense": "Frase não precisa obrigatoriamente de verbo. Que dia maravilhoso! É um exemplo!"
+        },
+        {
+          "id": "p6-port-f9-q3",
+          "type": "single-choice",
+          "prompt": "[Nível 3 · Aplicação] Quantas orações existem no período 'Pedro estudou e Maria trabalhou'?",
+          "choices": [
+            { "id": "a", "label": "Uma" },
+            { "id": "b", "label": "Duas" },
+            { "id": "c", "label": "Três" },
+            { "id": "d", "label": "Nenhuma" }
+          ],
+          "correctChoiceId": "b",
+          "explanation": "Existem dois verbos: estudou e trabalhou. Portanto, há duas orações em um período composto.",
+          "dicaCearense": "Conte os verbos: estudou e trabalhou. Dois verbos, duas orações!"
+        },
+        {
+          "id": "p6-port-f9-q4",
+          "type": "multiple-choice",
+          "prompt": "[Nível 4 · Análise] Analise os períodos e marque as afirmações CORRETAS.",
+          "choices": [
+            { "id": "a", "label": "'O menino correu.' é um período simples." },
+            { "id": "b", "label": "'Ana estudou e passou.' é um período composto." },
+            { "id": "c", "label": "'Silêncio!' é uma frase nominal." },
+            { "id": "d", "label": "'Os alunos chegaram.' possui duas orações." }
+          ],
+          "correctChoiceIds": ["a", "b", "c"],
+          "explanation": "A possui um verbo e um período simples; B possui dois verbos e duas orações; C é uma frase nominal. D apresenta apenas uma oração.",
+          "dicaCearense": "Período simples tem uma oração; composto tem duas ou mais. Conte os verbos!"
+        },
+        {
+          "id": "p6-port-f9-q5",
+          "type": "text",
+          "prompt": "[Nível 5 · Domínio] Classifique o período 'João acordou, tomou café e saiu.' quanto à quantidade de orações.",
+          "placeholder": "Digite simples ou composto",
+          "acceptedAnswers": ["composto", "Composto"],
+          "explanation": "O período apresenta três formas verbais: acordou, tomou e saiu. Portanto, é um período composto por três orações.",
+          "dicaCearense": "Três ações, três orações. É período composto, sem aperreio!"
+        }
+      ]
+    }
+  },
+  {
+    "id": "p6-port-f10",
+    "title": "Fase 10 · Sujeito e predicado",
+    "subtitle": "Termos essenciais e classificação sintática",
+    "chapter": "Módulo 06 · Fonologia e morfologia",
+    "icon": "star",
+    "position": { "x": 0, "y": 9 },
+    "unlock": { "requires": ["p6-port-f9"] },
+    "npc": {
+      "speaker": "Professora Thaís",
+      "lines": [
+        "Chegamos à última fase! Agora você vai descobrir quem pratica ou sofre a ação e o que se declara sobre o sujeito.",
+        "Prepare-se para identificar os tipos de sujeito e predicado. É hora de mostrar tudo que aprendeu!"
+      ]
+    },
+    "reward": { "itemId": "p6-selo-sintaxe", "label": "Selo de Mestre da Sintaxe" },
+    "lesson": {
+      "id": "lesson-p6-port-f10",
+      "title": "Dominar os termos essenciais da oração",
+      "intro": "Identifique sujeito e predicado, reconheça seus diferentes tipos e analise a estrutura das orações.",
+      "xpReward": 100,
+      "coinReward": 30,
+      "requiredCorrectRatio": 0.8,
+      "questions": [
+        {
+          "id": "p6-port-f10-q1",
+          "type": "single-choice",
+          "prompt": "[Nível 1 · Reconhecimento] Na oração 'Os estudantes fizeram a atividade', qual é o sujeito?",
+          "choices": [
+            { "id": "a", "label": "Fizeram" },
+            { "id": "b", "label": "A atividade" },
+            { "id": "c", "label": "Os estudantes" },
+            { "id": "d", "label": "Fizeram a atividade" }
+          ],
+          "correctChoiceId": "c",
+          "explanation": "Os estudantes é o sujeito, pois é sobre eles que se declara a ação de fazer a atividade.",
+          "dicaCearense": "Pergunte ao verbo: quem fez a atividade? Os estudantes!"
+        },
+        {
+          "id": "p6-port-f10-q2",
+          "type": "single-choice",
+          "prompt": "[Nível 2 · Compreensão] Na oração 'Mariana está feliz', o predicado é classificado como:",
+          "choices": [
+            { "id": "a", "label": "Predicado verbal" },
+            { "id": "b", "label": "Predicado nominal" },
+            { "id": "c", "label": "Predicado verbo-nominal" },
+            { "id": "d", "label": "Predicado inexistente" }
+          ],
+          "correctChoiceId": "b",
+          "explanation": "O predicado nominal apresenta verbo de ligação (está) e uma característica do sujeito (feliz).",
+          "dicaCearense": "Está feliz: o verbo liga o sujeito a uma característica. É predicado nominal!"
+        },
+        {
+          "id": "p6-port-f10-q3",
+          "type": "single-choice",
+          "prompt": "[Nível 3 · Aplicação] Qual é a classificação do sujeito na oração 'Chegamos cedo à escola'?",
+          "choices": [
+            { "id": "a", "label": "Sujeito simples expresso" },
+            { "id": "b", "label": "Sujeito composto" },
+            { "id": "c", "label": "Sujeito oculto ou elíptico" },
+            { "id": "d", "label": "Oração sem sujeito" }
+          ],
+          "correctChoiceId": "c",
+          "explanation": "O sujeito não aparece escrito, mas é identificado pela desinência verbal: nós chegamos. Trata-se de sujeito oculto ou elíptico.",
+          "dicaCearense": "O sujeito está escondido, mas o verbo entrega: chegamos = nós!"
+        },
+        {
+          "id": "p6-port-f10-q4",
+          "type": "multiple-choice",
+          "prompt": "[Nível 4 · Análise] Assinale as classificações CORRETAS.",
+          "choices": [
+            { "id": "a", "label": "'Pedro e Ana viajaram.' apresenta sujeito composto." },
+            { "id": "b", "label": "'Os pássaros cantaram.' apresenta predicado verbal." },
+            { "id": "c", "label": "'O menino chegou cansado.' apresenta predicado verbo-nominal." },
+            { "id": "d", "label": "'Há muitos livros na estante.' apresenta sujeito simples." }
+          ],
+          "correctChoiceIds": ["a", "b", "c"],
+          "explanation": "Pedro e Ana formam sujeito composto; cantaram é núcleo de predicado verbal; chegou cansado apresenta ação e característica do sujeito. Em 'Há muitos livros', o verbo haver com sentido de existir é impessoal, formando oração sem sujeito.",
+          "dicaCearense": "O verbo HAVER com sentido de existir não tem sujeito. Não caia nessa pegadinha!"
+        },
+        {
+          "id": "p6-port-f10-q5",
+          "type": "text",
+          "prompt": "[Nível 5 · Domínio] Na oração 'Os alunos permaneceram atentos', como se classifica o predicado?",
+          "placeholder": "Digite o tipo de predicado",
+          "acceptedAnswers": ["nominal", "predicado nominal"],
+          "explanation": "Permaneceram funciona como verbo de ligação e atentos indica uma característica do sujeito. Portanto, temos predicado nominal.",
+          "dicaCearense": "Permaneceram atentos: verbo de ligação mais característica. É predicado nominal!"
+        }
+      ]
+    }
+  }
+  ]
+}
