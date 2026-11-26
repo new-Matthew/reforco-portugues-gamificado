@@ -61,16 +61,16 @@
           {
             "id": "p5-ort-f1-q3",
             "type": "single-choice",
-            "prompt": "[Nível 3 · Aplicação] Complete a frase aplicando a regra ortográfica do M antes de P e B: 'Durante a tempestade, o cam___onês acendeu a lâm___ada do galpão.'",
+            "prompt": "[Nível 3 · Aplicação] Complete as lacunas com M ou N: 'No fim da tarde, o vaqueiro pegou a la___terna, subiu na ra___pa e foi ver o ca___to do açude.'",
             "choices": [
-              { "id": "a", "label": "camponês e lâmpada (ambas com M)" },
-              { "id": "b", "label": "camponês com N e lâmpada com M" },
-              { "id": "c", "label": "camponês com M e lâmpada com N" },
-              { "id": "d", "label": "canponês e lânpada (ambas com N)" }
+              { "id": "a", "label": "N – M – N" },
+              { "id": "b", "label": "M – M – N" },
+              { "id": "c", "label": "N – N – M" },
+              { "id": "d", "label": "M – N – M" }
             ],
             "correctChoiceId": "a",
-            "explanation": "Usa-se a letra M antes das consoantes P e B (camponês, lâmpada). Antes das demais consoantes, emprega-se N.",
-            "dicaCearense": "Regrinha de ouro: antes de P e B, a mamãe M sempre vem na frente."
+            "explanation": "Em la(n)terna (antes de T) e ca(n)to (antes de T) usa-se N. Já em ra(m)pa usa-se M porque vem antes da letra P.",
+            "dicaCearense": "Oxe, olha bem pra letra que vem logo depois do espaço! Só entra M se vier P ou B."
           },
           {
             "id": "p5-ort-f1-q4",
