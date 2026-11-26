@@ -2166,6 +2166,18 @@ legend.field__label {
   filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.45));
 }
 
+.player-avatar__held {
+  position: absolute;
+  right: calc(var(--avatar-size, 44px) * -0.18);
+  bottom: calc(var(--avatar-size, 44px) * 0.06);
+  z-index: 3;
+  width: calc(var(--avatar-size, 44px) * 0.58);
+  height: auto;
+  object-fit: contain;
+  pointer-events: none;
+  filter: drop-shadow(0 2px 0 rgba(0, 0, 0, 0.4));
+}
+
 /* Professora Thaís, retratos e assets pixelados */
 
 .pixel-sprite,

@@ -24,6 +24,7 @@ type ShopTab = ShopItemCategory | "inventory";
 const TABS: readonly { id: ShopTab; label: string }[] = [
   { id: "hat", label: "Chapéus" },
   { id: "avatar", label: "Avatares" },
+  { id: "equipar", label: "Equipar" },
   { id: "inventory", label: "Inventário" },
 ];
 

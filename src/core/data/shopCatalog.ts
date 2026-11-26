@@ -57,4 +57,22 @@ export const DEFAULT_SHOP_CATALOG: readonly ShopItem[] = [
     category: "avatar",
     spriteId: "avatar-ranger",
   },
+  {
+    id: "borocoxinha",
+    name: "Borocoxinha",
+    description:
+      "Esse é o Borocoxinha, o caderno que vai te acompanhar nas fases. Anota com calma e não fica borocoxô, que a gente desenrola junto!",
+    price: 300,
+    category: "equipar",
+    spriteId: "borocoxinha",
+  },
+  {
+    id: "avatar-borocoxinha",
+    name: "Avatar Borocoxinha",
+    description:
+      "A coxinha borocoxô do caderno, pronta pra estudar contigo e animar a trilha.",
+    price: 0,
+    category: "avatar",
+    spriteId: "avatar-borocoxinha",
+  },
 ];

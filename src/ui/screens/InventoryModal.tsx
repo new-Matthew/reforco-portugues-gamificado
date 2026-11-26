@@ -10,6 +10,7 @@ interface InventoryModalProps {
   readonly equippedItemIds: readonly string[];
   readonly equippedAvatarSpriteId?: string | null;
   readonly equippedHatSpriteId?: string | null;
+  readonly equippedHeldSpriteId?: string | null;
   readonly onClose: () => void;
   readonly onEquip: (itemId: string) => void;
   readonly onUnequip: (category: ShopItemCategory) => void;
@@ -21,6 +22,7 @@ export function InventoryModal({
   equippedItemIds,
   equippedAvatarSpriteId,
   equippedHatSpriteId,
+  equippedHeldSpriteId,
   onClose,
   onEquip,
   onUnequip,
@@ -50,6 +52,7 @@ export function InventoryModal({
             <PlayerAvatar
               avatarSpriteId={equippedAvatarSpriteId}
               hatSpriteId={equippedHatSpriteId}
+              heldSpriteId={equippedHeldSpriteId}
               size={48}
               title="Visual atualmente equipado"
             />
@@ -57,8 +60,8 @@ export function InventoryModal({
           <div>
             <span className="eyebrow">Visual atual</span>
             <p>
-              Escolha uma skin ou chapéu comprado para atualizar seu avatar no
-              mapa e na barra superior.
+              Escolha uma skin, chapéu ou item de mão comprado para atualizar
+              seu avatar no mapa e na barra superior.
             </p>
           </div>
         </div>

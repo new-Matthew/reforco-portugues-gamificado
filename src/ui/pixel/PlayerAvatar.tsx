@@ -1,4 +1,5 @@
 import type { CSSProperties } from "react";
+import { ASSET_INDEX, resolveSpriteAsset } from "../../content/assetsMap";
 import { PixelSprite } from "./PixelSprite";
 import {
   hatOffsetY,
@@ -9,6 +10,7 @@ import {
 interface PlayerAvatarProps {
   readonly avatarSpriteId?: string | null;
   readonly hatSpriteId?: string | null;
+  readonly heldSpriteId?: string | null;
   readonly size?: number;
   readonly title?: string;
   readonly className?: string;
@@ -17,12 +19,14 @@ interface PlayerAvatarProps {
 export function PlayerAvatar({
   avatarSpriteId,
   hatSpriteId,
+  heldSpriteId,
   size = 44,
   title = "Avatar do explorador",
   className,
 }: PlayerAvatarProps) {
   const avatar = spriteForAvatar(avatarSpriteId);
   const hat = spriteForHat(hatSpriteId);
+  const heldImageUrl = resolveSpriteAsset(ASSET_INDEX, heldSpriteId);
   const classes = ["player-avatar", className].filter(Boolean).join(" ");
   const style = { "--avatar-size": `${size}px` } as CSSProperties;
 
@@ -44,6 +48,15 @@ export function PlayerAvatar({
           sprite={hat}
           size={size}
           style={{ top: `${hatOffsetY(hat, avatar, size)}px` }}
+        />
+      ) : null}
+      {heldImageUrl ? (
+        <img
+          className="player-avatar__held pixel-asset"
+          src={heldImageUrl}
+          alt=""
+          aria-hidden="true"
+          draggable={false}
         />
       ) : null}
     </div>

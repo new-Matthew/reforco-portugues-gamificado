@@ -85,6 +85,7 @@ export function App() {
           shopItems={snapshot.shopItems}
           equippedAvatarSpriteId={snapshot.equippedAvatar?.spriteId}
           equippedHatSpriteId={snapshot.equippedHat?.spriteId}
+          equippedHeldSpriteId={snapshot.equippedHeld?.spriteId}
           unlockedNodeIds={snapshot.unlockedNodeIds}
           onSelectCourse={(courseId) => controller.selectCourse(courseId)}
           onOpenNode={(nodeId) => controller.startNode(nodeId)}

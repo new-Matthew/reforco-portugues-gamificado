@@ -40,6 +40,7 @@ export interface ControllerSnapshot {
   readonly shopItems: readonly ShopItem[];
   readonly equippedAvatar: ShopItem | null;
   readonly equippedHat: ShopItem | null;
+  readonly equippedHeld: ShopItem | null;
   readonly unlockedNodeIds: readonly string[];
   readonly session: LessonSession | null;
   readonly currentQuestion: Question | null;
@@ -342,6 +343,7 @@ export class GameController {
       shopItems: this.engine.getShopCatalog(),
       equippedAvatar: this.engine.getEquippedItem("avatar"),
       equippedHat: this.engine.getEquippedItem("hat"),
+      equippedHeld: this.engine.getEquippedItem("equipar"),
       unlockedNodeIds,
       session: this.engine.getSession(),
       currentQuestion: this.engine.getCurrentQuestion(),

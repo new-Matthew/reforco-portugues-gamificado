@@ -45,6 +45,7 @@ interface MapScreenProps {
   readonly shopItems: readonly ShopItem[];
   readonly equippedAvatarSpriteId?: string | null;
   readonly equippedHatSpriteId?: string | null;
+  readonly equippedHeldSpriteId?: string | null;
   readonly unlockedNodeIds: readonly string[];
   readonly onSelectCourse: (courseId: string) => void;
   readonly onOpenNode: (nodeId: string) => void;
@@ -128,6 +129,7 @@ interface TrailGroupProps {
   readonly nodesById: ReadonlyMap<string, MapNode>;
   readonly avatarSpriteId?: string | null;
   readonly hatSpriteId?: string | null;
+  readonly heldSpriteId?: string | null;
   readonly onOpenNode: (nodeId: string) => void;
 }
 
@@ -140,6 +142,7 @@ function TrailGroup({
   nodesById,
   avatarSpriteId,
   hatSpriteId,
+  heldSpriteId,
   onOpenNode,
 }: TrailGroupProps) {
   const [canvasRef, width] = useElementWidth<HTMLDivElement>();
@@ -231,6 +234,7 @@ function TrailGroup({
                 <PlayerAvatar
                   avatarSpriteId={avatarSpriteId}
                   hatSpriteId={hatSpriteId}
+                  heldSpriteId={heldSpriteId}
                   size={32}
                   title="Seu avatar no mapa"
                 />
@@ -278,6 +282,7 @@ export function MapScreen({
   shopItems,
   equippedAvatarSpriteId,
   equippedHatSpriteId,
+  equippedHeldSpriteId,
   unlockedNodeIds,
   onSelectCourse,
   onOpenNode,
@@ -328,6 +333,7 @@ export function MapScreen({
             <PlayerAvatar
               avatarSpriteId={equippedAvatarSpriteId}
               hatSpriteId={equippedHatSpriteId}
+              heldSpriteId={equippedHeldSpriteId}
               size={48}
               title="Avatar do explorador"
             />
@@ -440,6 +446,7 @@ export function MapScreen({
               nodesById={nodesById}
               avatarSpriteId={equippedAvatarSpriteId}
               hatSpriteId={equippedHatSpriteId}
+              heldSpriteId={equippedHeldSpriteId}
               onOpenNode={(nodeId) => {
                 const node = nodesById.get(nodeId);
                 if (node) handleOpen(node);
@@ -503,6 +510,7 @@ export function MapScreen({
           equippedItemIds={player.equippedItemIds}
           equippedAvatarSpriteId={equippedAvatarSpriteId}
           equippedHatSpriteId={equippedHatSpriteId}
+          equippedHeldSpriteId={equippedHeldSpriteId}
           onClose={() => setInventoryOpen(false)}
           onEquip={onEquipItem}
           onUnequip={onUnequipItem}

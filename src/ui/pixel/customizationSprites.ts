@@ -157,11 +157,39 @@ const glassesHatSprite: HatSprite = {
   ],
 };
 
+const borocoxinhaAvatarSprite: PixelSprite = {
+  palette: {
+    k: "#3a2410",
+    g: "#f2b134",
+    y: "#ffd766",
+    w: "#ffffff",
+    e: "#3a2410",
+    p: "#e85d8a",
+    t: "#7cc7ff",
+    b: "#c96a1f",
+  },
+  rows: [
+    "....kkkk....",
+    "...kgyygk...",
+    "..kgyyyygk..",
+    ".kgyyyyyygk.",
+    ".kgkyyykygk.",
+    ".kgywyywgk..",
+    ".kgyeyyegk..",
+    ".kgyyppytgk.",
+    ".kgyyyyyygk.",
+    ".kbgyyyygbk.",
+    "..kbgyygbk..",
+    "...kb..bk...",
+  ],
+};
+
 const AVATAR_SPRITES: Readonly<Record<string, PixelSprite>> = {
   "avatar-hero": heroSprite,
   "avatar-mage": mageAvatarSprite,
   "avatar-knight": knightAvatarSprite,
   "avatar-ranger": rangerAvatarSprite,
+  "avatar-borocoxinha": borocoxinhaAvatarSprite,
 };
 
 const HAT_SPRITES: Readonly<Record<string, HatSprite>> = {
