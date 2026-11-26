@@ -26,14 +26,14 @@ import { useElementWidth } from "../pixel/useElementWidth";
 import { playSoundEffect } from "../sound/soundManager";
 import { seedForGroup } from "../map/decorations";
 import { ForestBackdrop } from "../map/ForestBackdrop";
+import {
+  clampTrailColumn,
+  computeTrailLayout,
+  trailNodeTop,
+} from "../map/trailLayout";
 import { NpcDialog } from "./NpcDialog";
 import { ShopModal } from "./ShopModal";
 import { InventoryModal } from "./InventoryModal";
-
-const ROW_HEIGHT = 152;
-const NODE_CENTER_Y = 41;
-const TOP_PAD = 48;
-const BOTTOM_PAD = 40;
 
 interface MapScreenProps {
   readonly courses: readonly CourseSummary[];
@@ -143,25 +143,10 @@ function TrailGroup({
   onOpenNode,
 }: TrailGroupProps) {
   const [canvasRef, width] = useElementWidth<HTMLDivElement>();
-  const { baseY, height, points } = useMemo(() => {
-    const firstRow = Math.min(...group.nodes.map((node) => node.position.y));
-    const lastRow = Math.max(...group.nodes.map((node) => node.position.y - firstRow));
-    const canvasHeight =
-      TOP_PAD + (lastRow + 1) * ROW_HEIGHT + BOTTOM_PAD;
-    const columnWidth = (width || 320) / 3;
-
-    return {
-      baseY: firstRow,
-      height: canvasHeight,
-      points: group.nodes.map((node) => ({
-        x: (node.position.x + 0.5) * columnWidth,
-        y:
-          TOP_PAD +
-          (node.position.y - firstRow) * ROW_HEIGHT +
-          NODE_CENTER_Y,
-      })),
-    };
-  }, [group.nodes, width]);
+  const { baseY, height, points } = useMemo(
+    () => computeTrailLayout(group.nodes, width),
+    [group.nodes, width],
+  );
   const seed = useMemo(
     () => seedForGroup(`${groupIndex}:${group.chapter ?? "grupo"}`),
     [groupIndex, group.chapter],
@@ -196,14 +181,14 @@ function TrailGroup({
             key={node.id}
             className={[
               "trail-node-wrap",
-              `trail-node-wrap--${edgeClass(node.position.x)}`,
+              `trail-node-wrap--${edgeClass(clampTrailColumn(node.position.x))}`,
               isCurrent ? "trail-node-wrap--current" : "",
             ]
               .filter(Boolean)
               .join(" ")}
             style={{
               left: point?.x ?? 0,
-              top: TOP_PAD + (node.position.y - baseY) * ROW_HEIGHT,
+              top: trailNodeTop(node, baseY),
             }}
           >
             {isCurrent ? (
