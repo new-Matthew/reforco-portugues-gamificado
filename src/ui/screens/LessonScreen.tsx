@@ -231,7 +231,7 @@ export function LessonScreen({
             aria-live="polite"
             aria-atomic="true"
           >
-            <strong>Acertou, visse!</strong>
+            <strong>Acertou!</strong>
             <span>{xpGain ?? `+${feedback.earnedXp} XP`}</span>
           </div>
           {feedback.explanation ? <p>{feedback.explanation}</p> : null}
@@ -276,10 +276,10 @@ export function LessonScreen({
               <p>{question.dicaCearense}</p>
               <p className="hint-dialog__penalty">
                 Usar a dica reduz {hintXpPenalty} XP da recompensa final, uma vez
-                por questão. Visse?
+                por questão.
               </p>
               <PixelButton fullWidth onClick={() => setHintOpen(false)}>
-                Visse? Bora tentar!
+                Bora tentar!
               </PixelButton>
             </div>
           </div>

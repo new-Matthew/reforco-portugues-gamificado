@@ -18,7 +18,7 @@
         "speaker": "Professora Thaís",
         "lines": [
           "Oxe, macho, bora começar pelo Nível 1! Aqui tu vai reconhecer R e RR, M antes de P e B, X com som de CH e a sílaba tônica.",
-          "Bate o olho na palavra e repara no som e na posição das letras. Visse?"
+          "Bate o olho na palavra e repara no som e na posição das letras."
         ]
       },
       "reward": { "itemId": "p4-selo-nivel-1", "label": "Selo Nível 1 · Reconhecimento" },
@@ -187,7 +187,7 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "Agora é hora de aplicar dentro das frases, visse? R/RR, S/SS, M antes de P, X/CH e acento em boné.",
+          "Agora é hora de aplicar dentro das frases. R/RR, S/SS, M antes de P, X/CH e acento em boné.",
           "Lê o contexto inteiro antes de preencher ou marcar; a pista sempre aparece na frase."
         ]
       },
@@ -352,7 +352,7 @@
       "npc": {
         "speaker": "Professora Thaís",
         "lines": [
-          "Chegou a hora da verdade, visse? O desafio mistura acentuação, RR/SS, M antes de P e ortografia no mesmo texto.",
+          "O desafio mistura acentuação, RR/SS, M antes de P e ortografia no mesmo texto.",
           "Confia no teu raciocínio, lê cada detalhe e mostra que tu domina o 4º ano!"
         ]
       },

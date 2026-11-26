@@ -68,7 +68,7 @@ const singleQuestion: Question = {
   ],
   correctChoiceId: "a",
   explanation: "Amar termina em -AR.",
-  dicaCearense: "Oxe, lembra que amar termina em -AR, visse?",
+  dicaCearense: "Oxe, lembra que amar termina em -AR, macho!",
 };
 
 const textQuestion: Question = {

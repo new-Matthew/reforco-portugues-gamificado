@@ -8,7 +8,7 @@ export const GUIDE_LESSON_INTRO =
 
 export const GUIDE_RETRY_TITLE = "Quase lá! Bora revisar com calma.";
 export const GUIDE_RETRY_FALLBACK =
-  "Respira, visse? Relê a lição e tenta de novo. Tu é desenrolado, vai conseguir.";
+  "Respira, Relê a lição e tenta de novo. Tu é desenrolado, vai conseguir.";
 
 export const GUIDE_ERROR =
   "Vixe, algo saiu do prumo por aqui. Bora recarregar e seguir na trilha.";

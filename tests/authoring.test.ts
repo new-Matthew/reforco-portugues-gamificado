@@ -106,7 +106,7 @@ describe("authoring", () => {
       validLesson({
         questions: [
           validQuestion({
-            dicaCearense: "Oxe, olha o sujeito da oração com calma, visse?",
+            dicaCearense: "Oxe, olha o sujeito da oração com calma, macho!",
           }),
         ],
       }),
@@ -116,7 +116,7 @@ describe("authoring", () => {
     if (!result.ok) return;
 
     expect(result.value.lesson.questions[0]?.dicaCearense).toBe(
-      "Oxe, olha o sujeito da oração com calma, visse?",
+      "Oxe, olha o sujeito da oração com calma, macho!",
     );
   });
 

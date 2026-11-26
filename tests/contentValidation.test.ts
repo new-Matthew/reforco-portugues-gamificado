@@ -32,7 +32,7 @@ describe("validateContentPacks", () => {
     const acceptedNode = firstNode(accepted);
     const acceptedLesson = acceptedNode.lesson as Record<string, unknown>;
     const acceptedQuestions = acceptedLesson.questions as Array<Record<string, unknown>>;
-    acceptedQuestions[0]!.dicaCearense = "Oxe, olha a regra de novo, visse?";
+    acceptedQuestions[0]!.dicaCearense = "Oxe, olha a regra de novo, macho!";
 
     expect(validateContentPacks([accepted]).ok).toBe(true);
 

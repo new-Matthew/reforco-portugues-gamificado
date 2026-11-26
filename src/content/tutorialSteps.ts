@@ -11,7 +11,7 @@ export const TUTORIAL_STEPS: readonly TutorialStep[] = [
   {
     id: "welcome",
     message:
-      `Oxe, explorador! Eu sou a ${GUIDE_NAME} e vou te acompanhar nos primeiros passos. Bora desenrolar o português juntos, visse?`,
+      `Oxe, explorador! Eu sou a ${GUIDE_NAME} e vou te acompanhar nos primeiros passos. Bora desenrolar o português juntos.`,
     buttonLabel: "Entendi",
   },
   {

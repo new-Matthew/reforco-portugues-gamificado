@@ -448,7 +448,7 @@ export function TeacherDashboard({
                   className="pixel-input pixel-textarea"
                   value={question.dicaCearense ?? ""}
                   maxLength={220}
-                  placeholder="Ex.: Oxe, relê a regra e olha as opções de novo, visse?"
+                  placeholder="Ex.: Oxe, relê a regra e olha as opções de novo, macho!"
                   onChange={(event) =>
                     setQuestion((current) => ({
                       ...current,
