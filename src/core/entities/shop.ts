@@ -1,4 +1,4 @@
-export type ShopItemCategory = "hat" | "avatar" | "equipar";
+export type ShopItemCategory = "hat" | "avatar" | "grimorio";
 
 export interface ShopItem {
   readonly id: string;
@@ -10,5 +10,5 @@ export interface ShopItem {
 }
 
 export function isShopItemCategory(value: unknown): value is ShopItemCategory {
-  return value === "hat" || value === "avatar" || value === "equipar";
+  return value === "hat" || value === "avatar" || value === "grimorio";
 }

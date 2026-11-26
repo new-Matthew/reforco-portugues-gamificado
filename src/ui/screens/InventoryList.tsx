@@ -15,7 +15,7 @@ interface InventoryListProps {
 const CATEGORY_LABELS: Readonly<Record<ShopItemCategory, string>> = {
   hat: "Chapéu",
   avatar: "Avatar",
-  equipar: "Item de mão",
+  grimorio: "Grimório",
 };
 
 export function InventoryList({

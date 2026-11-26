@@ -343,7 +343,7 @@ export class GameController {
       shopItems: this.engine.getShopCatalog(),
       equippedAvatar: this.engine.getEquippedItem("avatar"),
       equippedHat: this.engine.getEquippedItem("hat"),
-      equippedHeld: this.engine.getEquippedItem("equipar"),
+      equippedHeld: this.engine.getEquippedItem("grimorio"),
       unlockedNodeIds,
       session: this.engine.getSession(),
       currentQuestion: this.engine.getCurrentQuestion(),

@@ -716,7 +716,9 @@ function normalizeShopCatalog(items: readonly ShopItem[]): readonly ShopItem[] {
         ? source.spriteId.trim()
         : category === "avatar"
           ? "avatar-hero"
-          : "hat-wizard";
+          : category === "grimorio"
+            ? "borocoxinha"
+            : "hat-wizard";
 
     normalized.push({ id, name, description, price, category, spriteId });
   }

@@ -32,7 +32,7 @@ async function createEngine(coins: number, saved?: Partial<PlayerProgress>) {
 }
 
 describe("Borocoxinha", () => {
-  it("cadastra o caderno como item de mão de 300 moedas", () => {
+  it("cadastra o grimório Borocoxinha por 300 moedas", () => {
     const item = DEFAULT_SHOP_CATALOG.find(
       (entry) => entry.id === "borocoxinha",
     );
@@ -41,14 +41,14 @@ describe("Borocoxinha", () => {
       id: "borocoxinha",
       name: "Borocoxinha",
       price: 300,
-      category: "equipar",
+      category: "grimorio",
       spriteId: "borocoxinha",
     });
     expect(item?.description?.trim().length ?? 0).toBeGreaterThan(0);
     expect(item?.description).not.toContain("visse");
   });
 
-  it("compra, equipa na mão e persiste entre instâncias da engine", async () => {
+  it("compra, equipa o grimório e persiste entre instâncias da engine", async () => {
     const { engine, store } = await createEngine(300);
 
     engine.purchaseItem("borocoxinha");
@@ -56,7 +56,7 @@ describe("Borocoxinha", () => {
     expect(engine.getPlayer().ownedItemIds).toContain("borocoxinha");
 
     engine.equipItem("borocoxinha");
-    expect(engine.getEquippedItem("equipar")?.id).toBe("borocoxinha");
+    expect(engine.getEquippedItem("grimorio")?.id).toBe("borocoxinha");
 
     const reloaded = new GameEngine({
       repository: new StaticRepository(buildCatalog()),
@@ -66,11 +66,13 @@ describe("Borocoxinha", () => {
     });
     await reloaded.init();
 
-    expect(reloaded.getEquippedItem("equipar")?.spriteId).toBe("borocoxinha");
+    expect(reloaded.getEquippedItem("grimorio")?.spriteId).toBe(
+      "borocoxinha",
+    );
     expect(reloaded.getPlayer().equippedItemIds).toContain("borocoxinha");
 
-    reloaded.unequipItem("equipar");
-    expect(reloaded.getEquippedItem("equipar")).toBeNull();
+    reloaded.unequipItem("grimorio");
+    expect(reloaded.getEquippedItem("grimorio")).toBeNull();
   });
 
   it("bloqueia a compra sem moedas suficientes", async () => {
@@ -96,10 +98,12 @@ describe("Borocoxinha", () => {
     expect(avatar).not.toBe(heroSprite);
     expect(avatar.rows).toHaveLength(12);
     expect(avatar.rows.every((row) => row.length === 12)).toBe(true);
-    expect(avatar.palette["g"]).toBe("#f2b134");
-    expect(avatar.palette["p"]).toBe("#e85d8a");
+    expect(avatar.palette["o"]).toBe("#e8891f");
+    expect(avatar.palette["r"]).toBe("#d62828");
     expect(avatar.rows.some((row) => row.includes("w"))).toBe(true);
-    expect(avatar.rows.some((row) => row.includes("t"))).toBe(true);
+    expect(
+      avatar.rows.slice(8).some((row) => row.includes("r") || row.includes("R")),
+    ).toBe(true);
   });
 
   it("resolve o asset e desenha o item segurado na mão", () => {

@@ -60,8 +60,8 @@ export function InventoryModal({
           <div>
             <span className="eyebrow">Visual atual</span>
             <p>
-              Escolha uma skin, chapéu ou item de mão comprado para atualizar
-              seu avatar no mapa e na barra superior.
+              Escolha uma skin, chapéu ou grimório comprado para atualizar seu
+              avatar no mapa e na barra superior.
             </p>
           </div>
         </div>
